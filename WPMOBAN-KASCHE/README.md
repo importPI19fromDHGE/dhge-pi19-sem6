@@ -29,4 +29,4 @@ Wahlpflichtmodul Mobile Anwendungen 3
 
 # Platzhalter
 
-Ich bin ein Platzhalter.
+Ich bin ein Platzhalter
