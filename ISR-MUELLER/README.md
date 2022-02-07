@@ -24,7 +24,7 @@ IT-Infrastrukturen / Sicherheit / Recht
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Begriffe](#begriffe)
+- [Governance, Compliance und Legal Tech](#governance-compliance-und-legal-tech)
 - [Rechtsfragen in der IT](#rechtsfragen-in-der-it)
 - [Rechtsstaatlichkeit](#rechtsstaatlichkeit)
   - [Besonderheiten im Umgang mit Rechtstexten](#besonderheiten-im-umgang-mit-rechtstexten)
@@ -32,7 +32,7 @@ IT-Infrastrukturen / Sicherheit / Recht
 - [Urheberrecht](#urheberrecht)
 - [Domänenrecht](#dom%C3%A4nenrecht)
 - [Telemediengesetz](#telemediengesetz)
-- [E-Governance](#e-governance)
+- [E-Government](#e-government)
 - [Informationsfreiheitsgesetz](#informationsfreiheitsgesetz)
 - [IT-Sicherheitsgesetz](#it-sicherheitsgesetz)
   - [Cyber Security Act](#cyber-security-act)
