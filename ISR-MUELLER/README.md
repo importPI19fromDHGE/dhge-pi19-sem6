@@ -42,7 +42,7 @@ IT-Infrastrukturen / Sicherheit / Recht
 
 <!--newpage-->
 
-# Begriffe
+# Governance, Compliance und Legal Tech
 
 - Governance heißt, dass Richtlinien empfohlen einzuhalten sind
 - Compliance heißt, dass Richtlinien verpflichtend einzuhalten sind
@@ -70,10 +70,11 @@ IT-Infrastrukturen / Sicherheit / Recht
 
 - für die IT gilt aufgrund oft veralteter Gesetzesbücher überwiegend Richterrecht
 - oft liegen Erwägungsgründe bei: erläuternde Kommentare zu Artikeln
-- in der DSGVO erlauben oft Öffnungsklauseln Anpassungen auf nationaler Ebene
+- in der DSGVO können Anpassungen auf nationaler Ebene durch Öffnungsklauseln erlaubt werden
 
 ## ePrivacy-Verordnung
 
+- Privacy by Design
 - Kommunikationsdaten sind besonders vertraulich und durch eigenes Grundrecht geschützt
 - sollte mit der DSGVO kommen, wurde verzögert, kommt also bald™
 
@@ -101,7 +102,7 @@ IT-Infrastrukturen / Sicherheit / Recht
 - i.d.R. gilt eine Mithaftung bei illegalen Inhalten in bspw. Foren, digitalen Gästelisten, etc.
   - Hinweis: nur für deutsche Betreiber
 
-# E-Governance
+# E-Government
 
 - neben De-Mail-Adressen ist ein zusätzlicher elektronischer Kommunikationskanal erforderlich<!--nicht, dass jemand De-Mail hätte...-->
 - elektronische Rechnungen sind erforderlich
@@ -116,7 +117,7 @@ IT-Infrastrukturen / Sicherheit / Recht
 # IT-Sicherheitsgesetz
 
 - betrifft KRITIS-Betreiber
-- Angriffe sind meldepflichtig, sobald er mindestens nicht automatisiert abgewehrt werden konnte
+- Angriffe sind meldepflichtig, sobald sie mindestens nicht automatisiert abgewehrt werden konnten
 
 ## Cyber Security Act
 
