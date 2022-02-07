@@ -24,13 +24,14 @@ IT-Infrastrukturen / Sicherheit / Recht
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [IT-Infrastrukturen / Sicherheit / Recht](#it-infrastrukturen--sicherheit--recht)
 - [Begriffe](#begriffe)
 - [Rechtsfragen in der IT](#rechtsfragen-in-der-it)
 - [Rechtsstaatlichkeit](#rechtsstaatlichkeit)
   - [Besonderheiten im Umgang mit Rechtstexten](#besonderheiten-im-umgang-mit-rechtstexten)
   - [ePrivacy-Verordnung](#eprivacy-verordnung)
 - [Urheberrecht](#urheberrecht)
-- [Domänenrecht](#dom%C3%A4nenrecht)
+- [Domänenrecht](#domänenrecht)
 - [Telemediengesetz](#telemediengesetz)
 - [E-Governance](#e-governance)
 - [Informationsfreiheitsgesetz](#informationsfreiheitsgesetz)
@@ -81,8 +82,9 @@ IT-Infrastrukturen / Sicherheit / Recht
 
 - Software ist ein Werk und damit urheberrechtlich geschützt
 - Urheberrecht hat den Zweck, Werke wirtschaftlich zu verwerten und zu schützen
-- höchstrichterlich entschieden: gebrauchte Software, E-Books, Musik, etc. kaufen und verkaufen ist erlaubt
+- höchstrichterlich entschieden: gebrauchte Software, Musik, etc. kaufen und verkaufen ist erlaubt
   - **aber:** Nachweis der Löschung beim Verkäufer ist erforderlich
+  - **Achtung:** der Verkauf von _gebrauchten_ Nutzungsrechten, wie bei E-Books der Fall, ist nicht gestattet. Das steht falsch auf der Folie!
 - ab einer gewissen Schöpfungshöhe sind auch Datenbanken urheberrechtlich geschützt
 
 # Domänenrecht
