@@ -22,7 +22,7 @@ Du kannst folgendermaßen vorgehen:
 1. Lege eine Organisation mit passendem Namen und Einstellungen an. (Wie wäre es mit importPI20fromDHGE?)
 2. Forke dieses Repository mit der Organisation als Besitzer, ändere ggf. den Namen.
 2. Nimm alle Sicherheitseinstellungen vor, stell das Repo auf Public, **lade deine Kommilitonen zur Organsiation ein**, *verwalte Rechte*.
-4. Klone (git clone) das neue Repo lokal auf deinem Computer.
+4. Klone (`git clone`) das neue Repo lokal auf deinem Computer.
 5. Passe ggf. das Top-Level README.md an.
 
 Und dann kann es losgehen!
@@ -38,7 +38,13 @@ Alle Kommilitonen PI19 sind dazu eingeladen, ihre eigenen Beiträge zu diesem Pr
 
 ## Module
 
-- [ToDo](./ToDo)
+- [Compilerbau](./CB-KUSCHE)
+- [IT-Consulting](./CONS-MUELLER)
+- [Embedded Systems III](./EMB-GUENTHER)
+- [IT-Infrastrukturen/IT-Sicherheit/IT-Recht](./ISR-MUELLER)
+- [Wissensbasierte Systeme/Neuronale Netze](./ML-FELDMANN)
+- [Verteilte Systeme](./NET-FELDMANN)
+- [Computerforensik](./PRO-STRASS)
 
 ## Markdown-Erweiterungen
 
