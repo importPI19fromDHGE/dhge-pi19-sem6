@@ -24,7 +24,19 @@ IT-Infrastrukturen / Sicherheit / Recht
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Platzhalter](#platzhalter)
+- [Begriffe](#begriffe)
+- [Rechtsfragen in der IT](#rechtsfragen-in-der-it)
+- [Rechtsstaatlichkeit](#rechtsstaatlichkeit)
+  - [Besonderheiten im Umgang mit Rechtstexten](#besonderheiten-im-umgang-mit-rechtstexten)
+  - [ePrivacy-Verordnung](#eprivacy-verordnung)
+- [Urheberrecht](#urheberrecht)
+- [Domänenrecht](#dom%C3%A4nenrecht)
+- [Telemediengesetz](#telemediengesetz)
+- [E-Governance](#e-governance)
+- [Informationsfreiheitsgesetz](#informationsfreiheitsgesetz)
+- [IT-Sicherheitsgesetz](#it-sicherheitsgesetz)
+  - [Cyber Security Act](#cyber-security-act)
+- [Haftung](#haftung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
