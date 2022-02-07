@@ -24,14 +24,13 @@ IT-Infrastrukturen / Sicherheit / Recht
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [IT-Infrastrukturen / Sicherheit / Recht](#it-infrastrukturen--sicherheit--recht)
 - [Begriffe](#begriffe)
 - [Rechtsfragen in der IT](#rechtsfragen-in-der-it)
 - [Rechtsstaatlichkeit](#rechtsstaatlichkeit)
   - [Besonderheiten im Umgang mit Rechtstexten](#besonderheiten-im-umgang-mit-rechtstexten)
   - [ePrivacy-Verordnung](#eprivacy-verordnung)
 - [Urheberrecht](#urheberrecht)
-- [Domänenrecht](#domänenrecht)
+- [Domänenrecht](#dom%C3%A4nenrecht)
 - [Telemediengesetz](#telemediengesetz)
 - [E-Governance](#e-governance)
 - [Informationsfreiheitsgesetz](#informationsfreiheitsgesetz)
