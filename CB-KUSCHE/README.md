@@ -16,7 +16,7 @@ header-includes:
 ---------->
 
 Wahlpflichtmodul Compilerbau
-===========================================
+====================
 
 <!-- md2apkg ignore-card -->
 
