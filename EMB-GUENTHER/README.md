@@ -1,7 +1,7 @@
 <!----------
-title: "IT-Sicherheit"
+title: "Wahlpflichtfach Embedded Systems 3"
 date: "Semester 6"
-keywords: [IT, Sicherheit, Security, DHGE, Semester 6]
+keywords: [Embedded, Embedded Systems, DHGE, Semester 6]
 header-includes:
 
   - \usepackage{enumitem}
@@ -15,16 +15,13 @@ header-includes:
 
 ---------->
 
-IT-Sicherheit
+Wahlpflichtmodul Embedded Systems 3
 ===========================================
 
 <!-- md2apkg ignore-card -->
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Inhaltsverzeichnis**
-
-- [Platzhalter](#platzhalter)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

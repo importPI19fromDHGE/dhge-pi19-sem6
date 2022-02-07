@@ -1,7 +1,7 @@
 <!----------
 title: "IT-Infrastrukturen"
 date: "Semester 6"
-keywords: [IT, Infrastruktur, DHGE, Semester 6]
+keywords: [IT, Infrastruktur, Recht, Sicherheit, DHGE, Semester 6]
 header-includes:
 
   - \usepackage{enumitem}
@@ -15,16 +15,13 @@ header-includes:
 
 ---------->
 
-IT-Infrastrukturen
+IT-Infrastrukturen / Sicherheit / Recht
 ===========================================
 
 <!-- md2apkg ignore-card -->
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Inhaltsverzeichnis**
-
-- [Platzhalter](#platzhalter)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
