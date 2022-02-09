@@ -24,25 +24,30 @@ IT-Infrastrukturen / Sicherheit / Recht
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [IT-Infrastrukturen / Sicherheit / Recht](#it-infrastrukturen--sicherheit--recht)
 - [Governance, Compliance und Legal Tech](#governance-compliance-und-legal-tech)
 - [Rechtsfragen in der IT](#rechtsfragen-in-der-it)
 - [Rechtsstaatlichkeit](#rechtsstaatlichkeit)
   - [Besonderheiten im Umgang mit Rechtstexten](#besonderheiten-im-umgang-mit-rechtstexten)
   - [ePrivacy-Verordnung](#eprivacy-verordnung)
 - [Urheberrecht](#urheberrecht)
-- [Domänenrecht](#dom%C3%A4nenrecht)
+- [Domänenrecht](#domänenrecht)
 - [Telemediengesetz](#telemediengesetz)
 - [E-Government](#e-government)
 - [Informationsfreiheitsgesetz](#informationsfreiheitsgesetz)
 - [IT-Sicherheitsgesetz](#it-sicherheitsgesetz)
   - [Cyber Security Act](#cyber-security-act)
 - [Haftung](#haftung)
-- [Gestaltungsfelder der Personalvertretung](#gestaltungsfelder-der-personalvertretung)
-- [Interessen der Arbeitgeber](#interessen-der-arbeitgeber)
-- [Dienstvereinbarungen](#dienstvereinbarungen)
+- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-beschäftigungskontext)
+  - [Gestaltungsfelder der Personalvertretung](#gestaltungsfelder-der-personalvertretung)
+  - [Interessen der Arbeitgeber](#interessen-der-arbeitgeber)
+  - [Dienstvereinbarungen](#dienstvereinbarungen)
 - [Recht auf informationelle Selbstbestimmung](#recht-auf-informationelle-selbstbestimmung)
+  - [Beeinträchtigung digitaler Rechte](#beeinträchtigung-digitaler-rechte)
+  - [Handlungsbedarf](#handlungsbedarf)
 - [Befugnisse von Datenschutzbeauftragten](#befugnisse-von-datenschutzbeauftragten)
 - [DSGVO Inhalt](#dsgvo-inhalt)
+  - [Zweck der DSGVO](#zweck-der-dsgvo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -141,14 +146,22 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
   - grobe Fahrlässigkeit und Vorsatz: Arbeitnehmer haftet voll
 - IT-Sicherheitsbeauftragte haften auch für Unterlassung
 
-# Gestaltungsfelder der Personalvertretung
+# Datenverarbeitung im Beschäftigungskontext
+
+- geregelt durch Gesetze oder Kollektivvereinbarung, z.B. Betriebsvereinbarungen
+- Personalrat hat Einfluss auf diese
+  - man unterscheidet in Fälle mit voller und normaler Mitbestimmung
+- geregelt auf technischer und organisatorischer Ebene mit rechtlicher Gestaltung und Regeltransparenz
+  - z.B. wird die private Nutzung des Firmen-Internets eingeschränkt oder verboten
+
+## Gestaltungsfelder der Personalvertretung
 
 - Fälle der vollen Mitbestimmung
   - Personalrat **muss** zustimmen
 - Fälle der Mitwirkung
   - Personalrat kann mitwirken aber nicht entscheiden
 
-# Interessen der Arbeitgeber
+## Interessen der Arbeitgeber
 
 - Sabotage und Datendiebstahl verhindern
 - Verlust von Arbeitszeit/Produktivität verhindern
@@ -156,11 +169,11 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 - Urheberrechtsverstöße verhindern
 - Straftaten verhindern
 
-# Dienstvereinbarungen
+## Dienstvereinbarungen
 
-- erlaubte private Nutzung von Internt muss geregelt werden
+- erlaubte private Nutzung von Internet muss geregelt werden
 - private Nutzung darf keine negativen Auswirkungen auf die Arbeit oder den Arbeitgeber haben
-- bei illegalen oder verbotenen Handlungen darf direkt gekündigt werden, ansonsten muss zunächst gemahnt werden
+- bei illegalen Handlungen darf direkt gekündigt werden, ansonsten muss zunächst gemahnt werden
 
 # Recht auf informationelle Selbstbestimmung
 
@@ -172,6 +185,16 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 - Zweckbindung der Erhebung und Verarbeitung personenbezogener Daten
 - Sammeln auf Vorrat ist nicht erlaubt
 
+## Beeinträchtigung digitaler Rechte
+
+- zunehmend werden vermeintlich kostenfreie Dienste mit Daten bezahlt
+- Cloud-Dienste haben den Verlust der Souveränität über die Daten zur Folge
+
+## Handlungsbedarf
+
+- Rechtsverletzungen werden nicht effektiv beendet
+- das in Planung befindliche IT-Sicherheitsgesetz bleibt hinter den Forderungen zurück
+
 # Befugnisse von Datenschutzbeauftragten
 
 - Untersuchungsbefugnisse: darf Serverraum öffnen und Inhalt einsehen
@@ -181,5 +204,10 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 # DSGVO Inhalt
 
 - Schutz der Grundrechte und Grundfreiheiten natürlicher Personen
-- der freie Verkehr personenbezogener Daten darf weder eingeschränkt noch verboten werden
-- die DSGVO zwingt lediglich Unternehmen dazu, die Nutzung der Daten transparent zu machen und den Regeln folgen
+  - damit steht jedes Datum unter dem Schutz des Grundgesetzes
+
+## Zweck der DSGVO
+
+- Ermöglichen einer legalen **Digitalwirtschaft**
+  - der freie Verkehr personenbezogener Daten darf weder eingeschränkt noch verboten werden
+- Schutz der **Grundrechte**: die DSGVO zwingt lediglich Unternehmen dazu, die Nutzung der Daten transparent zu machen und den Regeln folgen
