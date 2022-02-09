@@ -101,3 +101,67 @@ nach:
   - Gruppe oder vernetzte Gruppe (Peer Groups)
 - Motivationslage
   - Sozial, technisch, politisch, finanziell, staatlich
+
+# Indikatoren für gefährdete Mitarbeiter
+
+- Unzufriedenheit am Arbeitsplatz
+- fehlende Identifikation mit dem Unternehmen
+- Auffällige Neugier
+- Nutzung von Spionagehilfsmitteln (z.Bsp. Bild- und Tonaufzeichnungsgeräte, mobile Datenträger)
+- Auffälligkeiten im persönlichen Umfeld (aufwändiger Lebensstil, Anzeichen für Alkohlsuch etc.)
+- ...
+
+# Was sind Spuren?
+
+- sind materielle Veränderungen an Personen oder Objekten
+- stehen im Zusammenhang mit relevanten Ereignissen
+- können zur Tataufklärung beitragen, da sie Rückschlüsse auf den Tatablauf und den Täter geben
+
+# Was sind digitale Spuren?
+
+- basieren auf Daten, welche in Computersystemen gespeichert sind oder übertragen wurden
+- werden erst durch ihre Interpretation von physischen Spuren über unterschiedliche Interpretationsebenen zu verwertbaren Spuren
+
+# Was beschreibt das Locard'sche Prinzip?
+
+Es gibt keinen Tatort ohne Spuren!
+
+# Primäres und sekundäres Ziel des Vorgehensmodells der digitalen Forensik
+
+- Primär: Aufklärung
+- Sekundär: Vorsorge
+
+# Ziele der IT-Forensik
+
+- Sicherstellung von belastendem und entlastendem Beweismaterial
+- sichergestellte Daten sollen systematisch analysierbar sein
+- Rekonstruktion zuvor stattgefundener Ereignisse
+- Daten müssen gerichtsverwertbar aufbereitet und analysiert werden
+
+# Zwei Varianten der IT-Forensik (auf jeden Fall merken!)
+
+- Post-mortem Forensik
+- Live-Forensik
+
+# S-A-P-Modell
+
+- Secure
+  - strategische und operative Vorbereitungen zur Erfassung aller relevanten Daten durchführen
+- Analyse
+  - hier werden die gesicherten Spuren und Beweise überprüfbar aufgearbeitet, sorgfältig geprüft und objektiv bewertet
+- Present
+  - hier wird der Ermittlungsprozess nachvollziehabr dargelegt (präsentiert)
+
+# Grundlage des Ablaufs einer forensischen Untersuchung (BSI-Leitfaden)
+
+- basiert auf dem S-A-P-Modell und ergänzt es
+- Strategische Vorbereitung $\rightarrow$ Operative Vorbereitung $\rightarrow$ Datensammlung $\rightarrow$ Datenreduktion $\rightarrow$ Datenanalyse $\rightarrow$ Dokumentation
+
+# Anforderungen an eine neue Methode im forensischen Prozess
+
+- Akzeptanz: Methoden sind in der Fachwelt anerkannt
+- Glaubwürdigkeit: Funktionalität der Methoden ist nachweisbar
+- Wiederholbarkeit: Ergebnisse ist durch Dritte reproduzierbar
+- Integrität: Spuren werden durch Untersuchung nicht verändert
+- Ursache und Auswirkungen: Verbindung zwischen digitalen Spuren, Ereignissen und Personen sind herstellbar
+- Dokumentation: Ermittlungsprozess ist nachvollziehbar dokumentiert
