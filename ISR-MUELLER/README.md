@@ -134,3 +134,46 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
   - normale Fahrlässigkeit: Arbeitnehmer haftet teilweise
   - grobe Fahrlässigkeit und Vorsatz: Arbeitnehmer haftet voll
 - IT-Sicherheitsbeauftragte haften auch für Unterlassung
+
+# Gestaltungsfelder der Personalvertretung
+
+- Fälle der vollen Mitbestimmung
+  - Personalrat **muss** zustimmen
+- Fälle der Mitwirkung
+  - Personalrat kann mitwirken aber nicht entscheiden
+
+# Interessen der Arbeitgeber
+
+- Sabotage und Datendiebstahl verhindern
+- Verlust von Arbeitszeit/Produktivität verhindern
+- Bandbreite sparen
+- Urheberrechtsverstöße verhindern
+- Straftaten verhindern
+
+# Dienstvereinbarungen
+
+- erlaubte private Nutzung von Internt muss geregelt werden
+- private Nutzung darf keine negativen Auswirkungen auf die Arbeit oder den Arbeitgeber haben
+- bei illegalen oder verbotenen Handlungen darf direkt gekündigt werden, ansonsten muss zunächst gemahnt werden
+
+# Recht auf informationelle Selbstbestimmung
+
+- es gibt keine belanglosen Daten
+- "Wer weiß wann und bei welcher Gelegenheit was über mich?" $\rightarrow$ Grundrecht
+- Aufklärungspflicht der verantwortlichen Stelle
+- Vorrang der Selbstauskunft
+- Einschränkungen des Rechts müssen gesetzlich geregelt sein
+- Zweckbindung der Erhebung und Verarbeitung personenbezogener Daten
+- Sammeln auf Vorrat ist nicht erlaubt
+
+# Befugnisse von Datenschutzbeauftragten
+
+- Untersuchungsbefugnisse: darf Serverraum öffnen und Inhalt einsehen
+- Abhilfebefugnisse: Anweisung zur Änderung oder Abschaltung eines Servers
+- Datenschutzbeauftragten sollten zeitliche und monetäre Mittel zur Verfügung gestellt werden
+
+# DSGVO Inhalt
+
+- Schutz der Grundrechte und Grundfreiheiten natürlicher Personen
+- der freie Verkehr personenbezogener Daten darf weder eingeschränkt noch verboten werden
+- die DSGVO zwingt lediglich Unternehmen dazu, die Nutzung der Daten transparent zu machen und den Regeln folgen
