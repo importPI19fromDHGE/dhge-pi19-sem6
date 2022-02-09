@@ -37,6 +37,12 @@ IT-Infrastrukturen / Sicherheit / Recht
 - [IT-Sicherheitsgesetz](#it-sicherheitsgesetz)
   - [Cyber Security Act](#cyber-security-act)
 - [Haftung](#haftung)
+- [Gestaltungsfelder der Personalvertretung](#gestaltungsfelder-der-personalvertretung)
+- [Interessen der Arbeitgeber](#interessen-der-arbeitgeber)
+- [Dienstvereinbarungen](#dienstvereinbarungen)
+- [Recht auf informationelle Selbstbestimmung](#recht-auf-informationelle-selbstbestimmung)
+- [Befugnisse von Datenschutzbeauftragten](#befugnisse-von-datenschutzbeauftragten)
+- [DSGVO Inhalt](#dsgvo-inhalt)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
