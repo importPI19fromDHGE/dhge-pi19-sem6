@@ -41,6 +41,7 @@ IT-Infrastrukturen / Sicherheit / Recht
   - [Gestaltungsfelder der Personalvertretung](#gestaltungsfelder-der-personalvertretung)
   - [Interessen der Arbeitgeber](#interessen-der-arbeitgeber)
   - [Betriebs-/Dienstvereinbarungen](#betriebs-dienstvereinbarungen)
+    - [Beispiel: Private Internetnutzung](#beispiel-private-internetnutzung)
 - [Recht auf informationelle Selbstbestimmung](#recht-auf-informationelle-selbstbestimmung)
   - [Beeinträchtigung digitaler Rechte](#beeintr%C3%A4chtigung-digitaler-rechte)
   - [Handlungsbedarf](#handlungsbedarf)
