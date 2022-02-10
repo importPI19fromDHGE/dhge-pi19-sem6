@@ -168,9 +168,36 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 
 ## Betriebs-/Dienstvereinbarungen
 
-- erlaubte private Nutzung von Internet muss geregelt werden
+Regelt z.B. Beschränkungen nach Umfang, Dauer, Art und Weise der E-Mail und Internetnutzung
+
+- Aufzählung verbotener Nutzungen (Inhalte, Privat/Dienstlich)
+- Umgang mit Protokolldateien
+- et cetera
+
+### Beispiel: Private und dienstliche Internetnutzung
+
+**privat**
+
+- Erlaubnis oder Verbot einer privaten Nutzung von Internet muss geregelt werden
 - private Nutzung darf keine negativen Auswirkungen auf die Arbeit oder den Arbeitgeber haben
+- Wenn private Nutzung gestattet: Arbeitgeber ist Telekommunikationsanbieter
+  - Fernmeldegeheimnis!
+  - Datenerhebung nur ausnahmsweise, nicht systematisch
+
+**dienstlich**
+
+- kein Fernmeldegeheimnis, aber Datenschutzgesetze gelten
+- Verhältnismäßigkeit!
+  - Metadaten: ok
+  - Inhaltskontrolle unzulässig
 - bei illegalen Handlungen darf außerordentlich gekündigt werden, ansonsten kann abgemahnt werden
+
+### Beispiel: Protokolldateien
+
+- DSGVO kennt keine Höchstgrenze zur Aufbewahrungsdauer
+- Öffnungklausel: nationales Recht kann Vorschriften festlegen
+- Zweck muss klar sein, verhältnismäßige Speicherung
+- Artikel 40 DSGVO: Branchen(-Verbände) sollen Standards festlegen $\rightarrow$ Zertifikate
 
 # Recht auf informationelle Selbstbestimmung
 
