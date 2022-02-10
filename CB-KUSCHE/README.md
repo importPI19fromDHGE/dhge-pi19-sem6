@@ -35,9 +35,13 @@ Wahlpflichtmodul Compilerbau
 
 <!--newpage-->
 
-# Aufbau klassischer Compiler
+# Grundlagen
 
-- bestehen aus Frontend (Lexer, Parser), Infrastruktur (Symboltabelle, Syntaxbaum, etc.), Backend (Optimierer, Codegenerator)
+## Aufbau klassischer Compiler
+
+- **Frontend:** Lexer, Parser
+- **Infrastruktur:** Symboltabelle, Syntaxbaum
+- **Backend:** Optimierer, Codegenerator
 
 ## Begriffe
 
