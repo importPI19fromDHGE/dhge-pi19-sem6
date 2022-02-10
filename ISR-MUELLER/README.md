@@ -201,8 +201,9 @@ Regelt z.B. Beschränkungen nach Umfang, Dauer, Art und Weise der E-Mail und Int
 - Artikel 40 DSGVO: Branchen(-Verbände) sollen Standards festlegen $\rightarrow$ Zertifikate
 
 # Einführung Datenschutz
+
+## Exkurs Impulsfragen Datenschutz / Miro-Boards
 <!-- md2apkg ignore-card -->
-Exkurs Impulsfragen Datenschutz / Miro-Boards
 
 - moderne Technologien und Datenschutz
 - Recht auf informationelle Selbstbestimmung (Volkszählung 1983)
@@ -234,8 +235,7 @@ Exkurs Impulsfragen Datenschutz / Miro-Boards
 - Cloud-Dienste haben den Verlust der Souveränität über die Daten zur Folge
 - Big Data und KI
 
-
-### Handlungsbedarf
+### Handlungsbedarf (Datenschutz im Kontext moderner Technologien)
 
 - Rechtsverletzungen werden nicht effektiv beendet
 - das in Planung befindliche IT-Sicherheitsgesetz bleibt hinter den Forderungen zurück
