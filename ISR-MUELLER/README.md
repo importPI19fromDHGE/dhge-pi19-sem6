@@ -168,6 +168,8 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 
 ## Betriebs-/Dienstvereinbarungen
 
+### Beispiel: Private Internetnutzung
+
 - Erlaubnis oder Verbot einer privaten Nutzung von Internet muss geregelt werden
 - private Nutzung darf keine negativen Auswirkungen auf die Arbeit oder den Arbeitgeber haben
 - bei illegalen Handlungen darf außerordentlich gekündigt werden, ansonsten kann abgemahnt werden
