@@ -147,18 +147,16 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 
 # Datenverarbeitung im Beschäftigungskontext
 
-- geregelt durch Gesetze oder Kollektivvereinbarung, z.B. Betriebsvereinbarungen
-- Personalrat hat Einfluss auf diese
+- geregelt durch Gesetze oder Kollektivvereinbarung (Betriebs-/Dienstvereinbarungen)
+- Betriebs-/Personalrat hat Einfluss auf diese
   - man unterscheidet in Fälle mit voller und normaler Mitbestimmung
 - geregelt auf technischer und organisatorischer Ebene mit rechtlicher Gestaltung und Regeltransparenz
   - z.B. wird die private Nutzung des Firmen-Internets eingeschränkt oder verboten
 
 ## Gestaltungsfelder der Personalvertretung
 
-- Fälle der vollen Mitbestimmung
-  - Personalrat **muss** zustimmen
-- Fälle der Mitwirkung
-  - Personalrat kann mitwirken aber nicht entscheiden
+- Fälle der vollen Mitbestimmung $\rightarrow$ Betriebs-/Personalrat **muss** zustimmen
+- Fälle der Mitwirkung $\rightarrow$ Betriebs-/Personalrat kann mitwirken aber nicht entscheiden
 
 ## Interessen der Arbeitgeber
 
@@ -166,18 +164,18 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 - Verlust von Arbeitszeit/Produktivität verhindern
 - Bandbreite sparen
 - Urheberrechtsverstöße verhindern
-- Straftaten verhindern
+- Rechtsverletzungen (z.B. Urheberrechtsverstöße) durch Mitarbeiter verhindern
 
-## Dienstvereinbarungen
+## Betriebs-/Dienstvereinbarungen
 
 - erlaubte private Nutzung von Internet muss geregelt werden
 - private Nutzung darf keine negativen Auswirkungen auf die Arbeit oder den Arbeitgeber haben
-- bei illegalen Handlungen darf direkt gekündigt werden, ansonsten muss zunächst gemahnt werden
+- bei illegalen Handlungen darf außerordentlich gekündigt werden, ansonsten kann abgemahnt werden
 
 # Recht auf informationelle Selbstbestimmung
 
 - es gibt keine belanglosen Daten
-- "Wer weiß wann und bei welcher Gelegenheit was über mich?" $\rightarrow$ Grundrecht
+- *"Wer weiß wann und bei welcher Gelegenheit was über mich?"* $\rightarrow$ Grundrecht
 - Aufklärungspflicht der verantwortlichen Stelle
 - Vorrang der Selbstauskunft
 - Einschränkungen des Rechts müssen gesetzlich geregelt sein
