@@ -24,7 +24,8 @@ Wahlpflichtmodul Compilerbau
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Aufbau klassischer Compiler](#aufbau-klassischer-compiler)
+- [Grundlagen](#grundlagen)
+  - [Aufbau klassischer Compiler](#aufbau-klassischer-compiler)
   - [Begriffe](#begriffe)
 - [Parser](#parser)
   - [Entwurf](#entwurf)
