@@ -37,6 +37,16 @@ IT-Infrastrukturen / Sicherheit / Recht
 - [IT-Sicherheitsgesetz](#it-sicherheitsgesetz)
   - [Cyber Security Act](#cyber-security-act)
 - [Haftung](#haftung)
+- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-besch%C3%A4ftigungskontext)
+  - [Gestaltungsfelder der Personalvertretung](#gestaltungsfelder-der-personalvertretung)
+  - [Interessen der Arbeitgeber](#interessen-der-arbeitgeber)
+  - [Dienstvereinbarungen](#dienstvereinbarungen)
+- [Recht auf informationelle Selbstbestimmung](#recht-auf-informationelle-selbstbestimmung)
+  - [Beeinträchtigung digitaler Rechte](#beeintr%C3%A4chtigung-digitaler-rechte)
+  - [Handlungsbedarf](#handlungsbedarf)
+- [Befugnisse von Datenschutzbeauftragten](#befugnisse-von-datenschutzbeauftragten)
+- [DSGVO Inhalt](#dsgvo-inhalt)
+  - [Zweck der DSGVO](#zweck-der-dsgvo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -134,3 +144,69 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
   - normale Fahrlässigkeit: Arbeitnehmer haftet teilweise
   - grobe Fahrlässigkeit und Vorsatz: Arbeitnehmer haftet voll
 - IT-Sicherheitsbeauftragte haften auch für Unterlassung
+
+# Datenverarbeitung im Beschäftigungskontext
+
+- geregelt durch Gesetze oder Kollektivvereinbarung, z.B. Betriebsvereinbarungen
+- Personalrat hat Einfluss auf diese
+  - man unterscheidet in Fälle mit voller und normaler Mitbestimmung
+- geregelt auf technischer und organisatorischer Ebene mit rechtlicher Gestaltung und Regeltransparenz
+  - z.B. wird die private Nutzung des Firmen-Internets eingeschränkt oder verboten
+
+## Gestaltungsfelder der Personalvertretung
+
+- Fälle der vollen Mitbestimmung
+  - Personalrat **muss** zustimmen
+- Fälle der Mitwirkung
+  - Personalrat kann mitwirken aber nicht entscheiden
+
+## Interessen der Arbeitgeber
+
+- Sabotage und Datendiebstahl verhindern
+- Verlust von Arbeitszeit/Produktivität verhindern
+- Bandbreite sparen
+- Urheberrechtsverstöße verhindern
+- Straftaten verhindern
+
+## Dienstvereinbarungen
+
+- erlaubte private Nutzung von Internet muss geregelt werden
+- private Nutzung darf keine negativen Auswirkungen auf die Arbeit oder den Arbeitgeber haben
+- bei illegalen Handlungen darf direkt gekündigt werden, ansonsten muss zunächst gemahnt werden
+
+# Recht auf informationelle Selbstbestimmung
+
+- es gibt keine belanglosen Daten
+- "Wer weiß wann und bei welcher Gelegenheit was über mich?" $\rightarrow$ Grundrecht
+- Aufklärungspflicht der verantwortlichen Stelle
+- Vorrang der Selbstauskunft
+- Einschränkungen des Rechts müssen gesetzlich geregelt sein
+- Zweckbindung der Erhebung und Verarbeitung personenbezogener Daten
+- Sammeln auf Vorrat ist nicht erlaubt
+
+## Beeinträchtigung digitaler Rechte
+
+- zunehmend werden vermeintlich kostenfreie Dienste mit Daten bezahlt
+- Cloud-Dienste haben den Verlust der Souveränität über die Daten zur Folge
+
+## Handlungsbedarf
+
+- Rechtsverletzungen werden nicht effektiv beendet
+- das in Planung befindliche IT-Sicherheitsgesetz bleibt hinter den Forderungen zurück
+
+# Befugnisse von Datenschutzbeauftragten
+
+- Untersuchungsbefugnisse: darf Serverraum öffnen und Inhalt einsehen
+- Abhilfebefugnisse: Anweisung zur Änderung oder Abschaltung eines Servers
+- Datenschutzbeauftragten sollten zeitliche und monetäre Mittel zur Verfügung gestellt werden
+
+# DSGVO Inhalt
+
+- Schutz der Grundrechte und Grundfreiheiten natürlicher Personen
+  - damit steht jedes Datum unter dem Schutz des Grundgesetzes
+
+## Zweck der DSGVO
+
+- Ermöglichen einer legalen **Digitalwirtschaft**
+  - der freie Verkehr personenbezogener Daten darf weder eingeschränkt noch verboten werden
+- Schutz der **Grundrechte**: die DSGVO zwingt lediglich Unternehmen dazu, die Nutzung der Daten transparent zu machen und den Regeln folgen
