@@ -66,7 +66,7 @@ Computerforensik
 - Digitalisierung ermöglicht neue Schnittstellen, neue Angriffspunkte und Straftaten
 - Nutzung MS Teams <!-- LOL --> steigt exponentiell seit 2019 (auch dank Corona)
 - Telekom: Angriffe auf HoneyPots stiegen in letzten Jahren erheblich
-- bessere Infrastruktur (Viele Menschen haben Mittel um anzugreifen)
+- bessere Infrastruktur (viele Menschen haben Mittel um anzugreifen)
 - Tools zum Erstellen von Schadprogrammen (Script-Kiddies)
 - Rentable Form der Kriminalität
 - täglich neue Angriffsmuster
@@ -200,7 +200,7 @@ Es gibt keinen Tatort ohne Spuren!
 # Einordnung digitale Forensik
 
 - Modell
-  - Ablauf für Untersuchungen in verinfachter, schematischer Weise
+  - Ablauf für Untersuchungen in vereinfachter, schematischer Weise
 - Prozess
   - Ablauf .. in detaillierter Form, Zuständigkeiten
 - Methode
