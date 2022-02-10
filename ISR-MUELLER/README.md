@@ -204,6 +204,7 @@ Regelt z.B. Beschränkungen nach Umfang, Dauer, Art und Weise der E-Mail und Int
 # Einführung Datenschutz
 
 ## Exkurs Impulsfragen Datenschutz / Miro-Boards
+
 <!-- md2apkg ignore-card -->
 
 - moderne Technologien und Datenschutz
