@@ -49,9 +49,25 @@ Computerforensik
 
 <!--newpage-->
 
-# Digitale Rettungskette
+# Organisatorisches
 
-digitale Ersthelfer $\rightarrow$ Vorfall-Experten $\rightarrow$ IT-Sicherheits-Dienstleister
+<!-- md2apkg ignore-card -->
+
+- Prüfung: 40 min (?)
+- Schwerpunkte werden zu Beginn der Veranstaltungen wiederholt
+- Theorie, Forensik: Datenträger, Demo und Übung auf VMs
+
+<!--newpage-->
+
+# Intro
+
+<!-- md2apkg ignore-card -->
+
+# Digitale Rettungskette / Cyber Security Netzwerk (CSN)
+
+## Aufbau
+
+![CSN](assets/Rollen_CSN.png)<!--width=200px-->
 
 # Relevante Gesetze
 
