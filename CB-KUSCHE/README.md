@@ -24,7 +24,12 @@ Wahlpflichtmodul Compilerbau
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Platzhalter](#platzhalter)
+- [Aufbau klassischer Compiler](#aufbau-klassischer-compiler)
+  - [Begriffe](#begriffe)
+- [Parser](#parser)
+  - [Entwurf](#entwurf)
+  - [Arten](#arten)
+- [Lexer-Regeln](#lexer-regeln)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
