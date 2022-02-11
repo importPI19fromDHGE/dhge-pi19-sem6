@@ -27,6 +27,7 @@ Wahlpflichtmodul Compilerbau
 - [Grundlagen](#grundlagen)
   - [Aufbau klassischer Compiler](#aufbau-klassischer-compiler)
   - [Begriffe](#begriffe)
+    - [Lexer vs. Parser](#lexer-vs-parser)
     - [Value Propagation](#value-propagation)
 - [Parser](#parser)
   - [Entwurf](#entwurf)
