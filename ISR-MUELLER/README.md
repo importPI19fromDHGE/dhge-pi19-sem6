@@ -197,7 +197,7 @@ Regelt z.B. Beschränkungen nach Umfang, Dauer, Art und Weise der E-Mail und Int
   - Metadaten: ok
   - Inhaltskontrolle unzulässig
 
-**Bei illegalen Handlungen darf außerordentlich gekündigt werden, ansonsten muss vorher Abmahnung erfolgen werden**
+**Bei illegalen Handlungen darf außerordentlich gekündigt werden, ansonsten muss vorher Abmahnung erfolgen**
 
 ### Beispiel: Protokolldateien
 
