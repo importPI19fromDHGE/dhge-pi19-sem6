@@ -24,29 +24,30 @@ IT-Infrastrukturen / Sicherheit / Recht
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [IT-Infrastrukturen / Sicherheit / Recht](#it-infrastrukturen--sicherheit--recht)
 - [Governance, Compliance und Legal Tech](#governance-compliance-und-legal-tech)
 - [Rechtsfragen in der IT](#rechtsfragen-in-der-it)
 - [Rechtsstaatlichkeit](#rechtsstaatlichkeit)
   - [Besonderheiten im Umgang mit Rechtstexten](#besonderheiten-im-umgang-mit-rechtstexten)
   - [ePrivacy-Verordnung](#eprivacy-verordnung)
 - [Urheberrecht](#urheberrecht)
-- [Domänenrecht](#dom%C3%A4nenrecht)
+- [Domänenrecht](#domänenrecht)
 - [Telemediengesetz](#telemediengesetz)
 - [E-Government](#e-government)
 - [Informationsfreiheitsgesetz](#informationsfreiheitsgesetz)
 - [IT-Sicherheitsgesetz](#it-sicherheitsgesetz)
   - [Cyber Security Act](#cyber-security-act)
 - [Haftung](#haftung)
-- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-besch%C3%A4ftigungskontext)
+- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-beschäftigungskontext)
   - [Gestaltungsfelder der Personalvertretung](#gestaltungsfelder-der-personalvertretung)
   - [Interessen der Arbeitgeber](#interessen-der-arbeitgeber)
   - [Betriebs-/Dienstvereinbarungen](#betriebs-dienstvereinbarungen)
     - [Beispiel: Private und dienstliche Internetnutzung](#beispiel-private-und-dienstliche-internetnutzung)
     - [Beispiel: Protokolldateien](#beispiel-protokolldateien)
-- [Einführung Datenschutz](#einf%C3%BChrung-datenschutz)
+- [Einführung Datenschutz](#einführung-datenschutz)
   - [Exkurs Impulsfragen Datenschutz / Miro-Boards](#exkurs-impulsfragen-datenschutz--miro-boards)
   - [Recht auf informationelle Selbstbestimmung](#recht-auf-informationelle-selbstbestimmung)
-    - [Beeinträchtigung digitaler Rechte](#beeintr%C3%A4chtigung-digitaler-rechte)
+    - [Beeinträchtigung digitaler Rechte](#beeinträchtigung-digitaler-rechte)
     - [Handlungsbedarf (Datenschutz im Kontext moderner Technologien)](#handlungsbedarf-datenschutz-im-kontext-moderner-technologien)
   - [Befugnisse von Datenschutzbeauftragten](#befugnisse-von-datenschutzbeauftragten)
 - [EU-DSGVO](#eu-dsgvo)
@@ -55,7 +56,7 @@ IT-Infrastrukturen / Sicherheit / Recht
     - [Zweck der DSGVO](#zweck-der-dsgvo)
   - [identifizierte vs. identifizierbare Person](#identifizierte-vs-identifizierbare-person)
   - [Was sind besondere Datenkategorien (Art. 9 / sensible Daten)?](#was-sind-besondere-datenkategorien-art-9--sensible-daten)
-  - [Beispiele für Technisch-organisatorische Maßnahmen (TOM)](#beispiele-f%C3%BCr-technisch-organisatorische-ma%C3%9Fnahmen-tom)
+  - [Beispiele für Technisch-organisatorische Maßnahmen (TOM)](#beispiele-für-technisch-organisatorische-maßnahmen-tom)
   - [Jurisitische Definition Dateisystem](#jurisitische-definition-dateisystem)
   - [Rechte der Betroffenen](#rechte-der-betroffenen)
     - [Verantwortlicher](#verantwortlicher)
@@ -63,9 +64,8 @@ IT-Infrastrukturen / Sicherheit / Recht
   - [Pseudonymisierung](#pseudonymisierung)
   - [Profiling](#profiling)
   - [Artikel 5, 6, 9](#artikel-5-6-9)
-    - [Grundsätze der Verarbeitung](#grunds%C3%A4tze-der-verarbeitung)
-    - [Wann ist eine Verarbeitung rechtmäßig?](#wann-ist-eine-verarbeitung-rechtm%C3%A4%C3%9Fig)
-  - [Rechte der Betroffenen](#rechte-der-betroffenen-1)
+    - [Grundsätze der Verarbeitung](#grundsätze-der-verarbeitung)
+    - [Wann ist eine Verarbeitung rechtmäßig?](#wann-ist-eine-verarbeitung-rechtmäßig)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -312,6 +312,13 @@ Jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten Kriteri
 
 ## Rechte der Betroffenen
 
+- Mitteilungen an Betroffene unverzüglich, aber maximal innerhalb von drei Monaten, und unentgeltlich
+- Recht auf Auskunft
+- Recht auf Berichtigung
+- Recht auf Löschung
+- Recht auf Datenübertragbarkeit
+- Recht auf Widerspruch
+
 ### Verantwortlicher
 
 #### Begriff der Verarbeitung
@@ -350,12 +357,3 @@ Jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten Kriteri
 - bei Erforderlichkeit zur Vertragserfüllung
 - bei rechtlicher Verpflichtung (Gesetz, Verordnung, Dienstvereinbarung)
 - Ausnahme zur Wahrung der "berechtigten Interessen"
-
-## Rechte der Betroffenen
-
-- Mitteilungen an Betroffene unverzüglich, aber maximal innerhalb von drei Monaten, und unentgeltlich
-- Recht auf Auskunft
-- Recht auf Berichtigung
-- Recht auf Löschung
-- Recht auf Datenübertragbarkeit
-- Recht auf Widerspruch
