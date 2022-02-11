@@ -47,6 +47,15 @@ Wahlpflichtmodul Compilerbau
 
 ## Begriffe
 
+### Lexer vs. Parser
+
+- **Lexer:** Zeichenstrom \rightarrow\rightarrow Tokenstrom (zeichenweise)
+  - z.B.: Ziffern \rightarrow\rightarrow Zahlen; Zeichen \rightarrow\rightarrow Schlüsselwörter/Namen; ...
+  - verwirft Whitespace und Kommentare
+- **Parser:** Token \rightarrow\rightarrow Syntaxbaum/-graph (tokenweise)
+  - wendet Syntaxregeln in korrekter Reihenfolge an und erkennt Syntaxfehler
+  - kann auch *on the fly* Ergebnisse berechnen (Ausdrücke), Operationen durchführen (Interpreter) oder Code erzeugen (Compiler) 
+  
 ### Value Propagation
 
 Compiler bestimmt Wertebereich einer Variable
