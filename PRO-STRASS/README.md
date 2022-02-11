@@ -51,7 +51,31 @@ Computerforensik
 
 <!--newpage-->
 
-# Digitale Rettungskette
+# Organisatorisches
+
+<!-- md2apkg ignore-card -->
+
+- Prüfung: 40 min (?)
+- Schwerpunkte werden zu Beginn der Veranstaltungen wiederholt
+- Theorie, Forensik: Datenträger, Demo und Übung auf VMs
+
+<!--newpage-->
+
+# Intro
+
+<!-- md2apkg ignore-card -->
+
+- Digitalisierung ermöglicht neue Schnittstellen, neue Angriffspunkte und Straftaten
+- Nutzung MS Teams <!-- LOL --> steigt exponentiell seit 2019 (auch dank Corona)
+- Telekom: Angriffe auf HoneyPots stiegen in letzten Jahren erheblich
+- bessere Infrastruktur (viele Menschen haben Mittel um anzugreifen)
+- Tools zum Erstellen von Schadprogrammen (Script-Kiddies)
+- Rentable Form der Kriminalität
+- täglich neue Angriffsmuster
+
+# Digitale Rettungskette / Cyber Security Netzwerk (CSN)
+
+![CSN](assets/Rollen_CSN.png)<!--width=200px-->
 
 - Meldungen gehen an "Digitalen Ersthelfer"
   - ehrenamtliche Arbeit beim BSI
@@ -63,6 +87,14 @@ Computerforensik
   - Telefonsupport, Vor-Ort-Unterstützung
   - zusätzliche forensische Untersuchungen
 - Weiterleitung an IT-Sicherheitsdienstleister
+
+# häufige Angriffsvektoren
+
+- technische Sicherheitslücken
+- Social Engineering (Analog/Digital)
+  - Phishing-Mails
+  - Impersonation
+- Diebstahl/Verlust von IT-Geräten
 
 # Relevante Gesetze
 
@@ -84,6 +116,7 @@ Computerforensik
 - als Vorfall-Experte niemals ohne Zustimmung melden, die Verantwortung liegt bei der Geschäftsleitung!
 - Meldepflichten können sich aus gesetzlichen oder vertraglichen Vorgaben sowie freiwillig ergeben
 - als KRITIS-Betreiber muss jede **Störung** unverzüglich gemeldet werden
+- betroffene Personen sind zu informieren
 
 ## Beispiele für meldepflichtige Datenschutzvorfällen
 
@@ -153,7 +186,8 @@ nach:
 - Auffällige Neugier
 - Nutzung von Spionagehilfsmitteln (z.Bsp. Bild- und Tonaufzeichnungsgeräte, mobile Datenträger)
 - Auffälligkeiten im persönlichen Umfeld (aufwändiger Lebensstil, Anzeichen für Alkohlsuch etc.)
-- ...
+- Diskrepanzen im beruflichen Werdegang (Über/Unter-Qualifizierung)
+- zweifelhafte Dateien/PDF bei der Bewerbung (enthält Malware)
 
 # Was sind Spuren?
 
@@ -186,11 +220,21 @@ Es gibt keinen Tatort ohne Spuren!
 - sichergestellte Daten sollen systematisch analysierbar sein
 - Rekonstruktion zuvor stattgefundener Ereignisse
 - Daten müssen gerichtsverwertbar aufbereitet und analysiert werden
+- W-Fragen klären
 
 # Zwei Varianten der IT-Forensik (auf jeden Fall merken!)
 
 - Post-mortem Forensik
 - Live-Forensik
+
+# Einordnung digitale Forensik
+
+- Modell
+  - Ablauf für Untersuchungen in vereinfachter, schematischer Weise
+- Prozess
+  - Ablauf .. in detaillierter Form, Zuständigkeiten
+- Methode
+  - Vorgabe für einzelne Schritte, Handlungsanweisungen
 
 # S-A-P-Modell
 
@@ -214,3 +258,4 @@ Es gibt keinen Tatort ohne Spuren!
 - Integrität: Spuren werden durch Untersuchung nicht verändert
 - Ursache und Auswirkungen: Verbindung zwischen digitalen Spuren, Ereignissen und Personen sind herstellbar
 - Dokumentation: Ermittlungsprozess ist nachvollziehbar dokumentiert
+- keine gesetzlichen Vorgaben für forensische Untersuchung
