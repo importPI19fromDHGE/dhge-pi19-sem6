@@ -5,6 +5,10 @@
         "DHGE",
         "Domänenrecht",
         "Erwägungsgründe",
-        "KRITIS"
-    ]
+        "KRITIS",
+        "Pseudonymisierung"
+    ],
+    "markdownlint.config": {
+        "MD003": false
+    }
 }

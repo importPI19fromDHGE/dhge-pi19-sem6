@@ -24,30 +24,44 @@ IT-Infrastrukturen / Sicherheit / Recht
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [IT-Infrastrukturen / Sicherheit / Recht](#it-infrastrukturen--sicherheit--recht)
 - [Governance, Compliance und Legal Tech](#governance-compliance-und-legal-tech)
 - [Rechtsfragen in der IT](#rechtsfragen-in-der-it)
 - [Rechtsstaatlichkeit](#rechtsstaatlichkeit)
   - [Besonderheiten im Umgang mit Rechtstexten](#besonderheiten-im-umgang-mit-rechtstexten)
   - [ePrivacy-Verordnung](#eprivacy-verordnung)
 - [Urheberrecht](#urheberrecht)
-- [Domänenrecht](#dom%C3%A4nenrecht)
+- [Domänenrecht](#domänenrecht)
 - [Telemediengesetz](#telemediengesetz)
 - [E-Government](#e-government)
 - [Informationsfreiheitsgesetz](#informationsfreiheitsgesetz)
 - [IT-Sicherheitsgesetz](#it-sicherheitsgesetz)
   - [Cyber Security Act](#cyber-security-act)
 - [Haftung](#haftung)
-- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-besch%C3%A4ftigungskontext)
+- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-beschäftigungskontext)
   - [Gestaltungsfelder der Personalvertretung](#gestaltungsfelder-der-personalvertretung)
   - [Interessen der Arbeitgeber](#interessen-der-arbeitgeber)
   - [Betriebs-/Dienstvereinbarungen](#betriebs-dienstvereinbarungen)
     - [Beispiel: Private Internetnutzung](#beispiel-private-internetnutzung)
 - [Recht auf informationelle Selbstbestimmung](#recht-auf-informationelle-selbstbestimmung)
-  - [Beeinträchtigung digitaler Rechte](#beeintr%C3%A4chtigung-digitaler-rechte)
+  - [Beeinträchtigung digitaler Rechte](#beeinträchtigung-digitaler-rechte)
   - [Handlungsbedarf](#handlungsbedarf)
 - [Befugnisse von Datenschutzbeauftragten](#befugnisse-von-datenschutzbeauftragten)
 - [DSGVO Inhalt](#dsgvo-inhalt)
   - [Zweck der DSGVO](#zweck-der-dsgvo)
+  - [identifizierte vs. identifizierbare Person](#identifizierte-vs-identifizierbare-person)
+  - [Was sind besondere Datenkategorien (Art. 9 / sensible Daten)?](#was-sind-besondere-datenkategorien-art-9--sensible-daten)
+  - [Beispiele für Technisch-organisatorische Maßnahmen (TOM)](#beispiele-für-technisch-organisatorische-maßnahmen-tom)
+  - [Jurisitische Definition Dateisystem](#jurisitische-definition-dateisystem)
+  - [Rechte der Betroffenen](#rechte-der-betroffenen)
+    - [Verantwortlicher](#verantwortlicher)
+      - [Begriff der Verarbeitung](#begriff-der-verarbeitung)
+  - [Pseudonymisierung](#pseudonymisierung)
+  - [Profiling](#profiling)
+  - [Artikel 5, 6, 9](#artikel-5-6-9)
+    - [Grundsätze der Verarbeitung](#grundsätze-der-verarbeitung)
+    - [Wann ist eine Verarbeitung rechtmäßig?](#wann-ist-eine-verarbeitung-rechtmäßig)
+  - [Rechte der Betroffenen](#rechte-der-betroffenen-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -178,7 +192,7 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 # Recht auf informationelle Selbstbestimmung
 
 - es gibt keine belanglosen Daten
-- *"Wer weiß wann und bei welcher Gelegenheit was über mich?"* $\rightarrow$ Grundrecht
+- _"Wer weiß wann und bei welcher Gelegenheit was über mich?"_ $\rightarrow$ Grundrecht
 - Aufklärungspflicht der verantwortlichen Stelle
 - Vorrang der Selbstauskunft
 - Einschränkungen des Rechts müssen gesetzlich geregelt sein
@@ -211,3 +225,77 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 - Ermöglichen einer legalen **Digitalwirtschaft**
   - der freie Verkehr personenbezogener Daten darf weder eingeschränkt noch verboten werden
 - Schutz der **Grundrechte**: die DSGVO zwingt lediglich Unternehmen dazu, die Nutzung der Daten transparent zu machen und den Regeln folgen
+
+## identifizierte vs. identifizierbare Person
+
+- identifizierte Person: Daten können bekannter Person zugeordnet werden
+- identifizierbare Person: mit zusätzlichen Informationen kann auf die Identität geschlossen werden
+  - Bsp.: Kennnummer, Standortdaten, Online-Pseudonym, Eigenschaften einer Person
+
+## Was sind besondere Datenkategorien (Art. 9 / sensible Daten)?
+
+- Gesundheitsdaten und biometrische Daten
+- Politische Meinungen
+- Religion
+- Ethnie
+- Gewerkschaftsangehörigkeit
+- benötigen für hohen Schutzbedarf besondere technisch-organisatorische Maßnahmen
+
+## Beispiele für Technisch-organisatorische Maßnahmen (TOM)
+
+- Verschlüsselung
+- Pseudonymisierung
+
+## Jurisitische Definition Dateisystem
+
+Jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten Kriterien zugänglich sind [...](https://dsgvo-gesetz.de/art-4-dsgvo).
+
+## Rechte der Betroffenen
+
+### Verantwortlicher
+
+#### Begriff der Verarbeitung
+
+- egal ob mit oder ohne automatisierter Verfahren
+- Beispiele Verarbeitungsarten: Erheben, Ordnen, Speichern, Verändern, Abfragen, Offenlegen, Löschen, Vernichten
+- Unterschied Löschen vs. Vernichten:
+  - bezieht sich auf das Restrisiko
+  - Löschen: Datenträger bleibt intakt
+  - Vernichten: Datenträger wird zerstört
+- Bedeutung des Offenlegens: Daten werden nach Außen an Dritte übermittelt, verbreitet, etc.
+
+## Pseudonymisierung
+
+- Verarbeitung personenbezogener Daten in einer Weise, dass die P-Daten ohne zusätzliche Informationen nicht mehr einer spezifischen betroffenen Person zugeordnet werden können.
+
+## Profiling
+
+- automatisierte Verarbeitung von P-Daten zur Bewertung von bspw. wirtschaftlicher Leistung, Gesundheit, Aufenthaltsort, Vorlieben
+
+## Artikel 5, 6, 9
+
+### Grundsätze der Verarbeitung
+
+- Verarbeitung muss rechtmäßig und zweckgebunden erfolgen
+- auf dem Grundsatz von Treu und Glauben
+- Datenminimum
+- Richtigkeit der Daten
+- Speicherminimum / Datensparsamkeit
+- Integrität und Sicherheit mit TOMs
+- Rechenschaftspflicht (Verarbeitungsübersicht, SiKo)
+
+### Wann ist eine Verarbeitung rechtmäßig?
+
+- bei Einwilligung des Betroffenen
+- bei Erforderlichkeit zur Vertragserfüllung
+- bei rechtlicher Verpflichtung (Gesetz, Verordnung, Dienstvereinbarung)
+- Ausnahme zur Wahrung der "berechtigten Interessen"
+
+## Rechte der Betroffenen
+
+- Mitteilungen an Betroffene unverzüglich, aber maximal innerhalb von drei Monaten, und unentgeltlich
+- Recht auf Auskunft
+- Recht auf Berichtigung
+- Recht auf Löschung
+- Recht auf Datenübertragbarkeit
+- Recht auf Widerspruch
