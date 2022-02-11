@@ -41,13 +41,18 @@ IT-Infrastrukturen / Sicherheit / Recht
   - [Gestaltungsfelder der Personalvertretung](#gestaltungsfelder-der-personalvertretung)
   - [Interessen der Arbeitgeber](#interessen-der-arbeitgeber)
   - [Betriebs-/Dienstvereinbarungen](#betriebs-dienstvereinbarungen)
-    - [Beispiel: Private Internetnutzung](#beispiel-private-internetnutzung)
-- [Recht auf informationelle Selbstbestimmung](#recht-auf-informationelle-selbstbestimmung)
-  - [Beeinträchtigung digitaler Rechte](#beeintr%C3%A4chtigung-digitaler-rechte)
-  - [Handlungsbedarf](#handlungsbedarf)
-- [Befugnisse von Datenschutzbeauftragten](#befugnisse-von-datenschutzbeauftragten)
-- [DSGVO Inhalt](#dsgvo-inhalt)
-  - [Zweck der DSGVO](#zweck-der-dsgvo)
+    - [Beispiel: Private und dienstliche Internetnutzung](#beispiel-private-und-dienstliche-internetnutzung)
+    - [Beispiel: Protokolldateien](#beispiel-protokolldateien)
+- [Einführung Datenschutz](#einf%C3%BChrung-datenschutz)
+  - [Exkurs Impulsfragen Datenschutz / Miro-Boards](#exkurs-impulsfragen-datenschutz--miro-boards)
+  - [Recht auf informationelle Selbstbestimmung](#recht-auf-informationelle-selbstbestimmung)
+    - [Beeinträchtigung digitaler Rechte](#beeintr%C3%A4chtigung-digitaler-rechte)
+    - [Handlungsbedarf (Datenschutz im Kontext moderner Technologien)](#handlungsbedarf-datenschutz-im-kontext-moderner-technologien)
+  - [Befugnisse von Datenschutzbeauftragten](#befugnisse-von-datenschutzbeauftragten)
+- [EU-DSGVO](#eu-dsgvo)
+  - [Geltungsbereich](#geltungsbereich)
+  - [DSGVO Inhalt](#dsgvo-inhalt)
+    - [Zweck der DSGVO](#zweck-der-dsgvo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -169,44 +174,100 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 
 ## Betriebs-/Dienstvereinbarungen
 
-### Beispiel: Private Internetnutzung
+Regelt z.B. Beschränkungen nach Umfang, Dauer, Art und Weise der E-Mail und Internetnutzung
+
+- Aufzählung verbotener Nutzungen (Inhalte, Privat/Dienstlich)
+- Umgang mit Protokolldateien
+- et cetera
+
+### Beispiel: Private und dienstliche Internetnutzung
+
+**privat**
 
 - Erlaubnis oder Verbot einer privaten Nutzung von Internet muss geregelt werden
 - private Nutzung darf keine negativen Auswirkungen auf die Arbeit oder den Arbeitgeber haben
-- bei illegalen Handlungen darf außerordentlich gekündigt werden, ansonsten kann abgemahnt werden
+- Wenn private Nutzung gestattet: Arbeitgeber ist Telekommunikationsanbieter
+  - Fernmeldegeheimnis!
+  - Datenerhebung nur ausnahmsweise, nicht systematisch
 
-# Recht auf informationelle Selbstbestimmung
+**dienstlich**
+
+- kein Fernmeldegeheimnis, aber Datenschutzgesetze gelten
+- Verhältnismäßigkeit!
+  - Metadaten: ok
+  - Inhaltskontrolle unzulässig
+
+**Bei illegalen Handlungen darf außerordentlich gekündigt werden, ansonsten muss vorher Abmahnung erfolgen**
+
+### Beispiel: Protokolldateien
+
+- DSGVO kennt keine Höchstgrenze zur Aufbewahrungsdauer
+- Öffnungklausel: nationales Recht kann Vorschriften festlegen
+- Zweck muss klar sein, verhältnismäßige Speicherung
+- Artikel 40 DSGVO: Branchen(-Verbände) sollen Standards festlegen $\rightarrow$ Zertifikate
+
+# Einführung Datenschutz
+
+## Exkurs Impulsfragen Datenschutz / Miro-Boards
+
+<!-- md2apkg ignore-card -->
+
+- moderne Technologien und Datenschutz
+- Recht auf informationelle Selbstbestimmung (Volkszählung 1983)
+- Mephisto-Urteil / Kunstfreiheit
+- Gedankenexperiment: Daten als Eigentum
+- IT-Grundrecht
+- Auskunftssysteme (Privatwirtschaft)
+- Scoring (§31 BDSG)
+- Big Brother Award
+- E-Privacy (Verordnung)
+- Informationsfreiheitsgesetz
+
+## Recht auf informationelle Selbstbestimmung
 
 - es gibt keine belanglosen Daten
+
+>Das Bundesverfassungsgericht stellte fest, dass unter den Verarbeitungs- und Verknüpfungsmöglichkeiten der Informationstechnologie auch ein für sich gesehen belangloses Datum einen neuen Stellenwert bekommen kann und es insoweit keine belanglosen Daten gibt.
+
 - *"Wer weiß wann und bei welcher Gelegenheit was über mich?"* $\rightarrow$ Grundrecht
 - Aufklärungspflicht der verantwortlichen Stelle
 - Vorrang der Selbstauskunft
 - Einschränkungen des Rechts müssen gesetzlich geregelt sein
-- Zweckbindung der Erhebung und Verarbeitung personenbezogener Daten
+- Zweckbindung und Verhältnismäßigkeit der Erhebung und Verarbeitung personenbezogener Daten
 - Sammeln auf Vorrat ist nicht erlaubt
 
-## Beeinträchtigung digitaler Rechte
+### Beeinträchtigung digitaler Rechte
 
 - zunehmend werden vermeintlich kostenfreie Dienste mit Daten bezahlt
 - Cloud-Dienste haben den Verlust der Souveränität über die Daten zur Folge
+- Big Data und KI
 
-## Handlungsbedarf
+### Handlungsbedarf (Datenschutz im Kontext moderner Technologien)
 
 - Rechtsverletzungen werden nicht effektiv beendet
 - das in Planung befindliche IT-Sicherheitsgesetz bleibt hinter den Forderungen zurück
+- Zertifizierungsverfahren
 
-# Befugnisse von Datenschutzbeauftragten
+## Befugnisse von Datenschutzbeauftragten
 
 - Untersuchungsbefugnisse: darf Serverraum öffnen und Inhalt einsehen
 - Abhilfebefugnisse: Anweisung zur Änderung oder Abschaltung eines Servers
 - Datenschutzbeauftragten sollten zeitliche und monetäre Mittel zur Verfügung gestellt werden
 
-# DSGVO Inhalt
+# EU-DSGVO
+
+## Geltungsbereich
+
+DSGVO ist unmittelbares Gesetz
+>Artikel 91: "Gilt in allen Mitgliedsstaaten verbindlich und unmittelbar."
+2016 veröffentlicht
+
+## DSGVO Inhalt
 
 - Schutz der Grundrechte und Grundfreiheiten natürlicher Personen
   - damit steht jedes Datum unter dem Schutz des Grundgesetzes
 
-## Zweck der DSGVO
+### Zweck der DSGVO
 
 - Ermöglichen einer legalen **Digitalwirtschaft**
   - der freie Verkehr personenbezogener Daten darf weder eingeschränkt noch verboten werden
