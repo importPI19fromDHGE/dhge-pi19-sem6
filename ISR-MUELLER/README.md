@@ -285,29 +285,39 @@ DSGVO ist unmittelbares Gesetz
   - der freie Verkehr personenbezogener Daten darf weder eingeschränkt noch verboten werden
 - Schutz der **Grundrechte**: die DSGVO zwingt lediglich Unternehmen dazu, die Nutzung der Daten transparent zu machen und den Regeln folgen
 
+## Stakeholder DSGVO / Datenschutz
+
+- Betroffene
+- Verantwortlicher
+- Datenschutzbeauftragte(r) (DSB)
+- Auftragsverarbeiter
+- Dritte
+- Aufsichtsbehörde
+
 ## identifizierte vs. identifizierbare Person
 
-- identifizierte Person: Daten können bekannter Person zugeordnet werden
-- identifizierbare Person: mit zusätzlichen Informationen kann auf die Identität geschlossen werden
-  - Bsp.: Kennnummer, Standortdaten, Online-Pseudonym, Eigenschaften einer Person
+- **identifizierte Person:** Daten können bekannter Person zugeordnet werden
+- **identifizierbare Person:** mit zusätzlichen Informationen kann auf die Identität geschlossen werden
+  - Bsp.: Kennnummer, Standortdaten, Online-Pseudonym, Eigenschaften einer Person, ...
 
 ## Was sind besondere Datenkategorien (Art. 9 / sensible Daten)?
 
-- Gesundheitsdaten und biometrische Daten
+- Gesundheits- und biometrische Daten
 - Politische Meinungen
 - Religion
 - Ethnie
 - Gewerkschaftsangehörigkeit
-- benötigen für hohen Schutzbedarf besondere technisch-organisatorische Maßnahmen
 
-## Beispiele für Technisch-organisatorische Maßnahmen (TOM)
+> benötigen für hohen Schutzbedarf besondere technisch-organisatorische Maßnahmen
+
+## Beispiele für technisch-organisatorische Maßnahmen (TOM)
 
 - Verschlüsselung
 - Pseudonymisierung
 
 ## Jurisitische Definition Dateisystem
 
-Jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten Kriterien zugänglich sind [...](https://dsgvo-gesetz.de/art-4-dsgvo).
+Jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten Kriterien zugänglich ist [...](https://dsgvo-gesetz.de/art-4-dsgvo).
 
 ## Rechte der Betroffenen
 
@@ -355,4 +365,12 @@ Jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten Kriteri
 - bei Einwilligung des Betroffenen
 - bei Erforderlichkeit zur Vertragserfüllung
 - bei rechtlicher Verpflichtung (Gesetz, Verordnung, Dienstvereinbarung)
-- Ausnahme zur Wahrung der "berechtigten Interessen"
+- Ausnahme von Zweckbindung ist gegeben, wenn
+  - Wahrung der "berechtigten Interessen" (Betroffener kann berechtigtem Interesse allerdings folgen oder ablehnen)
+  - lebenswichtige Interessen
+  - öffentliches Interesse
+  
+## Geldbußen nach Artikel 83
+
+- bis 20 Mio. Euro oder bis 4% des weltweiten Jahresumsatz
+- höhere von beiden!
