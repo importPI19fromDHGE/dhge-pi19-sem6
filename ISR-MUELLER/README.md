@@ -24,29 +24,30 @@ IT-Infrastrukturen / Sicherheit / Recht
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [IT-Infrastrukturen / Sicherheit / Recht](#it-infrastrukturen--sicherheit--recht)
 - [Governance, Compliance und Legal Tech](#governance-compliance-und-legal-tech)
 - [Rechtsfragen in der IT](#rechtsfragen-in-der-it)
 - [Rechtsstaatlichkeit](#rechtsstaatlichkeit)
   - [Besonderheiten im Umgang mit Rechtstexten](#besonderheiten-im-umgang-mit-rechtstexten)
   - [ePrivacy-Verordnung](#eprivacy-verordnung)
 - [Urheberrecht](#urheberrecht)
-- [Domänenrecht](#dom%C3%A4nenrecht)
+- [Domänenrecht](#domänenrecht)
 - [Telemediengesetz](#telemediengesetz)
 - [E-Government](#e-government)
 - [Informationsfreiheitsgesetz](#informationsfreiheitsgesetz)
 - [IT-Sicherheitsgesetz](#it-sicherheitsgesetz)
   - [Cyber Security Act](#cyber-security-act)
 - [Haftung](#haftung)
-- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-besch%C3%A4ftigungskontext)
+- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-beschäftigungskontext)
   - [Gestaltungsfelder der Personalvertretung](#gestaltungsfelder-der-personalvertretung)
   - [Interessen der Arbeitgeber](#interessen-der-arbeitgeber)
   - [Betriebs-/Dienstvereinbarungen](#betriebs-dienstvereinbarungen)
     - [Beispiel: Private und dienstliche Internetnutzung](#beispiel-private-und-dienstliche-internetnutzung)
     - [Beispiel: Protokolldateien](#beispiel-protokolldateien)
-- [Einführung Datenschutz](#einf%C3%BChrung-datenschutz)
+- [Einführung Datenschutz](#einführung-datenschutz)
   - [Exkurs Impulsfragen Datenschutz / Miro-Boards](#exkurs-impulsfragen-datenschutz--miro-boards)
   - [Recht auf informationelle Selbstbestimmung](#recht-auf-informationelle-selbstbestimmung)
-    - [Beeinträchtigung digitaler Rechte](#beeintr%C3%A4chtigung-digitaler-rechte)
+    - [Beeinträchtigung digitaler Rechte](#beeinträchtigung-digitaler-rechte)
     - [Handlungsbedarf (Datenschutz im Kontext moderner Technologien)](#handlungsbedarf-datenschutz-im-kontext-moderner-technologien)
   - [Befugnisse von Datenschutzbeauftragten](#befugnisse-von-datenschutzbeauftragten)
 - [EU-DSGVO](#eu-dsgvo)
@@ -56,7 +57,7 @@ IT-Infrastrukturen / Sicherheit / Recht
   - [Stakeholder DSGVO / Datenschutz](#stakeholder-dsgvo--datenschutz)
   - [identifizierte vs. identifizierbare Person](#identifizierte-vs-identifizierbare-person)
   - [Was sind besondere Datenkategorien (Art. 9 / sensible Daten)?](#was-sind-besondere-datenkategorien-art-9--sensible-daten)
-  - [Beispiele für technisch-organisatorische Maßnahmen (TOM)](#beispiele-f%C3%BCr-technisch-organisatorische-ma%C3%9Fnahmen-tom)
+  - [Beispiele für technisch-organisatorische Maßnahmen (TOM)](#beispiele-für-technisch-organisatorische-maßnahmen-tom)
   - [Jurisitische Definition Dateisystem](#jurisitische-definition-dateisystem)
   - [Rechte der Betroffenen](#rechte-der-betroffenen)
     - [Verantwortlicher](#verantwortlicher)
@@ -64,9 +65,9 @@ IT-Infrastrukturen / Sicherheit / Recht
   - [Pseudonymisierung](#pseudonymisierung)
   - [Profiling](#profiling)
   - [Artikel 5, 6, 9](#artikel-5-6-9)
-    - [Grundsätze der Verarbeitung](#grunds%C3%A4tze-der-verarbeitung)
-    - [Wann ist eine Verarbeitung rechtmäßig?](#wann-ist-eine-verarbeitung-rechtm%C3%A4%C3%9Fig)
-  - [Geldbußen nach Artikel 83](#geldbu%C3%9Fen-nach-artikel-83)
+    - [Grundsätze der Verarbeitung](#grundsätze-der-verarbeitung)
+    - [Wann ist eine Verarbeitung rechtmäßig?](#wann-ist-eine-verarbeitung-rechtmäßig)
+  - [Geldbußen nach Artikel 83](#geldbußen-nach-artikel-83)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -371,7 +372,7 @@ Jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten Kriteri
   - Wahrung der "berechtigten Interessen" (Betroffener kann berechtigtem Interesse allerdings folgen oder ablehnen)
   - lebenswichtige Interessen
   - öffentliches Interesse
-  
+
 ## Geldbußen nach Artikel 83
 
 - bis 20 Mio. Euro oder bis 4% des weltweiten Jahresumsatz
