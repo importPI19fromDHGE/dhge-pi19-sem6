@@ -53,9 +53,10 @@ IT-Infrastrukturen / Sicherheit / Recht
   - [Geltungsbereich](#geltungsbereich)
   - [DSGVO Inhalt](#dsgvo-inhalt)
     - [Zweck der DSGVO](#zweck-der-dsgvo)
+  - [Stakeholder DSGVO / Datenschutz](#stakeholder-dsgvo--datenschutz)
   - [identifizierte vs. identifizierbare Person](#identifizierte-vs-identifizierbare-person)
   - [Was sind besondere Datenkategorien (Art. 9 / sensible Daten)?](#was-sind-besondere-datenkategorien-art-9--sensible-daten)
-  - [Beispiele für Technisch-organisatorische Maßnahmen (TOM)](#beispiele-f%C3%BCr-technisch-organisatorische-ma%C3%9Fnahmen-tom)
+  - [Beispiele für technisch-organisatorische Maßnahmen (TOM)](#beispiele-f%C3%BCr-technisch-organisatorische-ma%C3%9Fnahmen-tom)
   - [Jurisitische Definition Dateisystem](#jurisitische-definition-dateisystem)
   - [Rechte der Betroffenen](#rechte-der-betroffenen)
     - [Verantwortlicher](#verantwortlicher)
@@ -65,6 +66,7 @@ IT-Infrastrukturen / Sicherheit / Recht
   - [Artikel 5, 6, 9](#artikel-5-6-9)
     - [Grundsätze der Verarbeitung](#grunds%C3%A4tze-der-verarbeitung)
     - [Wann ist eine Verarbeitung rechtmäßig?](#wann-ist-eine-verarbeitung-rechtm%C3%A4%C3%9Fig)
+  - [Geldbußen nach Artikel 83](#geldbu%C3%9Fen-nach-artikel-83)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
