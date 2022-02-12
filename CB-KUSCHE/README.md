@@ -24,6 +24,7 @@ Wahlpflichtmodul Compilerbau
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Wahlpflichtmodul Compilerbau](#wahlpflichtmodul-compilerbau)
 - [Grundlagen](#grundlagen)
   - [Aufbau klassischer Compiler](#aufbau-klassischer-compiler)
   - [Begriffe](#begriffe)
@@ -111,6 +112,9 @@ float = ['+'|'-']digit{digit}['.'{digit}][('e'|'E')['+'|'-']digit{digit}]
 
 - der Ausdruck ``integer = {digit}digit`` ist unklug, weil man dann zwei Zeichen Lookahead benötigt
 - Für den Float wurde absichtlich kein ``integer`` verwendet<!--didaktische Gründe-->
-- TODO: hier Syntaxgraph einfügen
-  - Achtung: eigentlich ist der falsch; die Regel kann nicht zwischen Float und Int unterscheiden $\rightarrow$ Zweideutigkeit
+
+![Beispiel eines Syntaxgraph](assets/syntaxgraph.png)<!--width=600px-->
+
+Achtung: eigentlich ist der falsch; die Regel kann nicht zwischen Float und Int unterscheiden $\rightarrow$ Zweideutigkeit
+
 - Namenstrenner: Freiräume wie Leertasten, Tabs
