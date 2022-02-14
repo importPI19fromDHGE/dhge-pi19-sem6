@@ -1,12 +1,17 @@
 {
     "cSpell.words": [
         "Abhilfebefugnisse",
+        "BDSG",
         "bspw",
+        "datenschutzfreundliche",
         "DHGE",
         "Domänenrecht",
+        "DSFA",
         "Erwägungsgründe",
         "KRITIS",
-        "Pseudonymisierung"
+        "Pseudonymisierung",
+        "usepackage",
+        "Verknüpfungsmöglichkeiten"
     ],
     "markdownlint.config": {
         "MD003": false

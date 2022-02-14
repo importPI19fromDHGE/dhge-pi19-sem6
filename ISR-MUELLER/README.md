@@ -24,29 +24,30 @@ IT-Infrastrukturen / Sicherheit / Recht
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [IT-Infrastrukturen / Sicherheit / Recht](#it-infrastrukturen--sicherheit--recht)
 - [Governance, Compliance und Legal Tech](#governance-compliance-und-legal-tech)
 - [Rechtsfragen in der IT](#rechtsfragen-in-der-it)
 - [Rechtsstaatlichkeit](#rechtsstaatlichkeit)
   - [Besonderheiten im Umgang mit Rechtstexten](#besonderheiten-im-umgang-mit-rechtstexten)
   - [ePrivacy-Verordnung](#eprivacy-verordnung)
 - [Urheberrecht](#urheberrecht)
-- [Domänenrecht](#dom%C3%A4nenrecht)
+- [Domänenrecht](#domänenrecht)
 - [Telemediengesetz](#telemediengesetz)
 - [E-Government](#e-government)
 - [Informationsfreiheitsgesetz](#informationsfreiheitsgesetz)
 - [IT-Sicherheitsgesetz](#it-sicherheitsgesetz)
   - [Cyber Security Act](#cyber-security-act)
 - [Haftung](#haftung)
-- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-besch%C3%A4ftigungskontext)
+- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-beschäftigungskontext)
   - [Gestaltungsfelder der Personalvertretung](#gestaltungsfelder-der-personalvertretung)
   - [Interessen der Arbeitgeber](#interessen-der-arbeitgeber)
   - [Betriebs-/Dienstvereinbarungen](#betriebs-dienstvereinbarungen)
     - [Beispiel: Private und dienstliche Internetnutzung](#beispiel-private-und-dienstliche-internetnutzung)
     - [Beispiel: Protokolldateien](#beispiel-protokolldateien)
-- [Einführung Datenschutz](#einf%C3%BChrung-datenschutz)
+- [Einführung Datenschutz](#einführung-datenschutz)
   - [Exkurs Impulsfragen Datenschutz / Miro-Boards](#exkurs-impulsfragen-datenschutz--miro-boards)
   - [Recht auf informationelle Selbstbestimmung](#recht-auf-informationelle-selbstbestimmung)
-    - [Beeinträchtigung digitaler Rechte](#beeintr%C3%A4chtigung-digitaler-rechte)
+    - [Beeinträchtigung digitaler Rechte](#beeinträchtigung-digitaler-rechte)
     - [Handlungsbedarf (Datenschutz im Kontext moderner Technologien)](#handlungsbedarf-datenschutz-im-kontext-moderner-technologien)
   - [Befugnisse von Datenschutzbeauftragten](#befugnisse-von-datenschutzbeauftragten)
 - [EU-DSGVO](#eu-dsgvo)
@@ -56,17 +57,27 @@ IT-Infrastrukturen / Sicherheit / Recht
   - [Stakeholder DSGVO / Datenschutz](#stakeholder-dsgvo--datenschutz)
   - [identifizierte vs. identifizierbare Person](#identifizierte-vs-identifizierbare-person)
   - [Was sind besondere Datenkategorien (Art. 9 / sensible Daten)?](#was-sind-besondere-datenkategorien-art-9--sensible-daten)
-  - [Beispiele für technisch-organisatorische Maßnahmen (TOM)](#beispiele-f%C3%BCr-technisch-organisatorische-ma%C3%9Fnahmen-tom)
-  - [Jurisitische Definition Dateisystem](#jurisitische-definition-dateisystem)
+  - [Beispiele für technisch-organisatorische Maßnahmen (TOM)](#beispiele-für-technisch-organisatorische-maßnahmen-tom)
+  - [Juristische Definition Dateisystem](#juristische-definition-dateisystem)
   - [Rechte der Betroffenen](#rechte-der-betroffenen)
     - [Verantwortlicher](#verantwortlicher)
       - [Begriff der Verarbeitung](#begriff-der-verarbeitung)
   - [Pseudonymisierung](#pseudonymisierung)
   - [Profiling](#profiling)
   - [Artikel 5, 6, 9](#artikel-5-6-9)
-    - [Grundsätze der Verarbeitung](#grunds%C3%A4tze-der-verarbeitung)
-    - [Wann ist eine Verarbeitung rechtmäßig?](#wann-ist-eine-verarbeitung-rechtm%C3%A4%C3%9Fig)
-  - [Geldbußen nach Artikel 83](#geldbu%C3%9Fen-nach-artikel-83)
+    - [Grundsätze der Verarbeitung](#grundsätze-der-verarbeitung)
+    - [Wann ist eine Verarbeitung rechtmäßig?](#wann-ist-eine-verarbeitung-rechtmäßig)
+  - [Geldbußen nach Artikel 83](#geldbußen-nach-artikel-83)
+- [Artikel 24: Pflichten des für die Verarbeitung Verantwortlichen](#artikel-24-pflichten-des-für-die-verarbeitung-verantwortlichen)
+- [Warum IT-Grundschutz?](#warum-it-grundschutz)
+- [Datenschutz durch Technik und datenschutzfreundliche Voreinstellungen](#datenschutz-durch-technik-und-datenschutzfreundliche-voreinstellungen)
+- [Kriterien zur Bewertung eines Risikos](#kriterien-zur-bewertung-eines-risikos)
+- [Wie wird der Stand der Technik definiert?](#wie-wird-der-stand-der-technik-definiert)
+- [Beschreiben Sie Funktionsübertragung (Outsourcing)](#beschreiben-sie-funktionsübertragung-outsourcing)
+- [Artikel 28: Auftragsverarbeiter](#artikel-28-auftragsverarbeiter)
+- [Artikel 35: Datenschutzfolgeabschätzung](#artikel-35-datenschutzfolgeabschätzung)
+- [Inhalt der Folgenabschätzung](#inhalt-der-folgenabschätzung)
+- [Aufgaben des Verantwortlichen](#aufgaben-des-verantwortlichen)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -317,7 +328,7 @@ DSGVO ist unmittelbares Gesetz
 - Verschlüsselung
 - Pseudonymisierung
 
-## Jurisitische Definition Dateisystem
+## Juristische Definition Dateisystem
 
 Jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten Kriterien zugänglich ist [...](https://dsgvo-gesetz.de/art-4-dsgvo).
 
@@ -377,12 +388,12 @@ Jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten Kriteri
 - bis 20 Mio. Euro oder bis 4% des weltweiten Jahresumsatz
 - höhere von beiden!
 
-# Artikel 24: Pflichten des für die Vearbeitung Verantwortlichen
+# Artikel 24: Pflichten des für die Verarbeitung Verantwortlichen
 
 - Maßnahmen für den Schutz müssen erbracht und nachgewiesen werden
 - sehr viele Überschneidungen zwischen Datenschutz und technischer/organisatorischer Sicherheit
 - Schutzmaßnahmen müssen an die Art der Daten angepasst sein (höherer Schutz für sensible Daten)
-- eine Riskobewertung muss durchgeführt werden
+- eine Risikobewertung muss durchgeführt werden
 - IT-Grundschutz durchführen!
 
 # Warum IT-Grundschutz?
@@ -394,9 +405,16 @@ Jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten Kriteri
 
 - data protection by default and by design
 - erforderliche Sicherheitsmaßnahmen müssen in die Verarbeitung von Anfang an integriert werden
-  - unter Berücksichtigung der aktuellen Technologie und der Implementierungskosten
-  - und der Art, des Umfangs, der Umstände und der Zwecke der Vearbeitung
+  - unter Berücksichtigung des _Standes der Technik_ und der Implementierungskosten
+  - und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung
   - sowie der Risiken unterschiedlicher Eintrittswahrscheinlichkeit
+- Unternehmen müssen ISMS etablieren
+
+# Kriterien zur Bewertung eines Risikos
+
+- Wahrscheinlichkeit der Gefährdung
+- Schwere der Gefährdung
+- Implementierungskosten für die Lösung
 
 # Wie wird der Stand der Technik definiert?
 
@@ -404,32 +422,35 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 
 # Beschreiben Sie Funktionsübertragung (Outsourcing)
 
-Wenn der Outsourcingpartner so frei agieren kann, dass es nicht mehr gerechtfertigt wäre, ihn als bloßen Auftragsnehmer zu betrachten, so ist er als (selbstständig agierender) Dritter anzusehen.
+Wenn der Outsourcing-Partner so frei agieren kann, dass es nicht mehr gerechtfertigt wäre, ihn als bloßen Auftragnehmer zu betrachten, so ist er als (selbstständig agierender) Dritter anzusehen.
 
 # Artikel 28: Auftragsverarbeiter
 
 - Auftragsverarbeitung nicht ohne Vertrag
+- Verantwortung liegt beim Auftraggeber
 - Verarbeitung nur auf dokumentierte Weisung des Verantwortlichen
-- Mitarbeiter des Auftragsverarbeiters sind zur Vetraulichkeit zu verpflichten
+- Mitarbeiter des Auftragsverarbeiters sind zur Vertraulichkeit zu verpflichten
 - Sicherheitsmaßnahmen nach Artikel 32 sind erforderlich
+- der Auftragnehmer ist nach Angebot der TOMs sorgfältig zu wählen
 
 # Artikel 35: Datenschutzfolgeabschätzung
 
 - Gefahren und Risiken bewerten, bevor personenbezogene Daten verarbeitet werden $\rightarrow$ Ist es das Risiko wert?
-- Daten die vearbeitet werden **müssen** sind davon nicht betroffen
-- es gibt Listen, wo Anwendungsfälle aufgezählt sind, bei denen Datenschutzfolgeabschätzung erforderlich ist
+- **kann** bei voraussichtlich risikoreicher Verarbeitung vorab durchgeführt werden
+- **muss** bei systematischer Massen-Überwachung und -Analyse personenbezogener Daten durchgeführt werden
+- **muss** bei Verarbeitung, die in eine [Negativliste](https://www.bfdi.bund.de/DE/Fachthemen/Inhalte/Technik/Datenschutz-Folgenabschaetzungen.html) fällt, durchgeführt werden
 
 # Inhalt der Folgenabschätzung
 
-- systematische Beschreibung der geplanten Verarbeitungsvorgänge und der Zwecke der Verarbeitung
-- Bewertung Notwendigkeit und Verhältnismäßigkeit
-- Bewertung Bezug auf die Rechte und Freiheiten der betroffenen Personen
+- systematische Beschreibung der geplanten Verarbeitungsvorgänge und die Zwecke<!--!!!--> der Verarbeitung
+- Bewertung der Notwendigkeit und Verhältnismäßigkeit
+- Bewertung mit Bezug auf die Rechte und Freiheiten der betroffenen Personen
 - vorgesehene Maßnahmen
 
 # Aufgaben des Verantwortlichen
 
 - Art. 30 Verarbeitungsübersicht
 - Art. 28 Verträge zur Auftragsverarbeitung
-- Art. 33, 24 Meldepflichten
+- Art. 33, 34 Meldepflichten
 - Art. 35 Datenschutzfolgenabschätzung (DSFA) bei Risikoverfahren
 - Art. 32 TOMs (technisch-organisatorische Maßnahmen) $\rightarrow$ Informationssicherheitsmanagementsystem <!-- heh --> (ISMS) etablieren
