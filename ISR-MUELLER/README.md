@@ -376,3 +376,60 @@ Jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten Kriteri
 
 - bis 20 Mio. Euro oder bis 4% des weltweiten Jahresumsatz
 - höhere von beiden!
+
+# Artikel 24: Pflichten des für die Vearbeitung Verantwortlichen
+
+- Maßnahmen für den Schutz müssen erbracht und nachgewiesen werden
+- sehr viele Überschneidungen zwischen Datenschutz und technischer/organisatorischer Sicherheit
+- Schutzmaßnahmen müssen an die Art der Daten angepasst sein (höherer Schutz für sensible Daten)
+- eine Riskobewertung muss durchgeführt werden
+- IT-Grundschutz durchführen!
+
+# Warum IT-Grundschutz?
+
+- Die Einhaltung kann man sich zertifizieren lassen
+- Artikel 24 und 32 sagt, dass **alle** Unternehmen den IT-Grundschutz erfüllen sollen (nicht nur kritische Infrastruktur)
+
+# Datenschutz durch Technik und datenschutzfreundliche Voreinstellungen
+
+- data protection by default and by design
+- erforderliche Sicherheitsmaßnahmen müssen in die Verarbeitung von Anfang an integriert werden
+  - unter Berücksichtigung der aktuellen Technologie und der Implementierungskosten
+  - und der Art, des Umfangs, der Umstände und der Zwecke der Vearbeitung
+  - sowie der Risiken unterschiedlicher Eintrittswahrscheinlichkeit
+
+# Wie wird der Stand der Technik definiert?
+
+Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der Technik ab.
+
+# Beschreiben Sie Funktionsübertragung (Outsourcing)
+
+Wenn der Outsourcingpartner so frei agieren kann, dass es nicht mehr gerechtfertigt wäre, ihn als bloßen Auftragsnehmer zu betrachten, so ist er als (selbstständig agierender) Dritter anzusehen.
+
+# Artikel 28: Auftragsverarbeiter
+
+- Auftragsverarbeitung nicht ohne Vertrag
+- Verarbeitung nur auf dokumentierte Weisung des Verantwortlichen
+- Mitarbeiter des Auftragsverarbeiters sind zur Vetraulichkeit zu verpflichten
+- Sicherheitsmaßnahmen nach Artikel 32 sind erforderlich
+
+# Artikel 35: Datenschutzfolgeabschätzung
+
+- Gefahren und Risiken bewerten, bevor personenbezogene Daten verarbeitet werden $\rightarrow$ Ist es das Risiko wert?
+- Daten die vearbeitet werden **müssen** sind davon nicht betroffen
+- es gibt Listen, wo Anwendungsfälle aufgezählt sind, bei denen Datenschutzfolgeabschätzung erforderlich ist
+
+# Inhalt der Folgenabschätzung
+
+- systematische Beschreibung der geplanten Verarbeitungsvorgänge und der Zwecke der Verarbeitung
+- Bewertung Notwendigkeit und Verhältnismäßigkeit
+- Bewertung Bezug auf die Rechte und Freiheiten der betroffenen Personen
+- vorgesehene Maßnahmen
+
+# Aufgaben des Verantwortlichen
+
+- Art. 30 Verarbeitungsübersicht
+- Art. 28 Verträge zur Auftragsverarbeitung
+- Art. 33, 24 Meldepflichten
+- Art. 35 Datenschutzfolgenabschätzung (DSFA) bei Risikoverfahren
+- Art. 32 TOMs (technisch-organisatorische Maßnahmen) $\rightarrow$ Informationssicherheitsmanagementsystem <!-- heh --> (ISMS) etablieren
