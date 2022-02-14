@@ -53,6 +53,20 @@ IT-Infrastrukturen / Sicherheit / Recht
   - [Geltungsbereich](#geltungsbereich)
   - [DSGVO Inhalt](#dsgvo-inhalt)
     - [Zweck der DSGVO](#zweck-der-dsgvo)
+  - [Stakeholder DSGVO / Datenschutz](#stakeholder-dsgvo--datenschutz)
+  - [identifizierte vs. identifizierbare Person](#identifizierte-vs-identifizierbare-person)
+  - [Was sind besondere Datenkategorien (Art. 9 / sensible Daten)?](#was-sind-besondere-datenkategorien-art-9--sensible-daten)
+  - [Beispiele für technisch-organisatorische Maßnahmen (TOM)](#beispiele-f%C3%BCr-technisch-organisatorische-ma%C3%9Fnahmen-tom)
+  - [Jurisitische Definition Dateisystem](#jurisitische-definition-dateisystem)
+  - [Rechte der Betroffenen](#rechte-der-betroffenen)
+    - [Verantwortlicher](#verantwortlicher)
+      - [Begriff der Verarbeitung](#begriff-der-verarbeitung)
+  - [Pseudonymisierung](#pseudonymisierung)
+  - [Profiling](#profiling)
+  - [Artikel 5, 6, 9](#artikel-5-6-9)
+    - [Grundsätze der Verarbeitung](#grunds%C3%A4tze-der-verarbeitung)
+    - [Wann ist eine Verarbeitung rechtmäßig?](#wann-ist-eine-verarbeitung-rechtm%C3%A4%C3%9Fig)
+  - [Geldbußen nach Artikel 83](#geldbu%C3%9Fen-nach-artikel-83)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -226,10 +240,10 @@ Regelt z.B. Beschränkungen nach Umfang, Dauer, Art und Weise der E-Mail und Int
 ## Recht auf informationelle Selbstbestimmung
 
 - es gibt keine belanglosen Daten
+- _"Wer weiß wann und bei welcher Gelegenheit was über mich?"_ $\rightarrow$ Grundrecht
 
 >Das Bundesverfassungsgericht stellte fest, dass unter den Verarbeitungs- und Verknüpfungsmöglichkeiten der Informationstechnologie auch ein für sich gesehen belangloses Datum einen neuen Stellenwert bekommen kann und es insoweit keine belanglosen Daten gibt.
 
-- *"Wer weiß wann und bei welcher Gelegenheit was über mich?"* $\rightarrow$ Grundrecht
 - Aufklärungspflicht der verantwortlichen Stelle
 - Vorrang der Selbstauskunft
 - Einschränkungen des Rechts müssen gesetzlich geregelt sein
@@ -272,3 +286,93 @@ DSGVO ist unmittelbares Gesetz
 - Ermöglichen einer legalen **Digitalwirtschaft**
   - der freie Verkehr personenbezogener Daten darf weder eingeschränkt noch verboten werden
 - Schutz der **Grundrechte**: die DSGVO zwingt lediglich Unternehmen dazu, die Nutzung der Daten transparent zu machen und den Regeln folgen
+
+## Stakeholder DSGVO / Datenschutz
+
+- Betroffene
+- Verantwortlicher
+- Datenschutzbeauftragte(r) (DSB)
+- Auftragsverarbeiter
+- Dritte
+- Aufsichtsbehörde
+
+## identifizierte vs. identifizierbare Person
+
+- **identifizierte Person:** Daten können bekannter Person zugeordnet werden
+- **identifizierbare Person:** mit zusätzlichen Informationen kann auf die Identität geschlossen werden
+  - Bsp.: Kennnummer, Standortdaten, Online-Pseudonym, Eigenschaften einer Person, ...
+
+## Was sind besondere Datenkategorien (Art. 9 / sensible Daten)?
+
+- Gesundheits- und biometrische Daten
+- Politische Meinungen
+- Religion
+- Ethnie
+- Gewerkschaftsangehörigkeit
+
+> benötigen für hohen Schutzbedarf besondere technisch-organisatorische Maßnahmen
+
+## Beispiele für technisch-organisatorische Maßnahmen (TOM)
+
+- Verschlüsselung
+- Pseudonymisierung
+
+## Jurisitische Definition Dateisystem
+
+Jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten Kriterien zugänglich ist [...](https://dsgvo-gesetz.de/art-4-dsgvo).
+
+## Rechte der Betroffenen
+
+- Mitteilungen an Betroffene unverzüglich, aber maximal innerhalb von drei Monaten, und unentgeltlich
+- Recht auf Auskunft
+- Recht auf Berichtigung
+- Recht auf Löschung
+- Recht auf Datenübertragbarkeit
+- Recht auf Widerspruch
+
+### Verantwortlicher
+
+#### Begriff der Verarbeitung
+
+- egal ob mit oder ohne automatisierter Verfahren
+- Beispiele Verarbeitungsarten: Erheben, Ordnen, Speichern, Verändern, Abfragen, Offenlegen, Löschen, Vernichten
+- Unterschied Löschen vs. Vernichten:
+  - bezieht sich auf das Restrisiko
+  - Löschen: Datenträger bleibt intakt
+  - Vernichten: Datenträger wird zerstört
+- Bedeutung des Offenlegens: Daten werden nach Außen an Dritte übermittelt, verbreitet, etc.
+
+## Pseudonymisierung
+
+- Verarbeitung personenbezogener Daten in einer Weise, dass die P-Daten ohne zusätzliche Informationen nicht mehr einer spezifischen betroffenen Person zugeordnet werden können.
+
+## Profiling
+
+- automatisierte Verarbeitung von P-Daten zur Bewertung von bspw. wirtschaftlicher Leistung, Gesundheit, Aufenthaltsort, Vorlieben
+
+## Artikel 5, 6, 9
+
+### Grundsätze der Verarbeitung
+
+- Verarbeitung muss rechtmäßig und zweckgebunden erfolgen
+- auf dem Grundsatz von Treu und Glauben
+- Datenminimum
+- Richtigkeit der Daten
+- Speicherminimum / Datensparsamkeit
+- Integrität und Sicherheit mit TOMs
+- Rechenschaftspflicht (Verarbeitungsübersicht, SiKo)
+
+### Wann ist eine Verarbeitung rechtmäßig?
+
+- bei Einwilligung des Betroffenen
+- bei Erforderlichkeit zur Vertragserfüllung
+- bei rechtlicher Verpflichtung (Gesetz, Verordnung, Dienstvereinbarung)
+- Ausnahme von Zweckbindung ist gegeben, wenn
+  - Wahrung der "berechtigten Interessen" (Betroffener kann berechtigtem Interesse allerdings folgen oder ablehnen)
+  - lebenswichtige Interessen
+  - öffentliches Interesse
+
+## Geldbußen nach Artikel 83
+
+- bis 20 Mio. Euro oder bis 4% des weltweiten Jahresumsatz
+- höhere von beiden!
