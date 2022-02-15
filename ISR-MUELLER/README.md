@@ -160,7 +160,7 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 ### Domänenrecht
 
 - Adressen sollten zum Namen der Einrichtung passen (Verwechslungen vermeiden!)
-- Vergabe von Adressen der TLD `.de` durch DENIC (keine Prüfung auf Rechteverletzung) 
+- Vergabe von Adressen der TLD `.de` durch DENIC (keine Prüfung auf Rechteverletzung)
 - berechtigte Namensträger besitzen Möglichkeit auf Freigabe des Namens zu klagen
   - **[Domain-Squatting](https://de.wikipedia.org/wiki/Cybersquatting) ist illegal** (Basis [§12 BGB](https://www.gesetze-im-internet.de/bgb/__12.html))
 
@@ -184,10 +184,10 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 
 ## Informationsfreiheitsgesetz
 
-### Ziele 
+### Ziele
 
 - **Transparenz** der Verwaltung (kein Behördengeheimnis mehr!) <!--Deine Daten? UNSERE Daten!-->
-- Erhöhung der **Akzeptanz** von Verwaltungshandeln 
+- Erhöhung der **Akzeptanz** von Verwaltungshandeln
 - Möglichkeiten **aktiver Mitgestaltung** staatlicher Entscheidungen
 
 > [Videotipp](https://media.ccc.de/v/rc3-2021-chaosstudiohamburg-359-frag-den-berwachungsstaat), [fragdenstaat.de](https://fragdenstaat.de/)
@@ -344,6 +344,31 @@ Regelt z.B. Beschränkungen nach Umfang, Dauer, Art und Weise der E-Mail und Int
   - der freie Verkehr personenbezogener Daten darf weder eingeschränkt noch verboten werden
 - Schutz der **Grundrechte**: die DSGVO zwingt lediglich Unternehmen dazu, die Nutzung der Daten transparent zu machen und den Regeln folgen
 
+## Warum IT-Grundschutz?
+
+- Die Einhaltung kann man sich zertifizieren lassen
+- Artikel 24 und 32 sagt, dass **alle** Unternehmen den IT-Grundschutz erfüllen sollen (nicht nur kritische Infrastruktur)
+
+## Datenschutz durch Technik und datenschutzfreundliche Voreinstellungen
+
+> *data protection by default and by design*
+
+- erforderliche Sicherheitsmaßnahmen müssen in die Verarbeitung von Anfang an integriert werden
+  - unter Berücksichtigung des _Standes der Technik_ und der Implementierungskosten
+  - und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung
+  - sowie der Risiken unterschiedlicher Eintrittswahrscheinlichkeit
+- Unternehmen müssen ISMS etablieren
+
+## Kriterien zur Bewertung eines Risikos
+
+- Wahrscheinlichkeit der Gefährdung
+- Schwere der Gefährdung
+- Implementierungskosten für die Lösung
+
+## Wie wird der Stand der Technik definiert?
+
+Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der Technik ab.
+
 ## Begriffsbestimmungen
 
 ### Stakeholder der DSGVO
@@ -363,7 +388,7 @@ Regelt z.B. Beschränkungen nach Umfang, Dauer, Art und Weise der E-Mail und Int
 
 ### Verantwortlicher
 
-- jede Person oder Stelle, die: 
+- jede Person oder Stelle, die:
   - bei personenbezogenen Daten über Zwecke und Mittel der Verarbeitung entscheidet oder
   - im Auftrag durch Auftragsverarbeiter verarbeiten lässt
 
@@ -439,9 +464,9 @@ Regelt z.B. Beschränkungen nach Umfang, Dauer, Art und Weise der E-Mail und Int
 
 > Diese sensiblen Daten besitzen einen **hohen Schutzbedarf** und benötigen **besondere technisch-organisatorische Maßnahmen**
 
-## Art. 83 - Geldbußen 
+## Art. 83 - Geldbußen
 
-- bis **20 Mio. Euro** oder 
+- bis **20 Mio. Euro** oder
 - bis **4% des weltweiten Jahresumsatz**
 
 > **Höhere** von beiden!
@@ -471,32 +496,7 @@ Regelt z.B. Beschränkungen nach Umfang, Dauer, Art und Weise der E-Mail und Int
 - eine Risikobewertung muss durchgeführt werden
 - IT-Grundschutz durchführen!
 
-## Warum IT-Grundschutz?
-
-- Die Einhaltung kann man sich zertifizieren lassen
-- Artikel 24 und 32 sagt, dass **alle** Unternehmen den IT-Grundschutz erfüllen sollen (nicht nur kritische Infrastruktur)
-
-## Datenschutz durch Technik und datenschutzfreundliche Voreinstellungen
-
-> *data protection by default and by design*
-
-- erforderliche Sicherheitsmaßnahmen müssen in die Verarbeitung von Anfang an integriert werden
-  - unter Berücksichtigung des _Standes der Technik_ und der Implementierungskosten
-  - und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung
-  - sowie der Risiken unterschiedlicher Eintrittswahrscheinlichkeit
-- Unternehmen müssen ISMS etablieren
-
-## Kriterien zur Bewertung eines Risikos
-
-- Wahrscheinlichkeit der Gefährdung
-- Schwere der Gefährdung
-- Implementierungskosten für die Lösung
-
-## Wie wird der Stand der Technik definiert?
-
-Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der Technik ab.
-
-# Art. 28 - Auftragsverarbeiter
+### Art. 28 - Auftragsverarbeiter
 
 - Auftragsverarbeitung nicht ohne Vertrag
 - Verantwortung liegt beim Auftraggeber
