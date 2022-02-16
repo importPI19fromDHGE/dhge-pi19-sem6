@@ -582,3 +582,51 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 ## Datenschutzmodell
 
 - Checkliste für Gewährleistungsziele zum Nachweis der Datenschutzkonformität
+
+# Gefährliche IT-Entwicklungen
+
+- Steigender Vernetzungsgrad
+- IT-Verbreitung und Durchdringung
+- Verschwinden der Netzgrenzen
+- Angriffe kommen schneller
+- Höhere Interaktivität von Anwendungen
+- Verantwortung der Nutzer
+
+# Schadensszenarien
+
+- Schäden für Institution und den einzelnen Betroffenen
+- Negative Innen- und Außenwirkung
+- Verstoß gegen Gesetze, Vorschriften, Verträge
+- Beeinträchtigung des informationellen Selbstbestimmungsrechts
+- Beeinträchtigung der Aufgabenerfüllung
+- Finanzielle Auswirkungen
+
+# IT-Sicherheit ist gefährdet bei
+
+- Höhere Gewalt
+- Organisatorische Mängel
+- Menschliche Fehlhandlungen
+- Technisches Versagen
+- Vorsätzliche Handlungen
+
+# Die häufigsten Versäumnisse in Sachen Sicherheit
+
+- Unzureichende IT-Sicherheits-Strategie
+- Schlechte Konfiguration von IT-Systemen
+- Nichtbeachtung von Sicherheitsanforderungen
+
+# Nachgewiesene IT-Sicherheit lohnt sich
+
+# Stellenwert der Sicherheit
+
+IT-Sicherheit ist Chefsache!
+
+# Common Criteria Zertifikate
+
+- Bewerbung auf Zertifizierung bei lokaler Behörde (in Deutschland BSI)
+- Hinweise zu Bewerbung etc. auf der Seite des BSI
+- BSI stellt nach Prüfung Report und Zertifikat aus
+- Zertifikat ist 5 Jahre gültig
+- Definition des Target Of Evaluation (TOE)
+
+
