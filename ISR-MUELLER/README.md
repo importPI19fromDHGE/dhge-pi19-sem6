@@ -112,7 +112,7 @@ IT-Infrastrukturen / Sicherheit / Recht
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an der Backe, ich musste ja unbedingt mitschreiben :D-->
+Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 
 <!--newpage-->
 
