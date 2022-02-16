@@ -24,38 +24,39 @@ IT-Infrastrukturen / Sicherheit / Recht
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Überblick](#%C3%9Cberblick)
+- [IT-Infrastrukturen / Sicherheit / Recht](#it-infrastrukturen--sicherheit--recht)
+- [Überblick](#überblick)
   - [Governance, Compliance und Legal Tech](#governance-compliance-und-legal-tech)
   - [Rechtsfragen in der IT](#rechtsfragen-in-der-it)
   - [Vorschriften im IT-Recht](#vorschriften-im-it-recht)
   - [Datenschutz-Grundverordnung (DSGVO)](#datenschutz-grundverordnung-dsgvo)
     - [Rechtsstaatlichkeit und Grundrechtsschutz](#rechtsstaatlichkeit-und-grundrechtsschutz)
-    - [Grundrecht auf Schutz der Persönlichkeit](#grundrecht-auf-schutz-der-pers%C3%B6nlichkeit)
+    - [Grundrecht auf Schutz der Persönlichkeit](#grundrecht-auf-schutz-der-persönlichkeit)
     - [Besonderheiten im Umgang mit Rechtstexten](#besonderheiten-im-umgang-mit-rechtstexten)
     - [ePrivacy-Verordnung](#eprivacy-verordnung)
   - [Urheberrecht (UrhG)](#urheberrecht-urhg)
     - [Urheberrecht von Software und Datenbanken](#urheberrecht-von-software-und-datenbanken)
-    - [Urheberrecht im Arbeitsverhältnis](#urheberrecht-im-arbeitsverh%C3%A4ltnis)
+    - [Urheberrecht im Arbeitsverhältnis](#urheberrecht-im-arbeitsverhältnis)
   - [Einrichtung im Internet](#einrichtung-im-internet)
-    - [Domänenrecht](#dom%C3%A4nenrecht)
+    - [Domänenrecht](#domänenrecht)
     - [Telemediengesetz (TMG)](#telemediengesetz-tmg)
   - [E-Government-Gesetz](#e-government-gesetz)
   - [Informationsfreiheitsgesetz](#informationsfreiheitsgesetz)
     - [Ziele](#ziele)
-    - [Säulen der Umsetzung](#s%C3%A4ulen-der-umsetzung)
+    - [Säulen der Umsetzung](#säulen-der-umsetzung)
   - [IT-Sicherheits-Gesetz](#it-sicherheits-gesetz)
     - [Cyber Security Act (CSA)](#cyber-security-act-csa)
   - [Haftung](#haftung)
-- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-besch%C3%A4ftigungskontext)
+- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-beschäftigungskontext)
   - [Gestaltungsfelder der Personalvertretung](#gestaltungsfelder-der-personalvertretung)
   - [Interessen der Arbeitgeber](#interessen-der-arbeitgeber)
   - [Betriebs-/Dienstvereinbarungen](#betriebs-dienstvereinbarungen)
     - [Beispiel: Private und dienstliche Internetnutzung](#beispiel-private-und-dienstliche-internetnutzung)
     - [Beispiel: Protokolldateien](#beispiel-protokolldateien)
-- [Einführung Datenschutz](#einf%C3%BChrung-datenschutz)
+- [Einführung Datenschutz](#einführung-datenschutz)
   - [Exkurs - Impulsfragen Datenschutz / Miro-Board](#exkurs---impulsfragen-datenschutz--miro-board)
   - [Recht auf informationelle Selbstbestimmung](#recht-auf-informationelle-selbstbestimmung)
-    - [Beeinträchtigung digitaler Rechte](#beeintr%C3%A4chtigung-digitaler-rechte)
+    - [Beeinträchtigung digitaler Rechte](#beeinträchtigung-digitaler-rechte)
     - [Handlungsbedarf (Datenschutz im Kontext moderner Technologien)](#handlungsbedarf-datenschutz-im-kontext-moderner-technologien)
   - [Befugnisse von Datenschutzbeauftragten](#befugnisse-von-datenschutzbeauftragten)
 - [EU-Datenschutz Grundverordnung](#eu-datenschutz-grundverordnung)
@@ -72,30 +73,42 @@ IT-Infrastrukturen / Sicherheit / Recht
     - [Verantwortlicher](#verantwortlicher)
     - [Begriff der Verarbeitung](#begriff-der-verarbeitung)
       - [Offenlegen](#offenlegen)
-      - [Löschen vs. Vernichten](#l%C3%B6schen-vs-vernichten)
+      - [Löschen vs. Vernichten](#löschen-vs-vernichten)
     - [Auftragsverarbeiter](#auftragsverarbeiter)
     - [Dritter](#dritter)
     - [Dateisystem (juristische Definition)](#dateisystem-juristische-definition)
     - [Pseudonymisierung](#pseudonymisierung)
     - [Profiling](#profiling)
-  - [Kapitel 2 - Grundsätze](#kapitel-2---grunds%C3%A4tze)
-    - [Art. 5 - Grundsätze der Verarbeitung](#art-5---grunds%C3%A4tze-der-verarbeitung)
-    - [Art. 6 - Rechmäßigkeit der Verarbeitung](#art-6---rechm%C3%A4%C3%9Figkeit-der-verarbeitung)
+  - [Kapitel 2 - Grundsätze](#kapitel-2---grundsätze)
+    - [Art. 5 - Grundsätze der Verarbeitung](#art-5---grundsätze-der-verarbeitung)
+    - [Art. 6 - Rechtmäßigkeit der Verarbeitung](#art-6---rechtmäßigkeit-der-verarbeitung)
     - [Art. 9 - Besondere Datenkategorien](#art-9---besondere-datenkategorien)
-  - [Art. 83 - Geldbußen](#art-83---geldbu%C3%9Fen)
+  - [Art. 83 - Geldbußen](#art-83---geldbußen)
   - [Kapitel 3 - Rechte der Betroffenen](#kapitel-3---rechte-der-betroffenen)
-    - [Beispiele für technisch-organisatorische Maßnahmen (TOM)](#beispiele-f%C3%BCr-technisch-organisatorische-ma%C3%9Fnahmen-tom)
+    - [Beispiele für technisch-organisatorische Maßnahmen (TOM)](#beispiele-für-technisch-organisatorische-maßnahmen-tom)
   - [Kapitel 4 - Verantwortlicher und Auftragsverarbeiter](#kapitel-4---verantwortlicher-und-auftragsverarbeiter)
-    - [Art. 24 - Pflichten des für die Verarbeitung Verantwortlichen](#art-24---pflichten-des-f%C3%BCr-die-verarbeitung-verantwortlichen)
+    - [Art. 24 - Pflichten des für die Verarbeitung Verantwortlichen](#art-24---pflichten-des-für-die-verarbeitung-verantwortlichen)
     - [Art. 28 - Auftragsverarbeiter](#art-28---auftragsverarbeiter)
-      - [Auftragsverarbeitung vs. Funktionsübertragung](#auftragsverarbeitung-vs-funktions%C3%BCbertragung)
-    - [Art. 30 - Aufzeichnung der Verarbeitungsaktivitäten](#art-30---aufzeichnung-der-verarbeitungsaktivit%C3%A4ten)
+      - [Auftragsverarbeitung vs. Funktionsübertragung](#auftragsverarbeitung-vs-funktionsübertragung)
+    - [Art. 30 - Aufzeichnung der Verarbeitungsaktivitäten](#art-30---aufzeichnung-der-verarbeitungsaktivitäten)
     - [Art. 33 - Meldepflichten von Verletzungen des Schutzes personenbezogener Daten](#art-33---meldepflichten-von-verletzungen-des-schutzes-personenbezogener-daten)
-    - [Art. 35 - Datenschutz-Folgeabschätzung](#art-35---datenschutz-folgeabsch%C3%A4tzung)
-      - [Inhalt einer Datenschutz-Folgeabschätzung](#inhalt-einer-datenschutz-folgeabsch%C3%A4tzung)
+    - [Art. 35 - Datenschutz-Folgeabschätzung](#art-35---datenschutz-folgeabschätzung)
+      - [Inhalt einer Datenschutz-Folgeabschätzung](#inhalt-einer-datenschutz-folgeabschätzung)
       - [Blacklists](#blacklists)
   - [Aufgaben des Verantwortlichen](#aufgaben-des-verantwortlichen)
   - [Datenschutzmodell](#datenschutzmodell)
+- [Gefährliche IT-Entwicklungen](#gefährliche-it-entwicklungen)
+  - [Schadensszenarien](#schadensszenarien)
+  - [IT-Sicherheit ist gefährdet bei](#it-sicherheit-ist-gefährdet-bei)
+  - [Die häufigsten Versäumnisse in Sachen Sicherheit](#die-häufigsten-versäumnisse-in-sachen-sicherheit)
+  - [Nachgewiesene IT-Sicherheit lohnt sich](#nachgewiesene-it-sicherheit-lohnt-sich)
+  - [Stellenwert der Informationssicherheit](#stellenwert-der-informationssicherheit)
+  - [Grundwerte der Informationssicherheit](#grundwerte-der-informationssicherheit)
+  - [Blickwinkel der IT-Sicherheit](#blickwinkel-der-it-sicherheit)
+    - [Klassischer IT-Sicherheit](#klassischer-it-sicherheit)
+    - [Regulatory Compliance](#regulatory-compliance)
+  - [Common Criteria Zertifikate](#common-criteria-zertifikate)
+- [KRITIS](#kritis)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -189,7 +202,7 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 - sobald personenbezogenen Daten erhoben, verarbeitet oder genutzt werden, sind Datenschutzhinweise erforderlich
   - *Hinweis: IP-Adressen sind auch personenbezogen*
   - alle Datenerhebungen müssen auf das Notwendige beschränkt sein (siehe [Datensparsamkeit](https://de.wikipedia.org/wiki/Datenvermeidung_und_Datensparsamkeit)) sowie zweckgebunden sein
-- Mithaftung bei illegalen Inhalten in bspw. Foren, digitalen Gästelisten, ... (Verpflictung zur regelmäßigen Prüfung und Entfernung)
+- Mithaftung bei illegalen Inhalten in bspw. Foren, digitalen Gästelisten, ... (Verpflichtung zur regelmäßigen Prüfung und Entfernung)
 
 ## E-Government-Gesetz
 
@@ -293,7 +306,7 @@ Regelt z.B. Beschränkungen nach Umfang, Dauer, Art und Weise der E-Mail und Int
 ### Beispiel: Protokolldateien
 
 - DSGVO kennt keine Höchstgrenze zur Aufbewahrungsdauer
-- Öffnungklausel: nationales Recht kann Vorschriften festlegen
+- Öffnungsklausel: nationales Recht kann Vorschriften festlegen
 - Zweck muss klar sein, verhältnismäßige Speicherung
 - Artikel 40 DSGVO: Branchen(-Verbände) sollen Standards festlegen $\rightarrow$ Zertifikate
 
@@ -461,9 +474,9 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 - Integrität und Sicherheit mit TOMs
 - Rechenschaftspflicht (Verarbeitungsübersicht, SiKo)
 
-### Art. 6 - Rechmäßigkeit der Verarbeitung
+### Art. 6 - Rechtmäßigkeit der Verarbeitung
 
-> die Verarbeitung Personenbezogener Daten ist Rechmäßig bei:
+> die Verarbeitung Personenbezogener Daten ist rechtmäßig bei:
 
 - Einwilligung des Betroffenen
 - Erforderlichkeit zur Vertragserfüllung
@@ -503,7 +516,7 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 ### Beispiele für technisch-organisatorische Maßnahmen (TOM)
 
 - **Verschlüsselung**
-- **Pseudonymisierung:** ohne Hinzuziehung zusätzlicher Informationen keiner spezifischen Person zuordbar
+- **Pseudonymisierung:** ohne Hinzuziehung zusätzlicher Informationen keiner spezifischen Person zuordenbar
 
 ## Kapitel 4 - Verantwortlicher und Auftragsverarbeiter
 
@@ -527,10 +540,10 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 #### Auftragsverarbeitung vs. Funktionsübertragung
 
 - Funktionsübertragung nicht mehr in Datenschutzgesetzen zu finden
-- Outsourcingpartner agiert so frei, das er nicht mehr als bloßer Auftragnehmer betrachtet werden kann
+- Outsourcing-Partner agiert so frei, das er nicht mehr als bloßer Auftragnehmer betrachtet werden kann
 - wird als selbstständig agierender Dritter angesehen (z.B. Inkasso, ...)
 - Verantwortung verbleibt beim Auftraggeber
-- Auftragnehmer sorgfältig auszuwählen (unter besonderer Berücksichtigung der rechnischen und organisatorischen Maßnahmen)
+- Auftragnehmer sorgfältig auszuwählen (unter besonderer Berücksichtigung der technischen und organisatorischen Maßnahmen)
 
 ### Art. 30 - Aufzeichnung der Verarbeitungsaktivitäten
 
@@ -544,8 +557,8 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 
 ### Art. 33 - Meldepflichten von Verletzungen des Schutzes personenbezogener Daten
 
-- innerhalb von 72h nach Bekanntwerden (an Aufsichtbehörde)
-- Artikel 34: auch betroffene Personen müssen benarichtigt werden (wenn hohes Risiko für diese besteht)
+- innerhalb von 72h nach Bekanntwerden (an Aufsichtsbehörde)
+- Artikel 34: auch betroffene Personen müssen benachrichtigt werden (wenn hohes Risiko für diese besteht)
 
 ### Art. 35 - Datenschutz-Folgeabschätzung
 
@@ -592,7 +605,7 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 - Höhere Interaktivität von Anwendungen
 - Verantwortung der Nutzer
 
-# Schadensszenarien
+## Schadensszenarien
 
 - Schäden für Institution und den einzelnen Betroffenen
 - Negative Innen- und Außenwirkung
@@ -601,30 +614,75 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 - Beeinträchtigung der Aufgabenerfüllung
 - Finanzielle Auswirkungen
 
-# IT-Sicherheit ist gefährdet bei
+## IT-Sicherheit ist gefährdet bei
 
-- Höhere Gewalt
-- Organisatorische Mängel
-- Menschliche Fehlhandlungen
-- Technisches Versagen
-- Vorsätzliche Handlungen
+- Höhere Gewalt (Naturkatastrophen)
+- Organisatorische Mängel (z.B. fehlende Konzepte)
+- Menschliche Fehlhandlungen (z.B. Phishing)
+- Technisches Versagen (z.B. Hardware-Defekte)
+- Vorsätzliche Handlungen (z.B. Sabotage durch Mitarbeiter)
 
-# Die häufigsten Versäumnisse in Sachen Sicherheit
+## Die häufigsten Versäumnisse in Sachen Sicherheit
 
 - Unzureichende IT-Sicherheits-Strategie
+  - Sicherheit hat niedrigen Stellenwert
+  - keine Dokumentation
+  - Kontrollmechanismen fehlen
 - Schlechte Konfiguration von IT-Systemen
+  - Rechtevergabe zu großzügig
+  - keine / schlechte Nutzung von Sicherheitsfunktionen in Software
+  - schlechtes Firewalling
 - Nichtbeachtung von Sicherheitsanforderungen
+  - z.B. aus Bequemlichkeit oder unzureichender Schulung
 
-# Nachgewiesene IT-Sicherheit lohnt sich
+## Nachgewiesene IT-Sicherheit lohnt sich
 
-# Stellenwert der Sicherheit
+- Optimierung: IT-Betrieb effektiver und effizienter<!--Admin setzt InfSec ein. Admin's Verteidigung steigt. Das ist sehr effektiv!-->
+- erhöht Attraktivität für Kunden
+- Identifizierung mit dem Erreichten<!--LOL-->
+- Boni bei Versicherungen
 
-IT-Sicherheit ist Chefsache!
+## Stellenwert der Informationssicherheit
 
-# Common Criteria Zertifikate
+- Informations-Sicherheit ist Chefsache!
+- IT-Sicherheit wird oft ausschließlich mit der IT-Abteilung assoziiert
+- Informationssicherheit drückt aus, dass es alle Abteilungen angeht
+- in KMUs wird InfSec generell wenig Wert zugeordnet
+
+## Grundwerte der Informationssicherheit
+
+- Verfügbarkeit, Vertraulichkeit, Integrität
+  - aus Integrität werden Authentizität, Verbindlichkeit (Nichtabstreitbarkeit) und Zuverlässlichkeit
+- Verfügbarkeit wird messbar, indem eine maximale Service-Downtime vereinbart wird
+- Informationen müssen in ihrer Wichtigkeit klassifiziert werden
+  - Grundwerte dienen als Kriterien
+  - von Data Auditor durchgeführt
+
+## Blickwinkel der IT-Sicherheit
+
+### Klassischer IT-Sicherheit
+
+Betrachtet...
+
+- Schutz nach außen: Hacker, Viren, Trojaner
+- Schutz nach innen: Mitarbeiter als Risikofaktor
+- Geschäftskontinuität
+
+### Regulatory Compliance
+
+- Unternehmen tun von sich aus zu wenig für Informationssicherheit
+- Staat zwingt dazu mit Vorschriften und Richtlinien<!--Cyberpunk music stops-->
+- Bedarfsgerechte Umsetzung der Regularien
+- Dokumentierbarkeit und Audits von zentraler Bedeutung
+
+## Common Criteria Zertifikate
 
 - Bewerbung auf Zertifizierung bei lokaler Behörde (in Deutschland BSI)
 - Hinweise zu Bewerbung etc. auf der Seite des BSI
 - BSI stellt nach Prüfung Report und Zertifikat aus
 - Zertifikat ist 5 Jahre gültig
 - Definition des Target Of Evaluation (TOE)
+
+# KRITIS
+
+- sind Einrichtungen mit Bedeutung für das staatliche Gemeinwesen
