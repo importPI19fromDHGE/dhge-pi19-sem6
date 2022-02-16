@@ -628,5 +628,3 @@ IT-Sicherheit ist Chefsache!
 - BSI stellt nach Prüfung Report und Zertifikat aus
 - Zertifikat ist 5 Jahre gültig
 - Definition des Target Of Evaluation (TOE)
-
-
