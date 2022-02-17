@@ -682,7 +682,7 @@ Betrachtet...
 ## Gruppenarbeit 16.02.22
 
 ### BSI
-
+<!-- md2apkg ignore-card -->
 - Bundesamt für Sicherheit und Informationstechnik
 - Aufgaben: Schutz, Prävention, Reaktion, Beratung und Entwicklung mit Bezug Informationssicherheit
 - Zielgruppen:
@@ -692,36 +692,36 @@ Betrachtet...
   - Wissenschaft
 
 ### CERT
-
+<!-- md2apkg ignore-card -->
 - Computer Emergency Response Team
 - zentrale Anlaufstelle für präventive und reaktive Maßnahmen
 - Klassifizierung von Schwachstellen, Hinweise veröffentlichen
 
 ### Klassifikation von Informationen
-
+<!-- md2apkg ignore-card -->
 - Informationen in Bezug auf ihre Vertraulichkeit, Integrität und Verfügbarkeit klassifizieren
 - Rollen zur Klassifizierung: Data Creator, Owner, User, Auditor
 
 ### IT-Planungsrat
-
+<!-- md2apkg ignore-card -->
 - IT-Koordination
 - IT-Standards: XDOMEA  <!-- LG an Oliver -->
 - Digitalisierung der Verwaltung
 - E-Government-Projekte
 
 ### TCSEC (Orange Book)
-
+<!-- md2apkg ignore-card -->
 - veralteter Standard an Sicherheitsstufen
 - Level D bis A
 
 ### ITSEC
-
+<!-- md2apkg ignore-card -->
 - vgl. TCSEC, etwas besser aber zu bürokratisch
 - Funktionalitätsklassen und Qualitätsklassen
 
 
 ### Common Criteria Zertifikate
-
+<!-- md2apkg ignore-card -->
 - Bewerbung auf Zertifizierung bei lokaler Behörde (in Deutschland BSI)
 - Hinweise zu Bewerbung etc. auf der Seite des BSI
 - BSI stellt nach Prüfung Report und Zertifikat aus
@@ -730,5 +730,5 @@ Betrachtet...
 - TCSEC und ITSEC haben CC maßgeblich beeinflusst
 
 # KRITIS
-
+<!-- md2apkg ignore-card -->
 - sind Einrichtungen mit Bedeutung für das staatliche Gemeinwesen
