@@ -674,7 +674,17 @@ Betrachtet...
 - Bedarfsgerechte Umsetzung der Regularien
 - Dokumentierbarkeit und Audits von zentraler Bedeutung
 
-## Common Criteria Zertifikate
+## Gruppenarbeit 16.02.22
+
+### CERT
+
+### BSI
+
+### TCSEC
+
+### ITSEC
+
+### Common Criteria Zertifikate
 
 - Bewerbung auf Zertifizierung bei lokaler Behörde (in Deutschland BSI)
 - Hinweise zu Bewerbung etc. auf der Seite des BSI
