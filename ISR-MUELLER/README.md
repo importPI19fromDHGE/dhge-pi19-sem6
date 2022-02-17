@@ -95,7 +95,8 @@ IT-Infrastrukturen / Sicherheit / Recht
       - [Inhalt einer Datenschutz-Folgeabschätzung](#inhalt-einer-datenschutz-folgeabsch%C3%A4tzung)
       - [Blacklists](#blacklists)
   - [Aufgaben des Verantwortlichen](#aufgaben-des-verantwortlichen)
-  - [Datenschutzmodell](#datenschutzmodell)
+  - [Aufgaben des Datenschutzbeauftragten](#aufgaben-des-datenschutzbeauftragten)
+  - [Standard-Datenschutzmodell](#standard-datenschutzmodell)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
