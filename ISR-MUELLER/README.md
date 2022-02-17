@@ -95,7 +95,8 @@ IT-Infrastrukturen / Sicherheit / Recht
       - [Inhalt einer Datenschutz-Folgeabschätzung](#inhalt-einer-datenschutz-folgeabsch%C3%A4tzung)
       - [Blacklists](#blacklists)
   - [Aufgaben des Verantwortlichen](#aufgaben-des-verantwortlichen)
-  - [Datenschutzmodell](#datenschutzmodell)
+  - [Aufgaben des Datenschutzbeauftragten](#aufgaben-des-datenschutzbeauftragten)
+  - [Standard-Datenschutzmodell](#standard-datenschutzmodell)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -579,6 +580,23 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 - Art. 35: Datenschutzfolgenabschätzung (DSFA) bei Risikoverfahren
 - Art. 32: TOMs (technisch-organisatorische Maßnahmen) $\rightarrow$ Informationssicherheitsmanagementsystem <!-- heh --> (ISMS) etablieren
 
-## Datenschutzmodell
+## Aufgaben des Datenschutzbeauftragten
+
+- Art: 37: Konzernprivileg (u.a.)
+- Art. 39:
+  - Unterrichtung und Beratung des Verantwortlichen
+  - Überwachung der Einhaltung dieser Verordnung
+  - Zusammenarbeit mit Aufsichtsbehörde
+  - Tätigkeiten als Anlaufstelle für Aufsichtsbehörde
+
+## Standard-Datenschutzmodell
 
 - Checkliste für Gewährleistungsziele zum Nachweis der Datenschutzkonformität
+- 7 Bereiche
+  - Datenminimierung
+  - Verfügbarkeit
+  - Integrität
+  - Vertraulichkeit
+  - Nichtverkettung
+  - Transparenz
+  - Intervenierbarkeit
