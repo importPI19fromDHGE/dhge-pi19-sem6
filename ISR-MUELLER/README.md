@@ -683,7 +683,8 @@ Betrachtet...
 
 ### BSI
 
-- Aufgaben: Prävention, Rekation, Nachhaltigkeit
+- Bundesamt für Sicherheit und Informationstechnik
+- Aufgaben: Schutz, Prävention, Reaktion, Beratung und Entwicklung mit Bezug Informationssicherheit
 - Zielgruppen:
   - Regierung und Verwaltung
   - Wirtschaft
@@ -693,21 +694,31 @@ Betrachtet...
 ### CERT
 
 - Computer Emergency Response Team
-- Klassifizierung Schwachstellen
-- Rollen zur Klassifizierung (TODO)
+- zentrale Anlaufstelle für präventive und reaktive Maßnahmen
+- Klassifizierung von Schwachstellen, Hinweise veröffentlichen
+
+### Klassifikation von Informationen
+
+- Informationen in Bezug auf ihre Vertraulichkeit, Integrität und Verfügbarkeit klassifizieren
+- Rollen zur Klassifizierung: Data Creator, Owner, User, Auditor
 
 ### IT-Planungsrat
 
-- Standard, Digitalisierung der Verwaltung: XDOMEA<!-- LG an Oliver -->
+- IT-Koordination
+- IT-Standards: XDOMEA  <!-- LG an Oliver -->
+- Digitalisierung der Verwaltung
+- E-Government-Projekte
 
-### TCSEC
+### TCSEC (Orange Book)
 
 - veralteter Standard an Sicherheitsstufen
+- Level D bis A
 
 ### ITSEC
 
 - vgl. TCSEC, etwas besser aber zu bürokratisch
-- Level D bis A
+- Funktionalitätsklassen und Qualitätsklassen
+
 
 ### Common Criteria Zertifikate
 
