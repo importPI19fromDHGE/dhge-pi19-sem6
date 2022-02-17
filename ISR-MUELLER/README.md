@@ -676,13 +676,33 @@ Betrachtet...
 
 ## Gruppenarbeit 16.02.22
 
+### BSI
+
+- Aufgaben: Prävention, Rekation, Nachhaltigkeit
+- Zielgruppen:
+  - Regierung und Verwaltung
+  - Wirtschaft
+  - Bürger
+  - Wissenschaft
+
 ### CERT
 
-### BSI
+- Computer Emergency Response Team
+- Klassifizierung Schwachstellen
+- Rollen zur Klassifizierung (TODO)
+
+### IT-Planungsrat
+
+- Standard, Digitalisierung der Verwaltung: XDOMEA<!-- LG an Oliver -->
 
 ### TCSEC
 
+- veralteter Standard an Sicherheitsstufen
+
 ### ITSEC
+
+- vgl. TCSEC, etwas besser aber zu bürokratisch
+- Level D bis A
 
 ### Common Criteria Zertifikate
 
@@ -691,6 +711,7 @@ Betrachtet...
 - BSI stellt nach Prüfung Report und Zertifikat aus
 - Zertifikat ist 5 Jahre gültig
 - Definition des Target Of Evaluation (TOE)
+- TCSEC und ITSEC haben CC maßgeblich beeinflusst
 
 # KRITIS
 
