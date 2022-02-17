@@ -719,7 +719,6 @@ Betrachtet...
 - vgl. TCSEC, etwas besser aber zu bürokratisch
 - Funktionalitätsklassen und Qualitätsklassen
 
-
 ### Common Criteria Zertifikate
 <!-- md2apkg ignore-card -->
 - Bewerbung auf Zertifizierung bei lokaler Behörde (in Deutschland BSI)
