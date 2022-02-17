@@ -106,7 +106,12 @@ IT-Infrastrukturen / Sicherheit / Recht
   - [Blickwinkel der IT-Sicherheit](#blickwinkel-der-it-sicherheit)
     - [Klassischer IT-Sicherheit](#klassischer-it-sicherheit)
     - [Regulatory Compliance](#regulatory-compliance)
-  - [Common Criteria Zertifikate](#common-criteria-zertifikate)
+  - [Gruppenarbeit 16.02.22](#gruppenarbeit-160222)
+    - [CERT](#cert)
+    - [BSI](#bsi)
+    - [TCSEC](#tcsec)
+    - [ITSEC](#itsec)
+    - [Common Criteria Zertifikate](#common-criteria-zertifikate)
 - [KRITIS](#kritis)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -674,14 +679,71 @@ Betrachtet...
 - Bedarfsgerechte Umsetzung der Regularien
 - Dokumentierbarkeit und Audits von zentraler Bedeutung
 
-## Common Criteria Zertifikate
+## Gruppenarbeit 16.02.22
+
+### BSI
+
+<!-- md2apkg ignore-card -->
+
+- Bundesamt für Sicherheit und Informationstechnik
+- Aufgaben: Schutz, Prävention, Reaktion, Beratung und Entwicklung mit Bezug Informationssicherheit
+- Zielgruppen:
+  - Regierung und Verwaltung
+  - Wirtschaft
+  - Bürger
+  - Wissenschaft
+
+### CERT
+
+<!-- md2apkg ignore-card -->
+
+- Computer Emergency Response Team
+- zentrale Anlaufstelle für präventive und reaktive Maßnahmen
+- Klassifizierung von Schwachstellen, Hinweise veröffentlichen
+
+### Klassifikation von Informationen
+
+<!-- md2apkg ignore-card -->
+
+- Informationen in Bezug auf ihre Vertraulichkeit, Integrität und Verfügbarkeit klassifizieren
+- Rollen zur Klassifizierung: Data Creator, Owner, User, Auditor
+
+### IT-Planungsrat
+
+<!-- md2apkg ignore-card -->
+
+- IT-Koordination
+- IT-Standards: XDOMEA  <!-- LG an Oliver -->
+- Digitalisierung der Verwaltung
+- E-Government-Projekte
+
+### TCSEC (Orange Book)
+
+<!-- md2apkg ignore-card -->
+
+- veralteter Standard an Sicherheitsstufen
+- Level D bis A
+
+### ITSEC
+
+<!-- md2apkg ignore-card -->
+
+- vgl. TCSEC, etwas besser aber zu bürokratisch
+- Funktionalitätsklassen und Qualitätsklassen
+
+### Common Criteria Zertifikate
+
+<!-- md2apkg ignore-card -->
 
 - Bewerbung auf Zertifizierung bei lokaler Behörde (in Deutschland BSI)
 - Hinweise zu Bewerbung etc. auf der Seite des BSI
 - BSI stellt nach Prüfung Report und Zertifikat aus
 - Zertifikat ist 5 Jahre gültig
 - Definition des Target Of Evaluation (TOE)
+- TCSEC und ITSEC haben CC maßgeblich beeinflusst
 
 # KRITIS
+
+<!-- md2apkg ignore-card -->
 
 - sind Einrichtungen mit Bedeutung für das staatliche Gemeinwesen
