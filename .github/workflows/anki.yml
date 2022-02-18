@@ -23,7 +23,7 @@ jobs:
             outputpath=$(echo $line | awk -F\; '{print $2}');
             name=$(echo $outputpath | awk -F/ '{print $2}');
             if [[ $name != *"README"* ]]
-               then name=$name-$(echo $line | awk -F\; '{print $3}')
+               then name=$name-$(echo $line | awk -F/ '{print $3}')
             fi
             md2apkg -o output/${name} ${inputpath};
             done < "anki.list"
