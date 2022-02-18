@@ -1,0 +1,53 @@
+name: Create Anki Decks release from markdown
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  convert_via_md2apkg:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm install -g md2apkg
+      - run: mkdir output
+      - run: |
+          for mdPath in $(find . -regextype posix-egrep -regex './[A-Z]*[A-Z]-[A-Z]*[A-Z]/(README|appendix/LKF|appendix/Glossar).md')
+          do name=$(echo $mdPath | awk -F/ '{print $2}')
+               if [[ $mdPath == *"LKF"* ]]
+               then name=$name-LKF
+               fi
+               if [[ $mdPath == *"Glossar"* ]]
+               then name=$name-GLOSSAR
+               fi
+               md2apkg -o output/${name}.apkg ${mdPath}
+          done
+      - uses: actions/upload-artifact@master # upload pdfs as an artifact
+        with:
+          name: output
+          path: output
+  release_decks:
+    runs-on: ubuntu-20.04
+    needs: convert_via_md2apkg
+    if: github.ref == 'refs/heads/main' # only publish if commited to the main branch
+    steps:
+      - name: Retrieve saved Docker image
+        uses: actions/download-artifact@v2
+        with:
+          name: output
+          path: output
+      - uses: meeDamian/github-release@2.0 # create/override a release and attach apkgs
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          tag: anki-release
+          name: Anki Decks
+          body: Dieses Release wurde automatisch erstellt
+          gzip: false
+          files: output/[A-Z]*[A-Z]-[A-Z]*[A-Z].apkg
+          allow_override: true
