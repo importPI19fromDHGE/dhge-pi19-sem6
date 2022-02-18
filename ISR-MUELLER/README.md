@@ -80,7 +80,7 @@ IT-Infrastrukturen / Sicherheit / Recht
     - [Profiling](#profiling)
   - [Kapitel 2 - Grundsätze](#kapitel-2---grunds%C3%A4tze)
     - [Art. 5 - Grundsätze der Verarbeitung](#art-5---grunds%C3%A4tze-der-verarbeitung)
-    - [Art. 6 - Rechmäßigkeit der Verarbeitung](#art-6---rechm%C3%A4%C3%9Figkeit-der-verarbeitung)
+    - [Art. 6 - Rechtmäßigkeit der Verarbeitung](#art-6---rechtm%C3%A4%C3%9Figkeit-der-verarbeitung)
     - [Art. 9 - Besondere Datenkategorien](#art-9---besondere-datenkategorien)
   - [Art. 83 - Geldbußen](#art-83---geldbu%C3%9Fen)
   - [Kapitel 3 - Rechte der Betroffenen](#kapitel-3---rechte-der-betroffenen)
@@ -97,10 +97,29 @@ IT-Infrastrukturen / Sicherheit / Recht
   - [Aufgaben des Verantwortlichen](#aufgaben-des-verantwortlichen)
   - [Aufgaben des Datenschutzbeauftragten](#aufgaben-des-datenschutzbeauftragten)
   - [Standard-Datenschutzmodell](#standard-datenschutzmodell)
+- [Gefährliche IT-Entwicklungen](#gef%C3%A4hrliche-it-entwicklungen)
+  - [Schadensszenarien](#schadensszenarien)
+  - [IT-Sicherheit ist gefährdet bei](#it-sicherheit-ist-gef%C3%A4hrdet-bei)
+  - [Die häufigsten Versäumnisse in Sachen Sicherheit](#die-h%C3%A4ufigsten-vers%C3%A4umnisse-in-sachen-sicherheit)
+  - [Nachgewiesene IT-Sicherheit lohnt sich](#nachgewiesene-it-sicherheit-lohnt-sich)
+  - [Stellenwert der Informationssicherheit](#stellenwert-der-informationssicherheit)
+  - [Grundwerte der Informationssicherheit](#grundwerte-der-informationssicherheit)
+  - [Blickwinkel der IT-Sicherheit](#blickwinkel-der-it-sicherheit)
+    - [Klassischer IT-Sicherheit](#klassischer-it-sicherheit)
+    - [Regulatory Compliance](#regulatory-compliance)
+  - [Gruppenarbeit 16.02.22](#gruppenarbeit-160222)
+    - [BSI](#bsi)
+    - [CERT](#cert)
+    - [Klassifikation von Informationen](#klassifikation-von-informationen)
+    - [IT-Planungsrat](#it-planungsrat)
+    - [TCSEC (Orange Book)](#tcsec-orange-book)
+    - [ITSEC](#itsec)
+    - [Common Criteria Zertifikate](#common-criteria-zertifikate)
+- [KRITIS](#kritis)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an der Backe, ich musste ja unbedingt mitschreiben :D-->
+Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 
 <!--newpage-->
 
@@ -190,7 +209,7 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax<!--Toll jetzt hab ich das an d
 - sobald personenbezogenen Daten erhoben, verarbeitet oder genutzt werden, sind Datenschutzhinweise erforderlich
   - *Hinweis: IP-Adressen sind auch personenbezogen*
   - alle Datenerhebungen müssen auf das Notwendige beschränkt sein (siehe [Datensparsamkeit](https://de.wikipedia.org/wiki/Datenvermeidung_und_Datensparsamkeit)) sowie zweckgebunden sein
-- Mithaftung bei illegalen Inhalten in bspw. Foren, digitalen Gästelisten, ... (Verpflictung zur regelmäßigen Prüfung und Entfernung)
+- Mithaftung bei illegalen Inhalten in bspw. Foren, digitalen Gästelisten, ... (Verpflichtung zur regelmäßigen Prüfung und Entfernung)
 
 ## E-Government-Gesetz
 
@@ -294,7 +313,7 @@ Regelt z.B. Beschränkungen nach Umfang, Dauer, Art und Weise der E-Mail und Int
 ### Beispiel: Protokolldateien
 
 - DSGVO kennt keine Höchstgrenze zur Aufbewahrungsdauer
-- Öffnungklausel: nationales Recht kann Vorschriften festlegen
+- Öffnungsklausel: nationales Recht kann Vorschriften festlegen
 - Zweck muss klar sein, verhältnismäßige Speicherung
 - Artikel 40 DSGVO: Branchen(-Verbände) sollen Standards festlegen $\rightarrow$ Zertifikate
 
@@ -462,9 +481,9 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 - Integrität und Sicherheit mit TOMs
 - Rechenschaftspflicht (Verarbeitungsübersicht, SiKo)
 
-### Art. 6 - Rechmäßigkeit der Verarbeitung
+### Art. 6 - Rechtmäßigkeit der Verarbeitung
 
-> die Verarbeitung Personenbezogener Daten ist Rechmäßig bei:
+> die Verarbeitung Personenbezogener Daten ist rechtmäßig bei:
 
 - Einwilligung des Betroffenen
 - Erforderlichkeit zur Vertragserfüllung
@@ -504,7 +523,7 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 ### Beispiele für technisch-organisatorische Maßnahmen (TOM)
 
 - **Verschlüsselung**
-- **Pseudonymisierung:** ohne Hinzuziehung zusätzlicher Informationen keiner spezifischen Person zuordbar
+- **Pseudonymisierung:** ohne Hinzuziehung zusätzlicher Informationen keiner spezifischen Person zuordenbar
 
 ## Kapitel 4 - Verantwortlicher und Auftragsverarbeiter
 
@@ -528,10 +547,10 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 #### Auftragsverarbeitung vs. Funktionsübertragung
 
 - Funktionsübertragung nicht mehr in Datenschutzgesetzen zu finden
-- Outsourcingpartner agiert so frei, das er nicht mehr als bloßer Auftragnehmer betrachtet werden kann
+- Outsourcing-Partner agiert so frei, das er nicht mehr als bloßer Auftragnehmer betrachtet werden kann
 - wird als selbstständig agierender Dritter angesehen (z.B. Inkasso, ...)
 - Verantwortung verbleibt beim Auftraggeber
-- Auftragnehmer sorgfältig auszuwählen (unter besonderer Berücksichtigung der rechnischen und organisatorischen Maßnahmen)
+- Auftragnehmer sorgfältig auszuwählen (unter besonderer Berücksichtigung der technischen und organisatorischen Maßnahmen)
 
 ### Art. 30 - Aufzeichnung der Verarbeitungsaktivitäten
 
@@ -545,8 +564,8 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 
 ### Art. 33 - Meldepflichten von Verletzungen des Schutzes personenbezogener Daten
 
-- innerhalb von 72h nach Bekanntwerden (an Aufsichtbehörde)
-- Artikel 34: auch betroffene Personen müssen benarichtigt werden (wenn hohes Risiko für diese besteht)
+- innerhalb von 72h nach Bekanntwerden (an Aufsichtsbehörde)
+- Artikel 34: auch betroffene Personen müssen benachrichtigt werden (wenn hohes Risiko für diese besteht)
 
 ### Art. 35 - Datenschutz-Folgeabschätzung
 
@@ -592,6 +611,154 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 ## Standard-Datenschutzmodell
 
 - Checkliste für Gewährleistungsziele zum Nachweis der Datenschutzkonformität
+
+# Gefährliche IT-Entwicklungen
+
+- Steigender Vernetzungsgrad
+- IT-Verbreitung und Durchdringung
+- Verschwinden der Netzgrenzen
+- Angriffe kommen schneller
+- Höhere Interaktivität von Anwendungen
+- Verantwortung der Nutzer
+
+## Schadensszenarien
+
+- Schäden für Institution und den einzelnen Betroffenen
+- Negative Innen- und Außenwirkung
+- Verstoß gegen Gesetze, Vorschriften, Verträge
+- Beeinträchtigung des informationellen Selbstbestimmungsrechts
+- Beeinträchtigung der Aufgabenerfüllung
+- Finanzielle Auswirkungen
+
+## IT-Sicherheit ist gefährdet bei
+
+- Höhere Gewalt (Naturkatastrophen)
+- Organisatorische Mängel (z.B. fehlende Konzepte)
+- Menschliche Fehlhandlungen (z.B. Phishing)
+- Technisches Versagen (z.B. Hardware-Defekte)
+- Vorsätzliche Handlungen (z.B. Sabotage durch Mitarbeiter)
+
+## Die häufigsten Versäumnisse in Sachen Sicherheit
+
+- Unzureichende IT-Sicherheits-Strategie
+  - Sicherheit hat niedrigen Stellenwert
+  - keine Dokumentation
+  - Kontrollmechanismen fehlen
+- Schlechte Konfiguration von IT-Systemen
+  - Rechtevergabe zu großzügig
+  - keine / schlechte Nutzung von Sicherheitsfunktionen in Software
+  - schlechtes Firewalling
+- Nichtbeachtung von Sicherheitsanforderungen
+  - z.B. aus Bequemlichkeit oder unzureichender Schulung
+
+## Nachgewiesene IT-Sicherheit lohnt sich
+
+- Optimierung: IT-Betrieb effektiver und effizienter<!--Admin setzt InfSec ein. Admin's Verteidigung steigt. Das ist sehr effektiv!-->
+- erhöht Attraktivität für Kunden
+- Identifizierung mit dem Erreichten<!--LOL-->
+- Boni bei Versicherungen
+
+## Stellenwert der Informationssicherheit
+
+- Informations-Sicherheit ist Chefsache!
+- IT-Sicherheit wird oft ausschließlich mit der IT-Abteilung assoziiert
+- Informationssicherheit drückt aus, dass es alle Abteilungen angeht
+- in KMUs wird InfSec generell wenig Wert zugeordnet
+
+## Grundwerte der Informationssicherheit
+
+- Verfügbarkeit, Vertraulichkeit, Integrität
+  - aus Integrität werden Authentizität, Verbindlichkeit (Nichtabstreitbarkeit) und Zuverlässlichkeit
+- Verfügbarkeit wird messbar, indem eine maximale Service-Downtime vereinbart wird
+- Informationen müssen in ihrer Wichtigkeit klassifiziert werden
+  - Grundwerte dienen als Kriterien
+  - von Data Auditor durchgeführt
+
+## Blickwinkel der IT-Sicherheit
+
+### Klassischer IT-Sicherheit
+
+Betrachtet...
+
+- Schutz nach außen: Hacker, Viren, Trojaner
+- Schutz nach innen: Mitarbeiter als Risikofaktor
+- Geschäftskontinuität
+
+### Regulatory Compliance
+
+- Unternehmen tun von sich aus zu wenig für Informationssicherheit
+- Staat zwingt dazu mit Vorschriften und Richtlinien<!--Cyberpunk music stops-->
+- Bedarfsgerechte Umsetzung der Regularien
+- Dokumentierbarkeit und Audits von zentraler Bedeutung
+
+## Gruppenarbeit 16.02.22
+
+### BSI
+
+<!-- md2apkg ignore-card -->
+
+- Bundesamt für Sicherheit und Informationstechnik
+- Aufgaben: Schutz, Prävention, Reaktion, Beratung und Entwicklung mit Bezug Informationssicherheit
+- Zielgruppen:
+  - Regierung und Verwaltung
+  - Wirtschaft
+  - Bürger
+  - Wissenschaft
+
+### CERT
+
+<!-- md2apkg ignore-card -->
+
+- Computer Emergency Response Team
+- zentrale Anlaufstelle für präventive und reaktive Maßnahmen
+- Klassifizierung von Schwachstellen, Hinweise veröffentlichen
+
+### Klassifikation von Informationen
+
+<!-- md2apkg ignore-card -->
+
+- Informationen in Bezug auf ihre Vertraulichkeit, Integrität und Verfügbarkeit klassifizieren
+- Rollen zur Klassifizierung: Data Creator, Owner, User, Auditor
+
+### IT-Planungsrat
+
+<!-- md2apkg ignore-card -->
+
+- IT-Koordination
+- IT-Standards: XDOMEA  <!-- LG an Oliver -->
+- Digitalisierung der Verwaltung
+- E-Government-Projekte
+
+### TCSEC (Orange Book)
+
+<!-- md2apkg ignore-card -->
+
+- veralteter Standard an Sicherheitsstufen
+- Level D bis A
+
+### ITSEC
+
+<!-- md2apkg ignore-card -->
+
+- vgl. TCSEC, etwas besser aber zu bürokratisch
+- Funktionalitätsklassen und Qualitätsklassen
+
+### Common Criteria Zertifikate
+
+<!-- md2apkg ignore-card -->
+
+- Bewerbung auf Zertifizierung bei lokaler Behörde (in Deutschland BSI)
+- Hinweise zu Bewerbung etc. auf der Seite des BSI
+- BSI stellt nach Prüfung Report und Zertifikat aus
+- Zertifikat ist 5 Jahre gültig
+- Definition des Target Of Evaluation (TOE)
+- TCSEC und ITSEC haben CC maßgeblich beeinflusst
+
+# KRITIS
+
+<!-- md2apkg ignore-card -->
+
+- sind Einrichtungen mit Bedeutung für das staatliche Gemeinwesen
 - 7 Bereiche
   - Datenminimierung
   - Verfügbarkeit

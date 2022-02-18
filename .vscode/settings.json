@@ -1,17 +1,25 @@
 {
     "cSpell.words": [
         "Abhilfebefugnisse",
+        "Anbieterkennung",
         "BDSG",
         "bspw",
         "datenschutzfreundliche",
+        "DENIC",
         "DHGE",
+        "Dokumentierbarkeit",
         "Domänenrecht",
         "DSFA",
         "Erwägungsgründe",
+        "gehnehmigungspflichtig",
         "KRITIS",
+        "Nichtabstreitbarkeit",
         "Pseudonymisierung",
+        "Publikationspflichten",
+        "Sicherheitsaudits",
         "usepackage",
-        "Verknüpfungsmöglichkeiten"
+        "Verknüpfungsmöglichkeiten",
+        "Zuverlässlichkeit"
     ],
     "markdownlint.config": {
         "MD003": false
