@@ -95,26 +95,6 @@ IT-Infrastrukturen / Sicherheit / Recht
       - [Inhalt einer Datenschutz-Folgeabschätzung](#inhalt-einer-datenschutz-folgeabsch%C3%A4tzung)
       - [Blacklists](#blacklists)
   - [Aufgaben des Verantwortlichen](#aufgaben-des-verantwortlichen)
-  - [Datenschutzmodell](#datenschutzmodell)
-- [Gefährliche IT-Entwicklungen](#gef%C3%A4hrliche-it-entwicklungen)
-  - [Schadensszenarien](#schadensszenarien)
-  - [IT-Sicherheit ist gefährdet bei](#it-sicherheit-ist-gef%C3%A4hrdet-bei)
-  - [Die häufigsten Versäumnisse in Sachen Sicherheit](#die-h%C3%A4ufigsten-vers%C3%A4umnisse-in-sachen-sicherheit)
-  - [Nachgewiesene IT-Sicherheit lohnt sich](#nachgewiesene-it-sicherheit-lohnt-sich)
-  - [Stellenwert der Informationssicherheit](#stellenwert-der-informationssicherheit)
-  - [Grundwerte der Informationssicherheit](#grundwerte-der-informationssicherheit)
-  - [Blickwinkel der IT-Sicherheit](#blickwinkel-der-it-sicherheit)
-    - [Klassischer IT-Sicherheit](#klassischer-it-sicherheit)
-    - [Regulatory Compliance](#regulatory-compliance)
-  - [Gruppenarbeit 16.02.22](#gruppenarbeit-160222)
-    - [BSI](#bsi)
-    - [CERT](#cert)
-    - [Klassifikation von Informationen](#klassifikation-von-informationen)
-    - [IT-Planungsrat](#it-planungsrat)
-    - [TCSEC (Orange Book)](#tcsec-orange-book)
-    - [ITSEC](#itsec)
-    - [Common Criteria Zertifikate](#common-criteria-zertifikate)
-- [KRITIS](#kritis)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -598,7 +578,16 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 - Art. 35: Datenschutzfolgenabschätzung (DSFA) bei Risikoverfahren
 - Art. 32: TOMs (technisch-organisatorische Maßnahmen) $\rightarrow$ Informationssicherheitsmanagementsystem <!-- heh --> (ISMS) etablieren
 
-## Datenschutzmodell
+## Aufgaben des Datenschutzbeauftragten
+
+- Art: 37: Konzernprivileg (u.a.)
+- Art. 39:
+  - Unterrichtung und Beratung des Verantwortlichen
+  - Überwachung der Einhaltung dieser Verordnung
+  - Zusammenarbeit mit Aufsichtsbehörde
+  - Tätigkeiten als Anlaufstelle für Aufsichtsbehörde
+
+## Standard-Datenschutzmodell
 
 - Checkliste für Gewährleistungsziele zum Nachweis der Datenschutzkonformität
 
@@ -749,3 +738,11 @@ Betrachtet...
 <!-- md2apkg ignore-card -->
 
 - sind Einrichtungen mit Bedeutung für das staatliche Gemeinwesen
+- 7 Bereiche
+  - Datenminimierung
+  - Verfügbarkeit
+  - Integrität
+  - Vertraulichkeit
+  - Nichtverkettung
+  - Transparenz
+  - Intervenierbarkeit

@@ -33,6 +33,8 @@ Wahlpflichtmodul Compilerbau
   - [Entwurf](#entwurf)
   - [Arten](#arten)
 - [Lexer-Regeln](#lexer-regeln)
+- [Praxis mit yacc / bison](#praxis-mit-yacc--bison)
+- [Parser mit rek. Abstieg](#parser-mit-rek-abstieg)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -117,3 +119,23 @@ float = ['+'|'-']digit{digit}['.'{digit}][('e'|'E')['+'|'-']digit{digit}]
 Achtung: eigentlich ist der falsch; die Regel kann nicht zwischen Float und Int unterscheiden $\rightarrow$ Zweideutigkeit
 
 - Namenstrenner: Freiräume wie Leertasten, Tabs
+
+# Praxis mit yacc / bison
+
+- bei rekursiven Non-Terminals sollte die leere Alternative zuerst kommen
+- eine Zeile pro Alternative
+
+Bsp.:
+
+```txt
+Input:
+  // Leere Alternative
+  | Line Input
+  ;
+```
+
+- C-Code wird in geschwungene Klammern geschrieben
+
+# Parser mit rek. Abstieg
+
+- einfachste Möglichkeit zur Implementierung eines Compilers
