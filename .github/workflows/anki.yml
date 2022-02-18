@@ -20,7 +20,7 @@ jobs:
       - run: |
           for line in $(cat ${anki.list});
               do inputpath=$(echo $line | awk -F; '{print $1}')
-                 outputpath $(echo $line | awk -F; '{print $2}')
+                 outputpath=$(echo $line | awk -F; '{print $2}')
                  md2apkg -o output/${outputpath} ${inputpath}
               done
       - uses: actions/upload-artifact@master # upload decks as an artifact
