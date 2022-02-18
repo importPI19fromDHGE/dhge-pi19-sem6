@@ -18,7 +18,7 @@ jobs:
       - run: npm install -g md2apkg
       - run: mkdir output
       - run: |
-          for line in $(cat ${anki.list});
+          for line in $(cat anki.list);
               do inputpath=$(echo $line | awk -F; '{print $1}')
                  outputpath=$(echo $line | awk -F; '{print $2}')
                  md2apkg -o output/${outputpath} ${inputpath}
