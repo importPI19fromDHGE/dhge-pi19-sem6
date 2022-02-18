@@ -23,11 +23,14 @@ jobs:
           # nach semicolon steht output-name
           # md2apkg -o output/${outputpath} ${inputpath}
 
-          for inputpath in $(find . -regextype posix-egrep -regex './[A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md')  
+          for inputpath in anki.list
+
+          # $(find . -regextype posix-egrep -regex './[A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md')
 
           do inputpath=$(echo $mdPath | awk -F; '{print $1}')
+             outputpath $(echo $mdPath | awk -F; '{print $2}')
+             md2apkg -o output/${outputpath} ${inputpath}
           done
-          do outputpath $(echo $mdPath | awk -F; '{print $2}')
       - uses: actions/upload-artifact@master # upload decks as an artifact
         with:
           name: output
