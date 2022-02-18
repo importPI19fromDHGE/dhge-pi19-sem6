@@ -8,7 +8,6 @@
 !/.mdl.rb
 !/.mdlrc
 
-
 # github workflows #############################################################
 
 !/.github/
@@ -49,3 +48,7 @@
 !.vscode
 !.vscode/settings.json
 !.vscode/extensions.json
+
+# actions lists #################################################################
+
+!*.list
