@@ -18,17 +18,17 @@ jobs:
       - run: npm install -g md2apkg
       - run: mkdir output
       - run: |
-          for mdPath in $(find . -regextype posix-egrep -regex './[A-Z]*[A-Z]-[A-Z]*[A-Z]/(README|appendix/LKF|appendix/Glossar).md')
-          do name=$(echo $mdPath | awk -F/ '{print $2}')
-               if [[ $mdPath == *"LKF"* ]]
-               then name=$name-LKF
-               fi
-               if [[ $mdPath == *"Glossar"* ]]
-               then name=$name-GLOSSAR
-               fi
-               md2apkg -o output/${name}.apkg ${mdPath}
+          # anki.list Dokument lesen
+          # bis semicolon lesen --> In $Inputpath speichern
+          # nach semicolon steht output-name
+          # md2apkg -o output/${outputpath} ${inputpath}
+
+          for inputpath in $(find . -regextype posix-egrep -regex './[A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md')  
+
+          do inputpath=$(echo $mdPath | awk -F; '{print $1}')
           done
-      - uses: actions/upload-artifact@master # upload pdfs as an artifact
+          do outputpath $(echo $mdPath | awk -F; '{print $2}')
+      - uses: actions/upload-artifact@master # upload decks as an artifact
         with:
           name: output
           path: output
