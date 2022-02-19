@@ -97,7 +97,7 @@ Dabei muss folgende Syntax streng eingehalten werden:
 **Beispiel:**
 
 ```text
-./SCH-IT/appendix/LKF.md;SCHIT.apkg
+./SCH-IT/appendix/LKF.md;SCHIT-LKF.apkg
 ./PRO-K/README.md;PRO.apkg
 
 ```
