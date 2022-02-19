@@ -51,7 +51,7 @@ Alle Kommilitonen PI19 sind dazu eingeladen, ihre eigenen Beiträge zu diesem Pr
 Alle Skripte in diesem Repository sind im `markdown`-Format verfasst. Für dieses existieren [viele verschiedene Standards](https://de.wikipedia.org/wiki/Markdown#Weiterentwicklungen,_Variationen_und_Erg%C3%A4nzungen).
 Auf Github selbst ist der Funktionsumfang von `markdown` im Vergleich zu anderen Standards deutlich eingeschränkt.
 Es ist beispielsweise nicht möglich die Größe von Bilder zu definieren, Metadaten für Dokumente anzugeben oder Mathematische Formel darzustellen.
-Aus diesem Grund wird [`pandoc`](https://pandoc.org/) verwendet, um `markdown`-Dateien mit vielen Funktionserweiterungen in PDFs umzuwandeln.
+Aus diesem Grund wird [`pandoc`](https://pandoc.org/) verwendet, um `markdown`-Dateien mit vielen Funktionserweiterungen in PDFs umzuwandeln. [Siehe unten](### list-Dateien)
 Damit eine Kompatibilität zum Github-`markdown` haben wir eigene Erweiterungen definiert, die im Folgenden beschrieben werden:
 
 ### Markdown-Linter
@@ -81,20 +81,20 @@ Github unterstützt keine mathematischen Formeln.
 Als Workaround gibt es eine [Erweiterung für Chrome](https://github.com/orsharir/github-mathjax).
 Ansonsten können Formeln in ihrer vollen Pracht nur in den PDFs betrachtet werden.
 
-### Anki-Decks
+### list-Dateien
 
-Zusätzlich zu den PDFs generieren wir zu ausgewählten Modulen Anki-Decks.
+Zusätzlich zu den PDFs können aus Markdown-Dokumenten Anki-Decks generiert werden.
 Damit diese möglichst problemlos generiert werden können, sollten auch die Markdown Extensions [hier](https://github.com/Steve2955/md2apkg) beachtet werden.
-
-Um für ein Dokument ein Anki-Deck zu erstellen, muss dieses in die `anki.list` aufgenommen werden.
+Durch einen Eintrag in den Dateien `anki.list` und `pdf.list` wird festgelegt, welche Dokumente als PDF, als Anki-Deck erstellt werden.
 Dabei muss folgende Syntax streng eingehalten werden:
 
 - **pro Zeile** wird **genau ein** Dokument angegeben
-- Eine Zeile besteht aus dem **relativen Pfad** (vom Repo-Stammverzeichnis aus) zur gewünschten Markdown-Datei, gefolgt von einem **Semikolon als Trennzeichen**, gefolgt vom **Dateinamen ohne Pfad** für das Anki-Deck
+- Eine Zeile besteht aus dem **relativen Pfad** (vom Repo-Stammverzeichnis aus) zur gewünschten Markdown-Datei, gefolgt von einem **Semikolon als Trennzeichen**, gefolgt vom **Dateinamen ohne Pfad**
 - es befinden sich **keine Leerzeichen** in einer Zeile
 - die Datei **muss** mit einer **Leerzeile enden**
 
-**Beispiel:**
+**Beispiele**
+anki.list
 
 ```text
 ./SCH-IT/appendix/LKF.md;SCHIT-LKF.apkg
@@ -102,3 +102,10 @@ Dabei muss folgende Syntax streng eingehalten werden:
 
 ```
 
+pdf.list
+
+```text
+./ABC-MUELLER-IT/appendix/LKF.md;MUELLER-ABC-LKF.pdf
+./ML-FELDMANN/README.md;ML.pdf
+
+```
