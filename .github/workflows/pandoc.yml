@@ -15,25 +15,26 @@ jobs:
       - run: |
           mkdir .old &&
           rsync -vr ./* .old/ --exclude .old &&
-          for f in [A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md; do
+            while read -r line;do
+            inputpath=$(echo $line | awk -F\; '{print $1}');
             awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};
               {gsub("<!--pagebreak-->","\\pagebreak")};
               {gsub("<!--newpage-->","\\newpage")};
               {gsub("<!--clearpage-->","\\clearpage")};
               {gsub("<!----------","---")};
               {gsub("---------->","...")};
-              {print}' .old/${f} > ${f} ;
-          done
+              {print}' .old/${inputpath} > ${inputpath} ;
+          done < "pdf.list"
       - run: |
           mkdir output
       - uses: docker://rstropek/pandoc-latex:latest # generate pdfs using pandoc
         with:
           entrypoint: /bin/sh
           args:
-            -c "for file in [A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md;do
-              d=$(echo ${file} | awk -F/ '{print $1}');
-              echo ${filename} ${file} $PATH;
-              pandoc --output=output/${filename}.pdf --resource-path=${filename}/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ${f} || exit 1;
+            -c "while read -r line;do
+              outputfilename=$(echo $line | awk -F\; '{print $2}');
+              echo ${outputfilename} ${line} $PATH;
+              pandoc --output=output/${outputfilename}.pdf --resource-path=${outputfilename}/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ${f} || exit 1;
               done"
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
         with:
