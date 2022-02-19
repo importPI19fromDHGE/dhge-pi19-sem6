@@ -35,7 +35,7 @@ jobs:
               outputfilename=$(echo $line | awk -F\; '{print $2}');
               echo ${outputfilename} ${line} $PATH;
               pandoc --output=output/${outputfilename}.pdf --resource-path=${outputfilename}/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ${f} || exit 1;
-              done"
+              done < 'pdf.list'"
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
         with:
           name: output
