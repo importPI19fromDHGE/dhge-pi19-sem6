@@ -101,4 +101,3 @@ Dabei muss folgende Syntax streng eingehalten werden:
 ./PRO-K/README.md;PRO.apkg
 
 ```
-
