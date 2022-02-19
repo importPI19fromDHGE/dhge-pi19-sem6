@@ -83,13 +83,22 @@ Ansonsten können Formeln in ihrer vollen Pracht nur in den PDFs betrachtet werd
 
 ### Anki-Decks
 
-Zusätzlich zu den PDFs generieren wir zu allen Modulen Anki-Decks.
+Zusätzlich zu den PDFs generieren wir zu ausgewählten Modulen Anki-Decks.
 Damit diese möglichst problemlos generiert werden können, sollten auch die Markdown Extensions [hier](https://github.com/Steve2955/md2apkg) beachtet werden.
 
-Syntax von `anki.list`: Zeilenweise. Pfad zu Datei angeben. Semikolon separiert Namen. Newline am Ende lassen.
+Um für ein Dokument ein Anki-Deck zu erstellen, muss dieses in die `anki.list` aufgenommen werden.
+Dabei muss folgende Syntax streng eingehalten werden:
+
+- **pro Zeile** wird **genau ein** Dokument angegeben
+- Eine Zeile besteht aus dem **relativen Pfad** (vom Repo-Stammverzeichnis aus) zur gewünschten Markdown-Datei, gefolgt von einem **Semikolon als Trennzeichen**, gefolgt vom **Dateinamen ohne Pfad** für das Anki-Deck
+- es befinden sich **keine Leerzeichen** in einer Zeile
+- die Datei **muss** mit einer **Leerzeile enden**
+
 **Beispiel:**
 
 ```text
-./input/path/to/README.md;path.apkg
+./SCH-IT/appendix/LKF.md;SCHIT.apkg
+./PRO-K/README.md;PRO.apkg
+
 ```
 
