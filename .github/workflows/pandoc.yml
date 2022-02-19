@@ -33,8 +33,9 @@ jobs:
           args:
             -c "while read -r line;do
               outputfilename=$(echo $line | awk -F\; '{print $2}');
+              resourcepath=$(echo $line | awk -F\; '{print $1}');
               echo ${outputfilename} ${line} $PATH;
-              pandoc --output=output/${outputfilename} --resource-path=${outputfilename}/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ${f} || exit 1;
+              pandoc --output=output/${outputfilename} --resource-path=${resourcepath}/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ${resourcepath} || exit 1;
               done < 'pdf.list'"
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
         with:
