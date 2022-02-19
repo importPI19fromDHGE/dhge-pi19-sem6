@@ -15,13 +15,26 @@ jobs:
       - run: |
           mkdir .old &&
           rsync -vr ./* .old/ --exclude .old &&
-          for f in [A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md; do awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/${f} > ${f} ; done
+          for f in [A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md; do
+            awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};
+              {gsub("<!--pagebreak-->","\\pagebreak")};
+              {gsub("<!--newpage-->","\\newpage")};
+              {gsub("<!--clearpage-->","\\clearpage")};
+              {gsub("<!----------","---")};
+              {gsub("---------->","...")};
+              {print}' .old/${f} > ${f} ;
+          done
       - run: |
           mkdir output
       - uses: docker://rstropek/pandoc-latex:latest # generate pdfs using pandoc
         with:
           entrypoint: /bin/sh
-          args: -c "for f in [A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md; do d=$(echo ${f} | awk -F/ '{print $1}');echo ${d} ${f} $PATH; pandoc --output=output/${d}.pdf --resource-path=${d}/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ${f} || exit 1; done"
+          args:
+            -c "for file in [A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md;do
+              d=$(echo ${file} | awk -F/ '{print $1}');
+              echo ${filename} ${file} $PATH;
+              pandoc --output=output/${filename}.pdf --resource-path=${filename}/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ${f} || exit 1;
+              done"
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
         with:
           name: output
@@ -43,5 +56,5 @@ jobs:
           name: PDFs
           body: Dieses Release wurde automatisch erstellt
           gzip: false
-          files: output/[A-Z]*[A-Z]-[A-Z]*[A-Z].pdf
+          files: output/*.pdf
           allow_override: true
