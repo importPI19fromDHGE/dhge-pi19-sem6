@@ -81,11 +81,11 @@ Github unterstützt keine mathematischen Formeln.
 Als Workaround gibt es eine [Erweiterung für Chrome](https://github.com/orsharir/github-mathjax).
 Ansonsten können Formeln in ihrer vollen Pracht nur in den PDFs betrachtet werden.
 
-### list-Dateien
+### Dateilisten für Anki-Decks und PDFs
 
 Zusätzlich zu den PDFs können aus Markdown-Dokumenten Anki-Decks generiert werden.
 Damit diese möglichst problemlos generiert werden können, sollten auch die Markdown Extensions [hier](https://github.com/Steve2955/md2apkg) beachtet werden.
-Durch einen Eintrag in den Dateien `anki.list` und `pdf.list` wird festgelegt, welche Dokumente als PDF, als Anki-Deck erstellt werden.
+Durch einen Eintrag in den Dateien `anki.list` und `pdf.list` wird festgelegt, welche Dokumente als Anki-Deck bzw. PDF erstellt werden.
 Dabei muss folgende Syntax streng eingehalten werden:
 
 - **pro Zeile** wird **genau ein** Dokument angegeben
@@ -94,6 +94,7 @@ Dabei muss folgende Syntax streng eingehalten werden:
 - die Datei **muss** mit einer **Leerzeile enden**
 
 **Beispiele**
+
 anki.list
 
 ```text
