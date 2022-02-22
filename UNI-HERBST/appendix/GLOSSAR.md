@@ -37,13 +37,11 @@ Haupt-Editoren für dieses Dokument: nukerxy
 
 <!-- md2apkg ignore-card -->
 
-Im Kurs tauchen Begriffe von CAD,CG auf. Dazu bitte im Sem 5 nachschauen.
+Im Kurs tauchen viele Begriffe von CAD,CG auf. Dazu bitte im [Sem5](https://github.com/importPI19fromDHGE/dhge-pi19-sem5/blob/main/GDV-HERBST/appendix/Glossar.md) nachschauen.
 
-## Geometrische Schnittstelle
+## Geometrische Schnittstelle und Beispiele
 
 Realisierung des Datenaustauschs z. B. bei CAD- und DCC-Systemen
-
-## Beispiele Geometrische Schnittstelle
 
 - JT
 - STEP
@@ -97,9 +95,21 @@ Vertiefung für Drehung mit Anwendung z. B: in PLM-Systemen und in 3ds max in An
 
 TODO
 
+siehe https://de.wikipedia.org/wiki/Level_of_Detail
+
+auch Verwendung im JT-Format für den Datenaustausch (siehe Tesselierung).
+
 ## Lichtquellen
 
 TODO
+
+verschiedene Lichausbreitungsberechnungen (Energieerhaltung). <!-- ?! --->
+Informationen z. B. auch bei DirectX/Direct3D: https://docs.microsoft.com/de-at/windows/uwp/graphics-concepts/light-types
+zusätzlich siehe Image Based Lighting (IBL)
+
+siehe u.a. auch Arnold Renderer: https://docs.arnoldrenderer.com/display/A5AF3DSUG/Lights
+
+Alternativbegriffe: Lichttypen
 
 ## Materialbeschreibung
 
@@ -110,11 +120,13 @@ Parameter zur Beschreibung der optischen Eigenschaften eines Werkstoffs.
 - neue Anforderungen für Echtzeitvisualisierungen
 - einfache Modelle z. B. für Phon Beleuchtungsmodell und Phong Shading
 
-Wechsel zu physikbasierten Materialbeschreibungen (PBR-Materialien) z. B. NVIDIA Material Definition Language (MDL)  https://developer.nvidia.com/mdl-sdk oder MaterialX https://www.materialx.org/ oder auch glTF
+Wechsel zu physikbasierten Materialbeschreibungen (PBR-Materialien)
+z. B. NVIDIA Material Definition Language (MDL)  https://developer.nvidia.com/mdl-sdk oder MaterialX https://www.materialx.org/ oder auch glTF
 
 ## Metadaten
 
-Zusätzliche Informationen z. B. in Dateien (3D-Modelle und Pixelbilder). Beispiele für Fotos z. B. EXIF (Exchangeable Image File Format). Siehe auch geometrische Schnittstellen wie JT und STEP.
+Zusätzliche Informationen z. B. in Dateien (3D-Modelle und Pixelbilder). Beispiele für Fotos z. B. EXIF (Exchangeable Image File Format).
+TODO: Siehe auch geometrische Schnittstellen wie JT und STEP.
 
 Ablage z. B. auch in Datenbanksystemen wie z. B. für PDM, PLM und Assetmanagement.
 
@@ -128,25 +140,20 @@ z. B. Vergleich CPU vs. GPU: https://knowledge.autodesk.com/de/support/3ds-max/t
 
 ## Shader
 
-Hardware- bzw. Softwaremodule zur Berechnung im Umfeld der Computergrafik. https://en.wikipedia.org/wiki/Shader
+Hardware- bzw. Softwaremodule zur Berechnung im Umfeld der Computergrafik. TODO: https://en.wikipedia.org/wiki/Shader
 
-siehe Aufgabe Grafikkarten und Grafikpipeline
-
-siehe Grafische Schnittstellen (API)
-
-siehe Beleuchtungsmodelle
+- siehe Aufgabe Grafikkarten und Grafikpipeline
+- siehe Grafische Schnittstellen (API)
+- siehe Beleuchtungsmodelle
 
 ## Tesselierung
 
-
 Zerlegung einer exakten Geometrie in ebene Flächen (meist Dreiecke oder Vierecke -"triangulated or quadrangulated polygon Meshes" ).
-
 a) beim Datenaustausch (z. B. JT-Format oder Formate aus dem DCC-Bereich)
-
 b) in Echtzeit siehe Grafische Schnittstellen
 
+TODO
 siehe: https://en.wikipedia.org/wiki/Tessellation_(computer_graphics)
-
 siehe  z. B. https://www.khronos.org/opengl/wiki/Tessellation
 
 
