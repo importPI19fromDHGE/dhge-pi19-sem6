@@ -430,3 +430,111 @@ Bei Außeneinsätzen bei denen Beweismittel vor Ort erhoben werden müssen, werd
 - nützlich für:
   - kritische Nachfragen souverän beantworten
   - Zeitaufwand / Kosten berechnen
+
+# ISO 27037
+
+## beteiligte Akteure
+
+- Ersteinschreiter für digitale Beweismittel (Digital Evidence First Responder - DEFR)
+- Spezialist für digitale Beweismittel (Digital Evidence Specialist - DES)
+
+## DEFR und DES sollten in jedem Fall?
+
+- alle Maßnahmen dokumentieren
+- Methoden anwenden, mit welchen die Fehlerfreiheit und Verlässlichkeit der Kopie von potentiellen digitalen Beweismitteln festgestellt werden kann
+- Erkennen, dass der Vorgang der Erhaltung von potentiellen digitalen Beweismitteln nicht immer eingriffsfrei erfolgen
+
+## Grundlegende Aspekte bei der Bearbeitung von digitalen Beweismitteln
+
+- Auditierbarkeit
+- Wiedeholbarkeit
+- Begründbarkeit
+- Reproduzierbarkeit
+
+## Prozess zur Handhabung von digitalen Beweismitteln
+
+- Überblick
+  - Arbeit am Original auf ein Mindestmaß beschränken
+  - Nachweis aller Änderungen
+  - Keine Maßnahmen über den eigenen Kompetenzbereich
+- Identifikation
+  - Physisch oder logische Form
+  - Suche, Erkennung und Dokumentation digitaler Beweismittel
+- Mitnahme
+  - Mitnahme oder Sicherung?
+  - Zustände können sein:
+    - System ist ausgeschalten
+    - System angeschalten
+  - Kosten- und Zeitfaktor beachten
+- Sicherung
+  - Erstellen digitaler Kopien
+  - Methode muss reproduzierbar und verifizierbar sein
+  - Falls Prozesse nicht verifiziert werden können $\rightarrow$ Dokumentieren
+- Erhaltung
+  - Potentielle Beweismittel sollen erhalten bleiben
+  - Umfasst Schutz vor Verfälschung oder Zerstörung
+  - Solle in allen Bearbeitungsprozessen sichergestellt werden
+
+## Obhutskette
+
+- DEFR sollte immer in der Lage sein, die Verantwortung für alle erhobenen Daten und entgegengenommenen Geräte über den Zeitraum, in dem sie sich in seinem Gewahrsam befinden, zu tragen
+- Protokoll der Obhutskette führen
+  - chronologisch wird die Weitergabe und Bearbeitung festgehalten
+- Sollte folgendes enthalten:
+  - eine eindeutige Beweismittelkennzeichnung
+  - wer Zugriff auf das Beweismittel hatte, sowie Ort und Zeit der Zugriffs
+  - wer das Beweismittel in der Beweiserhaltungseinrichtung eingereicht hat und sich das Beweismittel dort herausgeben lassen hat, sowie die jeweiligen Zeitpunkte (inkl. Grund für Herausgabe)
+  - alle unvermeidbaren Änderungen an den potentiellen digitalen Beweismitteln sowie der Name der dafür verantwortlichen Person und die Begründung für die Durchführung der Änderung
+
+## Grundregeln für das Verhalten am Tator
+
+- ruhig und überlegt vorgehen
+- je unklarer die Lage, desto weiträumiger die Sicherung
+- Einsatzfahrzeuge nicht an den unmittelbaren Tatort bringen
+- nur Ausrüsung/persönliche Dinge an den Tatort bringen, die benötigt werden
+- keine Einrichtungen am Tatort nutzen
+- nicht essen, trinken, rauchen!
+- grundsätzlich nichts anfassen, verändern, verlegen etc.
+- Kontamination vermeiden
+- keine eigenen Spuren hinterlassen
+- erforderliche Veränderungen markieren und dokumentieren
+
+## Allgemeine Vorkehrungen am Untersuchungsort
+
+- Sichern und Kontrollieren des Bereis, in dem sich die Geräte befinden
+- Bestimmung der Person, die für den Ort die fachliche Verantwortung trägt
+- Sicherstellen, dass Personen von den Geräten und von der Stromversorgung ferngehalten werden
+- Alle Personen dokumentieren, die Zugang zum Ort haben oder für die ein Motiv für eine Beteiligung am Untersuchungsort vorliegen könnte
+- Ist das Gerät eingeschaltet, darf das Gerät nicht ausgeschaltet werden und umgekehrt
+- Untersuchungsort mit allen Komponenten und Kabeln in seiner ursprünglichen Position dokumentieren
+- Falls zulässig: Bereiche nach Gegenstände, wie Haftnotizen, Terminkalender, Akten, Laptops oder Handbücher für Hard- und Software durchsuchen
+
+## Personelle Vorkehrungen am Untersuchungsort
+
+- Sind Personen, gegen die ermittelt wird, anwesend? Falls ja, sind sie gewaltbereit?
+- Zu welcher Tageszeit erfolgt der Einsatz?
+- Kann der Untersuchungsort vor unbeteiligten Dritten abgeschirmt werden?
+- Befinden sich Waffen in diesem Bereich?
+- Bestehen objektive Risiken für anwesende Personen
+- Könnte irgendetwas in der Nähe, einschließlich des Gerätes, so konfiguriert worden sein, dass es zu Körperverletzungen führen kann, falls es auf unangemessene Weise bearbeitet wird, z. B. versteckte Falle?
+- Ist es wahrscheinlich, dass das zu sammelnde Beweismaterial psychische Schäden oder eine anstößige Wirkung hervorruft
+- Kann der Untersuchungsort als unsicher betrachtet werden?
+
+## potentielle Digitale Beweismittel am Untersuchungsort
+
+Risikobeurteilung durchführen und folgende Fragen Stellen:
+
+- Welche Art von Mitnahme-/Sicherungsmethode wird angewendet?
+- Welche Ausrüstung wird möglicherweise vor Ort benötigt?
+- Inwieweit sind die Daten und Informationen im Hinblick auf die potentiellen digitalen Beweismittel flüchtig?
+- Ist ein Fernzugriff auf irgendein digitales Gerät möglich und stellt er eine Bedrohung für die Beweismittelintegriät dar?
+- Was passiert, wenn der Datenbestand beschädigt ist?
+- Könnte der Datenbestand beeinträchtigt worden sein?
+- Könnte das digitale Gerät so konfiguriert worden sein, dass Daten zerstört (bspw. eine sog. Logikbombe), vereitelt oder verschleiert werden, wenn das Gerät ausgeschaltet wird oder ein unkontrolliert Zugriff darauf erfolgt?
+
+## Erhebung von nicht digitalen Beweisen
+
+- vom DEFR sollten auch nicht digitale beweise berücksichtigt werden, diese können zusätzliche Informationen liefern, wie bspw. Passwörter, Handbücher usw.
+- Es ist die Person zu identifizieren, welche für die Einrichtung am Vorfall-Ort verantwortlich ist
+- DEFR muss Name und Position dieser Person dokumentieren
+- Es kann notwendig sein, dass der DEFR mit weiteren Personen vor Ort spricht
