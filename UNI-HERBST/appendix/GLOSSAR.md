@@ -55,10 +55,6 @@ Realisierung des Datenaustauschs z. B. bei CAD- und DCC-Systemen
 
 Schritte zur Umsetzung einer Grafischen Darstellung aus dem zwei- oder dreidimensionalen Raum [siehe Wikipedia](https://de.wikipedia.org/wiki/Grafikpipeline); als Beispiel die [Rendering Pipeline von Direct3D](https://docs.microsoft.com/en-us/windows-hardware/drivers/display/rendering-pipeline)
 
-
-Schritte zur Umsetzung einer Grafischen Darstellung aus dem zwei- oder dreidimensionalen Raum (siehe https://de.wikipedia.org/wiki/Grafikpipeline )
-
-
 ## Beispiele Grafikpipeline
 
 - Koordinatensysteme
