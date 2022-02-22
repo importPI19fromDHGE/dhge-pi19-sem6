@@ -265,3 +265,168 @@ Es gibt keinen Tatort ohne Spuren!
 - Ursache und Auswirkungen: Verbindung zwischen digitalen Spuren, Ereignissen und Personen sind herstellbar
 - Dokumentation: Ermittlungsprozess ist nachvollziehbar dokumentiert
 - keine gesetzlichen Vorgaben für forensische Untersuchung
+
+# Forensic Readiness
+
+- beschäftigt sich mit Maßnahmen zur Vorbereitung auf digitale forensische Untersuchungen innerhalb Organisationen
+- Ziele:
+  - Systeme sollen in der Lage sein, bessere und belastbare digitale Spuren zu sammeln
+  - Die Kosten für eine forensische Untersuchung sollen verringert werden
+- Aus welchem Grund?
+  - Art. 33 DSGVO (Meldung von Verletzung des Schutzes personenbezogener Daten an die Aufsichtsbehörden)
+
+## Zielsetzung eines Betroffenen
+
+- Schnelle Behebung:
+  - Im Vordergrund steht dier zeitnahe Wiederverwendung der betroffenen Systeme
+  - Die Ursache des Problems tritt in den Hintergrund
+  - Es wird keine Sicherung von Beweisen gefordert
+  - **Nachteil**: Es besteht die Gefahr, dass nicht in jedem Fall eine vollständige Bereinigung erzielt werden kann
+- Vollständige Aufklärung:
+  - Ganzheitlicher Ansatz zur gefahrlosen Wiederverwendung der entsprechenden Systeme
+  - Es ist eine genaue Analyse durchzuführen, um Schadensausmaß und Angriffswege zu ermitteln
+  - Beweissicherung durch Systemabbilder, Log-Dateien und Erfassen des Netzwerkverkehrs
+  - **Nachteil**: Heterogene Systemlandschaften erfordern ein hohes Maß an Analyse und Know-How $\rightarrow$ Zeitaufwendig
+
+## Forensic Readiness: Dimensionen
+
+- personelle, technische und organisatorische Maßnahmen und Methoden
+- Maßnahmen und Methoden werden durch rechtliche Aspekte beeinflusst
+
+## Der forensische Arbeitsplatz
+
+Die Basis für die Untersuchung der Beweismittel stellt der Analysecomputer dar, welcher als eigenständiges Gerät physikalisch getrennt vom Büro- und Internetcomputer eingerichtet sein sollte.
+
+- Forensische Workstation
+  - Sehr gute Hardwareausstattung auf aktuellem Stand der Technik
+  - Duales Betriebssystem
+  - Virenscanner und Firewall
+- Office Computer für Schriftsachen
+  - Verschlüsselung nutzen!
+  - Interne Netzwerkanbindung, kein Internetzugang!
+- Internet Computer
+  - Keine sensiblen Daten eingeben oder speichern!
+  - Aktuelle Anti-Viren-Software verwenden!
+  - Auch als VM einsetzbar!
+
+## Forensic Readiness: Transportable Workstations
+
+Bei Außeneinsätzen bei denen Beweismittel vor Ort erhoben werden müssen, werden geeignete transportable Datensicherungsworkstations notwendig.
+
+## Forensic Readiness: Schreibschutzadapter
+
+- Für die Datensicherung im Labor, wie auch im Außeneinsatz, sind Schreibschutzadapter unerlässlich
+- Grundlegend sollten folgende Schnittstellen abgedeckt werden: IDE, SATA, USB 3.0, FireWire
+- Nice to have: SAS, SCSI, PCIE
+
+## Forensic Readiness: Technische Maßnahmen
+
+- auf Server-PCs: Logging und Gruppenrichtlinien konfigurieren
+- für jeden Benutzer-PC: Betriebssysteme konfigurieren
+- Beispiele:
+  - Wiederherstellungs-Passworte für Festplatten-Verschlüsselung
+  - lokales Logging aktivieren
+
+## Forensic Readiness: Organisatorische Maßnahmen
+
+- Responsive Teams
+- Hardware und Sofware beschaffen
+  - Forensik-Workstation
+  - Forensik-Hardware
+  - Forensik-Software
+- Weitere Organisatorische Maßnahmen
+  - Prozess für forensische Untersuchung aufbauen
+  - Verantwortlichen benennen
+  - Budget bereitstellen: Personal, Hardware, Software, Fortbildung
+  - Kompetenzen aufbauen: für eigene Untersuchungen? für externe Beauftragungen?
+  - Räumlichkeiten schaffen: Zutrittssicherheit, Tresor
+
+## Forensic Readiness: Optionale Maßnahmen
+
+- Planen! Untersuchungsziel präzise festlegen (lassen)!
+- Vorauswahl an relevanten Datenquellen treffen
+- Entscheiden:
+  - Post-mortem-Forensik? Live-Forensik?
+  - Welche Geräte / Datenträger / Daten?
+
+# ???
+
+# Datensammlung: Beweisführung im Zivil- oder Strafverfahren
+
+- Sicherung digitaler Beweismittel und Spuren
+- Die Sicherung von digitalen Beweisspuren kann auf zwei Arten geschehen:
+- Logische Sicherung
+  - auf Betriebssystemebene
+  - mit Mitteln des Betriebssystems
+  - Mit Drittanwendersoftware
+  - erfolgt Betriebssystemabhängig
+- Physikalische Sicherung
+  - Auf Hardwareebene
+  - mit hardwaretechnischen Hilfsmitteln
+  - mit softwaretechnischen Hilfsmitteln
+  - erfolgt Betriebssystem unabhängig
+
+# Sicherung besonderer digitaler Beweismittel und Spuren
+
+- Logfiles und Daten im Netzwerk
+  - meist erfolgt eine logische Sicherung mit geeigneten Tools
+- Flüchtige Daten / Hauptspeicherinhalte
+  - kann direkt mittels DMA (Direct Memory Access) erfolgen
+  - Cold-Boot
+  - Auswertung erfolgt Post-Mortem
+
+# Datensammlung: Die wichtigsten Regeln
+
+- möglichst keine Veränderungen vornehmen an betroffenen digitalen Beweismitteln
+- das bedeutet: Änderungen an Datenträgern mit geeigneten technischen Möglichkeiten sofern möglich unterbinden
+- eine Dokumentation aller Arbeitsschritte, Veränderungen an Daten, mit konkreten Zeitangaben während der Sicherung von Daten ist unerlässlich
+- Schreibblocker verwenden oder Datenträger mit Live-System als Read-Only mounten
+- Hashwerte verwenden
+
+# Hashwerte: Einsatzzwecke
+
+- Datenintegritätsprüfungen
+  - Überprüfung von Datensicherungen
+  - Überprüfung von Passwörtern
+- Dateninhaltsvergleiche
+  - KiPo-Vergleich von Bildern in Kinderpornographie Verfahren mit Hash Datenbanken
+  - Wirtschaftsspionage-Vergleich von Daten eines Unternehmens beim Auffinden in unternehmensfremden Umgebungen
+  - NSRL (National Software Reference Library Hash Daten)-Herausfiltern von betriebssystemspezifischen Dateien ohne Relevanz
+  - UrhG-Erkennen urheberrechtlich geschützter Werke durch Hash-Abgleich (MD4-Emule)
+
+# mögliche forensische Untersuchungstechniken
+
+- Wiederherstellen gelöschter Objekte
+- Hashwertüberprüfungen
+- File Carving
+- Textsuchen
+- Slack-Untersuchungen
+
+# Datensammlung Software
+
+- EnCase von Guidance Software
+- FTK von Access Data
+- X-Ways Forensics von X-Ways AG (!)
+- The Sleuthkit und Autopsy
+- DFF - Digital Forensic Framework
+
+**kostenfreie Werkzeuge:**
+
+- dd, ddrescue, dcfldd (Harbour), dc3dd (Kornblum)
+- grep, strings, find
+- hexdump
+- ...
+
+# Datensammlung
+
+- wichtig: Verlaufsdokumentation!
+  - Welche Daten gesammelt?
+  - Wozu?
+  - Wann?
+  - Durch wen?
+  - Wie?
+  - Welches Zwischenergebnis?
+  - Wann löschen?
+- nützlich für:
+  - kritische Nachfragen souverän beantworten
+  - Zeitaufwand / Kosten berechnen
