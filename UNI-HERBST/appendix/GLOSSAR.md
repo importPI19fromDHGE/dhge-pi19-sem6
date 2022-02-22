@@ -32,7 +32,6 @@ Haupt-Editoren für dieses Dokument: nukerxy
 
 <!--newpage-->
 
-
 # Glossareinträge
 
 <!-- md2apkg ignore-card -->
