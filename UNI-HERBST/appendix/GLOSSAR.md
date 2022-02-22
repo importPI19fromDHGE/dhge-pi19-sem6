@@ -15,7 +15,7 @@ header-includes:
 
 ---------->
 
-Unity Echtzeitvisualisierung
+Unity-Glossar
 ===========================================
 
 <!-- md2apkg ignore-card -->
@@ -33,7 +33,7 @@ Haupt-Editoren für dieses Dokument: nukerxy
 <!--newpage-->
 
 
-# Unity-Glossar
+# Glossareinträge
 
 <!-- md2apkg ignore-card -->
 
