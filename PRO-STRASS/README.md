@@ -538,3 +538,106 @@ Risikobeurteilung durchführen und folgende Fragen Stellen:
 - Es ist die Person zu identifizieren, welche für die Einrichtung am Vorfall-Ort verantwortlich ist
 - DEFR muss Name und Position dieser Person dokumentieren
 - Es kann notwendig sein, dass der DEFR mit weiteren Personen vor Ort spricht
+
+# Tatortfotographie
+
+<!-- md2apkg ignore-card -->
+
+nicht prüfungsrelevant!
+
+# Dokumentation
+
+- Dokumentation aller Schritte ist unerlässlich
+- Alle durchgeführten Schritte sind zu dokumentieren
+- Best Practice
+  - Heft / Block und einfach handschriftlich beschreiben, was durchgeführt wurde
+  - Wieso handschriftlich?
+    - geht i.d.R. schneller
+    - handschriftliche Aufzeichnungen sind hinterher schwerer zu verändert oder zu fälschen
+    - Änderungen bleiben erkennbar
+    - Muss etwas geändert werden, dann sollte die betroffene Stelle Stelle durchgestrichen werden, so dass der ursprüngliche Text noch lesbar bleibt
+
+# Bekämpfung der Computerkriminalität
+
+## Incident Handling
+
+- organisierter Ansatz zur Lösung und Bewältigung der Folgen einer Sicherheitsverletzung respektive eines Angriffs auf die IT-Infrastruktur
+- Ziel ist: die Situation in geeigneter Weise handhaben; Schaden begrenzen, verringern; Recovery Zeit und anfallende Kosten minimieren
+- Ursache des Zwischenfalls erkennen; geeignete Maßnahmen treffen; weitere Zwischenfälle verhindern oder gar Angreifer identifizieren
+
+## CERT
+
+- Computer Emergency Response Team
+- unterstützt Unternehmen bei IT-Zwischenfällen
+
+# E-Mail-Header-Analyse
+
+- `received`-Einträge: Server, der die Email bearbeitet haben
+
+## Welche Angaben kann der Angreifer manipulieren?
+
+- From, To, Date, Subject, Message-ID
+- `received` lässt sich nur mit hohem Aufwand manipulieren
+
+# Betriebssysteme
+
+## Windows
+
+- Unterstützte Dateisysteme: Fat 12/16/32, NTFS, ExFAT, CDFS/UDF
+- Unterstützte Architekturen: X86 (32 Bit), X64/iA64 (64 Bit)
+- Kategorien von Nutzerdaten: Benutzerdaten, Systemdaten, Softwaredaten
+
+### wichtige Verzeichnispfade
+
+- Systemdaten unter `WINDOWS`, `WIN`, oder `WINNT`
+- Softwaredaten unter `Programme` oder`Program Files`
+- Benutzerdaten im Benutzerverzeichnis
+- Einstellungen und Anwendungsspezifische Daten `AppData\Local`, `AppData\LocalLow` und `AppData\Roaming`
+  - `AppData\Local` $\rightarrow$ temporäre Dateien
+  -`AppData\Roaming` $\rightarrow$ Anwendungseinstellungen, können im Firmennetz ausgetauscht werden
+  - `AppData\LocalLow` $\rightarrow$ für Programme, die nirgendwo anders hin schreiben dürfen (bspw. Browser-Addons)
+
+### Windows Benutzerverwaltung mittels SID
+
+- Security Identifier
+- jedes System, jeden Nutzer und jede Gruppe kann durch SID dauerhaft identifiziert werden
+
+### Windows Registry
+
+- Daten werden in sog. Registrierungshives aufgeteilt und in Schlüsselns mit Key Value pairs gespeichert
+- Die Datenbanken liegen in Dateiform in `C:/Windows/System32/Config`
+- Die Benutzerspezifischen liegen in `C:/Users/User/`
+
+### Windows ShadowCopies
+
+- Snapshots des Systems
+
+### Windows Prefatch Dateien
+
+- welche Programme wurden ausgeführt?
+
+### Windows UserAssist Keys
+
+- geben Auskunft über gestartete Anwendungen und genutzte Schaltflächen im Windows Explorer
+
+### Windows Auslagerungsdateien
+
+- `swapfile.sys`
+- `pagefile.sys`
+- `hiberfil.sys`
+
+### Windows ADS
+
+- "Alternative Data Stream"
+- benötigt um: macintosh-Dateien unter NTFS zu verwalten, Antiviren-Programme verwenden z.T. ADS um Prüfsummen zu speichern
+- Herkunft der Dateien wird vom System gespeichert (lokal oder Internet)
+- Transaktionsdaten des Dateisystems werden gespeichert
+
+## MacOS
+
+- Unterstützte Dateisysteme: FAT12/16/32 und NTFS (nur lesend), exFAT, HFS/HFS+, CDFS, APFS
+- Unterteilung in Systemdaten, Benutzerdaten und Softwaredaten
+
+## Linux
+
+## Hacking
