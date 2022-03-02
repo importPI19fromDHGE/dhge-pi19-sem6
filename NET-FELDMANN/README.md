@@ -24,7 +24,25 @@ Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Platzhalter](#platzhalter)
+- [Prüfungsleistung](#pr%C3%BCfungsleistung)
+- [Einleitung und grundlegende Begriffe](#einleitung-und-grundlegende-begriffe)
+  - [Definition verteiles System](#definition-verteiles-system)
+  - [zentrale Zielsetzung verteilter Systeme](#zentrale-zielsetzung-verteilter-systeme)
+  - [Basismechanismen verteilter Systeme](#basismechanismen-verteilter-systeme)
+  - [Systemarchitekturen und Modelle](#systemarchitekturen-und-modelle)
+    - [Mehrstufige Architekturen](#mehrstufige-architekturen)
+    - [zentrale Vorteile mehrstufiger Architekturen](#zentrale-vorteile-mehrstufiger-architekturen)
+  - [Client-Server-Modell](#client-server-modell)
+  - [Objektorientiertes Modell](#objektorientiertes-modell)
+  - [Exkurs: Parameterübergabe](#exkurs-parameter%C3%BCbergabe)
+  - [Vergleich Client/Server vs. OO-Modell](#vergleich-clientserver-vs-oo-modell)
+  - [Komponenten-basiertes Modell](#komponenten-basiertes-modell)
+  - [dienstorientiertes Modell](#dienstorientiertes-modell)
+  - [P2P-Architektur](#p2p-architektur)
+  - [Grid Computing](#grid-computing)
+  - [Cloud Computing](#cloud-computing)
+    - [Klassifizierung von Clouds](#klassifizierung-von-clouds)
+  - [Middleware](#middleware)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 <!--NET hier, aber haben Sie schon mal eine Firma gegründet?-->
