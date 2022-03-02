@@ -70,6 +70,7 @@ Computerforensik
 - [ISO 27037](#iso-27037)
   - [beteiligte Akteure](#beteiligte-akteure)
   - [DEFR und DES sollten in jedem Fall?](#defr-und-des-sollten-in-jedem-fall)
+  - [Grundsätze in der digitale Forensik](#grunds%C3%A4tze-in-der-digitale-forensik)
   - [Grundlegende Aspekte bei der Bearbeitung von digitalen Beweismitteln](#grundlegende-aspekte-bei-der-bearbeitung-von-digitalen-beweismitteln)
   - [Prozess zur Handhabung von digitalen Beweismitteln](#prozess-zur-handhabung-von-digitalen-beweismitteln)
   - [Obhutskette](#obhutskette)
@@ -97,6 +98,7 @@ Computerforensik
     - [Windows ADS](#windows-ads)
   - [MacOS](#macos)
   - [Linux](#linux)
+    - [Linux-Dateisysteme](#linux-dateisysteme)
   - [Hacking](#hacking)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
