@@ -326,7 +326,7 @@ Es gibt keinen Tatort ohne Spuren!
 ## Zielsetzung eines Betroffenen
 
 - Schnelle Behebung:
-  - Im Vordergrund steht dier zeitnahe Wiederverwendung der betroffenen Systeme
+  - Im Vordergrund steht die zeitnahe Wiederverwendung der betroffenen Systeme
   - Die Ursache des Problems tritt in den Hintergrund
   - Es wird keine Sicherung von Beweisen gefordert
   - **Nachteil**: Es besteht die Gefahr, dass nicht in jedem Fall eine vollständige Bereinigung erzielt werden kann
@@ -334,7 +334,7 @@ Es gibt keinen Tatort ohne Spuren!
   - Ganzheitlicher Ansatz zur gefahrlosen Wiederverwendung der entsprechenden Systeme
   - Es ist eine genaue Analyse durchzuführen, um Schadensausmaß und Angriffswege zu ermitteln
   - Beweissicherung durch Systemabbilder, Log-Dateien und Erfassen des Netzwerkverkehrs
-  - **Nachteil**: Heterogene Systemlandschaften erfordern ein hohes Maß an Analyse und Know-How $\rightarrow$ Zeitaufwendig
+  - **Nachteil**: Heterogene Systemlandschaften erfordern ein hohes Maß an Analyse und Know-How $\rightarrow$ zeitaufwendig
 
 ## Forensic Readiness: Dimensionen
 
@@ -382,7 +382,7 @@ Bei Außeneinsätzen bei denen Beweismittel vor Ort erhoben werden müssen, werd
   - Forensik-Workstation
   - Forensik-Hardware
   - Forensik-Software
-- Weitere Organisatorische Maßnahmen
+- Weitere organisatorische Maßnahmen
   - Prozess für forensische Untersuchung aufbauen
   - Verantwortlichen benennen
   - Budget bereitstellen: Personal, Hardware, Software, Fortbildung
@@ -407,12 +407,12 @@ Bei Außeneinsätzen bei denen Beweismittel vor Ort erhoben werden müssen, werd
   - auf Betriebssystemebene
   - mit Mitteln des Betriebssystems
   - Mit Drittanwendersoftware
-  - erfolgt Betriebssystemabhängig
+  - erfolgt abhängig von Betriebssystem
 - Physikalische Sicherung
   - Auf Hardwareebene
   - mit hardwaretechnischen Hilfsmitteln
   - mit softwaretechnischen Hilfsmitteln
-  - erfolgt Betriebssystem unabhängig
+  - erfolgt betriebssystem**un**abhängig
 
 # Sicherung besonderer digitaler Beweismittel und Spuren
 
@@ -440,7 +440,7 @@ Bei Außeneinsätzen bei denen Beweismittel vor Ort erhoben werden müssen, werd
   - KiPo-Vergleich von Bildern in Kinderpornographie Verfahren mit Hash Datenbanken
   - Wirtschaftsspionage-Vergleich von Daten eines Unternehmens beim Auffinden in unternehmensfremden Umgebungen
   - NSRL (National Software Reference Library Hash Daten)-Herausfiltern von betriebssystemspezifischen Dateien ohne Relevanz
-  - UrhG-Erkennen urheberrechtlich geschützter Werke durch Hash-Abgleich (MD4-Emule)
+  - UrhG: Erkennen urheberrechtlich geschützter Werke durch Hash-Abgleich (MD4-Emule)
 
 # mögliche forensische Untersuchungstechniken
 
@@ -491,6 +491,14 @@ Bei Außeneinsätzen bei denen Beweismittel vor Ort erhoben werden müssen, werd
 - alle Maßnahmen dokumentieren
 - Methoden anwenden, mit welchen die Fehlerfreiheit und Verlässlichkeit der Kopie von potentiellen digitalen Beweismitteln festgestellt werden kann
 - Erkennen, dass der Vorgang der Erhaltung von potentiellen digitalen Beweismitteln nicht immer eingriffsfrei erfolgen
+
+
+## Grundsätze in der digitale Forensik
+
+- Relevanz
+- Vollständigkeit
+- Verlässlichkeit
+- Rechtmäßigkeit
 
 ## Grundlegende Aspekte bei der Bearbeitung von digitalen Beweismitteln
 
@@ -549,7 +557,7 @@ Bei Außeneinsätzen bei denen Beweismittel vor Ort erhoben werden müssen, werd
 
 ## Allgemeine Vorkehrungen am Untersuchungsort
 
-- Sichern und Kontrollieren des Bereis, in dem sich die Geräte befinden
+- Sichern und Kontrollieren des Bereichs, in dem sich die Geräte befinden
 - Bestimmung der Person, die für den Ort die fachliche Verantwortung trägt
 - Sicherstellen, dass Personen von den Geräten und von der Stromversorgung ferngehalten werden
 - Alle Personen dokumentieren, die Zugang zum Ort haben oder für die ein Motiv für eine Beteiligung am Untersuchungsort vorliegen könnte
@@ -601,7 +609,7 @@ nicht prüfungsrelevant!
   - Heft / Block und einfach handschriftlich beschreiben, was durchgeführt wurde
   - Wieso handschriftlich?
     - geht i.d.R. schneller
-    - handschriftliche Aufzeichnungen sind hinterher schwerer zu verändert oder zu fälschen
+    - handschriftliche Aufzeichnungen sind hinterher schwerer zu verändern oder zu fälschen
     - Änderungen bleiben erkennbar
     - Muss etwas geändert werden, dann sollte die betroffene Stelle Stelle durchgestrichen werden, so dass der ursprüngliche Text noch lesbar bleibt
 
@@ -688,4 +696,39 @@ nicht prüfungsrelevant!
 
 ## Linux
 
+### Linux-Dateisysteme 
+
+- FAT 12/16/32
+- ext 1/2/3/4
+- CDFS
+- ReiserFS
+- UFS
+
+<!-- 
+TODO
+
+schreibgeschützt mounten
+Rollensystem ugr, rwx, chmod
+
+nützliche Befehle Live
+- rpm-qu
+- dpkg -l
+- apt-list (?)
+- where is
+- which
+- echo $PATH
+
+PostMortem
+- /opt/..
+- .. ToDo Folie 3/52
+
+
+- history
+- grep auth-log nach sudo-Befehlen
+- Zeitzone, DNS, Betriebssysteminfo ...
+- Prozesse, Netzwrkverbindungen, Logdateien
+- Rootkit Scanner
+- syst internal suite (?????????????????????)
+- ....
+-->
 ## Hacking
