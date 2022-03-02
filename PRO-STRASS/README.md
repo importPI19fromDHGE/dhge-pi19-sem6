@@ -24,26 +24,27 @@ Computerforensik
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Computerforensik](#computerforensik)
 - [Organisatorisches](#organisatorisches)
 - [Intro](#intro)
 - [Digitale Rettungskette / Cyber Security Netzwerk (CSN)](#digitale-rettungskette--cyber-security-netzwerk-csn)
-- [häufige Angriffsvektoren](#h%C3%A4ufige-angriffsvektoren)
+- [häufige Angriffsvektoren](#häufige-angriffsvektoren)
 - [Relevante Gesetze](#relevante-gesetze)
-- [Datenschutzvorfälle](#datenschutzvorf%C3%A4lle)
-  - [Beispiele für meldepflichtige Datenschutzvorfällen](#beispiele-f%C3%BCr-meldepflichtige-datenschutzvorf%C3%A4llen)
+- [Datenschutzvorfälle](#datenschutzvorfälle)
+  - [Beispiele für meldepflichtige Datenschutzvorfällen](#beispiele-für-meldepflichtige-datenschutzvorfällen)
 - [Was ist Forensik?](#was-ist-forensik)
 - [Was ist digitale Forensik?](#was-ist-digitale-forensik)
   - [Worum geht es bei der Computer Forensik?](#worum-geht-es-bei-der-computer-forensik)
   - [Ziele der forensischen Analyse](#ziele-der-forensischen-analyse)
   - [Arbeitsgebiete der digitalen Forensik](#arbeitsgebiete-der-digitalen-forensik)
   - [Herausforderungen der digitalen Forensik](#herausforderungen-der-digitalen-forensik)
-  - [Klassifizierung der Täter](#klassifizierung-der-t%C3%A4ter)
+  - [Klassifizierung der Täter](#klassifizierung-der-täter)
   - [Herausforderungen in der IT-Forensik](#herausforderungen-in-der-it-forensik)
-- [Indikatoren für gefährdete Mitarbeiter](#indikatoren-f%C3%BCr-gef%C3%A4hrdete-mitarbeiter)
+- [Indikatoren für gefährdete Mitarbeiter](#indikatoren-für-gefährdete-mitarbeiter)
 - [Was sind Spuren?](#was-sind-spuren)
   - [Was sind digitale Spuren?](#was-sind-digitale-spuren)
   - [Was beschreibt das Locard'sche Prinzip?](#was-beschreibt-das-locardsche-prinzip)
-- [Primäres und sekundäres Ziel des Vorgehensmodells der digitalen Forensik](#prim%C3%A4res-und-sekund%C3%A4res-ziel-des-vorgehensmodells-der-digitalen-forensik)
+- [Primäres und sekundäres Ziel des Vorgehensmodells der digitalen Forensik](#primäres-und-sekundäres-ziel-des-vorgehensmodells-der-digitalen-forensik)
 - [Ziele der IT-Forensik](#ziele-der-it-forensik)
 - [Zwei Varianten der IT-Forensik (auf jeden Fall merken!)](#zwei-varianten-der-it-forensik-auf-jeden-fall-merken)
 - [Einordnung digitale Forensik](#einordnung-digitale-forensik)
@@ -118,7 +119,7 @@ Haupt-Editoren für dieses Dokument: RvNovae
 - liegt ein Datenschutzvorfall vor, besteht eine Meldepflicht (beim BSI) $\rightarrow$ ASAP, es darf keine Verzögerung geben
 - kritische Infrastrukturen sind stärker meldepflichtig, als einfache private Unternehmen
 - der Vorfall-Experte ist **nicht** für die Meldung verantwortlich!
-- die Meldepflicht liegt immer bei der Geschäftungsführung des Unternehmens
+- die Meldepflicht liegt immer bei der Geschäftsführung des Unternehmens
 - als Vorfall-Experte niemals ohne Zustimmung melden, die Verantwortung liegt bei der Geschäftsleitung!
 - Meldepflichten können sich aus gesetzlichen oder vertraglichen Vorgaben sowie freiwillig ergeben
 - als KRITIS-Betreiber muss jede **Störung** unverzüglich gemeldet werden
