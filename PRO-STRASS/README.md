@@ -192,7 +192,7 @@ nach:
 - fehlende Identifikation mit dem Unternehmen
 - Auffällige Neugier
 - Nutzung von Spionagehilfsmitteln (z.Bsp. Bild- und Tonaufzeichnungsgeräte, mobile Datenträger)
-- Auffälligkeiten im persönlichen Umfeld (aufwändiger Lebensstil, Anzeichen für Alkohlsuch etc.)
+- Auffälligkeiten im persönlichen Umfeld (aufwändiger Lebensstil, Anzeichen für Alkoholismus etc.)
 - Diskrepanzen im beruflichen Werdegang (Über/Unter-Qualifizierung)
 - zweifelhafte Dateien/PDF bei der Bewerbung (enthält Malware)
 
@@ -250,7 +250,7 @@ Es gibt keinen Tatort ohne Spuren!
 - Analyse
   - hier werden die gesicherten Spuren und Beweise überprüfbar aufgearbeitet, sorgfältig geprüft und objektiv bewertet
 - Present
-  - hier wird der Ermittlungsprozess nachvollziehabr dargelegt (präsentiert)
+  - hier wird der Ermittlungsprozess nachvollziehbar dargelegt (präsentiert)
 
 # Grundlage des Ablaufs einer forensischen Untersuchung (BSI-Leitfaden)
 
