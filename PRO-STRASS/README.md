@@ -494,7 +494,6 @@ Bei Außeneinsätzen bei denen Beweismittel vor Ort erhoben werden müssen, werd
 - Methoden anwenden, mit welchen die Fehlerfreiheit und Verlässlichkeit der Kopie von potentiellen digitalen Beweismitteln festgestellt werden kann
 - Erkennen, dass der Vorgang der Erhaltung von potentiellen digitalen Beweismitteln nicht immer eingriffsfrei erfolgen
 
-
 ## Grundsätze in der digitale Forensik
 
 - Relevanz
@@ -713,6 +712,7 @@ schreibgeschützt mounten
 Rollensystem ugr, rwx, chmod
 
 nützliche Befehle Live
+
 - rpm-qu
 - dpkg -l
 - apt-list (?)
@@ -724,7 +724,6 @@ PostMortem
 - /opt/..
 - .. ToDo Folie 3/52
 
-
 - history
 - grep auth-log nach sudo-Befehlen
 - Zeitzone, DNS, Betriebssysteminfo ...
@@ -732,6 +731,7 @@ PostMortem
 - Rootkit Scanner
 - syst internal suite (?????????????????????)
 - ....
+
 -->
 
 ## Hacking
