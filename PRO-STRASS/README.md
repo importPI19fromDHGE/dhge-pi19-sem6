@@ -698,7 +698,7 @@ nicht prüfungsrelevant!
 
 ## Linux
 
-### Linux-Dateisysteme 
+### Linux-Dateisysteme
 
 - FAT 12/16/32
 - ext 1/2/3/4
@@ -706,7 +706,7 @@ nicht prüfungsrelevant!
 - ReiserFS
 - UFS
 
-<!-- 
+<!--
 TODO
 
 schreibgeschützt mounten
@@ -733,4 +733,12 @@ PostMortem
 - syst internal suite (?????????????????????)
 - ....
 -->
+
 ## Hacking
+
+<!--(ToDo, Folien noch gebraucht)-->
+
+- Root-Kit
+- TCP-View
+- PDF Malware Analysis
+- Wireshark
