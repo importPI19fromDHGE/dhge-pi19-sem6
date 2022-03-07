@@ -51,11 +51,24 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 
 <!--newpage-->
 
+<!--Keywords aus dem Chat
+- ACID
+- REST
+- Erlang
+- JBOSS
+- J2EE
+- https://gitlab.com/rak-n-rok/krake
+- Lambda-Kalkül
+- secustack.com
+- heroku.com
+- OpenShift
+- OpenStack
+-->
 # Prüfungsleistung
 
-- 60min Klausur
-- wird zu 50% verrechnet
-- Cheatsheet 1x DIN A4 beidseitig
+- schriftliche Klausur (60 min)
+- wird zu 50% verrechnet (Rest `NET-BARIE` aus Semester 5)
+- eine DIN-A4-Seite beidseitig beschriftet als Cheatsheet erlaubt
 
 # Einleitung und grundlegende Begriffe
 
@@ -63,12 +76,13 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 
 <!--prüfungsrelevant-->
 
-- Ein verteiltes System ist ein System bestehend aus...
-  - mehreren Einzelkomponenten
-  - auf unterschiedlichen Rechnern
-  - keinen gemeinsamen Speicher
-  - Kooperation mittels Nachrichtenaustausch
-  - gemeinsames Ziel
+Ein verteiltes System ist ein System bestehend aus...
+
+- mehreren Einzelkomponenten
+- auf unterschiedlichen Rechnern
+- kein gemeinsamen Speicher
+- Kooperation mittels Nachrichtenaustausch (Netzwerk)
+- gemeinsames Ziel
 - TODO: Bildbeispiel von Folie
 
 ## zentrale Zielsetzung verteilter Systeme
@@ -86,7 +100,7 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 
 ## Systemarchitekturen und Modelle
 
-- mehrstufige Architekturen: "divide et impera"
+- mehrstufige Architekturen: *"divide et impera"*
 - aufeinander aufbauende Modelle:
   - Client/Server Modell
   - objektorientiertes Modell
@@ -185,6 +199,8 @@ TODO: Tabelle aus Folie
 - Plattform (PaaS): vorkonfigurierte Services wie Datenbanken, die für eine Anwendung benötigt werden; Ausführungsumgebung wird zur Verfügung gestellt und automatisch skaliert
 - Anwendung (SaaS): Anwendung wird als Komplettpaket zur Verfügung gestellt
 - spezielle Dienste wie Function as a Service
+
+<!-- gerne als Klausurfrage (IaaS,PaaS,SaaS)-->
 
 ## Middleware
 
