@@ -767,3 +767,40 @@ Betrachtet...
   - Nichtverkettung
   - Transparenz
   - Intervenierbarkeit
+
+# Modellierung
+
+## Schritte der Modellierung
+
+- Strukturanalyse des Informationsverbundes (inkl. Verknüpfung)
+- Schutzbedarfsfeststellung
+- Modellierung (Anforderungen auswählen, Umsetzungsstatus definieren) <!-- Prozessbausteine gelten für gesamten Informationsverbund -->
+- Risikoanalyse 
+
+## Risikoanalyse
+
+### Schritte einer Risikoanalyse
+
+- Erstellung einer Gefährdungsübersicht
+- Risikoeinschätzung (Eintrittshäufigkeit, Schadenshöhe) <!-- Risikomatrix einfügen? -->
+- Risikoeinstuffung
+- Risikobehandlung
+
+### Gefährdungen
+
+- direkt relevant $\rightarrow$ Gefärdung des betrachteten Objektes <!-- Reptiloiden-Angriffe -->
+- indirekt relevant (z.B. Feuer)
+- nicht relevant
+
+### Notwendigkeit einer Risikoanalyse
+
+- hoher oder sehr hoher Schutzbedarf
+- zusätzlicher Analysebedarf (untypisches Einsatzszenario für Baustein)
+- passender Baustein fehlt *(z.B. Windows Server 2012 vs. 2019)*
+
+### Risikobehandlungsoptionen
+
+- Risikovermeidung
+- Risikoreduktion (Zusatzmaßnahmen treffen)
+- Risikotransferierung (Versicherung/Outsourcing)
+- Risikoakzeptanz
