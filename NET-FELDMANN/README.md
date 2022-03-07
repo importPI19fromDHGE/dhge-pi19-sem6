@@ -60,6 +60,7 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 <!--newpage-->
 
 <!--Keywords aus dem Chat
+
 - ACID
 - REST
 - Erlang
@@ -71,6 +72,7 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 - heroku.com
 - OpenShift
 - OpenStack
+
 -->
 # Prüfungsleistung
 
