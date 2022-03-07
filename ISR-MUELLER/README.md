@@ -615,6 +615,58 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
   - Zusammenarbeit mit Aufsichtsbehörde
   - Tätigkeiten als Anlaufstelle für Aufsichtsbehörde
 
+## Datenschutzaufsicht
+
+### Aufgaben der Datenschutzaufsicht
+
+- Bürger und Wirtschaft sensibilisieren
+- Mitarbeit in Projekten der Staatsverwaltung und Wirtschaft
+- Beratung bestellter DSB
+- Kontrolle und Prüfung der Datenverarbeitung in Öffentlicher Verwaltung, Wissenschaft und Privatwirtschaft
+- Befassung mit Beschwerden betroffener Personen
+- Befassung mit Datenschutzvorfällen nach Art. 33 (Meldepflicht)
+- Verfolgung von Verstößen gegen die DSGVO (Ordnungswidrigkeitsverfahren)
+- Akkreditierung von Zertifizierungsprogrammen und -stellen
+- Jährlicher Tätigkeitsbericht
+
+### Kooperation
+
+#### Datenschutzkonferenz
+
+> Formeller Zusammenschluss der Datenschutzaufsichtsbehörden (zweimal jährlich)
+
+- einheitliche Auslegung und Interpretation der DSGVO innerhalb Deutschlands 
+- Wissenstranfer zwischen Behörden (Einige Bundesländer besitzen spezielles Know-How)
+
+> [https://www.datenschutzkonferenz-online.de/](https://www.datenschutzkonferenz-online.de/)
+
+##### Arbeitskreise
+
+**Technik**
+
+- Laboruntersuchung Windows 10 Telemetrie, MS Office 365
+- Bewertung Datenaustausch Voratsdatenspeicherung mit Ermittlungsbehörden
+- UAK SDM
+
+**Zertifizierung**
+
+- Entwicklung von Akreditierungsanforderungen an Zertifizierungsprogrammen
+
+**Medien**
+
+- Anforderungen an Videokonferenzsysteme, Messenger
+- Websiteprüfung WEC
+- Beobachtung und Untersuchung Google Analytics
+
+#### European Data Protection Board
+
+> vgl. Datenschutzkonferenz auf EU-Ebene
+
+- Europäischer Datenschutzausschuss (unabhängige europäische Einrichtung)
+- Beratung der Europäischen Kommision
+- Beschlüsse zu grenzüberschreitenden Datenschutzvorfällen
+- Zusammenarbeit zwischen nationalen Aufsichtsbehörden
+
 ## Standard-Datenschutzmodell
 
 - Checkliste für Gewährleistungsziele zum Nachweis der Datenschutzkonformität
