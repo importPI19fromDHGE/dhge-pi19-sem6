@@ -643,7 +643,7 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 
 > Formeller Zusammenschluss der Datenschutzaufsichtsbehörden (zweimal jährlich)
 
-- einheitliche Auslegung und Interpretation der DSGVO innerhalb Deutschlands 
+- einheitliche Auslegung und Interpretation der DSGVO innerhalb Deutschlands
 - Wissenstranfer zwischen Behörden (Einige Bundesländer besitzen spezielles Know-How)
 
 > [https://www.datenschutzkonferenz-online.de/](https://www.datenschutzkonferenz-online.de/)
@@ -841,7 +841,7 @@ Betrachtet...
 - Gestalltung der Informationssicherheit in der Gesellschaft durch:
   - Prävention
   - Detektion
-  - Reaktion 
+  - Reaktion
 - Dienstleister der Ressorts des Bundes (Verteidigung, Inneres, Wirtschaft, Gesundeheit, Finanzen, Verkehr, ...)
 
 ## Aufgaben
@@ -864,7 +864,7 @@ Betrachtet...
 - Strukturanalyse des Informationsverbundes (inkl. Verknüpfung)
 - Schutzbedarfsfeststellung
 - Modellierung (Anforderungen auswählen, Umsetzungsstatus definieren) <!-- Prozessbausteine gelten für gesamten Informationsverbund -->
-- Risikoanalyse 
+- Risikoanalyse
 
 ## Risikoanalyse
 
