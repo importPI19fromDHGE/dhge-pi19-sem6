@@ -833,6 +833,28 @@ Betrachtet...
   - Transparenz
   - Intervenierbarkeit
 
+# Bundesamt für Sicherheit in der Informationstechnik
+
+- Cyber-Sicherheitsbehörde des Bundes
+- Gestalltung der Informationssicherheit in der Gesellschaft durch:
+  - Prävention
+  - Detektion
+  - Reaktion 
+- Dienstleister der Ressorts des Bundes (Verteidigung, Inneres, Wirtschaft, Gesundeheit, Finanzen, Verkehr, ...)
+
+## Aufgaben
+
+> Alle Fragen im Umfeld der Informationssicherheit
+
+- Operativer Schutz (Regierungsnetze und Bundesverwaltung)
+- Aufsicht (der Betreiber Kritischer Infrastruktur)
+- Beratung (Unterstützung bei der Umsetzung geeigneter Maßnahmen)
+- Information (Alle Themen der Informationssicherheit von Cybersicherheit bis digitaler Verbraucherschutz)
+- Entwicklung (Standards, IT-Sicherheitsanwendungen)
+- Zertifizierung (IT-Systeme, Dienstleistungen, Personen)
+
+> kein Nachrichten-Dienst, keine Aufsichtsbehörde!
+
 # Modellierung
 
 ## Schritte der Modellierung
