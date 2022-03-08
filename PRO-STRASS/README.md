@@ -665,7 +665,7 @@ nicht prüfungsrelevant!
 ### Windows Registry
 
 - Daten werden in sog. Registrierungs-Hives aufgeteilt und in Schlüsseln mit Key Value pairs gespeichert
-- Die Datenbanken liegen in Dateiform in `C:\Windows\System32\Config`
+- Die Datenbanken liegen in Dateiform in `C:\Windows\System32\Config\`
 - Die Benutzerspezifischen liegen in `C:\Users\User\`
 
 ### Windows ShadowCopies
