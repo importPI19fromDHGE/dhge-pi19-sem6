@@ -28,6 +28,7 @@ Verteilte Systeme
 - [Einleitung und grundlegende Begriffe](#einleitung-und-grundlegende-begriffe)
   - [Definition verteiles System](#definition-verteiles-system)
   - [zentrale Zielsetzung verteilter Systeme](#zentrale-zielsetzung-verteilter-systeme)
+  - [CAP-Theorem](#cap-theorem)
   - [Basismechanismen verteilter Systeme](#basismechanismen-verteilter-systeme)
   - [Systemarchitekturen und Modelle](#systemarchitekturen-und-modelle)
     - [Mehrstufige Architekturen](#mehrstufige-architekturen)
