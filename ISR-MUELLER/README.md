@@ -637,9 +637,7 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 - Akkreditierung von Zertifizierungsprogrammen und -stellen
 - Jährlicher Tätigkeitsbericht
 
-### Kooperation
-
-#### Datenschutzkonferenz
+### Datenschutzkonferenz
 
 > Formeller Zusammenschluss der Datenschutzaufsichtsbehörden (zweimal jährlich)
 
@@ -648,7 +646,7 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 
 > [https://www.datenschutzkonferenz-online.de/](https://www.datenschutzkonferenz-online.de/)
 
-##### Arbeitskreise
+#### Arbeitskreise
 
 **Technik**
 
@@ -666,7 +664,7 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 - Websiteprüfung WEC
 - Beobachtung und Untersuchung Google Analytics
 
-#### European Data Protection Board
+### European Data Protection Board
 
 > vgl. Datenschutzkonferenz auf EU-Ebene
 
