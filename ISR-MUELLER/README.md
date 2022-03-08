@@ -96,6 +96,11 @@ IT-Infrastrukturen / Sicherheit / Recht
       - [Blacklists](#blacklists)
   - [Aufgaben des Verantwortlichen](#aufgaben-des-verantwortlichen)
   - [Aufgaben des Datenschutzbeauftragten](#aufgaben-des-datenschutzbeauftragten)
+  - [Datenschutzaufsicht](#datenschutzaufsicht)
+    - [Aufgaben der Datenschutzaufsicht](#aufgaben-der-datenschutzaufsicht)
+    - [Datenschutzkonferenz](#datenschutzkonferenz)
+      - [Arbeitskreise](#arbeitskreise)
+    - [European Data Protection Board](#european-data-protection-board)
   - [Standard-Datenschutzmodell](#standard-datenschutzmodell)
 - [Gefährliche IT-Entwicklungen](#gef%C3%A4hrliche-it-entwicklungen)
   - [Schadensszenarien](#schadensszenarien)
@@ -116,6 +121,15 @@ IT-Infrastrukturen / Sicherheit / Recht
     - [ITSEC](#itsec)
     - [Common Criteria Zertifikate](#common-criteria-zertifikate)
 - [KRITIS](#kritis)
+- [Bundesamt für Sicherheit in der Informationstechnik](#bundesamt-f%C3%BCr-sicherheit-in-der-informationstechnik)
+  - [Aufgaben](#aufgaben)
+- [Modellierung](#modellierung)
+  - [Schritte der Modellierung](#schritte-der-modellierung)
+  - [Risikoanalyse](#risikoanalyse)
+    - [Schritte einer Risikoanalyse](#schritte-einer-risikoanalyse)
+    - [Gefährdungen](#gef%C3%A4hrdungen)
+    - [Notwendigkeit einer Risikoanalyse](#notwendigkeit-einer-risikoanalyse)
+    - [Risikobehandlungsoptionen](#risikobehandlungsoptionen)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -608,6 +622,56 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
   - Zusammenarbeit mit Aufsichtsbehörde
   - Tätigkeiten als Anlaufstelle für Aufsichtsbehörde
 
+## Datenschutzaufsicht
+
+### Aufgaben der Datenschutzaufsicht
+
+- Bürger und Wirtschaft sensibilisieren
+- Mitarbeit in Projekten der Staatsverwaltung und Wirtschaft
+- Beratung bestellter DSB
+- Kontrolle und Prüfung der Datenverarbeitung in Öffentlicher Verwaltung, Wissenschaft und Privatwirtschaft
+- Befassung mit Beschwerden betroffener Personen
+- Befassung mit Datenschutzvorfällen nach Art. 33 (Meldepflicht)
+- Verfolgung von Verstößen gegen die DSGVO (Ordnungswidrigkeitsverfahren)
+- Akkreditierung von Zertifizierungsprogrammen und -stellen
+- Jährlicher Tätigkeitsbericht
+
+### Datenschutzkonferenz
+
+> Formeller Zusammenschluss der Datenschutzaufsichtsbehörden (zweimal jährlich)
+
+- einheitliche Auslegung und Interpretation der DSGVO innerhalb Deutschlands
+- Wissenstranfer zwischen Behörden (Einige Bundesländer besitzen spezielles Know-How)
+
+> [https://www.datenschutzkonferenz-online.de/](https://www.datenschutzkonferenz-online.de/)
+
+#### Arbeitskreise
+
+**Technik**
+
+- Laboruntersuchung Windows 10 Telemetrie, MS Office 365
+- Bewertung Datenaustausch Voratsdatenspeicherung mit Ermittlungsbehörden
+- UAK SDM
+
+**Zertifizierung**
+
+- Entwicklung von Akreditierungsanforderungen an Zertifizierungsprogrammen
+
+**Medien**
+
+- Anforderungen an Videokonferenzsysteme, Messenger
+- Websiteprüfung WEC
+- Beobachtung und Untersuchung Google Analytics
+
+### European Data Protection Board
+
+> vgl. Datenschutzkonferenz auf EU-Ebene
+
+- Europäischer Datenschutzausschuss (unabhängige europäische Einrichtung)
+- Beratung der Europäischen Kommission
+- Beschlüsse zu grenzüberschreitenden Datenschutzvorfällen
+- Zusammenarbeit zwischen nationalen Aufsichtsbehörden
+
 ## Standard-Datenschutzmodell
 
 - Checkliste für Gewährleistungsziele zum Nachweis der Datenschutzkonformität
@@ -767,3 +831,62 @@ Betrachtet...
   - Nichtverkettung
   - Transparenz
   - Intervenierbarkeit
+
+# Bundesamt für Sicherheit in der Informationstechnik
+
+- Cyber-Sicherheitsbehörde des Bundes
+- Gestaltung der Informationssicherheit in der Gesellschaft durch:
+  - Prävention
+  - Detektion
+  - Reaktion
+- Dienstleister der Ressorts des Bundes (Verteidigung, Inneres, Wirtschaft, Gesundeheit, Finanzen, Verkehr, ...)
+
+## Aufgaben
+
+> Alle Fragen im Umfeld der Informationssicherheit
+
+- Operativer Schutz (Regierungsnetze und Bundesverwaltung)
+- Aufsicht (der Betreiber Kritischer Infrastruktur)
+- Beratung (Unterstützung bei der Umsetzung geeigneter Maßnahmen)
+- Information (Alle Themen der Informationssicherheit von Cybersicherheit bis digitaler Verbraucherschutz)
+- Entwicklung (Standards, IT-Sicherheitsanwendungen)
+- Zertifizierung (IT-Systeme, Dienstleistungen, Personen)
+
+> kein Nachrichten-Dienst, keine Aufsichtsbehörde!
+
+# Modellierung
+
+## Schritte der Modellierung
+
+- Strukturanalyse des Informationsverbundes (inkl. Verknüpfung)
+- Schutzbedarfsfeststellung
+- Modellierung (Anforderungen auswählen, Umsetzungsstatus definieren) <!-- Prozessbausteine gelten für gesamten Informationsverbund -->
+- Risikoanalyse
+
+## Risikoanalyse
+
+### Schritte einer Risikoanalyse
+
+- Erstellung einer Gefährdungsübersicht
+- Risikoeinschätzung (Eintrittshäufigkeit, Schadenshöhe) <!-- Risikomatrix einfügen? -->
+- Risikoeinstufung
+- Risikobehandlung
+
+### Gefährdungen
+
+- direkt relevant $\rightarrow$ Gefährdung des betrachteten Objektes <!-- Reptiloiden-Angriffe -->
+- indirekt relevant (z.B. Feuer)
+- nicht relevant
+
+### Notwendigkeit einer Risikoanalyse
+
+- hoher oder sehr hoher Schutzbedarf
+- zusätzlicher Analysebedarf (untypisches Einsatzszenario für Baustein)
+- passender Baustein fehlt *(z.B. Windows Server 2012 vs. 2019)*
+
+### Risikobehandlungsoptionen
+
+- Risikovermeidung
+- Risikoreduktion (Zusatzmaßnahmen treffen)
+- Risikotransferierung (Versicherung/Outsourcing)
+- Risikoakzeptanz
