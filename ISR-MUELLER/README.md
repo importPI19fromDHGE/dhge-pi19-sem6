@@ -671,7 +671,7 @@ Die Bausteine des IT-Grundschutz-Kompendiums (BSI-Dokument) bilden den Stand der
 > vgl. Datenschutzkonferenz auf EU-Ebene
 
 - Europäischer Datenschutzausschuss (unabhängige europäische Einrichtung)
-- Beratung der Europäischen Kommision
+- Beratung der Europäischen Kommission
 - Beschlüsse zu grenzüberschreitenden Datenschutzvorfällen
 - Zusammenarbeit zwischen nationalen Aufsichtsbehörden
 
@@ -838,7 +838,7 @@ Betrachtet...
 # Bundesamt für Sicherheit in der Informationstechnik
 
 - Cyber-Sicherheitsbehörde des Bundes
-- Gestalltung der Informationssicherheit in der Gesellschaft durch:
+- Gestaltung der Informationssicherheit in der Gesellschaft durch:
   - Prävention
   - Detektion
   - Reaktion
@@ -872,12 +872,12 @@ Betrachtet...
 
 - Erstellung einer Gefährdungsübersicht
 - Risikoeinschätzung (Eintrittshäufigkeit, Schadenshöhe) <!-- Risikomatrix einfügen? -->
-- Risikoeinstuffung
+- Risikoeinstufung
 - Risikobehandlung
 
 ### Gefährdungen
 
-- direkt relevant $\rightarrow$ Gefärdung des betrachteten Objektes <!-- Reptiloiden-Angriffe -->
+- direkt relevant $\rightarrow$ Gefährdung des betrachteten Objektes <!-- Reptiloiden-Angriffe -->
 - indirekt relevant (z.B. Feuer)
 - nicht relevant
 
