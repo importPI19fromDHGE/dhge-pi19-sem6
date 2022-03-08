@@ -50,6 +50,59 @@ Computerforensik
 - [S-A-P-Modell](#s-a-p-modell)
 - [Grundlage des Ablaufs einer forensischen Untersuchung (BSI-Leitfaden)](#grundlage-des-ablaufs-einer-forensischen-untersuchung-bsi-leitfaden)
 - [Anforderungen an eine neue Methode im forensischen Prozess](#anforderungen-an-eine-neue-methode-im-forensischen-prozess)
+- [Forensic Readiness](#forensic-readiness)
+  - [Zielsetzung eines Betroffenen](#zielsetzung-eines-betroffenen)
+  - [Forensic Readiness: Dimensionen](#forensic-readiness-dimensionen)
+  - [Der forensische Arbeitsplatz](#der-forensische-arbeitsplatz)
+  - [Forensic Readiness: Transportable Workstations](#forensic-readiness-transportable-workstations)
+  - [Forensic Readiness: Schreibschutzadapter](#forensic-readiness-schreibschutzadapter)
+  - [Forensic Readiness: Technische Maßnahmen](#forensic-readiness-technische-ma%C3%9Fnahmen)
+  - [Forensic Readiness: Organisatorische Maßnahmen](#forensic-readiness-organisatorische-ma%C3%9Fnahmen)
+  - [Forensic Readiness: Optionale Maßnahmen](#forensic-readiness-optionale-ma%C3%9Fnahmen)
+- [???](#)
+- [Datensammlung: Beweisführung im Zivil- oder Strafverfahren](#datensammlung-beweisf%C3%BChrung-im-zivil--oder-strafverfahren)
+- [Sicherung besonderer digitaler Beweismittel und Spuren](#sicherung-besonderer-digitaler-beweismittel-und-spuren)
+- [Datensammlung: Die wichtigsten Regeln](#datensammlung-die-wichtigsten-regeln)
+- [Hashwerte: Einsatzzwecke](#hashwerte-einsatzzwecke)
+- [mögliche forensische Untersuchungstechniken](#m%C3%B6gliche-forensische-untersuchungstechniken)
+- [Datensammlung Software](#datensammlung-software)
+- [Datensammlung](#datensammlung)
+- [ISO 27037](#iso-27037)
+  - [beteiligte Akteure](#beteiligte-akteure)
+  - [DEFR und DES sollten in jedem Fall?](#defr-und-des-sollten-in-jedem-fall)
+  - [Grundsätze in der digitale Forensik](#grunds%C3%A4tze-in-der-digitale-forensik)
+  - [Grundlegende Aspekte bei der Bearbeitung von digitalen Beweismitteln](#grundlegende-aspekte-bei-der-bearbeitung-von-digitalen-beweismitteln)
+  - [Prozess zur Handhabung von digitalen Beweismitteln](#prozess-zur-handhabung-von-digitalen-beweismitteln)
+  - [Obhutskette](#obhutskette)
+  - [Grundregeln für das Verhalten am Tatort](#grundregeln-f%C3%BCr-das-verhalten-am-tatort)
+  - [Allgemeine Vorkehrungen am Untersuchungsort](#allgemeine-vorkehrungen-am-untersuchungsort)
+  - [Personelle Vorkehrungen am Untersuchungsort](#personelle-vorkehrungen-am-untersuchungsort)
+  - [potentielle Digitale Beweismittel am Untersuchungsort](#potentielle-digitale-beweismittel-am-untersuchungsort)
+  - [Erhebung von nicht digitalen Beweisen](#erhebung-von-nicht-digitalen-beweisen)
+- [Tatortfotographie](#tatortfotographie)
+- [Dokumentation](#dokumentation)
+- [Bekämpfung der Computerkriminalität](#bek%C3%A4mpfung-der-computerkriminalit%C3%A4t)
+  - [Incident Handling](#incident-handling)
+  - [CERT](#cert)
+- [E-Mail-Header-Analyse](#e-mail-header-analyse)
+  - [Welche Angaben kann der Angreifer manipulieren?](#welche-angaben-kann-der-angreifer-manipulieren)
+- [Betriebssysteme](#betriebssysteme)
+  - [Windows](#windows)
+    - [wichtige Verzeichnispfade](#wichtige-verzeichnispfade)
+    - [Windows Benutzerverwaltung mittels SID](#windows-benutzerverwaltung-mittels-sid)
+    - [Windows Registry](#windows-registry)
+    - [Windows ShadowCopies](#windows-shadowcopies)
+    - [Windows Prefetch Dateien](#windows-prefetch-dateien)
+    - [Windows UserAssist Keys](#windows-userassist-keys)
+    - [Windows Auslagerungsdateien](#windows-auslagerungsdateien)
+    - [Outlook-Dateien](#outlook-dateien)
+    - [Windows ADS](#windows-ads)
+  - [MacOS](#macos)
+  - [Linux](#linux)
+    - [Linux-Dateisysteme](#linux-dateisysteme)
+    - [Dateisysteme Read-only mounten](#dateisysteme-read-only-mounten)
+    - [Dateisystem-Rechte auf Linux / Rollensystem](#dateisystem-rechte-auf-linux--rollensystem)
+  - [Hacking](#hacking)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -118,7 +171,7 @@ Haupt-Editoren für dieses Dokument: RvNovae
 - liegt ein Datenschutzvorfall vor, besteht eine Meldepflicht (beim BSI) $\rightarrow$ ASAP, es darf keine Verzögerung geben
 - kritische Infrastrukturen sind stärker meldepflichtig, als einfache private Unternehmen
 - der Vorfall-Experte ist **nicht** für die Meldung verantwortlich!
-- die Meldepflicht liegt immer bei der Geschäftungsführung des Unternehmens
+- die Meldepflicht liegt immer bei der Geschäftsführung des Unternehmens
 - als Vorfall-Experte niemals ohne Zustimmung melden, die Verantwortung liegt bei der Geschäftsleitung!
 - Meldepflichten können sich aus gesetzlichen oder vertraglichen Vorgaben sowie freiwillig ergeben
 - als KRITIS-Betreiber muss jede **Störung** unverzüglich gemeldet werden
@@ -191,7 +244,7 @@ nach:
 - fehlende Identifikation mit dem Unternehmen
 - Auffällige Neugier
 - Nutzung von Spionagehilfsmitteln (z.Bsp. Bild- und Tonaufzeichnungsgeräte, mobile Datenträger)
-- Auffälligkeiten im persönlichen Umfeld (aufwändiger Lebensstil, Anzeichen für Alkohlsuch etc.)
+- Auffälligkeiten im persönlichen Umfeld (aufwändiger Lebensstil, Anzeichen für Alkoholismus etc.)
 - Diskrepanzen im beruflichen Werdegang (Über/Unter-Qualifizierung)
 - zweifelhafte Dateien/PDF bei der Bewerbung (enthält Malware)
 
@@ -249,7 +302,7 @@ Es gibt keinen Tatort ohne Spuren!
 - Analyse
   - hier werden die gesicherten Spuren und Beweise überprüfbar aufgearbeitet, sorgfältig geprüft und objektiv bewertet
 - Present
-  - hier wird der Ermittlungsprozess nachvollziehabr dargelegt (präsentiert)
+  - hier wird der Ermittlungsprozess nachvollziehbar dargelegt (präsentiert)
 
 # Grundlage des Ablaufs einer forensischen Untersuchung (BSI-Leitfaden)
 
@@ -265,3 +318,479 @@ Es gibt keinen Tatort ohne Spuren!
 - Ursache und Auswirkungen: Verbindung zwischen digitalen Spuren, Ereignissen und Personen sind herstellbar
 - Dokumentation: Ermittlungsprozess ist nachvollziehbar dokumentiert
 - keine gesetzlichen Vorgaben für forensische Untersuchung
+
+# Forensic Readiness
+
+- beschäftigt sich mit Maßnahmen zur Vorbereitung auf digitale forensische Untersuchungen innerhalb Organisationen
+- Ziele:
+  - Systeme sollen in der Lage sein, bessere und belastbare digitale Spuren zu sammeln
+  - Die Kosten für eine forensische Untersuchung sollen verringert werden
+- Aus welchem Grund?
+  - Art. 33 DSGVO (Meldung von Verletzung des Schutzes personenbezogener Daten an die Aufsichtsbehörden)
+
+## Zielsetzung eines Betroffenen
+
+- Schnelle Behebung:
+  - Im Vordergrund steht die zeitnahe Wiederverwendung der betroffenen Systeme
+  - Die Ursache des Problems tritt in den Hintergrund
+  - Es wird keine Sicherung von Beweisen gefordert
+  - **Nachteil**: Es besteht die Gefahr, dass nicht in jedem Fall eine vollständige Bereinigung erzielt werden kann
+- Vollständige Aufklärung:
+  - Ganzheitlicher Ansatz zur gefahrlosen Wiederverwendung der entsprechenden Systeme
+  - Es ist eine genaue Analyse durchzuführen, um Schadensausmaß und Angriffswege zu ermitteln
+  - Beweissicherung durch Systemabbilder, Log-Dateien und Erfassen des Netzwerkverkehrs
+  - **Nachteil**: Heterogene Systemlandschaften erfordern ein hohes Maß an Analyse und Know-How $\rightarrow$ zeitaufwendig
+
+## Forensic Readiness: Dimensionen
+
+- personelle, technische und organisatorische Maßnahmen und Methoden
+- Maßnahmen und Methoden werden durch rechtliche Aspekte beeinflusst
+
+## Der forensische Arbeitsplatz
+
+Die Basis für die Untersuchung der Beweismittel stellt der Analysecomputer dar, welcher als eigenständiges Gerät physikalisch getrennt vom Büro- und Internetcomputer eingerichtet sein sollte.
+
+- Forensische Workstation
+  - Sehr gute Hardwareausstattung auf aktuellem Stand der Technik
+  - Duales Betriebssystem
+  - Virenscanner und Firewall
+- Office Computer für Schriftsachen
+  - Verschlüsselung nutzen!
+  - Interne Netzwerkanbindung, kein Internetzugang!
+- Internet Computer
+  - Keine sensiblen Daten eingeben oder speichern!
+  - Aktuelle Anti-Viren-Software verwenden!
+  - Auch als VM einsetzbar!
+
+## Forensic Readiness: Transportable Workstations
+
+Bei Außeneinsätzen, bei denen Beweismittel vor Ort erhoben werden müssen, werden geeignete transportable Datensicherungsworkstations notwendig.
+
+## Forensic Readiness: Schreibschutzadapter
+
+- Für die Datensicherung im Labor, wie auch im Außeneinsatz, sind Schreibschutzadapter unerlässlich
+- Grundlegend sollten folgende Schnittstellen abgedeckt werden: IDE, SATA, USB 3.0, FireWire
+- Nice to have: SAS, SCSI, PCIE
+
+## Forensic Readiness: Technische Maßnahmen
+
+- auf Server-PCs: Logging und Gruppenrichtlinien konfigurieren
+- für jeden Benutzer-PC: Betriebssysteme konfigurieren
+- Beispiele:
+  - Wiederherstellungs-Passworte für Festplatten-Verschlüsselung
+  - lokales Logging aktivieren
+
+## Forensic Readiness: Organisatorische Maßnahmen
+
+- Responsive Teams
+- Hardware und Software beschaffen
+  - Forensik-Workstation
+  - Forensik-Hardware
+  - Forensik-Software
+- Weitere organisatorische Maßnahmen
+  - Prozess für forensische Untersuchung aufbauen
+  - Verantwortlichen benennen
+  - Budget bereitstellen: Personal, Hardware, Software, Fortbildung
+  - Kompetenzen aufbauen: für eigene Untersuchungen? für externe Beauftragungen?
+  - Räumlichkeiten schaffen: Zutrittssicherheit, Tresor
+
+## Forensic Readiness: Optionale Maßnahmen
+
+- Planen! Untersuchungsziel präzise festlegen (lassen)!
+- Vorauswahl an relevanten Datenquellen treffen
+- Entscheiden:
+  - Post-mortem-Forensik? Live-Forensik?
+  - Welche Geräte / Datenträger / Daten?
+
+# ???
+
+# Datensammlung: Beweisführung im Zivil- oder Strafverfahren
+
+- Sicherung digitaler Beweismittel und Spuren
+- Die Sicherung von digitalen Beweisspuren kann auf zwei Arten geschehen:
+- Logische Sicherung
+  - auf Betriebssystemebene
+  - mit Mitteln des Betriebssystems
+  - Mit Drittanwendersoftware
+  - erfolgt abhängig von Betriebssystem
+- Physikalische Sicherung
+  - Auf Hardwareebene
+  - mit hardwaretechnischen Hilfsmitteln
+  - mit softwaretechnischen Hilfsmitteln
+  - erfolgt betriebssystem**un**abhängig
+
+# Sicherung besonderer digitaler Beweismittel und Spuren
+
+- Logfiles und Daten im Netzwerk
+  - meist erfolgt eine logische Sicherung mit geeigneten Tools
+- Flüchtige Daten / Hauptspeicherinhalte
+  - kann direkt mittels DMA (Direct Memory Access) erfolgen
+  - Cold-Boot
+  - Auswertung erfolgt Post-Mortem
+
+# Datensammlung: Die wichtigsten Regeln
+
+- möglichst keine Veränderungen vornehmen an betroffenen digitalen Beweismitteln
+- das bedeutet: Änderungen an Datenträgern mit geeigneten technischen Möglichkeiten sofern möglich unterbinden
+- eine Dokumentation aller Arbeitsschritte, Veränderungen an Daten, mit konkreten Zeitangaben während der Sicherung von Daten ist unerlässlich
+- Schreibblocker verwenden oder Datenträger mit Live-System als Read-Only mounten
+- Hashwerte verwenden
+
+# Hashwerte: Einsatzzwecke
+
+- Datenintegritätsprüfungen
+  - Überprüfung von Datensicherungen
+  - Überprüfung von Passwörtern
+- Dateninhaltsvergleiche
+  - KiPo-Vergleich von Bildern in Kinderpornographie Verfahren mit Hash Datenbanken
+  - Wirtschaftsspionage-Vergleich von Daten eines Unternehmens beim Auffinden in unternehmensfremden Umgebungen
+  - NSRL (National Software Reference Library Hash Daten)-Herausfiltern von Betriebssystem-spezifischen Dateien ohne Relevanz
+  - UrhG: Erkennen urheberrechtlich geschützter Werke durch Hash-Abgleich (MD4-Emule)
+
+# mögliche forensische Untersuchungstechniken
+
+- Wiederherstellen gelöschter Objekte
+- Hashwert-Überprüfungen
+- File Carving
+- Textsuchen
+- Slack-Untersuchungen
+
+# Datensammlung Software
+
+- EnCase von Guidance Software
+- FTK von Access Data
+- X-Ways Forensics von X-Ways AG (!)
+- The Sleuthkit und Autopsy
+- DFF - Digital Forensic Framework
+
+**kostenfreie Werkzeuge:**
+
+- dd, ddrescue, dcfldd (Harbour), dc3dd (Kornblum)
+- grep, strings, find
+- hexdump
+- ...
+
+# Datensammlung
+
+- wichtig: Verlaufsdokumentation!
+  - Welche Daten gesammelt?
+  - Wozu?
+  - Wann?
+  - Durch wen?
+  - Wie?
+  - Welches Zwischenergebnis?
+  - Wann löschen?
+- nützlich für:
+  - kritische Nachfragen souverän beantworten
+  - Zeitaufwand / Kosten berechnen
+
+# ISO 27037
+
+## beteiligte Akteure
+
+- Ersteinschreiter für digitale Beweismittel (Digital Evidence First Responder - DEFR)
+- Spezialist für digitale Beweismittel (Digital Evidence Specialist - DES)
+
+## DEFR und DES sollten in jedem Fall?
+
+- alle Maßnahmen dokumentieren
+- Methoden anwenden, mit welchen die Fehlerfreiheit und Verlässlichkeit der Kopie von potentiellen digitalen Beweismitteln festgestellt werden kann
+- Erkennen, dass der Vorgang der Erhaltung von potentiellen digitalen Beweismitteln nicht immer eingriffsfrei erfolgen kann
+
+## Grundsätze in der digitale Forensik
+
+- Relevanz
+- Vollständigkeit
+- Verlässlichkeit
+- Rechtmäßigkeit
+
+## Grundlegende Aspekte bei der Bearbeitung von digitalen Beweismitteln
+
+- Auditierbarkeit
+- Wiederholbarkeit
+- Begründbarkeit
+- Reproduzierbarkeit
+
+## Prozess zur Handhabung von digitalen Beweismitteln
+
+- Überblick
+  - Arbeit am Original auf ein Mindestmaß beschränken
+  - Nachweis aller Änderungen
+  - Keine Maßnahmen über den eigenen Kompetenzbereich
+- Identifikation
+  - Physisch oder logische Form
+  - Suche, Erkennung und Dokumentation digitaler Beweismittel
+- Mitnahme
+  - Mitnahme oder Sicherung?
+  - Zustände können sein:
+    - System ist ausgeschaltet
+    - System angeschaltet
+  - Kosten- und Zeitfaktor beachten
+- Sicherung
+  - Erstellen digitaler Kopien
+  - Methode muss reproduzierbar und verifizierbar sein
+  - Falls Prozesse nicht verifiziert werden können $\rightarrow$ Dokumentieren
+- Erhaltung
+  - Potentielle Beweismittel sollen erhalten bleiben
+  - Umfasst Schutz vor Verfälschung oder Zerstörung
+  - Solle in allen Bearbeitungsprozessen sichergestellt werden
+
+## Obhutskette
+
+- DEFR sollte immer in der Lage sein, die Verantwortung für alle erhobenen Daten und entgegengenommenen Geräte über den Zeitraum, in dem sie sich in seinem Gewahrsam befinden, zu tragen
+- Protokoll der Obhutskette führen
+  - chronologisch wird die Weitergabe und Bearbeitung festgehalten
+- Sollte folgendes enthalten:
+  - eine eindeutige Beweismittelkennzeichnung
+  - wer Zugriff auf das Beweismittel hatte, sowie Ort und Zeit der Zugriffs
+  - wer das Beweismittel in der Beweiserhaltungseinrichtung eingereicht hat und sich das Beweismittel dort herausgeben lassen hat, sowie die jeweiligen Zeitpunkte (inkl. Grund für Herausgabe)
+  - alle unvermeidbaren Änderungen an den potentiellen digitalen Beweismitteln sowie der Name der dafür verantwortlichen Person und die Begründung für die Durchführung der Änderung
+
+## Grundregeln für das Verhalten am Tatort
+
+- ruhig und überlegt vorgehen
+- je unklarer die Lage, desto weiträumiger die Sicherung
+- Einsatzfahrzeuge nicht an den unmittelbaren Tatort bringen
+- nur Ausrüstung und persönliche Dinge an den Tatort bringen, die benötigt werden
+- keine Einrichtungen am Tatort nutzen
+- nicht essen, trinken, rauchen!
+- grundsätzlich nichts anfassen, verändern, verlegen etc.
+- Kontamination vermeiden
+- keine eigenen Spuren hinterlassen
+- erforderliche Veränderungen markieren und dokumentieren
+
+## Allgemeine Vorkehrungen am Untersuchungsort
+
+- Sichern und Kontrollieren des Bereichs, in dem sich die Geräte befinden
+- Bestimmung der Person, die für den Ort die fachliche Verantwortung trägt
+- Sicherstellen, dass Personen von den Geräten und von der Stromversorgung ferngehalten werden
+- Alle Personen dokumentieren, die Zugang zum Ort haben oder für die ein Motiv für eine Beteiligung am Untersuchungsort vorliegen könnte
+- Ist das Gerät eingeschaltet, darf das Gerät nicht ausgeschaltet werden und umgekehrt
+- Untersuchungsort mit allen Komponenten und Kabeln in seiner ursprünglichen Position dokumentieren
+- Falls zulässig: Bereiche nach Gegenstände, wie Haftnotizen, Terminkalender, Akten, Laptops oder Handbücher für Hard- und Software durchsuchen
+
+## Personelle Vorkehrungen am Untersuchungsort
+
+- Sind Personen, gegen die ermittelt wird, anwesend? Falls ja, sind sie gewaltbereit?
+- Zu welcher Tageszeit erfolgt der Einsatz?
+- Kann der Untersuchungsort vor unbeteiligten Dritten abgeschirmt werden?
+- Befinden sich Waffen in diesem Bereich?
+- Bestehen objektive Risiken für anwesende Personen
+- Könnte irgendetwas in der Nähe, einschließlich des Gerätes, so konfiguriert worden sein, dass es zu Körperverletzungen führen kann, falls es auf unangemessene Weise bearbeitet wird, z. B. versteckte Falle?
+- Ist es wahrscheinlich, dass das zu sammelnde Beweismaterial psychische Schäden oder eine anstößige Wirkung hervorruft
+- Kann der Untersuchungsort als unsicher betrachtet werden?
+
+## potentielle Digitale Beweismittel am Untersuchungsort
+
+Risikobeurteilung durchführen und folgende Fragen Stellen:
+
+- Welche Art von Mitnahme-/Sicherungsmethode wird angewendet?
+- Welche Ausrüstung wird möglicherweise vor Ort benötigt?
+- Inwieweit sind die Daten und Informationen im Hinblick auf die potentiellen digitalen Beweismittel flüchtig?
+- Ist ein Fernzugriff auf irgendein digitales Gerät möglich und stellt er eine Bedrohung für die Beweismittel-Integrität dar?
+- Was passiert, wenn der Datenbestand beschädigt ist?
+- Könnte der Datenbestand beeinträchtigt worden sein?
+- Könnte das digitale Gerät so konfiguriert worden sein, dass Daten zerstört (bspw. eine sog. Logikbombe), vereitelt oder verschleiert werden, wenn das Gerät ausgeschaltet wird oder ein unkontrolliert Zugriff darauf erfolgt?
+
+## Erhebung von nicht digitalen Beweisen
+
+- vom DEFR sollten auch nicht digitale beweise berücksichtigt werden, diese können zusätzliche Informationen liefern, wie bspw. Passwörter, Handbücher usw.
+- Es ist die Person zu identifizieren, welche für die Einrichtung am Vorfall-Ort verantwortlich ist
+- DEFR muss Name und Position dieser Person dokumentieren
+- Es kann notwendig sein, dass der DEFR mit weiteren Personen vor Ort spricht
+
+# Tatortfotographie
+
+<!-- md2apkg ignore-card -->
+
+nicht prüfungsrelevant!
+
+# Dokumentation
+
+- Dokumentation aller Schritte ist unerlässlich
+- Alle durchgeführten Schritte sind zu dokumentieren
+- Best Practice: Heft / Block und einfach handschriftlich beschreiben, was durchgeführt wurde
+  - Wieso handschriftlich?
+    - geht i.d.R. schneller
+    - handschriftliche Aufzeichnungen sind hinterher schwerer zu verändern oder zu fälschen
+    - Änderungen bleiben erkennbar
+    - Muss etwas geändert werden, dann sollte die betroffene Stelle Stelle durchgestrichen werden, so dass der ursprüngliche Text noch lesbar bleibt
+
+# Bekämpfung der Computerkriminalität
+
+## Incident Handling
+
+- organisierter Ansatz zur Lösung und Bewältigung der Folgen einer Sicherheitsverletzung respektive eines Angriffs auf die IT-Infrastruktur
+- Ziel ist: die Situation in geeigneter Weise handhaben; Schaden begrenzen, verringern; Recovery Zeit und anfallende Kosten minimieren
+- Ursache des Zwischenfalls erkennen; geeignete Maßnahmen treffen; weitere Zwischenfälle verhindern oder gar Angreifer identifizieren
+
+## CERT
+
+- Computer Emergency Response Team
+- unterstützt Unternehmen bei IT-Zwischenfällen
+
+# E-Mail-Header-Analyse
+
+- `received`-Einträge: Server, die die Email bearbeitet haben
+  - jeder Mail-Router fügt einen solchen Eintrag zur Email hinzu
+
+## Welche Angaben kann der Angreifer manipulieren?
+
+- ``From``, ``To``, ``Date``, ``Subject``, ``Message-ID`` lassen sich leicht manipulieren
+- `received`-Einträge lassen sich nur mit hohem Aufwand manipulieren
+
+# Betriebssysteme
+
+## Windows
+
+- Unterstützte Dateisysteme: Fat 12/16/32, NTFS, ExFAT, CDFS/UDF
+- Unterstützte Architekturen: X86 (32 Bit), X64/iA64 (64 Bit)
+- Kategorien von Nutzerdaten: Benutzerdaten, Systemdaten, Softwaredaten
+
+### wichtige Verzeichnispfade
+
+- Systemdaten unter `WINDOWS`, `WIN`, oder `WINNT`
+- Softwaredaten unter `Programme` oder`Program Files`
+- Benutzerdaten im Benutzerverzeichnis
+- Einstellungen und Anwendungsspezifische Daten `AppData\Local`, `AppData\LocalLow` und `AppData\Roaming`
+  - `AppData\Local` $\rightarrow$ temporäre Dateien
+  - `AppData\Roaming` $\rightarrow$ Anwendungseinstellungen, können im Firmennetz ausgetauscht werden
+  - `AppData\LocalLow` $\rightarrow$ für Programme, die nirgendwo anders hin schreiben dürfen (bspw. Browser-Addons)
+
+### Windows Benutzerverwaltung mittels SID
+
+- Security Identifier
+- jedes System, jeden Nutzer und jede Gruppe kann durch SID dauerhaft identifiziert werden
+
+### Windows Registry
+
+- Daten werden in sog. Registrierungs-Hives aufgeteilt und in Schlüsseln mit Key Value pairs gespeichert
+- Die Datenbanken liegen in Dateiform in `C:\Windows\System32\Config\`
+- Die Benutzerspezifischen liegen in `C:\Users\User\`
+
+### Windows ShadowCopies
+
+- Snapshots des Dateisystems
+- nutzt Copy-on-Write Technik
+- Deutsch: Volumeschattenkopie
+- Verwaltung mit Windows-Tool ``vss`` oder mit NirSoft ShadowExplorer
+
+### Windows Prefetch Dateien
+
+- häufig genutzte Programme werden beim Start in den RAM gecached<!--stammt aus HDD-Ära-->
+- nach Entfernen eines Programms bleiben Prefetch-Daten davon dennoch erhalten
+- bietet damit Rückschlüsse auf häufig genutzte Programme und den Startvorgang
+
+### Windows UserAssist Keys
+
+- geben Auskunft über gestartete Anwendungen und genutzte Schaltflächen im Windows Explorer
+- in ``NTUSER.DAT`` bzw. Registry gespeichert
+
+### Windows Auslagerungsdateien
+
+- `swapfile.sys`
+- `pagefile.sys`
+- `hiberfil.sys` - ggf. leer, wenn die Hibernation deaktiviert wurde
+- können mit dem Tool _Volatility_ analysiert werden
+
+### Outlook-Dateien
+
+- v.a. bei Ransomware-Angriffen sind Outlook-Anhänge interessant
+- werden gespeichert:
+  - im Nutzerprofil
+  - als temporäre Anhänge
+- können mit NirSoft OutlookAttachView gefunden und analysiert werden
+
+### Windows ADS
+
+- "Alternative Data Stream"
+- unsichtbare Dateien, fest mit Hauptdatei verknüpft
+- benötigt um: Macintosh-Dateien unter NTFS zu verwalten, Antiviren-Programme verwenden z.T. ADS um Prüfsummen zu speichern
+- Herkunft der Dateien wird vom System gespeichert (lokal oder Internet)
+- Transaktionsdaten des Dateisystems werden gespeichert
+- auch sehr gern von Malware / Viren genutzt
+- [Weitere Infos](https://de.wikipedia.org/wiki/Fork_(Dateisystem))
+
+## MacOS
+
+- Unterstützte Dateisysteme: FAT12/16/32 und NTFS (nur lesend), exFAT, HFS/HFS+, CDFS, APFS
+- Unterteilung in Systemdaten, Benutzerdaten und Softwaredaten
+
+## Linux
+
+### Linux-Dateisysteme
+
+- FAT 12/16/32
+- ext 1/2/3/4
+- CDFS
+- ReiserFS
+- UFS
+
+### Dateisysteme Read-only mounten
+
+<!--ad hocSonderkapitel von Max, nicht aus der VL, nicht belegt, deal with it-->
+
+- erfordert Einsatz eines Live-Systems oder einer forensischen Workstation mit Linux
+- geschieht auf der Kommandozeile mit der ``mount``-Option ``ro``
+  - also z.B.: ``mount -o ro /dev/sdb1 /mnt``
+
+### Dateisystem-Rechte auf Linux / Rollensystem
+
+<!--ad hoc Sonderkapitel von Max, nicht aus der VL, nicht belegt, deal with it-->
+
+- Dateien und Ordner auf Linux-Dateisystemen haben genau einen Besitzer und genau eine Gruppe
+  - anhand von IDs aus der ``/etc/group``-Datei des Systems
+- Für den Besitzer, die Gruppe und _Other_ existieren jeweils die Rechte "Read", "Write" und "Execute" als 3-Bit-Binärzahl codiert (``rwx``)
+  - ``r``: entspricht 4
+  - ``w``: entspricht 2
+  - ``x``: entspricht 1
+  - Addition der 3 Stellen zu einer Dezimalzahl
+  - Eine Datei, die für den Besitzer volle Rechte, für die Gruppe lesbar und ausführbar und für alle anderen keine Rechte haben soll, hat also:
+    - u: ``0b111`` g: ``0b101`` o: ``0b000``
+    - aka 750 in **Oktal-Schreibweise**
+- für Ordner ist das ``x``-Bit die Erlaubnis, einen Ordner zu betreten
+- Rechte können mit dem Tool ``chmod`` verändert werden und mit ``ls -l`` ausgelesen werden
+- chmod-Syntax:
+  - ``chmod <neue Rechte> datei-oder-ordner``
+  - ``neue Rechte`` können dabei in der Oktal-schreibweise, z.B. ``750`` oder in Langschreibweisen wie ``u=rwx,g=rx,o=`` oder ``g+r,o-r`` angegeben werden
+  - kann rekursiv auf Ordner angewendet werden: ``chmod -R ...``
+- Besitzer- und Gruppen-Zugehörigkeit kann mit dem Tool ``chown`` verändert werden
+- Weiterführende Info: es gibt auch ein [SetUID-Bit](https://de.wikipedia.org/wiki/Setuid) für ausführbare Dateien
+  - Wenn das gesetzt ist, wird ein Programm zusätzlich zu den Rechten des eigenen Nutzers mit denen des Datei-Besitzers ausgeführt
+  - das kann ein großes Sicherheitsrisiko werden und ist deshalb unbedingt kritisch zu betrachten!
+
+<!--
+TODO
+
+nützliche Befehle Live
+
+- rpm-qu
+- dpkg -l
+- apt-list (?)
+- where is
+- which
+- echo $PATH
+
+PostMortem
+
+- /opt/..
+- .. ToDo Folie 3/52
+
+- history
+- grep auth-log nach sudo-Befehlen
+- Zeitzone, DNS, Betriebssysteminfo ...
+- Prozesse, Netzwerkverbindungen, Logdateien
+- Rootkit Scanner
+- syst internal suite (?????????????????????)
+- ....
+
+-->
+
+## Hacking
+
+<!--(ToDo, Folien noch gebraucht)-->
+
+- Root-Kit
+- TCP-View
+- PDF Malware Analysis
+- Wireshark
