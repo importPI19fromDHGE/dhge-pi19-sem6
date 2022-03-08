@@ -103,6 +103,14 @@ Ein verteiltes System ist ein System bestehend aus...
 - Skalierbarkeit
 - Fehlertoleranz, Ausfallsicherheit, Verfügbarkeit
 
+## CAP-Theorem
+
+Ein verteiltes System kann zwei der folgenden Eigenschaften gleichzeitig erfüllen, jedoch nicht alle drei:
+
+- **C**onsistency (Konsistenz)
+- **A**vailability (Verfügbarkeit)
+- **P**artition Tolerance (Ausfalltoleranz)
+
 ## Basismechanismen verteilter Systeme
 
 - dynamisches Binden: über einen Verzeichnisdienst werden Ressourcen dynamisch gefunden und bei Bedarf eine Verbindung hergestellt
