@@ -794,3 +794,122 @@ PostMortem
 - TCP-View
 - PDF Malware Analysis
 - Wireshark
+
+# Techniken der digitalen Spurensuche
+
+- forensische Kopien nutzen
+- Schreibblocker verwenden
+- Hashwertvergleich von Image und Original
+- Überprüfung der Standardverzeichnisse
+- Filterfunktion der Tools verwenden
+- Wiederherstellen gelöschter Objekte
+  - Wenn nicht automatisch erkannt: gelöschte Daten manuell suchen
+- Papierkorb überprüfen
+- Dateiendungen und Überstimmung mit Inhalt prüfung
+- Erkennung unbekannter Dateiobjekte
+
+## FileCarving
+
+- ist eine Methode, um Dateien auf Datenträgern ausfindig zu machen, die durch das Dateisystem nicht mehr erkannt werden und sich zum Beispiel im freien Speicherbereich befinden
+- Grundlage ist die Überprüfung des Datenträgers byte-, sektor- oder clusterweise auf bestimmte Dateisignaturen
+
+## RAM Sicherung Grundlagen
+
+- wegen der Volatilität ist darauf zu achten, möglichst wenig Informationen am zu untersuchenden System zu verändern
+- kleinste Aufrufe von Software am untersuchten System können Änderungen am RAM hervorrufen
+- Bei Dateisicherungen ist die RAM-Sicherung immer der letzte Punkt
+- RAM Sicherungen sind sehr instabil und führen oft zu Abstürzen des Systems
+
+# Dateisysteme
+
+## Dateisysteme Grundlagen
+
+- Unterteilung in Sektoren (meist 512 Byte) und Cluster (n zusammenhängende Sektoren)
+- am Anfang des Datenträgers befindet sich der Bootsektor (MBR/GPT), der die Partitionstabele mit den Eintragungen zu den einzelnen Partitionen des Datenträgers enthält
+- am Ende des Datenträgers kann sich eine Kopie des Bootsektors befinden
+
+### Festplattenpartitionierung auf BIOS basierten Computern
+
+- Partitionstabelle umfasst immer 64 Bytes und enthält Eintragungen zu den Partitionen des Datenträgers.
+- Eintragungen bestehen aus jeweils 16 Byte Einträgen. Maximal 4 Partitionen speicherbar!
+- MBR: Master Boot Record
+
+### Festplattenpartitionierung auf EFI basierten Computern
+
+- GPT: GUID Partition Table
+- GPT partitionierte Festplatten können eine Größe von bis zu 8192 Exabyte verwalten
+
+### Dateisystem-Besonderheiten: Zeitstempel
+
+- für Aussagen zu Zeitpunkten und Zeiträumen können die vom Dateisystem gespeicherten Meta-Daten zu den Zeitstempeln von Dateien eine wichtige Aussage treffen
+- drei wichtige Zeitstempel (MAC-Time):
+  - **M**odification Time
+  - **A**ccess Time
+  - **C**hange/**C**reation Time
+- Besonderheiten:
+  - C-Zeitstempel unter Windows und Linux
+- beim Erfassen auf korrektes Format und Zeitzone achten
+- Abweichungen dokumentieren!
+- Last-Access timestamp lässt sich in der Windows-Registry deaktivieren
+
+### Slackspeicher
+
+- Versatz, der beim Speichern von Daten auf Sektor-basierten Datenträgern auftritt
+- Betriebssysteme speichern immer nur ganze Cluster $\rightarrow$ es bleibt Platz übrig
+- Slack-Speicher kann wertvolle Informationen enthalten
+- Formen von Slackspeicher: File-Slack, Partition-Slak, RAM-Slack
+
+## FAT-Dateisystem
+
+- FAT-Systeme: FAT12, FAT16, FAT32, exFAT, VFAT, TFAT
+- einfaches Dateisystem, nur geringe Anzahl an Datenstrukturen zur Datenverwaltung vorausgesetzt
+- nur zwei wichtige Strukturen zum Speichern von Daten
+  - File Allocation Table (FAT)
+  - DirectoryEntries (Verzeichniseinträge)
+- Anordnung einer Partition: `Bootsektor + Partitionssektor | Reservierte Sektoren | FAT Bereich | Datenbereich mit Verzeichniseinträgen`
+
+## Löschen bei FAT-Dateisystem
+
+- gelöschte Dateien werden nicht vollständig gelöscht; erstes Byte des Verzeichniseintrags, der des Namens, wird mit 0xE5 überschrieben
+- Clusterkette wird gelöscht
+- Wiederherstellungsvariante 1: Cluster vom Startcluster aus lesen, bis Dateigröße erreicht ist; funktioniert nicht bei fragmentierten Dateien
+- Wiederherstellungsvariante 2: wie 1 aber Zuteilungsstatus berücksichtigen, nur "nicht zugeteilte" Cluster für die Wiederherstellung verwenden; funktioniert auch nur unter Umständen
+
+## NTFS-Dateisystem
+
+- alles in einem NTFS Laufwerk ist eine Datei
+- Hauptverwaltungsdatei: $MFT (Master File Table)
+- über Bootsektor ($Boot) der Partition (steht am Anfang) kann Bereich der $MFT ermittelt werden
+- erster Eintrag der $MFT ist die $MFT selbst
+- jeder MFT Eintrag hat feste Größe von 1024 Byte
+  - kann mehrere Attribute beinhalten
+  - wichtigste Attribute: $Filename, $Standard, $Security, $Data
+  - am Anfang steht `FILE`, endet mit 0xFFFFFFFF
+
+### NTFS Attribute
+
+jede Datei muss folgende Attribute enthalten:
+
+- $STANDARD_INFORMATION
+- $FILE_NAME
+- $DATA
+
+jedes Verzeichnis muss folgende Attribute enthalten:
+
+- $STANDARD_INFORMATION
+- $FILE_NAME
+- $INDEX_ROOT
+- $INDEX_ALLOCATION
+
+### NTFW $DATA Attribut
+
+- entweder Resident $\rightarrow$ Daten direkt in $DATA Attribut
+- oder Verweis auf Dataruns (Verweis auf Cluster)
+- Cluster können wieder auf andere Dataruns/Cluster verweisen
+- NTFW Besonderheit: ADS: Alternative Datastreams
+
+## Ext-Dateisystem
+
+- ext3/ext4 ist das Standard-Dateisystem vieler Linux-Distributionen
+- Datenblöcke einer Datei werden möglichst nah beieinander gehalten
+- die Superblocks hat hohe forensische Relevanz
