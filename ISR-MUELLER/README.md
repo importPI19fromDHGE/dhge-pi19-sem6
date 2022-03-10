@@ -24,38 +24,39 @@ IT-Infrastrukturen / Sicherheit / Recht
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Überblick](#%C3%9Cberblick)
+- [IT-Infrastrukturen / Sicherheit / Recht](#it-infrastrukturen--sicherheit--recht)
+- [Überblick](#überblick)
   - [Governance, Compliance und Legal Tech](#governance-compliance-und-legal-tech)
   - [Rechtsfragen in der IT](#rechtsfragen-in-der-it)
   - [Vorschriften im IT-Recht](#vorschriften-im-it-recht)
   - [Datenschutz-Grundverordnung (DSGVO)](#datenschutz-grundverordnung-dsgvo)
     - [Rechtsstaatlichkeit und Grundrechtsschutz](#rechtsstaatlichkeit-und-grundrechtsschutz)
-    - [Grundrecht auf Schutz der Persönlichkeit](#grundrecht-auf-schutz-der-pers%C3%B6nlichkeit)
+    - [Grundrecht auf Schutz der Persönlichkeit](#grundrecht-auf-schutz-der-persönlichkeit)
     - [Besonderheiten im Umgang mit Rechtstexten](#besonderheiten-im-umgang-mit-rechtstexten)
     - [ePrivacy-Verordnung](#eprivacy-verordnung)
   - [Urheberrecht (UrhG)](#urheberrecht-urhg)
     - [Urheberrecht von Software und Datenbanken](#urheberrecht-von-software-und-datenbanken)
-    - [Urheberrecht im Arbeitsverhältnis](#urheberrecht-im-arbeitsverh%C3%A4ltnis)
+    - [Urheberrecht im Arbeitsverhältnis](#urheberrecht-im-arbeitsverhältnis)
   - [Einrichtung im Internet](#einrichtung-im-internet)
-    - [Domänenrecht](#dom%C3%A4nenrecht)
+    - [Domänenrecht](#domänenrecht)
     - [Telemediengesetz (TMG)](#telemediengesetz-tmg)
   - [E-Government-Gesetz](#e-government-gesetz)
   - [Informationsfreiheitsgesetz](#informationsfreiheitsgesetz)
     - [Ziele](#ziele)
-    - [Säulen der Umsetzung](#s%C3%A4ulen-der-umsetzung)
+    - [Säulen der Umsetzung](#säulen-der-umsetzung)
   - [IT-Sicherheits-Gesetz](#it-sicherheits-gesetz)
     - [Cyber Security Act (CSA)](#cyber-security-act-csa)
   - [Haftung](#haftung)
-- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-besch%C3%A4ftigungskontext)
+- [Datenverarbeitung im Beschäftigungskontext](#datenverarbeitung-im-beschäftigungskontext)
   - [Gestaltungsfelder der Personalvertretung](#gestaltungsfelder-der-personalvertretung)
   - [Interessen der Arbeitgeber](#interessen-der-arbeitgeber)
   - [Betriebs-/Dienstvereinbarungen](#betriebs-dienstvereinbarungen)
     - [Beispiel: Private und dienstliche Internetnutzung](#beispiel-private-und-dienstliche-internetnutzung)
     - [Beispiel: Protokolldateien](#beispiel-protokolldateien)
-- [Einführung Datenschutz](#einf%C3%BChrung-datenschutz)
+- [Einführung Datenschutz](#einführung-datenschutz)
   - [Exkurs - Impulsfragen Datenschutz / Miro-Board](#exkurs---impulsfragen-datenschutz--miro-board)
   - [Recht auf informationelle Selbstbestimmung](#recht-auf-informationelle-selbstbestimmung)
-    - [Beeinträchtigung digitaler Rechte](#beeintr%C3%A4chtigung-digitaler-rechte)
+    - [Beeinträchtigung digitaler Rechte](#beeinträchtigung-digitaler-rechte)
     - [Handlungsbedarf (Datenschutz im Kontext moderner Technologien)](#handlungsbedarf-datenschutz-im-kontext-moderner-technologien)
   - [Befugnisse von Datenschutzbeauftragten](#befugnisse-von-datenschutzbeauftragten)
 - [EU-Datenschutz Grundverordnung](#eu-datenschutz-grundverordnung)
@@ -72,27 +73,27 @@ IT-Infrastrukturen / Sicherheit / Recht
     - [Verantwortlicher](#verantwortlicher)
     - [Begriff der Verarbeitung](#begriff-der-verarbeitung)
       - [Offenlegen](#offenlegen)
-      - [Löschen vs. Vernichten](#l%C3%B6schen-vs-vernichten)
+      - [Löschen vs. Vernichten](#löschen-vs-vernichten)
     - [Auftragsverarbeiter](#auftragsverarbeiter)
     - [Dritter](#dritter)
     - [Dateisystem (juristische Definition)](#dateisystem-juristische-definition)
     - [Pseudonymisierung](#pseudonymisierung)
     - [Profiling](#profiling)
-  - [Kapitel 2 - Grundsätze](#kapitel-2---grunds%C3%A4tze)
-    - [Art. 5 - Grundsätze der Verarbeitung](#art-5---grunds%C3%A4tze-der-verarbeitung)
-    - [Art. 6 - Rechtmäßigkeit der Verarbeitung](#art-6---rechtm%C3%A4%C3%9Figkeit-der-verarbeitung)
+  - [Kapitel 2 - Grundsätze](#kapitel-2---grundsätze)
+    - [Art. 5 - Grundsätze der Verarbeitung](#art-5---grundsätze-der-verarbeitung)
+    - [Art. 6 - Rechtmäßigkeit der Verarbeitung](#art-6---rechtmäßigkeit-der-verarbeitung)
     - [Art. 9 - Besondere Datenkategorien](#art-9---besondere-datenkategorien)
-  - [Art. 83 - Geldbußen](#art-83---geldbu%C3%9Fen)
+  - [Art. 83 - Geldbußen](#art-83---geldbußen)
   - [Kapitel 3 - Rechte der Betroffenen](#kapitel-3---rechte-der-betroffenen)
-    - [Beispiele für technisch-organisatorische Maßnahmen (TOM)](#beispiele-f%C3%BCr-technisch-organisatorische-ma%C3%9Fnahmen-tom)
+    - [Beispiele für technisch-organisatorische Maßnahmen (TOM)](#beispiele-für-technisch-organisatorische-maßnahmen-tom)
   - [Kapitel 4 - Verantwortlicher und Auftragsverarbeiter](#kapitel-4---verantwortlicher-und-auftragsverarbeiter)
-    - [Art. 24 - Pflichten des für die Verarbeitung Verantwortlichen](#art-24---pflichten-des-f%C3%BCr-die-verarbeitung-verantwortlichen)
+    - [Art. 24 - Pflichten des für die Verarbeitung Verantwortlichen](#art-24---pflichten-des-für-die-verarbeitung-verantwortlichen)
     - [Art. 28 - Auftragsverarbeiter](#art-28---auftragsverarbeiter)
-      - [Auftragsverarbeitung vs. Funktionsübertragung](#auftragsverarbeitung-vs-funktions%C3%BCbertragung)
-    - [Art. 30 - Aufzeichnung der Verarbeitungsaktivitäten](#art-30---aufzeichnung-der-verarbeitungsaktivit%C3%A4ten)
+      - [Auftragsverarbeitung vs. Funktionsübertragung](#auftragsverarbeitung-vs-funktionsübertragung)
+    - [Art. 30 - Aufzeichnung der Verarbeitungsaktivitäten](#art-30---aufzeichnung-der-verarbeitungsaktivitäten)
     - [Art. 33 - Meldepflichten von Verletzungen des Schutzes personenbezogener Daten](#art-33---meldepflichten-von-verletzungen-des-schutzes-personenbezogener-daten)
-    - [Art. 35 - Datenschutz-Folgeabschätzung](#art-35---datenschutz-folgeabsch%C3%A4tzung)
-      - [Inhalt einer Datenschutz-Folgeabschätzung](#inhalt-einer-datenschutz-folgeabsch%C3%A4tzung)
+    - [Art. 35 - Datenschutz-Folgeabschätzung](#art-35---datenschutz-folgeabschätzung)
+      - [Inhalt einer Datenschutz-Folgeabschätzung](#inhalt-einer-datenschutz-folgeabschätzung)
       - [Blacklists](#blacklists)
   - [Aufgaben des Verantwortlichen](#aufgaben-des-verantwortlichen)
   - [Aufgaben des Datenschutzbeauftragten](#aufgaben-des-datenschutzbeauftragten)
@@ -102,10 +103,10 @@ IT-Infrastrukturen / Sicherheit / Recht
       - [Arbeitskreise](#arbeitskreise)
     - [European Data Protection Board](#european-data-protection-board)
   - [Standard-Datenschutzmodell](#standard-datenschutzmodell)
-- [Gefährliche IT-Entwicklungen](#gef%C3%A4hrliche-it-entwicklungen)
+- [Gefährliche IT-Entwicklungen](#gefährliche-it-entwicklungen)
   - [Schadensszenarien](#schadensszenarien)
-  - [IT-Sicherheit ist gefährdet bei](#it-sicherheit-ist-gef%C3%A4hrdet-bei)
-  - [Die häufigsten Versäumnisse in Sachen Sicherheit](#die-h%C3%A4ufigsten-vers%C3%A4umnisse-in-sachen-sicherheit)
+  - [IT-Sicherheit ist gefährdet bei](#it-sicherheit-ist-gefährdet-bei)
+  - [Die häufigsten Versäumnisse in Sachen Sicherheit](#die-häufigsten-versäumnisse-in-sachen-sicherheit)
   - [Nachgewiesene IT-Sicherheit lohnt sich](#nachgewiesene-it-sicherheit-lohnt-sich)
   - [Stellenwert der Informationssicherheit](#stellenwert-der-informationssicherheit)
   - [Grundwerte der Informationssicherheit](#grundwerte-der-informationssicherheit)
@@ -121,15 +122,33 @@ IT-Infrastrukturen / Sicherheit / Recht
     - [ITSEC](#itsec)
     - [Common Criteria Zertifikate](#common-criteria-zertifikate)
 - [KRITIS](#kritis)
-- [Bundesamt für Sicherheit in der Informationstechnik](#bundesamt-f%C3%BCr-sicherheit-in-der-informationstechnik)
+- [Bundesamt für Sicherheit in der Informationstechnik](#bundesamt-für-sicherheit-in-der-informationstechnik)
   - [Aufgaben](#aufgaben)
 - [Modellierung](#modellierung)
   - [Schritte der Modellierung](#schritte-der-modellierung)
   - [Risikoanalyse](#risikoanalyse)
     - [Schritte einer Risikoanalyse](#schritte-einer-risikoanalyse)
-    - [Gefährdungen](#gef%C3%A4hrdungen)
+    - [Gefährdungen](#gefährdungen)
     - [Notwendigkeit einer Risikoanalyse](#notwendigkeit-einer-risikoanalyse)
     - [Risikobehandlungsoptionen](#risikobehandlungsoptionen)
+- [Kommunikation](#kommunikation)
+  - [Jede Botschaft hat mehrere Seiten](#jede-botschaft-hat-mehrere-seiten)
+  - [Kommunikationsprozess](#kommunikationsprozess)
+  - [Feedback](#feedback)
+  - [Komponenten einer Nachricht](#komponenten-einer-nachricht)
+    - [Sachinhalt](#sachinhalt)
+    - [Appell](#appell)
+    - [Selbstoffenbarung (Wie ich bin!)](#selbstoffenbarung-wie-ich-bin)
+    - [Beziehungsinhalt (Wie stehe ich zu dir?)](#beziehungsinhalt-wie-stehe-ich-zu-dir)
+  - [Kommunikationsfehleranalyse](#kommunikationsfehleranalyse)
+  - [Kommunikationstechniken](#kommunikationstechniken)
+    - [Ich-Botschaften](#ich-botschaften)
+    - [Du-Botschaften](#du-botschaften)
+    - [Ein kleines Rezept für Ich-Botschaften](#ein-kleines-rezept-für-ich-botschaften)
+    - [Richtig streiten](#richtig-streiten)
+    - [Kommunikationstechnik: Feedback](#kommunikationstechnik-feedback)
+    - [Regeln zur Vermittlung konstruktiven Feedbacks](#regeln-zur-vermittlung-konstruktiven-feedbacks)
+  - [](#)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -890,3 +909,111 @@ Betrachtet...
 - Risikoreduktion (Zusatzmaßnahmen treffen)
 - Risikotransferierung (Versicherung/Outsourcing)
 - Risikoakzeptanz
+
+# Kommunikation
+
+## Jede Botschaft hat mehrere Seiten
+
+- Inhalt/Sachaussage
+- Gefühle/Stimmung
+- Appell/Aufforderung
+- Beziehung/Verhältnis
+
+$\rightarrow$ ein großer Teil der Botschaft bleibt meist versteckt!
+
+## Kommunikationsprozess
+
+- Nachricht: Entscheidend ist die Form
+  - klare Sprache
+  - deutliche Schrift
+  - eindeutige Formulierung
+  - die Gliederung
+  - Darstellung, Gehalt
+- Jede Nachricht enthält stets mehrere Botschaften zugleich
+  - auus psychologischer Sicht hat eine Nachricht zwei Bereiche, die beim Empfänger ankommen
+
+## Feedback
+
+- Reaktion zeigt dem Sender, wie die Nachricht angekommen ist
+- Feedback spiegelt die Gedanken und Gefühle des Empfängers
+
+## Komponenten einer Nachricht
+
+### Sachinhalt
+
+- stellt sachlichen Grundwert der Nachricht dar
+- soll auf Sachziel bezogen sein, d.h. frei von Emotionen
+
+### Appell
+
+- Sender will Empänger veranlassen, bestimmte Dinge zu tun oder zu unterlassen, zu denken oder zu fühlen
+
+### Selbstoffenbarung (Wie ich bin!)
+
+- in Nachrichten stecken offen implizit Informationen über den Sender als Person
+- gewollte Selbstdarstellung
+- unfreiwillige Selbstenthüllung
+
+### Beziehungsinhalt (Wie stehe ich zu dir?)
+
+- zeigt sich in der gewählten Formulierung, Tonfall, nichtsprachlichen Begleitsignalen
+- Empfänger ist dafür besonders empfänglich, da er sich auf bestimmte Weise als Person behandelt fühlt
+- geprägt von Sympathie, Antipathie, Erwartungen, Hoffnungen
+- Empfänger ist die "Beziehungsebene"
+
+## Kommunikationsfehleranalyse
+
+- Empfangsfehler finden meist entweder auf der Sach- oder auf der Beziehungsebene statt
+- schwierigstes Problem bei der zwischenmenschlichen Kommunikation: Beziehungsstörungen werden auf der Sachebene ausgetragen
+- Folgerung: Schaffen von Klarheit über die Beziehung der Partner, dann sachliche Kommunikation
+
+## Kommunikationstechniken
+
+### Ich-Botschaften
+
+- Ermöglichen es, mit den Kommunikationspartnern offen, ehrlich und direkt umzugehen
+- Bedeuten eine Selbstoffenbarung
+  - liefern Aussage der Art: Ich bin ein Mensch, ich habe Anliegen, Probleme, Gefühle, Wünsche, ...
+  - Fördern eine effektive Kommunikation:
+    - Sie fördern die Bereitschaft, sich zu ändern
+    - enthalten kaum (negative) Bewertungen
+    - verletzen die Beziehung nicht
+    - sagen etwas über den Sender aus
+
+### Du-Botschaften
+
+- verfügen ausschließlich über den Empfänger
+- bauen Fassaden auf und machen Kommunikation unpersönlich
+- Wünsche werden versteckt
+- werten, kategorisieren, beschuldigen den Empfänger
+
+### Ein kleines Rezept für Ich-Botschaften
+
+- Sache klar beschreiben
+- Gefühle ausdrücken
+- Wünsche äußern
+- Folgen benennen
+
+### Richtig streiten
+
+"Du bist blöd!" oder "Es ärgert mich, dass ..."?
+
+### Kommunikationstechnik: Feedback
+
+- Zunächst herrscht Unsicherheit über Wirkung, die die Nachricht beim Empfänger ausgelöst hat
+- Reaktion (Feedback) des Senders zeigt dem Empfänger, ob und wie die Nachricht angekommen ist
+- Feedback bezieht sich sowohl auf die erzeugten Gedanken auf der Sachebene, als auch auf die ausgelösten Gefühle der Gefühlsebene
+- Feedback ist eine Mitteilung an eine Person, die diese darüber informiert, wie ihre Verhaltensweisen von anderen wahrgenommen, verstanden und erlebt werden
+
+### Regeln zur Vermittlung konstruktiven Feedbacks
+
+- sollte offen und echt sein
+- Vorraussetzung: vertrauensvolle Atmosphäre und Mut
+- keine Globalaussagen machen sondern Sachverhalte möglichst konkret beschreiben
+- Feedback muss angemessen sein, es muss die Bedürfnisse aller beteiligten Personen in angemessener Weise berücksichtigen
+- muss brauchbar sein, muss auf Verhaltensweisen beziehen, die der Empfänger auch verändern kann
+- muss auf Verlangen angebracht werden und nicht aufgezwungen werden
+- muss zur rechten Zeit gegeben werden, je unmittelbarer desto wirksamer
+- sollte korrekt und nie manipulatorisch sein
+
+## 
