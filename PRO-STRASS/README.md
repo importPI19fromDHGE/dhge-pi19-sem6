@@ -109,6 +109,12 @@ Computerforensik
     - [File Carving](#file-carving)
     - [Stichwortsuche](#stichwortsuche)
 - [RAM Sicherung](#ram-sicherung)
+  - [Grundlagen der RAM-Sicherung](#grundlagen-der-ram-sicherung)
+  - [RAM-Sicherung - Sicherungstechniken](#ram-sicherung---sicherungstechniken)
+  - [Arten der RAM-Sicherung](#arten-der-ram-sicherung)
+    - [User Level RAM Sicherung](#user-level-ram-sicherung)
+    - [Kernel Level RAM Sicherung](#kernel-level-ram-sicherung)
+    - [Crash Dump RAM Sicherung](#crash-dump-ram-sicherung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -839,4 +845,59 @@ PostMortem
 
 # RAM Sicherung
 
+- Logfiles und Daten im Netzwerk: logische Sicherung mit geeigneten Tools
+- RAM-Inhalte: mit DMA oder Cold-Boot; post-mortem
+- Random Access Memory...
+  - ...ist flüchtig: nach Ausschalten gehen die Daten verloren
+  - ...volatil: Daten unterliegen ständiger Änderung
+  - ...enthält u.a. Programme in Ausführung und Caches
+- folgende Informationen sind darin interessant:
+  - laufende Prozesse
+  - geöffnete Netzwerk-Verbindungen
+  - entschlüsselte Inhalte
+  - TODO
 
+## Grundlagen der RAM-Sicherung
+
+Für eine Vergleichbarkeit einzelner Sicherungstechniken findet man folgende Einteilung:
+
+- Korrektheit des Abbildes in Prozent
+- Atomarität: Abbild wird in atomar fortlaufenden Leseoperationen ohne Unterbrechung erzeugt
+- Integrität: TODO
+- TODO
+
+## RAM-Sicherung - Sicherungstechniken
+
+- User-Level: selektiver Bereich wird im Userland gesichert, z.B. Prozess
+- Kernel-Level: auf Ebene des Systemkerns wird der gesamte RAM gesichert
+- Crash-Dump: RAM-Abbild, was nach Absturz geschrieben wird
+
+- Bus-basiert (extern): Nutzung eines externen Bussystems, welcher DMA nutzt
+- Hardware-basiert: Nutzung eines internen Bussystems, welcher DMA nutzt
+
+- Cold Boot ohne RAM-Transfer: RAM-Sicherung durch Live-System im selben Host
+- Cold Boot mit RAM-Transfer: TODO
+
+- Hibernation-basiert: nach *Suspend to disk* wird die Hibernation-Datei gelesen
+- Virtualisation-basiert: Snapshots
+
+## Arten der RAM-Sicherung
+
+### User Level RAM Sicherung
+
+- selektiv aus dem Userland
+- bei Malware-Suche TODO
+
+TODO
+
+### Kernel Level RAM Sicherung
+
+- Dump durch Systemkern
+- z.B. durch Tool "DumpIt" für Windows, "LiME" für Linux oder "Rekall Memory Toolkit" für macOS
+
+### Crash Dump RAM Sicherung
+
+- in drei verschiedenen Arten:
+  - Complete Memory Dump
+  - Kernel Memory Dump
+  - Small memory Dump
