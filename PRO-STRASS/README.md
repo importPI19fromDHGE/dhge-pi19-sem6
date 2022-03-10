@@ -115,6 +115,23 @@ Computerforensik
     - [User Level RAM Sicherung](#user-level-ram-sicherung)
     - [Kernel Level RAM Sicherung](#kernel-level-ram-sicherung)
     - [Crash Dump RAM Sicherung](#crash-dump-ram-sicherung)
+- [Dateisysteme](#dateisysteme)
+  - [Dateisysteme Grundlagen](#dateisysteme-grundlagen)
+    - [Aufbau des MBR](#aufbau-des-mbr)
+    - [Aufbau des GPT](#aufbau-des-gpt)
+  - [Dateisysteme besondere Zeitstempel](#dateisysteme-besondere-zeitstempel)
+  - [Slack-Speicher](#slack-speicher)
+  - [FAT-Dateisystem](#fat-dateisystem)
+    - [Wiederherstellung von Daten im FAT-Dateisystem](#wiederherstellung-von-daten-im-fat-dateisystem)
+  - [NTFS-Dateisystem](#ntfs-dateisystem)
+    - [MFT Records](#mft-records)
+    - [NTFS Attribute](#ntfs-attribute)
+    - [NTFS: Speichern von Dateien](#ntfs-speichern-von-dateien)
+    - [NTFS: Löschen von Daten](#ntfs-löschen-von-daten)
+    - [NTFS: Datenwiederherstellung](#ntfs-datenwiederherstellung)
+    - [NTFS-Journal](#ntfs-journal)
+  - [EXT-Dateisystem](#ext-dateisystem)
+    - [EXT-Aufbau](#ext-aufbau)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -901,3 +918,129 @@ TODO
   - Complete Memory Dump
   - Kernel Memory Dump
   - Small memory Dump
+
+# Dateisysteme
+
+## Dateisysteme Grundlagen
+
+- Sektoren: ein Block an Bytes auf einer Spur
+- Cluster: Zusammenfassung von Sektoren im Betriebssystem
+- auf SATA SSDs leert erst ein ``TRIM``-Befehl die Zellen
+- Am Anfang eines Datenträgers ist der Bootsektor (MBR oder GPT) mit Partitionstabelle
+  - möglicherweise existiert eine Kopie davon am Ende
+
+### Aufbau des MBR
+
+![MBR](assets/mbr.png)<!--width=600px-->
+
+### Aufbau des GPT
+
+![GPT](assets/gpt.png)<!--width=600px-->
+
+## Dateisysteme besondere Zeitstempel
+
+- Drei Zeitstempel bilden die **MAC-Time**:
+  - **M**odification Time
+  - **A**ccess Time
+  - **C**reation Time / **C**hange Time (Linux, wann wurden Metadaten verändert)
+- C-Stempel existieren nur unter Windows und Linux
+- Last-Access-Timestamp kann deaktiviert werden
+
+## Slack-Speicher
+
+- auch: Schlupfspeicher
+- freier Speicher, der durch interne Fragmentierung einer Datei zugeordnet ist (freie Sektoren innerhalb eines Clusters)
+
+## FAT-Dateisystem
+
+- in den Varianten FAT12, FAT16, FAT32, exFAT, VFAT, TFAT
+- geringe Anzahl an Datenstrukturen
+- basiert auf Directory Entries und File Allocation Tables
+
+### Wiederherstellung von Daten im FAT-Dateisystem
+
+TODO
+
+## NTFS-Dateisystem
+
+- alles ist eine Datei
+- Master File Table (MFT) enthält Strukturverzeichnis und Datenträgerinformationen
+  - kann über Bootsektor addressiert werden
+  - erster Eintrag ist Pointer auf sich selbst
+  - kann fragmentiert vorliegen
+  - Einträge üblicherweise 1024 Bytes groß
+  - häufig als iNode bezeichnet
+
+![NTFS MFT](assets/ntfs_mft.png)<!--width=600px-->
+
+### MFT Records
+
+- ``$Data`` Attribut enthält Nutzlast
+- Flags codieren Art des Eintrags (Datei / Ordner) und ob es gelöscht wurde
+- Dateien haben einen File Record Header
+  - startet mit Signatur "FILE"
+  - endet mit 0xFFFFFFFF
+- es existieren feste MFT-Einträge
+
+### NTFS Attribute
+
+- jede Datei hat:
+  - ``$STANDARD_INFORMATION``
+  - ``$FILE_NAME``
+  - ``$DATA``
+- jedes Verzeichnis hat:
+  - ``$STANDARD_INFORMATION``
+  - ``$FILE_NAME``
+  - ``$INDEX_ROOT``
+  - ``$INDEX_ALLOCATION``
+- im ``$Data``-Attribut können entweder die Nutzlast selbst gespeichert sein oder über Datarun-Einträgen Verweise auf mehrere Cluster sein
+
+### NTFS: Speichern von Dateien
+
+1. im Bootsector wird der ``$MFT`` Eintrag gesucht und gelesen
+2. darin wird in der $Bitmap ein freier Eintrag gesucht
+3. ``$Logfile`` wird angelegt
+4. MFT-Eintrag wird mit o.g. Pflichtinhalt initialisiert
+5. in ``$Bitmap`` wird passender Platz für Nutzlast gesucht
+6. ``$INDEX_ROOT`` und ``$INDEX_ALLOCATION`` werden angepasst und die Datei in das Verzeichnis aufgenommen
+7. Zeitstempel wird erneuert
+8. Operationsende in ``$Logfile`` vermerkt
+
+### NTFS: Löschen von Daten
+
+1. im Bootsector wird der ``$MFT`` Eintrag gesucht und gelesen
+2. MFT-Eintrag und Verzeichniseintrag der zu löschenden Datei wird gesucht
+3. im Verzeichniseintrag werden die Zeitstempel aktualisiert
+4. ``$Logfile`` wird angelegt
+5. Datei wird aus Index des Verzeichnisses gelöscht
+6. MFT-Eintrag der Datei wird gelöscht und Sequenzeintrag der MFT wird inkrementiert
+7. In ``$Bitmap`` werden die Datencluster als _unallocated_ eingetragen
+
+### NTFS: Datenwiederherstellung
+
+- man kann sich nicht auf Dateisystemtreiber verlassen, da alle MFT-Einträge gelöscht
+- man muss auf Byte-Ebene arbeiten
+  - anhand der Parent File Referenz können verwaiste Referenzen gelöschter Elemente gefunden werden
+
+### NTFS-Journal
+
+- Changelog (USN Journal ``$UsnJrnl``) und Transaktionslog ``$LogFile`` des Dateisystems
+
+## EXT-Dateisystem
+
+- quasi-Standard-Dateisystem für Linux-Distributionen
+- entworfen für Geschwindigkeit und Zuverlässigkeit
+- Datenblöcke einer Datei werden nahe beieinander gehalten, um Seeking in HDDs zu minimieren
+- Kopien zentraler Datenstrukturen mehrfach auf dem Volume
+- 4 Versionen (ext bis ext4)
+- Forensik ist mit ext3/ext4 schwierig
+- durch Quelloffenheit können Antiforensik-Maßnahmen durchgeführt werden
+
+### EXT-Aufbau
+
+- besteht aus Boot-Block und mehreren Block-Gruppen
+- Superblock am Anfang jeder Block-Gruppe, nummeriert, ansonsten identisch
+  - am Offset ``0x38`` steht das Magic Byte ``0x53EF``
+- Gruppendeskriptor enthält Informationen über die entsprechende Block-Gruppe
+
+![EXT Aufbau](assets/ext_aufbau.png)<!--width=600px-->
