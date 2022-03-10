@@ -148,7 +148,11 @@ IT-Infrastrukturen / Sicherheit / Recht
     - [Richtig streiten](#richtig-streiten)
     - [Kommunikationstechnik: Feedback](#kommunikationstechnik-feedback)
     - [Regeln zur Vermittlung konstruktiven Feedbacks](#regeln-zur-vermittlung-konstruktiven-feedbacks)
-  - [](#)
+  - [Theorie des Teufelskreises](#theorie-des-teufelskreises)
+  - [Standard Teufelskreise](#standard-teufelskreise)
+  - [Konsequenzen des Teufelskreises](#konsequenzen-des-teufelskreises)
+  - [Strategien zur Verhaltensänderung](#strategien-zur-verhaltensänderung)
+  - [Die menschlichen Grundstrebungen](#die-menschlichen-grundstrebungen)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1016,4 +1020,41 @@ $\rightarrow$ ein großer Teil der Botschaft bleibt meist versteckt!
 - muss zur rechten Zeit gegeben werden, je unmittelbarer desto wirksamer
 - sollte korrekt und nie manipulatorisch sein
 
-## 
+## Theorie des Teufelskreises
+
+- Strafe
+- diese Betrachtungsweise macht aus Schuldgefühlen und Schuldzuweisungen eine Beteiligung von Anwendern und Betreuern am Konflikt
+- zu jedem Teufelskreis existiert auch ein Engelskreis
+
+## Standard Teufelskreise
+
+- Aggressions-Opfer-Teufelskreis
+- Misstrauen-Verschlossenheit-Teufelskreis
+- Kontrolle-Flucht-Teufelskreis
+
+## Konsequenzen des Teufelskreises
+
+- Verhalten, das belohnt wird, ändern wir nicht
+- Verhalten, das bestraft oder nicht belohnt wird, stellen wir ein
+
+## Strategien zur Verhaltensänderung
+
+**Strategie 1: Positive Verstärkung**
+
+- welches Verhalten soll gefördert werden?
+- welche Verstärkung soll es geben?
+- Verstärkung muss unmittelbar nach gewünschtem Verhalten erfolgen
+- "Intervallverstärkung" nach Etablierung des Verhaltensmusters durchführen
+
+**Stragie 2: Nichtbelohnung**
+
+- schwieriger Anwender darf aus seinem Verhalten dem Betreuer gegenüber keinerlei Vorteil ziehen
+- nicht nur das Verhalten einfach ignorieren, sondern darauf achten, dass sein Verhalten nicht belohnt wird
+- Betreuer muss dazu oft das eigene Verhalten zum Anwender ändern!
+
+## Die menschlichen Grundstrebungen
+
+- Nähestrebung
+- Distanzstrebung
+- Dauerstrebung
+- Wechselstrebung
