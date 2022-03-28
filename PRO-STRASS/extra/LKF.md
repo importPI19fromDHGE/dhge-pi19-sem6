@@ -175,7 +175,7 @@
 
 <!-- ToDo -->
 
-- NTFS-Dateisystem 
+- NTFS-Dateisystem
 - direkte Daten oder DataRuns
 
 ### Slackspeicher
