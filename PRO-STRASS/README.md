@@ -878,7 +878,10 @@ PostMortem
   - laufende Prozesse
   - geöffnete Netzwerk-Verbindungen
   - entschlüsselte Inhalte
-  - TODO
+- Passwörter (Klartext oder Hash)
+- Informationen zu angemeldeten Benutzern
+- Schadsoftware und deren Aktivitäten (Registry Aufrufe)
+- Flüchtige nicht gespeicherte Dokumente oder Online Inhalte
 
 ## Grundlagen der RAM-Sicherung
 
@@ -886,8 +889,8 @@ Für eine Vergleichbarkeit einzelner Sicherungstechniken findet man folgende Ein
 
 - Korrektheit des Abbildes in Prozent
 - Atomarität: Abbild wird in atomar fortlaufenden Leseoperationen ohne Unterbrechung erzeugt
-- Integrität: TODO
-- TODO
+- Integrität: bezeichnet den prozentualen Anteil an geänderten Speicherseiten im Bezug auf alle Speicherseiten, die zu einem Zeitpunkt geherrscht haben (Übernahme des Asservates durch den Forensiker etwa).
+- Verfügbarkeit: ist die Methode verfügbar für bestimmte Sicherungsfälle?
 
 ## RAM-Sicherung - Sicherungstechniken
 
@@ -899,7 +902,9 @@ Für eine Vergleichbarkeit einzelner Sicherungstechniken findet man folgende Ein
 - Hardware-basiert: Nutzung eines internen Bussystems, welcher DMA nutzt
 
 - Cold Boot ohne RAM-Transfer: RAM-Sicherung durch Live-System im selben Host
-- Cold Boot mit RAM-Transfer: TODO
+- Cold Boot mit RAM-Transfer: nach einem Transfer der RAM Speichermodule in ein zweites Sicherungssystems RAM Datensicherung mittels eines eigenen Betriebssystems
+- Beide Techniken geeignet für RAM Sicherung. 
+- praktische Umsetzung: sehr kompliziert und eher für Forensik Labore
 
 - Hibernation-basiert: nach *Suspend to disk* wird die Hibernation-Datei gelesen
 - Virtualisation-basiert: Snapshots
@@ -908,10 +913,13 @@ Für eine Vergleichbarkeit einzelner Sicherungstechniken findet man folgende Ein
 
 ### User Level RAM Sicherung
 
-- selektiv aus dem Userland
-- bei Malware-Suche TODO
 
-TODO
+- RAM Sicherungen: Bereiche sichern auf die der Benutzer selbst Zugriff hat. 
+- Malware Analysen:  Prozesse der Malware können  versteckt und nicht auffindbar sein (Rootkit Hiding Technologien / APT).
+- Tools: 
+  - Sysinternals ProcDump (CMD basiert)
+  - Process Explorer (Abbildung)
+  - Windows Taskmanager ('Abbilddatei erstellen')
 
 ### Kernel Level RAM Sicherung
 
