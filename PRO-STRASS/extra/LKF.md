@@ -225,7 +225,6 @@ im digital forensischen Umfeld Manipulationen am Tatort: ausschalten/abziehen ei
 - Sicherung der flüchtigen Daten in Betracht ziehen
   - Verschlüsselungscodes können im aktiven und inaktiven Speicher vorhanden sein
   - Wenn Verschlüsselung vermutet wird, dann logischer Sicherung in Betracht ziehen
-  
   - Analyse, ob das Gerät durch normales Herunterfahren ausgeschalten werden sollte oder mittels Netzstecker
   - Beim trennen des Netzsteckers darauf achten, dass die Seite am Gerät zuerst getrennt wird und nicht auf Seiten der Steckdose
 - Netzschalter mit Klebeband abkleben!
