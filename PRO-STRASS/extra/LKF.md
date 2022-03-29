@@ -133,11 +133,19 @@ Wenn kein physischer Zugriff/man weiß nicht was drauf läuft/evtl. Verschlüsse
 
 ### Beteiligte Akteuere in der ISO 27037
 
-<!-- ToDo -->
+Ersteinschreiter für digitale Beweismittel (DEFR): Befugt ist die ersten Maßnahmen am Tatort/an den Systemen vorzunehmen, der über Sicherungsmethode entscheidet & über Methode der Mitnahme
+
+Spezialist für digitale Beweismittel (DES): kümmert sich um Analyse, kann Aufgaben des DEFR übernehmen, aber zusätzlich noch Analysen
 
 ### Allgemeine Schritte nach ISO 27037
 
-<!-- ToDo -->
+- Sichern und Kontrollieren des Bereichs, in dem sich die Geräte befinden
+- Bestimmung der Person, die für den Ort die fachliche Verantwortung trägt
+- Sicherstellen, dass Personen von den Geräten und von der Stromversorgung ferngehalten werden
+- Alle Personen dokumentieren, die Zugang zum Ort haben oder für die ein Motiv für eine Beteiligung am Untersuchungsort vorliegen könnte
+- Ist das Gerät eingeschaltet, darf das Gerät nicht ausgeschaltet werden und umgekehrt, falls das Gerät ausgeschaltet ist, darf es nicht eingeschaltet werden
+- Untersuchungsort mit allen Komponenten und Kabeln in seiner ursprünglichen Position dokumentieren
+- Falls zulässig: Bereiche nach Gegenstände, wie Haftnotizen, Terminkalender, Akten, Laptops oder Handbücher für Hard- und Software durchsuchen
 
 ### Durchführung einer Risikobeurteilung
 
@@ -169,7 +177,23 @@ logische Form soll dargestellt und gesichert werden
 
 ### Leitfäden nach ISO 27037
 
-<!-- ToDo -->
+![Leitfaden Bild 1](/assets/LeitfadenISO27037_Bild1.png)
+
+#### Mitnahme von eingeschaltenen digitalen Geräten
+
+![Leitfaden Bild 2](/assets/LeitfadenISO27037_Bild2.png)
+
+#### Mitnahme von ausgeschalteten digitalen Geräten
+
+![Leitfaden Bild 3](/assets/LeitfadenISO27037_Bild3.png)
+
+#### Sicherung von eingeschalteten digitalen Geräten
+
+![Leitfaden Bild 4](/assets/LeitfadenISO27037_Bild4.png)
+
+#### Sicherung von ausgeschalteten digitalen Geräten
+
+![Leitfaden Bild 5](/assets/LeitfadenISO27037_Bild5.png)
 
 ### Mitnahme vs. Sicherung
 
@@ -185,7 +209,15 @@ im digital forensischen Umfeld Manipulationen am Tatort: ausschalten/abziehen ei
 
 ### Grundlegende Maßnahmen für ausgeschaltete digitale Geräte
 
-<!-- ToDo -->
+- Stromversorgungskabel zuerst am Gerät und nicht an der Steckdose trennen
+- Alle Kabel werden vom Gerät getrennt, gesichert und gekennzeichnet
+- Ein-/Aus-Knopf mit Klebeband überkleben, so dass keine Zustandsänderung stattfinden kann
+
+- bei Laptops sicherstellen, dass das Gerät wirklich ausgeschalten ist, anschließend Akku entfernen
+- Beim entfernen von Komponenten auf Erdung achten
+- Dokumentieren, ob CD/DVD-Laufwerke leer und vollständig eingefahren sind
+
+- In den meisten Fällen sollte das Speichermedium bis zum zeitpunkt der Sicherung nicht aus dem digitalen Gerät entfernt werden, da Das Entfernen das Risiko der Beschädigung oder Störung durch andere Speichermedien erhöhen kann.
 
 ### Grundlegende Maßnahmen für eingeschaltete digitale Geräte
 
@@ -204,7 +236,7 @@ im digital forensischen Umfeld Manipulationen am Tatort: ausschalten/abziehen ei
 
 ### Besonderheiten bei der Sicherung digitaler Beweismittel
 
-<!-- ToDo -->
+Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, können verschlüsselt sein, liegen physisch auf Datenträger vor und müssen dann logisch interpretiert werden um lesbar zu werden
 
 ### Hashwerte
 
