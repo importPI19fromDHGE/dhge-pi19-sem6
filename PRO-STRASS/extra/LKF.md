@@ -44,6 +44,10 @@
 
 <!-- ToDo -->
 
+#### Spurenträger
+
+<!-- ToDo -->
+
 ### Locard'sche Prinzip
 
 <!-- ToDo -->
@@ -88,9 +92,17 @@
 
 <!-- ToDo -->
 
-## ISO27037 und Tatorfotografie
+## ISO 27037 und Tatorfotografie
 
-### Beteiligte Akteuere inder ISO27037
+### Beteiligte Akteuere in der ISO 27037
+
+<!-- ToDo -->
+
+### Allgemeine Schritte nach ISO 27037
+
+<!-- ToDo -->
+
+### Durchführung einer Risikobeurteilung
 
 <!-- ToDo -->
 
@@ -102,6 +114,10 @@
 
 <!-- ToDo -->
 
+### Leitfäden nach ISO 27037
+
+<!-- ToDo -->
+
 ### Mitnahme vs. Sicherung
 
 <!-- ToDo -->
@@ -110,11 +126,19 @@
 
 <!-- ToDo -->
 
-### Mitnahme von ausgeschalteten digitalen Geräten
+### Grundlegende Maßnahmen für ausgeschaltete digitale Geräte
+
+<!-- ToDo -->
+
+### Grundlegende Maßnahmen für eingeschaltete digitale Geräte
 
 <!-- ToDo -->
 
 ### Erhebung von nicht digitalen Beweismitteln
+
+<!-- ToDo -->
+
+### Besonderheiten bei der Sicherung digitaler Beweismittel
 
 <!-- ToDo -->
 
