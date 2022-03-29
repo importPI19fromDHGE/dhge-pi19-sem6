@@ -135,7 +135,7 @@ Computerforensik
     - [NTFS-Journal](#ntfs-journal)
   - [EXT-Dateisystem](#ext-dateisystem)
     - [EXT-Aufbau](#ext-aufbau)
-    - [Löschen von Daten bei ext2 und ext3](#löschen-von-daten-bei-ext2-und-ext3)
+    - [Löschen von Daten bei ext2 und ext3](#l%C3%B6schen-von-daten-bei-ext2-und-ext3)
     - [EXT Antiforensik](#ext-antiforensik)
     - [Ext Besonderheiten](#ext-besonderheiten)
 
