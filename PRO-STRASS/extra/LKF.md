@@ -4,10 +4,15 @@
 
 ### Definition Digitale Forensik
 
-- **Forensik:** systematischenUntersuchung von kriminellen Handlungen
-- **Digitale Forensik:**
-
 <!-- ToDo: PPT 1 - Folie 33 -->
+
+- **Forensik:** systematischen Untersuchung von kriminellen Handlungen
+
+**Digitale Forensik:**
+
+- **streng methodisch vorgenommene Datenanalyse** auf Datenträgern und in Computernetzen 
+- zur **Aufklärung von Vorfällen** 
+- unter Einbeziehung der Möglichkeiten der strategischen Vorbereitung insbesondere aus der Sicht des Anlagenbetreibers eines IT-Systems.
 
 ### Ziele digitaler Forensik
 
@@ -22,24 +27,39 @@
 
 <!-- PPT 1 - Folie 35 -->
 
-- Datenträger-Forensik
-- Mobilfunk-Forensik
-- Netzwerk-Forensik
-- Multimedia-Forensik
-- Cloud-Forensik
-- Memory-Forensik
-- Car Forensik
-- IoT-Forensik
-- Forensische Linguistik
+- **Datenträger**-Forensik
+- **Mobilfunk**-Forensik
+- **Netzwerk**-Forensik
+- **Multimedia**-Forensik
+- **Cloud**-Forensik
+- **Memory**-Forensik
+- **Car** Forensik
+- **IoT**-Forensik
+- Forensische **Linguistik**
+
+#### Überschneidungen zu anderen Gebieten der Informationssicherheit
+
+<!-- HELP: Findet ihr das relevant? -->
+
+- Forensic Intelligence (predictive Policing, Untersuchung von Radikalisierung im Internet)
+- Informationssicherheitsmanagement
+- Schadsoftware-Analyse / Reverse Engineering
+- Untersuchungen im Darknet
+- Kryptowährungen / Blockchain-Untersuchung
 
 #### Multimedia-Forensik
 
 - Feststellung von Spuren bzw. Manipulationen in Bildern/Videos/Audio
 - Arbeitsgebiet der digitalen Forensik
 
+### Herausforderungen der digitalen Forensik
+
+- Massendaten in der Datenträger-Forensik: **Datenmengen immer größer**, Speicherplatz immer günstiger
+- **Faktor Zeit:** bis zur Entdeckung eines Vorfalls vergehen oft Monate
+
 ### Dunkelfeld
 
-Der Bereich, der Cyber-Straftaten, die nicht in der polizeilichen Kriminalstatistik erfasst wird, da es nicht entdeckt wird.
+> **Bereich der Cyber-Straftaten, die nicht in der polizeilichen Kriminalstatistik erfasst wird**, da sie nicht entdeckt werden.
 
 #### Gründe für nicht entdecken
 
@@ -48,9 +68,16 @@ Der Bereich, der Cyber-Straftaten, die nicht in der polizeilichen Kriminalstatis
 - Firmen melden Vorfälle wegen Imageschäden/Zeitdruck (schnell wieder einsatzfähig sein)
 - Kein Interesse an forensischer Aufarbeitung nicht
 
-### Digitale Spuren
+### Spuren
 
-Metadaten/Computerdaten, die aufgrund unseres Verhalten angelegt werden (Arbeitsspeicher, auf Datenbanken etc.)
+- materielle **Veränderungen an Personen oder Objekten**
+- stehen **im Zusammenhang mit relevanten Ereignissen**
+- **können zur Tataufklärung beitragen** (geben Rückschlüsse auf Tatablauf und Täter)
+
+#### Digitale Spuren
+
+- basieren auf Daten, welche in Computersystemen gespeichert sind bzw. übertragen wurden (Metadaten/Computerdaten $\rightarrow$ RAM, DBs, ...)
+- werden erst durch ihre Interpretation von physischen Spuren über unterschiedliche Interpretationsebenen zu verwertbaren Spuren
 
 #### Unterschiede im Gegensatz zu analogen Spuren
 
@@ -61,45 +88,58 @@ Metadaten/Computerdaten, die aufgrund unseres Verhalten angelegt werden (Arbeits
 
 #### Spurenträger
 
-<!-- ToDo -->
+<!-- ToDo: HELP PPT1 - Folie 45? -->
 
 ### Locard'sche Prinzip
 
-Keine Person (Täter/Opfer/Ermittler) kann einen Tatort betreten & verlassen ohne Spuren zu hinterlassen
+> Es gibt keinen Tatort ohne Spuren!
 
-Jeder der mit Tatort interagiert hinterlässt/verändert Spuren oder nimmt etwas mit. Auch bei digitalen Spuren
+- keine Person (Täter/Opfer/Ermittler) kann einen Tatort betreten und verlassen ohne Spuren zu hinterlassen
+- Jeder der mit Tatort interagiert hinterlässt/verändert Spuren oder nimmt etwas mit.
+
+> auch bei digitalen Spuren!
 
 ### Forensischer Arbeitsplatz
 
-<!--ToDo-->
+- **forensische Workstation** (sehr potente Hardware)
+- **Office Computer** für schriftliche Sachen (Dokumentation) ohne Verbindung zum Netzwerk oder nur interne Verbindung, aber kein Internetzugang
+- **Internetcomputer** für Recherche (aktuelle Virenscanner und Firewall!)
+
+> $\rightarrow$ im Idealfall drei physische Rechner (forensische Workstation immer physisch getrennt)
 
 ### Forensic Readiness
 
-Wenn etwas passiert, auf strategischer und operativer Ebene, bereit sein für forensische Prozesse durch forensischen Arbeitsplatz
+> -**bereit sein** für forensische Prozesse durch forensischen Arbeitsplatz **(strategischer und operativer Ebene)**
+> - Systeme sollen so konfiguriert sein, dass man digitale Spuren sammeln, schneller im Ernstfall agieren und Kosten sparen kann
 
-Systeme sollen so konfiguriert sein, dass man digitale Spuren sammeln kann, schneller im Ernstfall agieren, Kosten sparen
+- **Transportable Workstations** für Außeneinsätze (Beweismittel vor Ort erheben)
+- **Schreibschutzadapter** für Datensicherung (Außen- und Laboreinsatz)
+- **Technische Maßnahmen:** Gruppenrichtlinien konfigurieren (Server), Logging aktivieren 
+- **Organisatorische Maßnahmen:** Response-Teams, Hard- und Software beschaffen, Prozesse aufbauen (Verantwortliche, Budget, Kompetenzen, Räumlichkeiten, ...)
 
-#### Drei Säulen
+#### Schreibschutzadapter
 
-- forensische Workstation (sehr potente Hardware)
-- Office Computer für schriftliche Sachen (Dokumentation) ohne Verbindung zum Netzwerk oder nur interne Verbindung, aber kein Internetzugang
-- Internetcomputer für Recherche
+- Gerät zwischen Datenträger und Auslesegerät
+- verhindert dass Auslesegerät den Inhalt auf dem Datenträger verändern kann (blockiert Schreibzugriffe)
 
-→ im Idealfall drei physische Rechner
+##### Datenintegrität
 
-### Schreibschutzadapter
-
-Gerät zwischen Datenträger und Auslesegerät, verhindert dass Auslesegerät den Inhalt auf dem Datenträger verändern kann.
-
-#### Datenintegrität
+<!--ToDo: Prüfen -->
 
 - Sichern: nach gewissen Vorgehen, damit man nichts verändert
-
-- Analysieren: Wer/Wann/Wo/Wie/Was
-
+- Analysieren: Wer/Wann/Wo/Wie/Was?
 - Präsentieren bzw. Aufbereiten: Ergebnisse so aufarbeiten, dass sie Auftraggeber pärsentieren kann
 
 ### Vorgehensmodelle
+
+#### Anforderungen an forensische Vorgehensweisen
+
+- **Akzeptanz:** Methoden sind in der Fachwelt anerkannt
+- **Glaubwürdigkeit:** Funktionalität der Methoden ist nachweisbar
+- **Wiederholbarkeit:** Ergebnisse ist durch Dritte reproduzierbar
+- **Integrität:** Spuren werden durch Untersuchung nicht verändert
+- **Ursache und Auswirkungen:** Verbindung zwischen digitalen Spuren, Ereignissen und Personen sindherstellbar
+- **Dokumentation:** Ermittlungsprozess ist nachvollziehbar dokumentiert 
 
 #### BSI-IT-Forensik-Leitfaden
 
@@ -107,27 +147,29 @@ Gerät zwischen Datenträger und Auslesegerät, verhindert dass Auslesegerät de
 
 <!-- ToDo: ein Schwerpunkt! -->
 
-#### Post-moretem-Forensik
+#### Post-mortem Forensik
 
-“nach dem Tod” Hierbei werden nach einem Vorfall Daten erhoben und analysiert z.B. Datenträger-Forensik
-
-Wenn Rechner ausgeschaltet ist & Festplatte ausbaubar, dann an forensische Maschine anschließen & Daten 1:1 kopieren kann
+- *"nach dem Tod"* werden nach einem Vorfall Daten erhoben und analysiert (z.B. Datenträger-Forensik)
+- wenn Rechner ausgeschaltet und Festplatte ausbaubar $\rightarrow$ komplettes Datenträgerabbild mit forensischer Maschine erstellen
 
 #### Live-Forensik
 
-Während das System noch läuft, findet die Untersuchung eines Vorfalls statt
+- *während das System noch läuft* findet die Untersuchung eines Vorfalls statt
+- Daten live abziehen, wenn das System noch läuft (z.B. RAM)
+- wenn kein physischer Zugriff/man weiß nicht was drauf läuft/evtl. Verschlüsselung bei herunterfahren
 
-Daten live abziehen, wenn das System noch läuft
+#### logische Sicherung
 
-Wenn kein physischer Zugriff/man weiß nicht was drauf läuft/evtl. Verschlüsselung bei herunterfahren
+- auf Betriebssystemebene
+- mit Mitteln des Betriebssystems
+- mit Drittanwendersoftware
+- erfolgt abhängig von Betriebssystem
 
-### logische vs. physikal Sicherung
+#### physikalische Sicherung
 
-<!-- ToDo -->
-
-### Post-Mortem vs. Live-Forensik
-
-<!-- ToDo -->
+- auf Hardwareebene
+- mit hardware- und softwaretechnischen Hilfsmitteln
+- erfolgt betriebssystemunabhängig
 
 ## ISO 27037 und Tatorfotografie
 
