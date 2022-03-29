@@ -10,8 +10,8 @@
 
 **Digitale Forensik:**
 
-- **streng methodisch vorgenommene Datenanalyse** auf Datenträgern und in Computernetzen 
-- zur **Aufklärung von Vorfällen** 
+- **streng methodisch vorgenommene Datenanalyse** auf Datenträgern und in Computernetzen
+- zur **Aufklärung von Vorfällen**
 - unter Einbeziehung der Möglichkeiten der strategischen Vorbereitung insbesondere aus der Sicht des Anlagenbetreibers eines IT-Systems.
 
 ### Ziele digitaler Forensik
@@ -114,7 +114,7 @@
 
 - **Transportable Workstations** für Außeneinsätze (Beweismittel vor Ort erheben)
 - **Schreibschutzadapter** für Datensicherung (Außen- und Laboreinsatz)
-- **Technische Maßnahmen:** Gruppenrichtlinien konfigurieren (Server), Logging aktivieren 
+- **Technische Maßnahmen:** Gruppenrichtlinien konfigurieren (Server), Logging aktivieren
 - **Organisatorische Maßnahmen:** Response-Teams, Hard- und Software beschaffen, Prozesse aufbauen (Verantwortliche, Budget, Kompetenzen, Räumlichkeiten, ...)
 
 #### Schreibschutzadapter
@@ -139,7 +139,7 @@
 - **Wiederholbarkeit:** Ergebnisse ist durch Dritte reproduzierbar
 - **Integrität:** Spuren werden durch Untersuchung nicht verändert
 - **Ursache und Auswirkungen:** Verbindung zwischen digitalen Spuren, Ereignissen und Personen sindherstellbar
-- **Dokumentation:** Ermittlungsprozess ist nachvollziehbar dokumentiert 
+- **Dokumentation:** Ermittlungsprozess ist nachvollziehbar dokumentiert
 
 #### BSI-IT-Forensik-Leitfaden
 
