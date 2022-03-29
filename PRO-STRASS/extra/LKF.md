@@ -224,6 +224,15 @@ Systemspezifische Daten gleich ausblenden
 - größere Unternehmen, extern ausgelagert, auch auf Landesebene (pro Bundesland eins)
 - Kontaktstellen bei größeren IT-Sicherheitsvorfall
 
+### Sechs Schritte des SANS-Institut
+
+1. Vorbereitung: Die Organisation sensibilisiert die MA und trainiert sie darauf, auf Computer- und Netzwerk-Sicherheits-Zwischenfälle schnell und korrekt zu reagieren.
+2. Identifizierung: Das Response Team entscheidet, ob ein bestimmtes Ereignis eine Bedrohung darstellt. Das Team kann sich an der CERT Coordination Center wenden, welche aktuelle Spuren im Internet auf Sicherheitsvorfälle untersucht und hat die Möglichkeit die aktuellsten Informationen über Viren und Würmer zu enthalten.
+3. Eingrenzung: Das Team bestimmt, wie weit das Problem bereits Schaden verursacht hat und nimmt alle betroffenen Systeme und Geräte zur Verhinderung weiterer Schäden offline.
+4. Beseitigung: Das Team untersucht die Herkunft des Vorfalls und beseitig die Ursache des Problems.
+5. Recovery: Daten und Software sind sauber von Backup-Systemen wiederherzustellen. Um sicherzustellen, dass keine Lücken bleiben, werden diese überprüft. Systeme werden für weitere Anzeichen und Kompromittierung oder eines erneuten Auftretens überwacht.
+6. Nachbesprechung: Das Team untersucht den Vorfall und wie er behandelt wurde und versucht die Vorfallbehandlung und Prävention zu verbessern, um ein erneutes Auftreten des Problems zu verhindern.
+
 ### BSI IT-Grundschutz Kompendium
 
 - Katalog für die einzelnen Bereiche einer Organisation einzelne Bausteine beschrieben
@@ -234,7 +243,13 @@ Systemspezifische Daten gleich ausblenden
 - Rechtsformulierung da sich Gesetze langsamer als die Technik entwickeln
 - Hinweise auf Stand der Technik geben bspw. IT-Grundschutz Bausteine
 
-### Received-Einträge im E-Mail Header
+### E-Mail Header
+
+- Folgende Angaben kann der Angreifer manipulieren: From, To, Date, Subject, Message-ID
+- praktisch manipulationssicher: Received
+- good to know: G Suite Toolbox Nachrichten-Header
+
+#### Received-Einträge im E-Mail Header
 
 - jeder Mailrouter, der Mail verarbeitet fügt sich dieser Liste hinzu
 - Anomalien leicht feststellbar
@@ -243,6 +258,9 @@ Systemspezifische Daten gleich ausblenden
 ### Windows Registry
 
 - verschiedene Datenbanken (Registry Hives) die dort als Datei vorliegen auf dem Datenträger
+- Speicherung von Einstellungen in der Registrierungsdatenbank:
+  - gespeicherte Daten in sogenannten Registrierungshives aufgeteilt und in Keys mit Values abgelegt
+  - Datenbanken existieren in Form von Dateien im Verzeichnis
 
 ### Volume Shadow Copy
 
