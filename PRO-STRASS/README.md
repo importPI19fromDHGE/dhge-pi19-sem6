@@ -136,6 +136,9 @@ Computerforensik
     - [NTFS-Journal](#ntfs-journal)
   - [EXT-Dateisystem](#ext-dateisystem)
     - [EXT-Aufbau](#ext-aufbau)
+    - [Löschen von Daten bei ext2 und ext3](#löschen-von-daten-bei-ext2-und-ext3)
+    - [EXT Antiforensik](#ext-antiforensik)
+    - [Ext Besonderheiten](#ext-besonderheiten)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1086,6 +1089,44 @@ TODO: was passiert hier?
 - besteht aus Boot-Block und mehreren Block-Gruppen
 - Superblock am Anfang jeder Block-Gruppe, nummeriert, ansonsten identisch
   - am Offset ``0x38`` steht das Magic Byte ``0x53EF``
-- Gruppendeskriptor enthält Informationen über die entsprechende Block-Gruppe
+- Gruppendeskriptor enthält Informationen über die entsprechende Block-Gruppe:
+  - Superblock
+  - Gruppendeskriptortabelle
+  - Block-Bitmap
+  - Inode-Bitmap
+  - Inode-Tabelle
+- Bitmaps kennzeichnen belegte Blöcke
+- Metadaten für Dateien und Verzeichnisse werden in Inode-Datenstruktur gespeichert
+- Inodes verweisen auf Dateninhalte über direkte oder indirekte Blockpointer
+- Inodes enthalten Dateistempel
+- Verzeichniseinträge sind Datenstrukturen, die den Datei-/Verzeichniseintrag sowie Pointer auf Inode-Eintrag sowie den nächsten genutzten Verzeichniseintrag enthalten (Länge)
 
 ![EXT Aufbau](assets/ext_aufbau.png)<!--width=600px-->
+
+### Löschen von Daten bei ext2 und ext3
+
+![Löschen bei ext2](assets/ext-delete.png)<!--width=600px-->
+
+- kinda TODO
+
+### EXT Antiforensik
+
+- Ext ist quelloffen
+- kann beliebig modifiziert werden:
+  - Änderungen am Superblock
+  - Änderungen am Gruppendeskriptor
+  - Änderungen an der Inode
+- neu zu beschreibende Datenbereiche werden vorher immer mit Nullen überschrieben $\rightarrow$ **keine File-Slacks**
+
+### Ext Besonderheiten
+
+- ab Ext3 existiert ein Journal für Rollback bei Crash (im Superblock definiert)
+- jede Änderung am Dateisystem erfolgt in 3 Schritten:
+  - Kopie aller zu verändernden Blöcke in Journal kopieren
+  - I/O Operation durchführen
+  - Journaleintrag löschen
+- im Journaling existieren drei Optionen:
+  - **Journal**: Alle Transaktionen protokollieren
+  - **Ordered**: nur Transaktionen an Inodes protokollieren: erst Datenblöcke, dann Inodes speichern (Standard)
+  - **Writeback**
+- für Ext4 ist vieles wegen umfassenden Änderungen nicht mehr glültig
