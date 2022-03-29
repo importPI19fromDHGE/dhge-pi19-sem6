@@ -24,26 +24,27 @@ Computerforensik
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Computerforensik](#computerforensik)
 - [Organisatorisches](#organisatorisches)
 - [Intro](#intro)
 - [Digitale Rettungskette / Cyber Security Netzwerk (CSN)](#digitale-rettungskette--cyber-security-netzwerk-csn)
-- [häufige Angriffsvektoren](#h%C3%A4ufige-angriffsvektoren)
+- [häufige Angriffsvektoren](#häufige-angriffsvektoren)
 - [Relevante Gesetze](#relevante-gesetze)
-- [Datenschutzvorfälle](#datenschutzvorf%C3%A4lle)
-  - [Beispiele für meldepflichtige Datenschutzvorfällen](#beispiele-f%C3%BCr-meldepflichtige-datenschutzvorf%C3%A4llen)
+- [Datenschutzvorfälle](#datenschutzvorfälle)
+  - [Beispiele für meldepflichtige Datenschutzvorfällen](#beispiele-für-meldepflichtige-datenschutzvorfällen)
 - [Was ist Forensik?](#was-ist-forensik)
 - [Was ist digitale Forensik?](#was-ist-digitale-forensik)
   - [Worum geht es bei der Computer Forensik?](#worum-geht-es-bei-der-computer-forensik)
   - [Ziele der forensischen Analyse](#ziele-der-forensischen-analyse)
   - [Arbeitsgebiete der digitalen Forensik](#arbeitsgebiete-der-digitalen-forensik)
   - [Herausforderungen der digitalen Forensik](#herausforderungen-der-digitalen-forensik)
-  - [Klassifizierung der Täter](#klassifizierung-der-t%C3%A4ter)
+  - [Klassifizierung der Täter](#klassifizierung-der-täter)
   - [Herausforderungen in der IT-Forensik](#herausforderungen-in-der-it-forensik)
-- [Indikatoren für gefährdete Mitarbeiter](#indikatoren-f%C3%BCr-gef%C3%A4hrdete-mitarbeiter)
+- [Indikatoren für gefährdete Mitarbeiter](#indikatoren-für-gefährdete-mitarbeiter)
 - [Was sind Spuren?](#was-sind-spuren)
   - [Was sind digitale Spuren?](#was-sind-digitale-spuren)
   - [Was beschreibt das Locard'sche Prinzip?](#was-beschreibt-das-locardsche-prinzip)
-- [Primäres und sekundäres Ziel des Vorgehensmodells der digitalen Forensik](#prim%C3%A4res-und-sekund%C3%A4res-ziel-des-vorgehensmodells-der-digitalen-forensik)
+- [Primäres und sekundäres Ziel des Vorgehensmodells der digitalen Forensik](#primäres-und-sekundäres-ziel-des-vorgehensmodells-der-digitalen-forensik)
 - [Ziele der IT-Forensik](#ziele-der-it-forensik)
 - [Zwei Varianten der IT-Forensik (auf jeden Fall merken!)](#zwei-varianten-der-it-forensik-auf-jeden-fall-merken)
 - [Einordnung digitale Forensik](#einordnung-digitale-forensik)
@@ -56,32 +57,32 @@ Computerforensik
   - [Der forensische Arbeitsplatz](#der-forensische-arbeitsplatz)
   - [Forensic Readiness: Transportable Workstations](#forensic-readiness-transportable-workstations)
   - [Forensic Readiness: Schreibschutzadapter](#forensic-readiness-schreibschutzadapter)
-  - [Forensic Readiness: Technische Maßnahmen](#forensic-readiness-technische-ma%C3%9Fnahmen)
-  - [Forensic Readiness: Organisatorische Maßnahmen](#forensic-readiness-organisatorische-ma%C3%9Fnahmen)
-  - [Forensic Readiness: Optionale Maßnahmen](#forensic-readiness-optionale-ma%C3%9Fnahmen)
+  - [Forensic Readiness: Technische Maßnahmen](#forensic-readiness-technische-maßnahmen)
+  - [Forensic Readiness: Organisatorische Maßnahmen](#forensic-readiness-organisatorische-maßnahmen)
+  - [Forensic Readiness: Optionale Maßnahmen](#forensic-readiness-optionale-maßnahmen)
 - [???](#)
-- [Datensammlung: Beweisführung im Zivil- oder Strafverfahren](#datensammlung-beweisf%C3%BChrung-im-zivil--oder-strafverfahren)
+- [Datensammlung: Beweisführung im Zivil- oder Strafverfahren](#datensammlung-beweisführung-im-zivil--oder-strafverfahren)
 - [Sicherung besonderer digitaler Beweismittel und Spuren](#sicherung-besonderer-digitaler-beweismittel-und-spuren)
 - [Datensammlung: Die wichtigsten Regeln](#datensammlung-die-wichtigsten-regeln)
 - [Hashwerte: Einsatzzwecke](#hashwerte-einsatzzwecke)
-- [mögliche forensische Untersuchungstechniken](#m%C3%B6gliche-forensische-untersuchungstechniken)
+- [mögliche forensische Untersuchungstechniken](#mögliche-forensische-untersuchungstechniken)
 - [Datensammlung Software](#datensammlung-software)
 - [Datensammlung](#datensammlung)
 - [ISO 27037](#iso-27037)
   - [beteiligte Akteure](#beteiligte-akteure)
   - [DEFR und DES sollten in jedem Fall?](#defr-und-des-sollten-in-jedem-fall)
-  - [Grundsätze in der digitale Forensik](#grunds%C3%A4tze-in-der-digitale-forensik)
+  - [Grundsätze in der digitale Forensik](#grundsätze-in-der-digitale-forensik)
   - [Grundlegende Aspekte bei der Bearbeitung von digitalen Beweismitteln](#grundlegende-aspekte-bei-der-bearbeitung-von-digitalen-beweismitteln)
   - [Prozess zur Handhabung von digitalen Beweismitteln](#prozess-zur-handhabung-von-digitalen-beweismitteln)
   - [Obhutskette](#obhutskette)
-  - [Grundregeln für das Verhalten am Tatort](#grundregeln-f%C3%BCr-das-verhalten-am-tatort)
+  - [Grundregeln für das Verhalten am Tatort](#grundregeln-für-das-verhalten-am-tatort)
   - [Allgemeine Vorkehrungen am Untersuchungsort](#allgemeine-vorkehrungen-am-untersuchungsort)
   - [Personelle Vorkehrungen am Untersuchungsort](#personelle-vorkehrungen-am-untersuchungsort)
   - [potentielle Digitale Beweismittel am Untersuchungsort](#potentielle-digitale-beweismittel-am-untersuchungsort)
   - [Erhebung von nicht digitalen Beweisen](#erhebung-von-nicht-digitalen-beweisen)
 - [Tatortfotographie](#tatortfotographie)
 - [Dokumentation](#dokumentation)
-- [Bekämpfung der Computerkriminalität](#bek%C3%A4mpfung-der-computerkriminalit%C3%A4t)
+- [Bekämpfung der Computerkriminalität](#bekämpfung-der-computerkriminalität)
   - [Incident Handling](#incident-handling)
   - [CERT](#cert)
 - [E-Mail-Header-Analyse](#e-mail-header-analyse)
@@ -103,7 +104,7 @@ Computerforensik
     - [Dateisysteme Read-only mounten](#dateisysteme-read-only-mounten)
     - [Dateisystem-Rechte auf Linux / Rollensystem](#dateisystem-rechte-auf-linux--rollensystem)
   - [Hacking](#hacking)
-- [Techniken und Untersuchungsplanung für die digitale Spurensuche](#techniken-und-untersuchungsplanung-f%C3%BCr-die-digitale-spurensuche)
+- [Techniken und Untersuchungsplanung für die digitale Spurensuche](#techniken-und-untersuchungsplanung-für-die-digitale-spurensuche)
   - [Techniken digitaler Spurensuche](#techniken-digitaler-spurensuche)
     - [File Carving](#file-carving)
     - [Stichwortsuche](#stichwortsuche)
@@ -121,12 +122,16 @@ Computerforensik
   - [Dateisysteme besondere Zeitstempel](#dateisysteme-besondere-zeitstempel)
   - [Slack-Speicher](#slack-speicher)
   - [FAT-Dateisystem](#fat-dateisystem)
-    - [Wiederherstellung von Daten im FAT-Dateisystem](#wiederherstellung-von-daten-im-fat-dateisystem)
+    - [FAT Root-Verzeichnis](#fat-root-verzeichnis)
+    - [FAT Verzeichniseinträge](#fat-verzeichniseinträge)
+    - [Löschung von Daten im FAT-Dateisystem](#löschung-von-daten-im-fat-dateisystem)
+    - [Wiederherstellung von Daten in FAT (Variante 1)](#wiederherstellung-von-daten-in-fat-variante-1)
+    - [Wiederherstellung von Daten in FAT (Variante 2)](#wiederherstellung-von-daten-in-fat-variante-2)
   - [NTFS-Dateisystem](#ntfs-dateisystem)
     - [MFT Records](#mft-records)
     - [NTFS Attribute](#ntfs-attribute)
     - [NTFS: Speichern von Dateien](#ntfs-speichern-von-dateien)
-    - [NTFS: Löschen von Daten](#ntfs-l%C3%B6schen-von-daten)
+    - [NTFS: Löschen von Daten](#ntfs-löschen-von-daten)
     - [NTFS: Datenwiederherstellung](#ntfs-datenwiederherstellung)
     - [NTFS-Journal](#ntfs-journal)
   - [EXT-Dateisystem](#ext-dateisystem)
@@ -926,11 +931,17 @@ TODO
 - Cluster: Zusammenfassung von Sektoren im Betriebssystem
 - auf SATA SSDs leert erst ein ``TRIM``-Befehl die Zellen
 - Am Anfang eines Datenträgers ist der Bootsektor (MBR oder GPT) mit Partitionstabelle
+  - existiert am Anfang eines Datenträgers
   - möglicherweise existiert eine Kopie davon am Ende
+  - 
 
 ### Aufbau des MBR
 
 ![MBR](assets/mbr.png)<!--width=600px-->
+
+- 64 Bytes groß
+- 16 Byte Einträge
+- daraus folgt: max. 4 Partitionen
 
 ### Aufbau des GPT
 
@@ -956,9 +967,39 @@ TODO
 - geringe Anzahl an Datenstrukturen
 - basiert auf Directory Entries und File Allocation Tables
 
-### Wiederherstellung von Daten im FAT-Dateisystem
+![FAT Wahnsinn](assets/fat_wahnsinn.png)<!--width=600px-->
 
-TODO
+TODO: was passiert hier?
+
+### FAT Root-Verzeichnis
+
+- Tabelle von Verzeichniseinträgen, die jede Datei und Unterverzeichnis repräsentiert
+- bei FAT12 und FAT16 direkt an die `FAT` anschließend mit fixer Größe
+- bei FAT32 variable Größe, kann an beliebiiger Position im Datenbereich beginnen
+
+![FAT Aufbau](assets/fat_aufbau.png)<!--width=600px-->
+
+### FAT Verzeichniseinträge
+
+- jeder Ordnereintrag 32 Byte Datenstruktur, enthält Ordner und Dateien
+- speichert alle Attribute, Dateigröße, Startcluster
+
+### Löschung von Daten im FAT-Dateisystem
+
+- beim Löschen wird das erste Byte des **Verzeichniseintrages mit ``0xE5`` überschrieben**
+- Clusterkette der Datei, Daten erscheinen als "frei"
+- damit in forensischer Anwendung wiederherstellbar
+
+### Wiederherstellung von Daten in FAT (Variante 1)
+
+- vom Startcluster aus alle Cluster wiederherstellen, bis Dateigröße aus Verzeichniseintrag erreicht
+- funktioniert **nicht bei fragmentierten Dateien**
+
+### Wiederherstellung von Daten in FAT (Variante 2)
+
+- zusätzlich zu Variante 1 wird Zuteilungsstatus von freien Custern berücksichtigt: **nur nicht zugeteilte Cluster werden wiederhergestellt**
+- Wahrscheinlichkeit gegeben, fragmentierte Dateien vollst. wiederherzustellen
+- funktioniert **nicht, wenn CLuster bereits neu zugewiesen**
 
 ## NTFS-Dateisystem
 
@@ -994,6 +1035,8 @@ TODO
   - ``$INDEX_ALLOCATION``
 - im ``$Data``-Attribut können entweder die Nutzlast selbst gespeichert sein oder über Datarun-Einträgen Verweise auf mehrere Cluster sein
 
+![NFTS Dataruns](assets/ntfs_dataruns.png)<!--width=600px-->
+
 ### NTFS: Speichern von Dateien
 
 1. im Bootsector wird der ``$MFT`` Eintrag gesucht und gelesen
@@ -1018,8 +1061,11 @@ TODO
 ### NTFS: Datenwiederherstellung
 
 - man kann sich nicht auf Dateisystemtreiber verlassen, da alle MFT-Einträge gelöscht
+  - Treiber verwendet Top-Down Methode: von Dateisystem-Wurzel aus alle Verzeichniseinträge durchsuchen $\rightarrow$ keine gelöschten Einträge
 - man muss auf Byte-Ebene arbeiten
-  - anhand der Parent File Referenz können verwaiste Referenzen gelöschter Elemente gefunden werden
+  - anhand der Parent File Referenz können verwaiste Referenzen gelöschter Elemente gefunden werden $\rightarrow$ Bottom-Up Methode
+
+![Top Down vs. Bottom Up](assets/top-down-vs-bottom-up.png)<!--width=600px-->
 
 ### NTFS-Journal
 
