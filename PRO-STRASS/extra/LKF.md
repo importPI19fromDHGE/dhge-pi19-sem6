@@ -216,16 +216,21 @@ im digital forensischen Umfeld Manipulationen am Tatort: ausschalten/abziehen ei
 - bei Laptops sicherstellen, dass das Gerät wirklich ausgeschalten ist, anschließend Akku entfernen
 - Beim entfernen von Komponenten auf Erdung achten
 - Dokumentieren, ob CD/DVD-Laufwerke leer und vollständig eingefahren sind
+- bei Transport: Anti-Statik Beutel, keine Beschädigungen des Gerätes
 
 - In den meisten Fällen sollte das Speichermedium bis zum zeitpunkt der Sicherung nicht aus dem digitalen Gerät entfernt werden, da Das Entfernen das Risiko der Beschädigung oder Störung durch andere Speichermedien erhöhen kann.
 
 ### Grundlegende Maßnahmen für eingeschaltete digitale Geräte
 
-- drauf achten, ob Gerät WIRKLICH ausgeschaltet ist z.B. durch Status-LED, Maus bewegen
-- Ein- und Ausschaltknöpfe abkleben → während Transport keine Zustandsänderungen
-- Kabel etc. vom Gerät trennen, kennzeichnen an welchem Port diese waren
-- Stromzufuhr trennen: zunächst am Gerät trennen, damit keine unterbrechungsfreie Stromzufuhr ausgelöst wird
-- bei Transport: Anti-Statik Beutel, keine Beschädigungen des Gerätes
+- Sicherung der flüchtigen Daten in Betracht ziehen
+  - Verschlüsselungscodes können im aktiven und inaktiven Speicher vorhanden sein
+  - Wenn Verschlüsselung vermutet wird, dann logischer Sicherung in Betracht ziehen
+  
+  - Analyse, ob das Gerät durch normales Herunterfahren ausgeschalten werden sollte oder mittels Netzstecker
+  - Beim trennen des Netzsteckers darauf achten, dass die Seite am Gerät zuerst getrennt wird und nicht auf Seiten der Steckdose
+- Netzschalter mit Klebeband abkleben!
+
+Beim trennen der Stromzufuhr werden verschlüsselte Daten ohne passenden Schlüssel unzugänglich gemacht. Live-Daten können verloren gehen, was zu Schadensersatzansprüchen oder zu Verlusten von Menschenleben führen kann!
 
 ### Erhebung von nicht digitalen Beweismitteln
 
