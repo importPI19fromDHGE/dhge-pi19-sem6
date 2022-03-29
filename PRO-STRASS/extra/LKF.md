@@ -1,8 +1,38 @@
 # LKF - Computerforensik
 
-## Grundlagen der Beweisführung
+## Grundlagen und Beweisführung
 
-### Multimedia-Forensik
+### Definition Digitale Forensik
+
+- **Forensik:** systematischenUntersuchung von kriminellen Handlungen
+- **Digitale Forensik:** 
+
+<!-- ToDo: PPT 1 - Folie 33 -->
+
+### Ziele digitaler Forensik
+
+<!-- PPT 1 - Folie 34  -->
+
+- Identifikation des Angreifers
+- Erkennen der Methode
+- Ermittlung des Schadens 
+- Sicherung der Beweise
+
+### Arbeitsgebiete digitaler Forensik
+
+<!-- PPT 1 - Folie 35 -->
+
+- Datenträger-Forensik
+- Mobilfunk-Forensik
+- Netzwerk-Forensik
+- Multimedia-Forensik
+- Cloud-Forensik
+- Memory-Forensik
+- Car Forensik
+- IoT-Forensik
+- Forensische Linguistik
+
+#### Multimedia-Forensik
 
 <!-- ToDo -->
 
@@ -18,6 +48,10 @@
 
 <!-- ToDo -->
 
+### Forensischer Arbeitsplatz
+
+<!--ToDo-->
+
 ### Forensic Readiness
 
 <!-- ToDo -->
@@ -26,15 +60,31 @@
 
 <!-- ToDo -->
 
-### S-A-P-Modell
+#### Datenintegrität
 
 <!-- ToDo -->
 
-### Post-moretem-Forensik
+### Vorgehensmodelle
+
+#### BSI-IT-Forensik-Leitfaden
+
+#### S-A-P-Modell
+
+<!-- ToDo: ein Schwerpunkt! -->
+
+#### Post-moretem-Forensik
 
 <!-- ToDo -->
 
-### Live-Forensik
+#### Live-Forensik
+
+<!-- ToDo -->
+
+### logische vs. physikal Sicherung
+
+<!-- ToDo -->
+
+### Post-Mortem vs. Live-Forensik
 
 <!-- ToDo -->
 
