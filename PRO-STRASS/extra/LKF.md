@@ -5,7 +5,7 @@
 ### Definition Digitale Forensik
 
 - **Forensik:** systematischenUntersuchung von kriminellen Handlungen
-- **Digitale Forensik:** 
+- **Digitale Forensik:**
 
 <!-- ToDo: PPT 1 - Folie 33 -->
 
@@ -15,7 +15,7 @@
 
 - Identifikation des Angreifers
 - Erkennen der Methode
-- Ermittlung des Schadens 
+- Ermittlung des Schadens
 - Sicherung der Beweise
 
 ### Arbeitsgebiete digitaler Forensik
@@ -50,7 +50,7 @@ Der Bereich, der Cyber-Straftaten, die nicht in der polizeilichen Kriminalstatis
 
 ### Digitale Spuren
 
-Metadaten/Computerdaten, die aufgrund unseres Verhalten angelegt werden (Arbeitsspeicher, auf Datenbanken etc.) 
+Metadaten/Computerdaten, die aufgrund unseres Verhalten angelegt werden (Arbeitsspeicher, auf Datenbanken etc.)
 
 #### Unterschiede im Gegensatz zu analogen Spuren
 
@@ -82,7 +82,7 @@ Systeme sollen so konfiguriert sein, dass man digitale Spuren sammeln kann, schn
 #### Drei Säulen
 
 - forensische Workstation (sehr potente Hardware)
-- Office Computer für schriftliche Sachen (Dokumentation) ohne Verbindung zum Netzwerk oder nur interne Verbindung, aber kein Internetzugang 
+- Office Computer für schriftliche Sachen (Dokumentation) ohne Verbindung zum Netzwerk oder nur interne Verbindung, aber kein Internetzugang
 - Internetcomputer für Recherche
 
 → im Idealfall drei physische Rechner
@@ -157,7 +157,7 @@ Relevanz, Vollständigkeit, Verlässlichkeit
 
 nach ISO Ersteinschreiter wird tätig und sucht nach Beweismitteln, diese können in physischer und logischer Form vorliegen
 
-physischer: Vorhandensein auf konkreten Gerät, die Zustände der einzelnen Datenträgern auf Bitebene 
+physischer: Vorhandensein auf konkreten Gerät, die Zustände der einzelnen Datenträgern auf Bitebene
 
 logischer: physische Form interpretieren z.B. Mithilfe Betriebssystem oder Dirttanwendersoftware
 
@@ -326,7 +326,7 @@ Systemspezifische Daten gleich ausblenden
 
 ### Sektoren
 
-- Zusammenfassung von Bytes in einem Block 
+- Zusammenfassung von Bytes in einem Block
 
 ### Cluster
 
