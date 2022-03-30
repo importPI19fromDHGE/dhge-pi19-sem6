@@ -27,7 +27,7 @@ Verteilte Systeme
 - [Verteilte Systeme](#verteilte-systeme)
 - [Prüfungsleistung](#prüfungsleistung)
 - [Einleitung und grundlegende Begriffe](#einleitung-und-grundlegende-begriffe)
-  - [Definition verteiles System](#definition-verteiles-system)
+  - [Definition verteiltes System](#definition-verteiltes-system)
   - [zentrale Zielsetzung verteilter Systeme](#zentrale-zielsetzung-verteilter-systeme)
   - [CAP-Theorem](#cap-theorem)
   - [Basismechanismen verteilter Systeme](#basismechanismen-verteilter-systeme)
@@ -86,13 +86,13 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 -->
 # Prüfungsleistung
 
-- schriftliche Klausur (60 min)
-- wird zu 50% verrechnet (Rest `NET-BARIE` aus Semester 5)
-- eine DIN-A4-Seite beidseitig beschriftet als Cheatsheet erlaubt
+- Klausurersatzleistung
+- Praktischer Teil: Kubernetes Cluster in 4er-Gruppen aufbauen
+- Theoretischer Teil: Ausarbeitung zu Fragestellungen, ca. 5 Seiten
 
 # Einleitung und grundlegende Begriffe
 
-## Definition verteiles System
+## Definition verteiltes System
 
 <!--prüfungsrelevant-->
 
