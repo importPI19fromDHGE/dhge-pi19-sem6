@@ -69,13 +69,28 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 - MongoDB (auf Verfügbarkeit optimiert)
 - Gaia-X - https://gaia-x.eu/news/events/gaia-x-hackathon-3
 - Content Distribution Networks
+- Paxos (-Protokoll)
+- Consensus-Protokolle
+- Edge-Cloud
 -->
 
 # Prüfungsleistung
 
 - schriftliche Klausur (60 min)
 - wird zu 50% verrechnet (Rest `NET-BARIE` aus Semester 5)
-- eine DIN-A4-Seite beidseitig beschriftet als Cheatsheet erlaubt
+- eine DIN-A4-Seite beidseitig beschriftet als Cheatsheet erlaubt <!--wieder handschriftlich?-->
+
+**Änderung: 30.03.22**
+
+- keine Klausur!
+- Ersatzleistung: zwei Teile 
+  - Praktisch Kubernetes Cluster aufsetzen und benutzen (Dokumentieren -> als Gruppe)
+    - Zeitraum von zwei Wochen
+    - VMs werden zur Verfügung gestellt
+  - Theoretischer Teil -> kleine Ausarbeitung zu einigen Fragestellungen (4-5 Seiten)
+    - CAP-Theorem mit Beispiel erklären
+    - Synchrone, Asynchrone Replikation Vergleichen
+
 
 # Einleitung und grundlegende Begriffe
 
@@ -349,10 +364,22 @@ Commit ist abschließen!
 
 ### CAP-Theorem
 
-Beschreibt Relation zwischen Konsistenz, Verfügbarkeit und Partitionstoleranz
+> Beschreibt Relation zwischen **Konsistenz**, **Verfügbarkeit** und **Partitionstoleranz**
 
-<!--ToDo nochmal prüfen -->
+- **Konsistenz:** Schreiben auf einem Knoten, Lesen von anderem: Es wird nichts Älteres zurückgegeben, als was gerade geschrieben wurde
+- **Verfügbarkeit:** jeder Request wird beantwortet
+- **Partitionstoleranz:** auch bei Netzwerkfehlern/-ausfällen (Partitionierungen) arbeitet das System weiter
 
-> beschreibt, dass in Verteilten Systemen immer die Wahl zwischen Konsistenz und Verfügbarkeit vorhanden ist
+### Asynchrone Replikation
+
+### Synchrone Replikation
+
+> Voraussetzung: keine große Latenz zwischen Primary und Secondary
+>
+> $\rightarrow$ Synchrone Replikation über große Distanzen nicht möglich
 
 ### Datenreplikation am Beispiel Galera
+
+### Galera
+
+- wird von MariaDB (relationale Datenbank) für Replikation genutzt 
