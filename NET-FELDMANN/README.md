@@ -24,8 +24,7 @@ Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Verteilte Systeme](#verteilte-systeme)
-- [Prüfungsleistung](#prüfungsleistung)
+- [Prüfungsleistung](#pr%C3%BCfungsleistung)
 - [Einleitung und grundlegende Begriffe](#einleitung-und-grundlegende-begriffe)
   - [Definition verteiles System](#definition-verteiles-system)
   - [zentrale Zielsetzung verteilter Systeme](#zentrale-zielsetzung-verteilter-systeme)
@@ -36,7 +35,7 @@ Verteilte Systeme
     - [zentrale Vorteile mehrstufiger Architekturen](#zentrale-vorteile-mehrstufiger-architekturen)
   - [Client-Server-Modell](#client-server-modell)
   - [Objektorientiertes Modell](#objektorientiertes-modell)
-  - [Exkurs: Parameterübergabe](#exkurs-parameterübergabe)
+  - [Exkurs: Parameterübergabe](#exkurs-parameter%C3%BCbergabe)
   - [Vergleich Client/Server vs. OO-Modell](#vergleich-clientserver-vs-oo-modell)
   - [Komponenten-basiertes Modell](#komponenten-basiertes-modell)
   - [dienstorientiertes Modell](#dienstorientiertes-modell)
@@ -51,7 +50,7 @@ Verteilte Systeme
   - [Optimierungen von Namens-/VZ-Diensten](#optimierungen-von-namens-vz-diensten)
   - [ACID-Prinzip](#acid-prinzip)
   - [Zwei-Phase-Commits](#zwei-phase-commits)
-  - [CAP Theorem](#cap-theorem)
+  - [CAP Theorem](#cap-theorem-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 <!--NET hier, aber haben Sie schon mal eine Firma gegründet?-->
