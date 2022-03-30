@@ -51,7 +51,16 @@ Verteilte Systeme
   - [Optimierungen von Namens-/VZ-Diensten](#optimierungen-von-namens-vz-diensten)
   - [ACID-Prinzip](#acid-prinzip)
   - [Zwei-Phase-Commits](#zwei-phase-commits)
-  - [CAP Theorem](#cap-theorem)
+  - [CAP Theorem](#cap-theorem-1)
+  - [asynchrone Replikation](#asynchrone-replikation)
+  - [synchrone Replikation](#synchrone-replikation)
+  - [synchrone Multi-Master-Replikation](#synchrone-multi-master-replikation)
+  - [Galera](#galera)
+    - [Galera ausgewählte Szenarien](#galera-ausgewählte-szenarien)
+      - [Disaster Recovery](#disaster-recovery)
+      - [Rolling Updates](#rolling-updates)
+      - [Latenzreduktion](#latenzreduktion)
+      - [Galera Konsistenzsicherung](#galera-konsistenzsicherung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 <!--NET hier, aber haben Sie schon mal eine Firma gegründet?-->
@@ -259,6 +268,7 @@ TODO: Tabelle aus Folie
   - **proaktiv**, geplant
 - Problem: Aktualität von Einträgen und Gewährleistung von Konsistenz
 - siehe auch: DNS, CDN, X.500, LDAP
+
 <!--Anm. Max: er hat sehr auf Caching vs. Repl hingewiesen - klausurrelevant?-->
 
 ## ACID-Prinzip
@@ -301,4 +311,81 @@ Aufgabe: Unterschiede zwischen ACID und BASE
 
 ## CAP Theorem
 
-- man hat die Wahl zwischen Konsistenz und Verfügbarkeit
+- man hat die Wahl zwischen Konsistenz, Verfügbarkeit, Partitionstoleranz
+- immer (bis zu) zwei möglich: CA, CP, AP
+  - CA-Systeme nicht realistisch
+- Consistency
+  - schreiben auf einem Knoten, lesen von einem anderen
+  - es wird nichts zurückgegeben, als was gerade geschrieben wurde
+- Availability jeder Request wird beantwortet
+- Partitionstoleranz
+  - Partitionen sind verschiedene, **voneinander getrennte Knoten** eines verteilten Systems
+  - Szenario: z.B. Netzwerkausfall
+  - bei Partitionierung, d.h. Zusammenbruch der Synchronisierung, zwei Reaktionsmöglichkeiten auf Schreibvorgänge
+    - Schreibvorgänge abweisen (Konsistenz wahren)
+    - Schreibvorgang später synchronisieren (Verfügbarkeit wahren)
+- siehe auch: Consensus-Protokolle
+
+<!--Darstellung CAP Theorem wahrscheinlich klausurrelevant-->
+
+## asynchrone Replikation
+
+![Asynchrone Replizierung](assets/async-repl.png)<!--width=600px-->
+
+- schnelle Replikation, ACK-Msg wird sofort gesendet
+- Verfügbarkeitsoptimiert
+- Problem: ACK-Msg wird versandt, Replikation kann dennoch fehlschlagen
+
+## synchrone Replikation
+
+![Asynchrone Replizierung](assets/sync-repl.png)<!--width=600px-->
+
+- Konsistenzoptimiert
+- empfindlich gegenüber Latenzen, sonst signifikante Performance-Einbußen
+  - daher nicht über große Distanzen geeignet
+- ACK-Msg wird erst geschickt, wenn Replikation abgeschlossen
+
+## synchrone Multi-Master-Replikation
+
+![Asynchrone Replizierung](assets/sync-multi-master-repl.png)<!--width=600px-->
+
+- Erweiterung der sync. Repl.
+- oft vorgelagerter Load Balancer
+- kein Master-Slave-System, sondern gleichberechtigte Master
+
+## Galera
+
+![Galera](assets/galera.png)<!--width=600px-->
+
+- gute Eignung:
+  - bei wenigen Schreibvorgängen, da teuer
+  - häufige Lesezugriffe
+  - keine hauptsächlich lokal relevanten Daten
+- schlechte Eignung:
+  - viele Schreibzugriff
+  - lokal relevante Daten
+
+### Galera ausgewählte Szenarien
+
+#### Disaster Recovery
+
+- problematisch bei nur zwei Sites
+- zusätzliche Infrastruktur für Failover benötigt
+
+#### Rolling Updates
+
+- Schritt für Schritt Updates installieren, indem immer nur ein Knoten gestoppt und neu gestartet wird
+- Zugriff auf andere Knoten noch möglich
+- gestoppter Knoten holt ausstehende Replikation nach
+
+#### Latenzreduktion
+
+Latenz kann abhängig von der Geolokalität durch Load-Balancer optimiert werden, indem Clients den Knoten in physischer Nähe nutzen
+
+#### Galera Konsistenzsicherung
+
+- pessimistisch $\rightarrow$ Konsistenz im Vordergrund
+- im Falle einer Partitionierung entstehen mehrere *Komponenten*
+- nur eine Komponente kann *primär* sein $\rightarrow$ Quorum-Verfahren
+- innerhalb einer Partition müssen >50% absolute Mehrheit vorhanden sein, um ein Quorum zu bilden
+- Gewichtung der *Stimmen* auch möglich $\rightarrow$ Arbitratoren
