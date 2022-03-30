@@ -331,15 +331,25 @@ TODO: Tabelle aus Folie
 **1. Phase**
 
 - **Versenden von Kommandos zur temporären Speicherung** von Daten durch einen Koordinator an alle Teilnehmer
-- **Bestätigung**, dass Daten temporär gesichert wurden (bzw. Fehlermeldung)
+- **Bestätigung**, dass Daten temporär gesichert wurden (bzw. Fehlermeldung/Timeout)
 
 **2. Phase**
 
 - **Versenden eines "Commits"** durch Koordinator $\rightarrow$ alle temporären Daten müssen persistent gemacht werden
 - **Bestätigung persistenter Speicherung** gegenüber Koordinator
 
+> Problem: wenn Bestätigung in der 2. Phase ausbleibt, muss dies separat behandelt werden (offene Transaktion)
+
+<!-- 
+Regelmäßig gern in Prüfung gefragt -> kein Rollback! 
+
+Commit ist abschließen! 
+-> Ausgebliebener Teilnehmer muss nachträglich in konsistenten Zustand überführt werden (nicht immer mit Algorithmus möglich -> manuell nötig)
+-->
 
 ### CAP-Theorem
+
+Beschreibt Relation zwischen Konsistenz, Verfügbarkeit und Partitionstoleranz
 
 <!--ToDo nochmal prüfen -->
 
