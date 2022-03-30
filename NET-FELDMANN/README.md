@@ -65,8 +65,12 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 - heroku.com
 - OpenShift
 - OpenStack
-
+- MariaDB (auf Konsistenz optimiert)
+- MongoDB (auf Verfügbarkeit optimiert)
+- Gaia-X - https://gaia-x.eu/news/events/gaia-x-hackathon-3
+- Content Distribution Networks
 -->
+
 # Prüfungsleistung
 
 - schriftliche Klausur (60 min)
@@ -217,4 +221,128 @@ TODO: Tabelle aus Folie
 
 - abstrahiert Netzwerkumgebung für den Client
 
-## Suchen in Verteilten Systemen / Verzeichnisdienste und Datenkonsistenz
+## Microservice-Anmerkung
+
+> *Don't distribute your objects!*
+>
+> $\rightarrow$ Schnittstelle nach außen und rein lokale Datenverarbeitung genau abwägen. 
+
+# Suchen in Verteilten Systemen / Verzeichnisdienste und Datenkonsistenz
+
+## Namens-/Verzeichnisdienste
+
+- Suche von Kommunikationspartnern, Ressourcen, Komponenten, Diensten, ... ($\rightarrow$ IPs/Ports)
+
+### Grundbegriffe
+
+#### Namensdienst
+
+- Bilden Namen auf Adressen bzw. (Objekt-)Referenzen ab
+- z.B. DNS
+
+#### Name
+
+- logische, in der Regel lokationsunabhängige Bezeichnung einer Instanz
+
+#### Adresse
+
+- bzw. (Objekt-)Referenz
+- eindeutige, physikalische bzw. in der Regel ortsbezogene Bezeichnung
+
+#### Verzeichnisdienst (Directory Service)
+
+- Erweiterung
+- Bietet Verwaltung zusätzlicher Attribute und entsprechende Suche mittels dieser an
+  - z.B. Cloud-Provider mit bestimmten Standort, Zertifizierungen (kryptografisch nachweisbar, in verzeichnisdienst durchsuchbar), ...
+
+#### Namensraum
+
+#### Kontext
+
+#### Namensinterpretation
+
+### Überblick zu Realisierungen
+
+#### Hierarchische Realisierung
+
+- zur Gewährleistung von Skalierbarkeit und Effizienz der Interpretation zu verschiedenen hierarchisch organisierten Servern zugeordnet
+- mehrere Möglichkeiten für Einstiegspunkt und Anfragebearbeitung: Chaining, Referral
+
+##### Chaining (verkettete Delegation von Anfragen an andere Dienste)
+
+##### Referral (itterative Delegation zwischen den Diensten)
+
+- Zwischenergebnisse Ablegen (Cache)
+
+### Optimierungskozepte
+
+- **Caching:** Speicherung von teilen des Namensraums auf servern, die ursprünglich für den jeweiligen Namensraum nicht zuständig waren
+- **Replikation von Kontexten:** im Vergleich zu Caching geplant und proaktiv $\rightarrow$ höhrere Fehlertoleranz; bei CDNs im Einsatz
+- **Allgemeines Problem:** Aktualität von Einträgen / Gewährleistung von Konsistenz
+
+### Systembeispiele
+
+- Domain Name System (DNS): Auflösung von Domainnamen auf IP-Adressen
+- X.500: mächtiger, flexibel einsetzbarer standardisierter Verzeichnisdiesnt
+- Lightweight Directory Access Protocol (LDAP): Leichtgewichtiges Protokoll, dass Anfragen und Modifikation von Informationen eines Verzeichnisdienstes ermöglicht
+
+#### X.500 - Namenseinträge
+
+- Distinguished Name (DN)
+  - Zusammengesetzter Name für einzelnen Eintrag
+  - Zusammengesetzt aus Relativ Distinguished Name (RDN)
+
+- Relative Distinguished Name (RDN)
+
+#### LDAP
+
+- De-Facto-Standard für den Zugriff auf Verzeichnisdienste
+- Vereinfachung des X.600 Directory Access Protocol (DAP)
+- eingesetzt für Benutzerverwaltung, Adressverwaltung, Authentifizierung
+
+## Verteilte Transaktionen
+
+### ACID-Prinzip
+
+> auf Konsistenz ausgelegt
+
+- **Atomicity:** Entweder vollständige oder keine Ausführung
+- **Consistency:** nur Übergänge von konsistentem Zustand zu konsistentem Zustand
+- **Isolation:** Keine Überlappung von Transaktionen, die sich gegenseitig beeinflussen können
+- **Durability:** Nach Abschluss einer Transaktion werden Daten garantiert dauerhaft in einer Datenbank gespeichert
+
+#### BASE
+
+> auf Verfügbarkeit ausgelegt $\rightarrow$ einfach skalierbar (best efford, optimistic)
+
+- **Basically Available:** Lese- und Schreiboperationen sind immer verfügbar
+  - `write` bei Konflikten nicht unbedingt persistent
+  - `read` liefert nicht unbedingt zuletzt gespeicherte (bzw. konsistente) Daten
+- **Soft state:** keine Garantie für Konsistenz (nur Wahrscheinlichkeit)
+- **Eventual consistency:** nach ausreichender Zeit kann von einem konsistenten Zustand ausgegangen werden
+
+#### 2-Phasen-Commit-Protokoll
+
+- Protokoll zur konsistenten Ablage von Daten in verschiedenen Datenbanken
+- zwei Rollen: **Koordinator, Teilnehmer** 
+- Annahme: zu speichernden Daten liegen den Teilnehmern bei Beginn des Protokollablaufs vor
+- falls Ablauf fehlschlägt: **Rollback**
+
+**1. Phase**
+
+- **Versenden von Kommandos zur temporären Speicherung** von Daten durch einen Koordinator an alle Teilnehmer
+- **Bestätigung**, dass Daten temporär gesichert wurden (bzw. Fehlermeldung)
+
+**2. Phase**
+
+- **Versenden eines "Commits"** durch Koordinator $\rightarrow$ alle temporären Daten müssen persistent gemacht werden
+- **Bestätigung persistenter Speicherung** gegenüber Koordinator
+
+
+### CAP-Theorem
+
+<!--ToDo nochmal prüfen -->
+
+> beschreibt, dass in Verteilten Systemen immer die Wahl zwischen Konsistenz und Verfügbarkeit vorhanden ist
+
+### Datenreplikation am Beispiel Galera
