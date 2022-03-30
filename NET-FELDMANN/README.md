@@ -34,3 +34,6 @@ Verteilte Systeme
 # Platzhalter
 
 Ich bin ein Platzhalter.
+
+
+## Suchen in Verteilten Systemen / Verzeichnisdienste und Datenkonsistenz
