@@ -24,7 +24,8 @@ Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungsleistung](#pr%C3%BCfungsleistung)
+- [Verteilte Systeme](#verteilte-systeme)
+- [Prüfungsleistung](#prüfungsleistung)
 - [Einleitung und grundlegende Begriffe](#einleitung-und-grundlegende-begriffe)
   - [Definition verteiles System](#definition-verteiles-system)
   - [zentrale Zielsetzung verteilter Systeme](#zentrale-zielsetzung-verteilter-systeme)
@@ -34,7 +35,7 @@ Verteilte Systeme
     - [zentrale Vorteile mehrstufiger Architekturen](#zentrale-vorteile-mehrstufiger-architekturen)
   - [Client-Server-Modell](#client-server-modell)
   - [Objektorientiertes Modell](#objektorientiertes-modell)
-  - [Exkurs: Parameterübergabe](#exkurs-parameter%C3%BCbergabe)
+  - [Exkurs: Parameterübergabe](#exkurs-parameterübergabe)
   - [Vergleich Client/Server vs. OO-Modell](#vergleich-clientserver-vs-oo-modell)
   - [Komponenten-basiertes Modell](#komponenten-basiertes-modell)
   - [dienstorientiertes Modell](#dienstorientiertes-modell)
@@ -43,6 +44,13 @@ Verteilte Systeme
   - [Cloud Computing](#cloud-computing)
     - [Klassifizierung von Clouds](#klassifizierung-von-clouds)
   - [Middleware](#middleware)
+- [Verzeichnisdienste, verteilte Transaktionen](#verzeichnisdienste-verteilte-transaktionen)
+  - [Grundbegriffe](#grundbegriffe)
+  - [hierarchische Realisierung von Namens-/VZ-Diensten](#hierarchische-realisierung-von-namens-vz-diensten)
+  - [Optimierungen von Namens-/VZ-Diensten](#optimierungen-von-namens-vz-diensten)
+  - [ACID-Prinzip](#acid-prinzip)
+  - [Zwei-Phase-Commits](#zwei-phase-commits)
+  - [CAP Theorem](#cap-theorem)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 <!--NET hier, aber haben Sie schon mal eine Firma gegründet?-->
@@ -144,6 +152,8 @@ TODO: Tabelle aus Folie
 - Komponenten kapseln Funktionalität und werden beim **Deployment** parametriert
 - **Komponenten-Container** dienen als Laufzeitumgebung und interpretieren Parameter
 - sind für sich leicht installierbar, meist mit **einfachen, klar definierten APIs** und Entwicklungswerkzeugen
+- Schnittstellen sollten wohl überlegt sein
+- Komponenten sollten so entworfen werden, dass hoher Kommunikations-Overhead zwischen Komponenten vermieden wird
 
 ## dienstorientiertes Modell
 
@@ -189,3 +199,79 @@ TODO: Tabelle aus Folie
 ## Middleware
 
 - abstrahiert Netzwerkumgebung für den Client
+
+# Verzeichnisdienste, verteilte Transaktionen
+
+## Grundbegriffe
+
+- Namensdienst: Grundform, Bilden Namen auf Adressen ab
+  - Namen: Standortunabhängige Bezeichnung einer Ressource
+  - Adresse / Referenz: eindeutige, physikalische / ortsbezogene Bezeichnung
+- Verzeichnisdienst: Finden von Kommunikationspartnern, Ressourcen, Attributen, ...
+  - Erweiterung des Namensdienstes
+
+## hierarchische Realisierung von Namens-/VZ-Diensten
+
+- Kontexte sind zur Skalierbarkeit und Effizienz der Interpretation zu versch. organisierten Servern zugeordnet
+  - TODO: Screenshot extrahieren
+- Anfrage-Bearbeitung mit Chaining oder Referral
+  - Chaining löst rekursiv auf, Referral iterativ
+  - Referral ermöglicht besseres Caching
+  - TODO: Screenshot einfügen
+
+## Optimierungen von Namens-/VZ-Diensten
+
+- Caching: Speicherung von Teilen des Namensraums
+  - v.a. auf unteren Ebenen
+  - vollst. oder teilw. Namen
+  - TODO: Vor-/Nachteile
+  - **reaktiv**
+- Replikation
+  - v.a. auf unteren Ebenen
+  - höhere Fehlertoleranz
+  - **proaktiv**, geplant
+- Problem: Aktualität von Einträgen und Gewährleistung von Konsistenz
+- siehe auch: DNS, CDN, X.500, LDAP
+<!--Anm. Max: er hat sehr auf Caching vs. Repl hingewiesen - klausurrelevant?-->
+
+## ACID-Prinzip
+
+Siehe DBS.
+Aufgabe: Unterschiede zwischen ACID und BASE
+
+- BASE:
+  - Optimierungsziel: Verfügbarkeit
+  - Konsistenz nicht garantiert
+  - letzter Schreibzugriff "gewinnt"
+  - skaliert besser
+  - einfachere Implementierung
+  - aggressiv / optimistisch / best effort
+- ACID:
+  - Optimierungsziel: Konsistenz
+  - Isolation von Zugriffen
+  - Commit-basiert, komplexe Implementierung
+  - konservativ / pessimistisch
+
+## Zwei-Phase-Commits
+
+- Protkoll zur Konsistenzwahrung zwischen verteilten Datenbanken
+- zwei Rollen: **Koordinator**, **Teilnehmer**
+- Annahme: zu speichernde Daten liegen den Teilnehmern vor
+- bei Fehlschlag Rollback
+- beide Phasen sind Teil *einer* Transaktion
+
+- Phase 1:
+  - Koordinator befiehlt nicht-persistente Speicherung der Daten
+  - Teilnehmer bestätigen Erfolg
+- Phase 2:
+  - Bedingung: Phase 1 erfolgreich
+  - Koordinator versendet Commit-Befehl
+  - alle Teilnehmer müssen Daten persistent speichern
+  - Teilnehmer bestätigen Erfolg
+- Problem: wenn Commit-Entscheidung stattgefunden hat, aber ein Teilnehmer nicht bestätigt (z.B. Absturz)
+  - betroffener Teilnehmer muss konsistenten Zustand anfordern und *nachholen* (nicht verwechseln mit Roll-forward) <!--Prüfungsrelevant!-->
+  - **Commit-Entscheidungen werden nie rückgängig gemacht**
+
+## CAP Theorem
+
+- man hat die Wahl zwischen Konsistenz und Verfügbarkeit
