@@ -6,7 +6,7 @@
 
 <!-- ToDo: PPT 1 - Folie 33 -->
 
-- **Forensik:** systematischen Untersuchung von kriminellen Handlungen
+- **Forensik:** systematische Untersuchung von kriminellen Handlungen
 
 **Digitale Forensik:**
 
@@ -61,12 +61,12 @@
 
 > **Bereich der Cyber-Straftaten, die nicht in der polizeilichen Kriminalstatistik erfasst wird**, da sie nicht entdeckt werden.
 
-#### Gründe für nicht entdecken
+#### Gründe für Nicht-Entdecken
 
 - gute Angreifer (wird nicht entdeckt)
 - mangelnde Schutzvorkehrung
 - Firmen melden Vorfälle wegen Imageschäden/Zeitdruck (schnell wieder einsatzfähig sein)
-- Kein Interesse an forensischer Aufarbeitung nicht
+- Kein Interesse an forensischer Aufarbeitung
 
 ### Spuren
 
@@ -128,7 +128,7 @@
 
 - Sichern: nach gewissen Vorgehen, damit man nichts verändert
 - Analysieren: Wer/Wann/Wo/Wie/Was?
-- Präsentieren bzw. Aufbereiten: Ergebnisse so aufarbeiten, dass sie Auftraggeber pärsentieren kann
+- Präsentieren bzw. Aufbereiten: Ergebnisse so aufarbeiten, dass Auftraggeber sie präsentieren kann
 
 ### Vorgehensmodelle
 
@@ -197,15 +197,15 @@ Relevanz, Vollständigkeit, Verlässlichkeit
 
 ### Identifikationsphase
 
-nach ISO Ersteinschreiter wird tätig und sucht nach Beweismitteln, diese können in physischer und logischer Form vorliegen
+nach ISO: Ersteinschreiter wird tätig und sucht nach Beweismitteln, diese können in physischer und logischer Form vorliegen
 
-physischer: Vorhandensein auf konkreten Gerät, die Zustände der einzelnen Datenträgern auf Bitebene
+physisch: Vorhandensein auf konkreten Gerät, die Zustände der einzelnen Datenträgern auf Bitebene
 
-logischer: physische Form interpretieren z.B. Mithilfe Betriebssystem oder Dirttanwendersoftware
+logisch: physische Form interpretieren z.B. Mithilfe Betriebssystem oder Dirttanwendersoftware
 
 logische Form soll dargestellt und gesichert werden
 
-- soll Speichermedien und alle datenverarbeitenden Geräte alle identifizieren (die vorfallrelevant sein können)
+- soll Speichermedien und alle datenverarbeitenden Geräte identifizieren (die Vorfall-relevant sein können)
 - Priorisierung der Beweismittelerhebung auf Grundlage der Flüchtigkeit der Daten
 - Ein- oder ausgeschalteter Zustand der Geräte
 
@@ -217,7 +217,7 @@ logische Form soll dargestellt und gesichert werden
 
 Entscheiden, ob man das Gerät an sich braucht oder nur Daten auf der Festplatte
 
-Wichtiges Entscheidungskriterium: ist das Gerät aus oder an? Wenn es an ist → Live Forensik Vorort mögl. oder mit Stromzufuhr Mitnahme oder Sicherung Vorort vornehmen (gerade bei schweren Geräten, die man erst ausschalten müssen oder so, bei systemkritischer Technik)
+Wichtiges Entscheidungskriterium: ist das Gerät aus oder an? Wenn es an ist → Live Forensik vor Ort mögl. oder mit Stromzufuhr Mitnahme oder Sicherung vor Ort vornehmen (gerade bei schweren Geräten, die man erst ausschalten müssen oder so, bei systemkritischer Technik)
 
 ### Totmannschaltung
 
@@ -240,7 +240,7 @@ im digital forensischen Umfeld Manipulationen am Tatort: ausschalten/abziehen ei
 ### Erhebung von nicht digitalen Beweismitteln
 
 - digitaler Ersteinschreiter sollte nicht nur digitale Beweismittel erhalten, sondern auch nicht digitale Beweismittel berücksichtigen
-- z.B. Personen, die für das Büro Vorort verantwortlich sind, Zugänge von diesen Personen herausgeben lassen
+- z.B. Personen, die für das Büro vor Ort verantwortlich sind, Zugänge von diesen Personen herausgeben lassen
 - diese Personen können zusätzliche Infos für Doku herausgeben → relevante Details aus Gesprächen mit aufnehmen, Name und Position der Person dokumentieren
 - Hinweise die z.B. Passwort herausgeben (Post It Zettel), andere weitere Notizen
 
@@ -347,7 +347,7 @@ Systemspezifische Daten gleich ausblenden
 
 ### Volatility Framework
 
-- Framework zum analysieren von RAM Abbildern
+- Framework zum Analysieren von RAM-Abbildern
 
 ### Plist-Dateien
 
@@ -382,7 +382,7 @@ Systemspezifische Daten gleich ausblenden
 
 - im Datenbereich beim FAT-Datenträger
 - FAT12&16 → direkt im Anschluss an die FAT
-- FAT32 → kann überall beginnen, meist in den Sektoren direkt nach der FAST
+- FAT32 → kann überall beginnen, meist in den Sektoren direkt nach der FAT
 - Root Verzeichnis finden: boot Sektor ansehen, wie viele reservierte Sektoren, zwei im Offset und ein paar mehr → dann diese Zahl ist das gesuchte ROOT-Datenverzeichnis
 
 ### Master File Table
@@ -405,7 +405,7 @@ Systemspezifische Daten gleich ausblenden
 ### Slackspeicher
 
 - Ursprung: interne Fragmentierung
-- Cluster wird nicht komplett durch eine Datei ausgefüllt, ist aber komplett ausgefüllt -> verbleiende Bereich = Slackspeicher (kann alte Daten beinhalten)
+- Cluster wird nicht komplett durch eine Datei ausgenutzt, ist aber komplett ausgefüllt -> verbleibender Bereich = Slackspeicher (kann alte Daten beinhalten)
 - z.B. bei FAT oder NTFS, aber nicht ext
 
 ### MAC-Zeitstempel
