@@ -81,7 +81,13 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 - heroku.com
 - OpenShift
 - OpenStack
-
+- MariaDB (auf Konsistenz optimiert)
+- MongoDB (auf Verfügbarkeit optimiert)
+- Gaia-X - https://gaia-x.eu/news/events/gaia-x-hackathon-3
+- Content Distribution Networks
+- Paxos (-Protokoll)
+- Consensus-Protokolle
+- Edge-Cloud
 -->
 # Prüfungsleistung
 
@@ -288,7 +294,7 @@ Aufgabe: Unterschiede zwischen ACID und BASE
   - Commit-basiert, komplexe Implementierung
   - konservativ / pessimistisch
 
-## Zwei-Phase-Commits
+## Zwei-Phasen-Commit-Protokoll
 
 - Protkoll zur Konsistenzwahrung zwischen verteilten Datenbanken
 - zwei Rollen: **Koordinator**, **Teilnehmer**
@@ -296,21 +302,29 @@ Aufgabe: Unterschiede zwischen ACID und BASE
 - bei Fehlschlag Rollback
 - beide Phasen sind Teil *einer* Transaktion
 
-- Phase 1:
-  - Koordinator befiehlt nicht-persistente Speicherung der Daten
-  - Teilnehmer bestätigen Erfolg
-- Phase 2:
+**Phase 1:**
+
+- **Versenden von Kommandos zur temporären Speicherung** 
+  - Koordinator befiehlt Teilnehmer nicht-persistente Speicherung der Daten
+- **Bestätigung**
+  - Teilnehmer bestätigen Erfolg (bzw. Fehlermeldung/Timeout), dass Daten (nicht) temporär gesichert wurden
+**Phase 2:**
+
+- **Versenden eines "Commits"** durch Koordinator $\rightarrow$ alle temporären Daten müssen persistent gemacht werden
   - Bedingung: Phase 1 erfolgreich
   - Koordinator versendet Commit-Befehl
   - alle Teilnehmer müssen Daten persistent speichern
+- **Bestätigung persistenter Speicherung** gegenüber Koordinator
   - Teilnehmer bestätigen Erfolg
+
 - Problem: wenn Commit-Entscheidung stattgefunden hat, aber ein Teilnehmer nicht bestätigt (z.B. Absturz)
   - betroffener Teilnehmer muss konsistenten Zustand anfordern und *nachholen* (nicht verwechseln mit Roll-forward) <!--Prüfungsrelevant!-->
   - **Commit-Entscheidungen werden nie rückgängig gemacht**
 
 ## CAP Theorem
 
-- man hat die Wahl zwischen Konsistenz, Verfügbarkeit, Partitionstoleranz
+> Beschreibt Relation zwischen Konsistenz, Verfügbarkeit und Partitionstoleranz
+
 - immer (bis zu) zwei möglich: CA, CP, AP
   - CA-Systeme nicht realistisch
 - Consistency
