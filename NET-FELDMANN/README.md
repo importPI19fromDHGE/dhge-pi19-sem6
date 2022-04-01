@@ -49,7 +49,7 @@ Verteilte Systeme
   - [hierarchische Realisierung von Namens-/VZ-Diensten](#hierarchische-realisierung-von-namens-vz-diensten)
   - [Optimierungen von Namens-/VZ-Diensten](#optimierungen-von-namens-vz-diensten)
   - [ACID-Prinzip](#acid-prinzip)
-  - [Zwei-Phase-Commits](#zwei-phase-commits)
+  - [Zwei-Phasen-Commit-Protokoll](#zwei-phasen-commit-protokoll)
   - [CAP Theorem](#cap-theorem-1)
   - [asynchrone Replikation](#asynchrone-replikation)
   - [synchrone Replikation](#synchrone-replikation)
