@@ -61,6 +61,8 @@ Verteilte Systeme
       - [Rolling Updates](#rolling-updates)
       - [Latenzreduktion](#latenzreduktion)
       - [Galera Konsistenzsicherung](#galera-konsistenzsicherung)
+- [TODO](#todo)
+  - [Allgemeines](#allgemeines)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 <!--NET hier, aber haben Sie schon mal eine Firma gegründet?-->
@@ -111,7 +113,8 @@ Ein verteiltes System ist ein System bestehend aus...
 - kein gemeinsamen Speicher
 - Kooperation mittels Nachrichtenaustausch (Netzwerk)
 - gemeinsames Ziel
-- TODO: Bildbeispiel von Folie
+
+![Beispiel eines VS](assets/beispiel_vs.jpg)<!--width=600px-->
 
 ## zentrale Zielsetzung verteilter Systeme
 
@@ -406,3 +409,18 @@ Latenz kann abhängig von der Geolokalität durch Load-Balancer optimiert werden
 - nur eine Komponente kann *primär* sein $\rightarrow$ Quorum-Verfahren
 - innerhalb einer Partition müssen >50% absolute Mehrheit vorhanden sein, um ein Quorum zu bilden
 - Gewichtung der *Stimmen* auch möglich $\rightarrow$ Arbitratoren
+
+# TODO
+
+## Allgemeines
+
+- Kommunikation ermöglicht Interoperabilität + Kooperation zwischen Instanzen
+- hohe Abstraktion von System und Netzwerk
+- **Transparenzbegriff: Systemdetails werden nicht mehr wahrgenommen**
+- häufig über Middleware realisiert
+- verschiedene Ansätze
+  - Sockets
+  - RPC
+  - Remote Method Invocation (RMI) $\rightarrow$ Java
+  - Web-Services
+  - Message Oriented Middleware / Message Queues $\rightarrow$ asynchrone Kommunikation
