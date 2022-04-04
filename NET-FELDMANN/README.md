@@ -72,6 +72,17 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 - Paxos (-Protokoll)
 - Consensus-Protokolle
 - Edge-Cloud
+- lingua franca
+- WS-*
+- XML Schema
+- W3C
+- RabbitMQ
+- XMLRPC
+- JSONRPC
+- Nfqueue
+- https://de.wikipedia.org/wiki/Steganographie
+- https://flask.palletsprojects.com/en/2.1.x/
+- curl
 -->
 
 # Prüfungsleistung
@@ -83,9 +94,12 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 **Änderung: 30.03.22**
 
 - keine Klausur!
-- Ersatzleistung: zwei Teile 
+- Ersatzleistung: zwei Teile
   - Praktisch Kubernetes Cluster aufsetzen und benutzen (Dokumentieren -> als Gruppe)
     - Zeitraum von zwei Wochen
+    - Datenbank Replikate aufsetzen (3x)
+    - Einfache Webanwendung
+    - Load-Balancer
     - VMs werden zur Verfügung gestellt
   - Theoretischer Teil -> kleine Ausarbeitung zu einigen Fragestellungen (4-5 Seiten)
     - CAP-Theorem mit Beispiel erklären
@@ -240,7 +254,7 @@ TODO: Tabelle aus Folie
 
 > *Don't distribute your objects!*
 >
-> $\rightarrow$ Schnittstelle nach außen und rein lokale Datenverarbeitung genau abwägen. 
+> $\rightarrow$ Schnittstelle nach außen und rein lokale Datenverarbeitung genau abwägen.
 
 # Suchen in Verteilten Systemen / Verzeichnisdienste und Datenkonsistenz
 
@@ -339,7 +353,7 @@ TODO: Tabelle aus Folie
 #### 2-Phasen-Commit-Protokoll
 
 - Protokoll zur konsistenten Ablage von Daten in verschiedenen Datenbanken
-- zwei Rollen: **Koordinator, Teilnehmer** 
+- zwei Rollen: **Koordinator, Teilnehmer**
 - Annahme: zu speichernden Daten liegen den Teilnehmern bei Beginn des Protokollablaufs vor
 - falls Ablauf fehlschlägt: **Rollback**
 
@@ -355,10 +369,10 @@ TODO: Tabelle aus Folie
 
 > Problem: wenn Bestätigung in der 2. Phase ausbleibt, muss dies separat behandelt werden (offene Transaktion)
 
-<!-- 
-Regelmäßig gern in Prüfung gefragt -> kein Rollback! 
+<!--
+Regelmäßig gern in Prüfung gefragt -> kein Rollback!
 
-Commit ist abschließen! 
+Commit ist abschließen!
 -> Ausgebliebener Teilnehmer muss nachträglich in konsistenten Zustand überführt werden (nicht immer mit Algorithmus möglich -> manuell nötig)
 -->
 
@@ -382,4 +396,54 @@ Commit ist abschließen!
 
 ### Galera
 
-- wird von MariaDB (relationale Datenbank) für Replikation genutzt 
+- wird von MariaDB (relationale Datenbank) für Replikation genutzt
+
+# Kommunikationsparadigmen und -mechanismen
+
+## Allgemeines
+
+- Kommunikation (Austausch von Nachrichten) ist ein elementarer Aspekt für verteilte Systeme um Interoperabilität und Kooperation zu ermöglichen
+- Möglichst hoher Grad an Abstraktion von System- und Netzwerkdetails (**Transparenz**)
+
+## Sockets
+
+- Softwareschnittstelle für Netzwerk- und Interprozesskommunikation
+- Zugriff über Schreib- und Leseoperationen
+-
+
+## Remote Procedure Call
+
+## Remote Method Invocation
+
+## Mobiler Code / Mobile Objekte
+
+- Erweiterung des traditionellen Ansatzes (feste Instanzen auf unterschiedlichen Rechnern)
+- Möglichkeit die Platzierung der Verarbeitungslogik zu verändern
+- **Migration:** dynamische Änderung des Programmcodes
+
+### Gründe
+
+- Aktualität des ausgeführten Programmcodes gewährleisten
+- Leichte Installation/Konfiguration von Teilsystemen via Migration (ggf. Migration von "Konfigurationsobjekten")
+- Last ausgleichen / verteilen
+- Programmcode zu daten migrieren, falls Daten umfangreich sind
+
+## Web Services
+
+## Message Oriented Middleware / Message Queues
+
+# Sicherheitsdienste und -mechanismen
+
+## Angriffsszenarien und Schutzziele
+
+## Verschlüsselung
+
+## Digitale Signaturen
+
+## Authentifizierung
+
+## Zugriffskontrolle
+
+## Anonymisierung
+
+# Cloud Computing, IaaS am Beispiel von OpenStack, Docker, Kubernetes
