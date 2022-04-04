@@ -72,6 +72,15 @@ Verteilte Systeme
   - [Web Services](#web-services)
     - [REST](#rest)
   - [Message Oriented Middleware / Message Queues](#message-oriented-middleware--message-queues)
+- [Sicherheitsdienste und -mechanismen](#sicherheitsdienste-und--mechanismen)
+  - [Kategorien von Angriffsszenarien](#kategorien-von-angriffsszenarien)
+  - [Schutzziele](#schutzziele)
+  - [Verschlüsselung](#verschlüsselung)
+    - [Verschlüsselung - Vergleich der Verfahren](#verschlüsselung---vergleich-der-verfahren)
+  - [Digitale Signaturen](#digitale-signaturen)
+  - [Zugriffskontrolle](#zugriffskontrolle)
+  - [Anonymisierung](#anonymisierung)
+- [Cloud Computing, IaaS, OpenStack, Docker, Kubernetes](#cloud-computing-iaas-openstack-docker-kubernetes)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 <!--NET hier, aber haben Sie schon mal eine Firma gegründet?-->
@@ -525,3 +534,70 @@ Latenz kann abhängig von der Geolokalität durch Load-Balancer optimiert werden
 - FCFS-Prinzip
 - typischereweise Publish-Subscriber-Modell
 - Sender schreibt in MQ, Empfänger liest daraus
+
+# Sicherheitsdienste und -mechanismen
+
+## Kategorien von Angriffsszenarien
+
+- **Verhindern**
+  - Angriff auf die **Verfügbarkeit**
+- **Erlangen**
+  - Angriffe haben unberechtigten Zugriff auf Informationen
+- **Modifizieren**
+  - Angriff auf die Daten-**Integrität**, Manipulation einer echten, bereits vorhandenen Nachricht
+- **Fälschen**
+  - Angriffe bringen regulär nicht vorhandene Nachrichten in das System (Replay-Attacke)
+
+## Schutzziele
+
+- **Vertraulichkeit**
+  - unberechtigte Teilnehmer dürfen keine Kenntnisse über schützenswerte Informationen erhalten
+- **Integrität**
+  - Veränderungen müssen zuverlässig erkannt werden
+- **Verfügbarkeit**
+  - Nutzbarkeit von Diensten muss zum benötigten Zeitpunkt möglich sein
+- **Authentizität**
+  - Echtheit einer Nachricht muss überprüfbar sein
+- **Anonymität**
+  - unberechtigte Dritte dürfen nicht ermitteln können, wer die Kommunikationspartner sind und dass überhaupt kommuniziert wird
+  - siehe auch: Steganographie
+
+## Verschlüsselung
+
+<!--hier wirklich nochmal?-->
+
+### Verschlüsselung - Vergleich der Verfahren
+
+- symmetrisch:
+  - effizient
+  - Schlüsselverteilung problematisch, sicherer Kanal notwendig
+- asymmetrisch:
+  - langsam
+  - Schlüsselverteilung einfach, z.B. in Verzeichnisdienst
+- aber: Authentizität des Schlüssel kann ohne weiteres nicht gewährleistet werden $\rightarrow$ Signaturverfahren, PKI
+
+## Digitale Signaturen
+
+- asymmetrische Verfahren werden *umgekehrt* angewandt, Schlüssel tauschen die Rolle
+- Prüfsumme einer Nachricht wird mit Private Key verschlüsselt
+- Empfänger prüft Prüfsumme mit öffentlichen Schlüssel Korrektheit der Prüfsumme
+
+## Zugriffskontrolle
+
+- zwei Grundlegende Formen:
+  - **Access Control List**: Speichern Informationen über Ressourcen, auf die zugegriffen werden darf
+  - **Capabilities**: Speichern von Subjekt-Rechten
+- TODO: Screenshot (ACL ist die ganze Zeile, Capability ist die ganze Spalte)
+
+## Anonymisierung
+
+- Ziel: keine Dritte Partei kann nicht durch die Kenntnis über eine Kommunikation auf die Kommunikationspartner schließen
+- einfache Variante: Pseudonyme
+- einfach und wenig effizient: Proxy-Server
+- aufwändiger: Mix-System
+  - Kommunikation mit und zwischen Relays ist immer verschlüsselt
+  - Relays leiten Anfragen und Antworten in veränderter Reihenfolge weiter
+  - Ein Angreifer muss alle Relays unter Kontrolle bringen, um zu De-anonymisieren
+  - Anonymität innerhalb der Menge der teilnehmenden Clients
+
+# Cloud Computing, IaaS, OpenStack, Docker, Kubernetes
