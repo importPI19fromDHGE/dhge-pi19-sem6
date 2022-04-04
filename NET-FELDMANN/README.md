@@ -24,8 +24,7 @@ Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Verteilte Systeme](#verteilte-systeme)
-- [Prüfungsleistung](#prüfungsleistung)
+- [Prüfungsleistung](#pr%C3%BCfungsleistung)
 - [Einleitung und grundlegende Begriffe](#einleitung-und-grundlegende-begriffe)
   - [Definition verteiltes System](#definition-verteiltes-system)
   - [zentrale Zielsetzung verteilter Systeme](#zentrale-zielsetzung-verteilter-systeme)
@@ -36,7 +35,7 @@ Verteilte Systeme
     - [zentrale Vorteile mehrstufiger Architekturen](#zentrale-vorteile-mehrstufiger-architekturen)
   - [Client-Server-Modell](#client-server-modell)
   - [Objektorientiertes Modell](#objektorientiertes-modell)
-  - [Exkurs: Parameterübergabe](#exkurs-parameterübergabe)
+  - [Exkurs: Parameterübergabe](#exkurs-parameter%C3%BCbergabe)
   - [Vergleich Client/Server vs. OO-Modell](#vergleich-clientserver-vs-oo-modell)
   - [Komponenten-basiertes Modell](#komponenten-basiertes-modell)
   - [dienstorientiertes Modell](#dienstorientiertes-modell)
@@ -56,7 +55,7 @@ Verteilte Systeme
   - [synchrone Replikation](#synchrone-replikation)
   - [synchrone Multi-Master-Replikation](#synchrone-multi-master-replikation)
   - [Galera](#galera)
-    - [Galera ausgewählte Szenarien](#galera-ausgewählte-szenarien)
+    - [Galera ausgewählte Szenarien](#galera-ausgew%C3%A4hlte-szenarien)
       - [Disaster Recovery](#disaster-recovery)
       - [Rolling Updates](#rolling-updates)
       - [Latenzreduktion](#latenzreduktion)
