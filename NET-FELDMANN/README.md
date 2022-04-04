@@ -24,7 +24,8 @@ Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungsleistung](#pr%C3%BCfungsleistung)
+- [Verteilte Systeme](#verteilte-systeme)
+- [Prüfungsleistung](#prüfungsleistung)
 - [Einleitung und grundlegende Begriffe](#einleitung-und-grundlegende-begriffe)
   - [Definition verteiltes System](#definition-verteiltes-system)
   - [zentrale Zielsetzung verteilter Systeme](#zentrale-zielsetzung-verteilter-systeme)
@@ -35,7 +36,7 @@ Verteilte Systeme
     - [zentrale Vorteile mehrstufiger Architekturen](#zentrale-vorteile-mehrstufiger-architekturen)
   - [Client-Server-Modell](#client-server-modell)
   - [Objektorientiertes Modell](#objektorientiertes-modell)
-  - [Exkurs: Parameterübergabe](#exkurs-parameter%C3%BCbergabe)
+  - [Exkurs: Parameterübergabe](#exkurs-parameterübergabe)
   - [Vergleich Client/Server vs. OO-Modell](#vergleich-clientserver-vs-oo-modell)
   - [Komponenten-basiertes Modell](#komponenten-basiertes-modell)
   - [dienstorientiertes Modell](#dienstorientiertes-modell)
@@ -55,7 +56,7 @@ Verteilte Systeme
   - [synchrone Replikation](#synchrone-replikation)
   - [synchrone Multi-Master-Replikation](#synchrone-multi-master-replikation)
   - [Galera](#galera)
-    - [Galera ausgewählte Szenarien](#galera-ausgew%C3%A4hlte-szenarien)
+    - [Galera ausgewählte Szenarien](#galera-ausgewählte-szenarien)
       - [Disaster Recovery](#disaster-recovery)
       - [Rolling Updates](#rolling-updates)
       - [Latenzreduktion](#latenzreduktion)
@@ -88,7 +89,9 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 - Paxos (-Protokoll)
 - Consensus-Protokolle
 - Edge-Cloud
+
 -->
+
 # Prüfungsleistung
 
 - Klausurersatzleistung
@@ -274,7 +277,7 @@ TODO: Tabelle aus Folie
 - Problem: Aktualität von Einträgen und Gewährleistung von Konsistenz
 - siehe auch: DNS, CDN, X.500, LDAP
 
-<!--Anm. Max: er hat sehr auf Caching vs. Repl hingewiesen - klausurrelevant?-->
+<!--Anm. Max: er hat sehr auf Caching vs. Repl hingewiesen - klausurrelevant-->
 
 ## ACID-Prinzip
 
@@ -304,10 +307,11 @@ Aufgabe: Unterschiede zwischen ACID und BASE
 
 **Phase 1:**
 
-- **Versenden von Kommandos zur temporären Speicherung** 
+- **Versenden von Kommandos zur temporären Speicherung**
   - Koordinator befiehlt Teilnehmer nicht-persistente Speicherung der Daten
 - **Bestätigung**
   - Teilnehmer bestätigen Erfolg (bzw. Fehlermeldung/Timeout), dass Daten (nicht) temporär gesichert wurden
+
 **Phase 2:**
 
 - **Versenden eines "Commits"** durch Koordinator $\rightarrow$ alle temporären Daten müssen persistent gemacht werden
