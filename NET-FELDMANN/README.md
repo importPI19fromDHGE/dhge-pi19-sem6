@@ -204,7 +204,7 @@ TODO: Tabelle aus Folie
 
 > *Don't distribute your objects!*
 >
-> $\rightarrow$ Schnittstelle nach außen und rein lokale Datenverarbeitung genau abwägen. 
+> $\rightarrow$ Schnittstelle nach außen und rein lokale Datenverarbeitung genau abwägen.
 
 ## dienstorientiertes Modell
 
