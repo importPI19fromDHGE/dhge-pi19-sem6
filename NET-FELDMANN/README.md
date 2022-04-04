@@ -49,7 +49,7 @@ Verteilte Systeme
   - [hierarchische Realisierung von Namens-/VZ-Diensten](#hierarchische-realisierung-von-namens-vz-diensten)
   - [Optimierungen von Namens-/VZ-Diensten](#optimierungen-von-namens-vz-diensten)
   - [Systembeispiele](#systembeispiele)
-    - [X.500 - Namenseinträge](#x500---namenseinträge)
+    - [X.500 - Namenseinträge](#x500---namenseintr%C3%A4ge)
     - [LDAP](#ldap)
   - [ACID vs. BASE](#acid-vs-base)
     - [ACID-Prinzip](#acid-prinzip)
