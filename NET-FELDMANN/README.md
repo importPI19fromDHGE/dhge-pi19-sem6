@@ -61,8 +61,17 @@ Verteilte Systeme
       - [Rolling Updates](#rolling-updates)
       - [Latenzreduktion](#latenzreduktion)
       - [Galera Konsistenzsicherung](#galera-konsistenzsicherung)
-- [TODO](#todo)
+- [Kommunikationsparadigmen und -mechanismen](#kommunikationsparadigmen-und--mechanismen)
   - [Allgemeines](#allgemeines)
+  - [Sockets](#sockets)
+  - [Remote Procedure Call (RPC)](#remote-procedure-call-rpc)
+    - [Stubs](#stubs)
+    - [Ablauf](#ablauf)
+  - [Remote Method Invocation](#remote-method-invocation)
+  - [mobiler Code / mobile Objekte](#mobiler-code--mobile-objekte)
+  - [Web Services](#web-services)
+    - [REST](#rest)
+  - [Message Oriented Middleware / Message Queues](#message-oriented-middleware--message-queues)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 <!--NET hier, aber haben Sie schon mal eine Firma gegründet?-->
@@ -176,7 +185,8 @@ Ein verteiltes System kann zwei der folgenden Eigenschaften gleichzeitig erfüll
 
 - ähnlich zum Client-Server-Modell
 - Einsatz von Objekten beliebiger Granularität
-- TODO: Beispiel-Bild von Folie
+
+![OO-Modell](assets/oo-modell.jpg)<!--width=600px-->
 
 ## Exkurs: Parameterübergabe
 
@@ -189,7 +199,7 @@ Ein verteiltes System kann zwei der folgenden Eigenschaften gleichzeitig erfüll
 
 ## Vergleich Client/Server vs. OO-Modell
 
-TODO: Tabelle aus Folie
+![Vergleich Client-Server - OO](assets/vgl-oo-clientserver.jpg)<!--width=600px-->
 
 ## Komponenten-basiertes Modell
 
@@ -260,11 +270,12 @@ TODO: Tabelle aus Folie
 ## hierarchische Realisierung von Namens-/VZ-Diensten
 
 - Kontexte sind zur Skalierbarkeit und Effizienz der Interpretation zu versch. organisierten Servern zugeordnet
-  - TODO: Screenshot extrahieren
+  - TODO: Screenshot *extrahieren*
 - Anfrage-Bearbeitung mit Chaining oder Referral
   - Chaining löst rekursiv auf, Referral iterativ
   - Referral ermöglicht besseres Caching
-  - TODO: Screenshot einfügen
+
+![Chaining vs. Referral](assets/chaining-vs-referral.png)<!--width=600px-->
 
 ## Optimierungen von Namens-/VZ-Diensten
 
@@ -410,7 +421,7 @@ Latenz kann abhängig von der Geolokalität durch Load-Balancer optimiert werden
 - innerhalb einer Partition müssen >50% absolute Mehrheit vorhanden sein, um ein Quorum zu bilden
 - Gewichtung der *Stimmen* auch möglich $\rightarrow$ Arbitratoren
 
-# TODO
+# Kommunikationsparadigmen und -mechanismen
 
 ## Allgemeines
 
@@ -424,3 +435,93 @@ Latenz kann abhängig von der Geolokalität durch Load-Balancer optimiert werden
   - Remote Method Invocation (RMI) $\rightarrow$ Java
   - Web-Services
   - Message Oriented Middleware / Message Queues $\rightarrow$ asynchrone Kommunikation
+
+## Sockets
+
+- Software-Schnittstelle für IPC
+- Posix-Standard, unter Linux verfügbar
+- prinzipiell: Deskriptor auf einen weiteren Socket, auf den der Kommunikationspartner zugreift
+- unterstützt reguläre Lese- und Schreib-Operationen
+- auch in High-Level-Programmierung verfügbar, z.B. in Java, aber mit weniger Kontrolle
+
+## Remote Procedure Call (RPC)
+
+- **synchrone Übergabe des Kontrollflusses** zwischen zwei Prozessen mit **unterschiedlichen Adressräumen**
+  - Client-Prozess blockiert während des Aufrufes
+- Alternative zu Sockets
+- Client ruft Code beim Server aus, als wäre es lokaler Code
+- Server führt Code aus, gibt Client Ergebnis zurück
+- relativ **schmaler Kanal** zur Kommunikation $\rightarrow$ kein gemeinsamer Speicher, nicht sehr performant
+- Funktionsaufrufe sind transparent
+- Schnittstelle der entfernten Funktionalität über *Interface Definition Language (IDL)* beschrieben, *Stub* beim Client vorhanden
+- entfernte Instanz kann durch *dynamisches Binden* an Client gebunden werden
+  - Server wird dem Client ggf. erst zur Laufzeit mit Verzeichnisdienst bekannt
+
+### Stubs
+
+- Funktionen haben Identifier
+- Daten werden serialisiert und deserialisiert
+- dienen der Abstrahierung eines Funktionsaufrufes in ein Übertragungsformat
+- aus Interface-Beschreibung erzeugt
+
+### Ablauf
+
+- Client führt lokalen Aufruf an Client-Stub aus
+- Client-Stub führt Marshalling aus $\rightarrow$ Serialisierung des Aufrufs aus dem internen Format, Namensauflösung von Funktionsnamen etc.
+- Client-Stub sendet Daten zur Übertragung an Laufzeitsystem
+- Server empfängt und überträgt an Server-Stub
+- Server-Stub führt Unmarshalling aus $\rightarrow$ Deserialisierung aus Übertragungsformat in internes Format
+- Stub führt Server-Aufruf aus
+- Ergebnis wird via Marshalling durch Server-Stub an Client-Stub übertragen
+- Client-Stub führt Unmarshalling des Ergebnisses aus und übergibt dem Client
+
+![RPC Ablauf](assets/rpc-ablauf.jpg)<!--width=600px-->
+
+## Remote Method Invocation
+
+- Anwendung von RPC auf objektorientierte Programmierung
+- Kommunikation mit entfernten Objekten
+- weit verbreitet: Java RMI
+  - Schnittstellenbeschreibung über Java-Interface
+  - können dynamisch zur Laufzeit nachgeladen werden
+  - Implementierung des Interfaces muss nicht bekannt sein $\rightarrow$ Kommunikation mit unbekannten Klassen
+
+## mobiler Code / mobile Objekte
+
+- traditionell: Kommunikation mit festen Instanzen auf untersch. Rechnern
+- Mobile Codesysteme ermöglichen die Migration von Verarbeitungslogik
+  - Lastausgleich
+  - Aktualität des Codes gewährleisten
+  - Programmcode zu Daten migrieren kann einfacher sein als umgekehrt
+
+## Web Services
+
+- Ziel: Programmiersprachen- und Plattform-Unabhängigkeit
+- Implementierungen:
+  - SOAP
+  - "Web Service Description Language" (WSDL)
+  - UDDI
+  - "W3C-Web-Services"
+  - **REST Web Services**
+- verwenden HTTP
+- Addressierung von Ressourcen über **Uniform Resource Identifier/Locator** URI/URL
+
+### REST
+
+- Protokoll zustandslos $\rightarrow$ Zustände werden in Nachrichten codiert
+- soll besonders skalierbar sein, da keine Zustandsinformationen serverseitig verwaltet werden müssen
+- Anfragen werden nicht an Prozeduren, sondern an Ressourcen/Dokumente übertragen
+- Caching möglich
+- Methoden (GET, POST, ...) sind nicht an einen Kontext gebunden ($\rightarrow$ **generisch**), wiederverwendbar für mehrere Ressourcen
+- verwendet CRUD-Operationen
+- häufig werden Services zu *REST-like* entartet, wenn Server Zustände verwaltet, z.B. durch Cookies
+
+## Message Oriented Middleware / Message Queues
+
+- *MOM* ermöglicht synchrone und asynchrone Kommunikation
+- Nachrichtenaustausch über Zwischenkomponente (Message Queue)
+- Entkopplung der Kommunikationspartner
+- häufig persistent
+- FCFS-Prinzip
+- typischereweise Publish-Subscriber-Modell
+- Sender schreibt in MQ, Empfänger liest daraus
