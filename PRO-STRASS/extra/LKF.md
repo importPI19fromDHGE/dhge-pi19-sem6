@@ -88,7 +88,21 @@
 
 #### Spurenträger
 
-<!-- ToDo: HELP PPT1 - Folie 45? -->
+Spurenträger können mobile und immobile digitale Geräte mit deren flüchtigen und nichtflüchtigen Speichern sein:
+
+- Desktop-PC
+- Notebook
+- Datenträger:
+  - interne/externe Festplatte
+  - SD-Karten
+  - SIM-Karten
+  - Disketten
+  - CDs
+  - USB-Sticks
+- Drucker
+- Kameras
+- Smartphones
+- Spielekonsolen
 
 ### Locard'sche Prinzip
 
@@ -121,14 +135,24 @@
 
 - Gerät zwischen Datenträger und Auslesegerät
 - verhindert dass Auslesegerät den Inhalt auf dem Datenträger verändern kann (blockiert Schreibzugriffe)
+- verhindert versehentliches Vertauschen von Quelle und Ziel
 
-##### Datenintegrität
+##### Datenintegrität garantieren
 
-<!--ToDo: Prüfen -->
+Integrität der Beweiskette sichern:
 
-- Sichern: nach gewissen Vorgehen, damit man nichts verändert
-- Analysieren: Wer/Wann/Wo/Wie/Was?
-- Präsentieren bzw. Aufbereiten: Ergebnisse so aufarbeiten, dass Auftraggeber sie präsentieren kann
+- Writeblocker zum Schreibschutz einsetzen
+- Hashing des forensischen Duplikats vor der weiteren Untersuchung
+
+### Hashwerte
+
+Ein einzigartiges Rechenergebnis aus einer Bitfolge
+
+Für Überprüfung von Datenmanipulation (Integrität sicherstellen)
+
+Illegale Daten finden z.B. Kinderporngrafie
+
+Systemspezifische Daten gleich ausblenden
 
 ### Vorgehensmodelle
 
@@ -145,7 +169,11 @@
 
 #### S-A-P-Modell
 
-<!-- ToDo: ein Schwerpunkt! -->
+<!-- ein Schwerpunkt! -->
+
+- Sichern: Strategische und operative Vorbereitungen und Erfassung aller relevanter Daten
+- Analysieren: Wer/Wann/Wo/Wie/Was?
+- Präsentieren bzw. Aufbereiten: Ergebnisse so aufarbeiten, dass sie dem Auftraggeber präsentiert werden können
 
 #### Post-mortem Forensik
 
@@ -175,11 +203,18 @@
 
 ### Beteiligte Akteuere in der ISO 27037
 
-<!-- ToDo -->
+- Ersteinschreiter für digitale Beweismittel (DEFR)
+- Spezialist für digitale Beweismittel (DES)
 
 ### Allgemeine Schritte nach ISO 27037
 
-<!-- ToDo -->
+<!-- ToDo: Prüfen Folie 2/7-->
+
+- Überblick
+- Identifikation
+- Mitnahme
+- Sicherung
+- Erhaltung
 
 ### Durchführung einer Risikobeurteilung
 
@@ -211,7 +246,7 @@ logische Form soll dargestellt und gesichert werden
 
 ### Leitfäden nach ISO 27037
 
-<!-- ToDo -->
+<!-- ToDo: Folie 16 ff.? -->
 
 ### Mitnahme vs. Sicherung
 
@@ -225,9 +260,29 @@ Mechanismus, der ausgelöst wird wenn die Bestätigung durch einen Menschen ausb
 
 im digital forensischen Umfeld Manipulationen am Tatort: ausschalten/abziehen eines Geräts, entfernen eines Tokens (z.B. abziehen eines USB-Sticks) kann zur Verschlüsselung des Systems führen
 
-### Grundlegende Maßnahmen für ausgeschaltete digitale Geräte
+### Grundlegende Maßnahmen für ausgeschaltete digitale Geräte - Mitnahme
 
-<!-- ToDo -->
+- Stromversorgungskabel zuerst am Gerät trennen
+- Alle Kabel werden vom Gerät getrennt, gesichert und gekennzeichnet
+- Ein-/Aus-Knopf mit Klebeband überkleben $\rightarrow$ keine Zustandsänderung
+- Laptops: Sicherstellen, dass Gerät wirklich ausgeschalten ist $\rightarrow$ Akku entfernen
+- Beim Entfernen von Komponenten auf Erdung achten
+- Dokumentieren, ob CD/DVD-Laufwerke leer und vollständig eingefahren sind
+
+In den meisten Fällen sollte das Speichermedium bis zum Zeitpunkt der Sicherung nicht aus dem digitalen Gerät
+entfernt werden, da das Entfernen das Risiko der Beschädigung oder der Störung durch andere Speichermedien
+erhöhen kann.
+
+### Grundlegende Maßnahmen für ausgeschaltete digitale Geräte - Sicherung
+
+- Es ist sicherzustellen, dass das Gerät tatsächlich ausgeschalten ist
+- Wenn möglich, ist das Speicherlaufwerk aus dem ausgeschalteten digitalen Gerät zu entnehmen, falls es zuvor noch nicht entnommen wurde.
+- Das Speicherlaufwerk wird als Beweismittel gekennzeichnet und alle Details, wie Hersteller, Modellbezeichnung,Seriennummer und Speicherkapazität, werden dokumentiert.
+- Es wird eine Imagesicherung mithilfe von validierten Sicherungswerkzeugen erstellt, um eine digitale Beweismittelkopie des verdächtigen Laufwerks zu erhalten
+
+In den meisten Fällen sollte das Speichermedium bis zum Zeitpunkt der Sicherung nicht aus dem digitalen Gerät
+entfernt werden, da das Entfernen das Risiko der Beschädigung oder der Störung durch andere Speichermedien
+erhöhen kann.
 
 ### Grundlegende Maßnahmen für eingeschaltete digitale Geräte
 
@@ -246,17 +301,7 @@ im digital forensischen Umfeld Manipulationen am Tatort: ausschalten/abziehen ei
 
 ### Besonderheiten bei der Sicherung digitaler Beweismittel
 
-<!-- ToDo -->
-
-### Hashwerte
-
-Ein einzigartiges Rechenergebnis aus einer Bitfolge
-
-Für Überprüfung von Datenmanipulation (Integrität sicherstellen)
-
-Illegale Daten finden z.B. Kinderporngrafie
-
-Systemspezifische Daten gleich ausblenden
+<!-- ToDo Folie 1/80 und 1/82 Richtung Datenintegrität oder 1/77-->
 
 ## Betriebssysteme
 
