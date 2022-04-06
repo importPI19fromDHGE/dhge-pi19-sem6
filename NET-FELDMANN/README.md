@@ -49,7 +49,12 @@ Verteilte Systeme
   - [Grundbegriffe](#grundbegriffe)
   - [hierarchische Realisierung von Namens-/VZ-Diensten](#hierarchische-realisierung-von-namens-vz-diensten)
   - [Optimierungen von Namens-/VZ-Diensten](#optimierungen-von-namens-vz-diensten)
-  - [ACID-Prinzip](#acid-prinzip)
+  - [Systembeispiele](#systembeispiele)
+    - [X.500 - Namenseinträge](#x500---namenseinträge)
+    - [LDAP](#ldap)
+  - [ACID vs. BASE](#acid-vs-base)
+    - [ACID-Prinzip](#acid-prinzip)
+    - [BASE](#base)
   - [Zwei-Phasen-Commit-Protokoll](#zwei-phasen-commit-protokoll)
   - [CAP Theorem](#cap-theorem-1)
   - [asynchrone Replikation](#asynchrone-replikation)
@@ -115,8 +120,9 @@ Haupt-Editoren für dieses Dokument: ZeroPointMax, RvNovae
 # Prüfungsleistung
 
 - Klausurersatzleistung
-- Praktischer Teil: Kubernetes Cluster in 4er-Gruppen aufbauen
+- Praktischer Teil: Kubernetes Cluster in 4er-Gruppen aufbauen, Zeitraum zwei Wochen
 - Theoretischer Teil: Ausarbeitung zu Fragestellungen, ca. 5 Seiten
+  - siehe Markdown-Kommentare
 
 # Einleitung und grundlegende Begriffe
 
@@ -302,10 +308,26 @@ Ein verteiltes System kann zwei der folgenden Eigenschaften gleichzeitig erfüll
 
 <!--Anm. Max: er hat sehr auf Caching vs. Repl hingewiesen - klausurrelevant-->
 
-## ACID-Prinzip
+## Systembeispiele
 
-Siehe DBS.
-Aufgabe: Unterschiede zwischen ACID und BASE
+- Domain Name System (DNS): Auflösung von Domainnamen auf IP-Adressen
+- X.500: mächtiger, flexibel einsetzbarer standardisierter Verzeichnisdiesnt
+- Lightweight Directory Access Protocol (LDAP): Leichtgewichtiges Protokoll, dass Anfragen und Modifikation von Informationen eines Verzeichnisdienstes ermöglicht
+
+### X.500 - Namenseinträge
+
+- Distinguished Name (DN)
+  - Zusammengesetzter Name für einzelnen Eintrag
+  - Zusammengesetzt aus Relativ Distinguished Name (RDN)
+- Relative Distinguished Name (RDN)
+
+### LDAP
+
+- De-Facto-Standard für den Zugriff auf Verzeichnisdienste
+- Vereinfachung des X.600 Directory Access Protocol (DAP)
+- eingesetzt für Benutzerverwaltung, Adressverwaltung, Authentifizierung
+
+## ACID vs. BASE
 
 - BASE:
   - Optimierungsziel: Verfügbarkeit
@@ -319,6 +341,25 @@ Aufgabe: Unterschiede zwischen ACID und BASE
   - Isolation von Zugriffen
   - Commit-basiert, komplexe Implementierung
   - konservativ / pessimistisch
+
+### ACID-Prinzip
+
+> auf Konsistenz ausgelegt
+
+- **Atomicity:** Entweder vollständige oder keine Ausführung
+- **Consistency:** nur Übergänge von konsistentem Zustand zu konsistentem Zustand
+- **Isolation:** Keine Überlappung von Transaktionen, die sich gegenseitig beeinflussen können
+- **Durability:** Nach Abschluss einer Transaktion werden Daten garantiert dauerhaft in einer Datenbank gespeichert
+
+### BASE
+
+> auf Verfügbarkeit ausgelegt $\rightarrow$ einfach skalierbar (best effort, optimistic)
+
+- **Basically Available:** Lese- und Schreiboperationen sind immer verfügbar
+  - `write` bei Konflikten nicht unbedingt persistent
+  - `read` liefert nicht unbedingt zuletzt gespeicherte (bzw. konsistente) Daten
+- **Soft state:** keine Garantie für Konsistenz (nur Wahrscheinlichkeit)
+- **Eventual consistency:** nach ausreichender Zeit kann von einem konsistenten Zustand ausgegangen werden
 
 ## Zwei-Phasen-Commit-Protokoll
 
