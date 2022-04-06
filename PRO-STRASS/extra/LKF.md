@@ -65,7 +65,7 @@
 
 - gute Angreifer (wird nicht entdeckt)
 - mangelnde Schutzvorkehrung
-- Firmen melden Vorfälle wegen Imageschäden/Zeitdruck (schnell wieder einsatzfähig sein)
+- Firmen melden Vorfälle wegen Imageschäden/Zeitdruck nicht (schnell wieder einsatzfähig sein)
 - Kein Interesse an forensischer Aufarbeitung
 
 ### Spuren
@@ -151,12 +151,15 @@
 
 - *"nach dem Tod"* werden nach einem Vorfall Daten erhoben und analysiert (z.B. Datenträger-Forensik)
 - wenn Rechner ausgeschaltet und Festplatte ausbaubar $\rightarrow$ komplettes Datenträgerabbild mit forensischer Maschine erstellen
+- komplette Datenträgerkopie erstellen, alles vollumfänglich gesichert
+- können immer wieder neue Wege zur Ermittlung einschlagen durch die vollumfänglichen Kopien
 
-#### Live-Forensik
+#### Live Forensik
 
 - *während das System noch läuft* findet die Untersuchung eines Vorfalls statt
 - Daten live abziehen, wenn das System noch läuft (z.B. RAM)
 - wenn kein physischer Zugriff/man weiß nicht was drauf läuft/evtl. Verschlüsselung bei herunterfahren
+- Vorteil: geht deutlich schneller
 
 #### logische Sicherung
 
@@ -179,13 +182,20 @@
 
 ### Allgemeine Schritte nach ISO 27037
 
+<!--ToDo-->
+
+### Grundsätzliche Regeln am Tatort
+
 <!-- ToDo -->
 
 ### Durchführung einer Risikobeurteilung
 
-Ersteinschreiter für digitale Beweismittel (DEFR): Befugt ist die ersten Maßnahmen am Tatort/an den Systemen vorzunehmen, der über Sicherungsmethode entscheidet & über Methode der Mitnahme
+- Ersteinschreiter für digitale Beweismittel (DEFR): 
+  - befugt die ersten Maßnahmen am Tatort/an den Systemen vorzunehmen
+  - Entscheidung über Sicherungsmethode und Methode der Mitnahme
 
-Spezialist für digitale Beweismittel (DES): kümmert sich um Analyse, kann Aufgaben des DEFR übernehmen, aber zusätzlich noch Analysen
+- Spezialist für digitale Beweismittel (DES)
+  - kann Aufgaben des DEFR übernehmen, führt zusätzliche Analysen durch
 
 ### Grundsätze der digitalen Beweisführung
 
@@ -258,7 +268,15 @@ Illegale Daten finden z.B. Kinderporngrafie
 
 Systemspezifische Daten gleich ausblenden
 
-## Betriebssysteme
+## Bekämpfung der Computerkriminalität
+
+### Die sechs Schritte des SANS-Institut
+
+**1. Vorbereitung:** Die Organisation sensibilisiert die Mitarbeiter und trainiert sie darauf, auf Computer-und Netzwerk-Sicherheits-Zwischenfälle schnell und korrekt zu reagieren.
+**2. Identifizierung:** Das Response Team entscheidet, ob ein bestimmtes Ereignis eine Bedrohung darstellt. Das Team kann sich an das CERT CoordinationCenter wenden, welche aktuelle Spuren im Internet auf Sicherheitsvorfälle untersucht und hat die Möglichkeit die aktuellsten Informationen über Viren und Würmer zu erhalten.
+**3. Eingrenzung:** Das Team bestimmt, wie weit das Problem bereits Schaden verursacht hat und nimmt alle betroffenen Systeme und Geräte zur Verhinderung weiterer Schäden offline.4.Beseitigung: Das Team untersucht die Herkunft des Vorfalls und beseitigt die Ursache des Problems.
+**5. Recovery:** Daten und Software sind sauber von Backup-Systemen wiederherzustellen. Um sicherzustellen, dass keine Lücken bleiben, werden diese überprüft. Systeme werden für weitere Anzeichen von Kompromittierung oder eines erneuten Auftretens überwacht.
+**6. Nachbesprechung:** Das Team untersucht den Vorfall und wie er behandelt wurde und versucht die Vorfallbehandlung und Prävention zu verbessern, um ein erneutes Auftreten des Problems zu verhindern.
 
 ### CERT
 
@@ -270,6 +288,8 @@ Systemspezifische Daten gleich ausblenden
 
 - Katalog für die einzelnen Bereiche einer Organisation einzelne Bausteine beschrieben
 - Applikation, System, Organisation usw.
+
+## Betriebssysteme
 
 ### Stand der Technik
 
@@ -303,13 +323,20 @@ Systemspezifische Daten gleich ausblenden
 
 - SID pro Benutzergruppe/Benutzerkonto etc. eindeutig vergeben
 
-→ nachvollziehen wer, was geändert hat
+→ nachvollziehen, wer was geändert hat
 
 - Benutzerrechte damit zuweisen
 - welcher Nutzer hat Zugriff, wer hat es angelegt und wer hat es geändert
 - ob Nutzer gelöscht wurden, die daran etwas gemacht haben
 - Log Dateien bzgl. Löschvorgangs/Änderung an Nutzerkonten
 - SID bleibt immer identisch
+
+### Interessante Linux-Anwendungsprotokolle
+
+- apache2
+- httpd
+- samba
+- mysqld
 
 ## Techniken der Spurensuche und RAM Analyse
 
@@ -324,14 +351,6 @@ Systemspezifische Daten gleich ausblenden
 - nicht mehr im allozierten Speicher, aber noch drauf sind
 - zB mit Hexeditor
 
-### Post Mortem Forensik
-
-- komplette Datenträgerkopie erstellen, alles vollumfänglich gesichert
-- können immer wieder neue Wege zur Ermittlung einschlagen durch die vollumfänglichen Kopien
-
-### Live Forensik
-
-- Vorteil: geht deutlich schneller
 
 ### Kernel Level Sicherung
 
@@ -378,12 +397,30 @@ Systemspezifische Daten gleich ausblenden
 
 - Betriebssystem arbeitet Clusterweise $\rightarrow$ es werden immer ganze Cluster gespeichert
 
+### Aufbau FAT-Dateisystem
+
+<!-- Folie 5-15 (done) und Folie 5-21 (TODO) -->
+- FAT-Dateisystem = FileAllocationTable (FAT) + DirectoryEntries
+- Partition:
+  - Bootsektor + Partitionskennung
+  - Reservierte Sektoren
+  - FAT Bereich
+  - Datenbereich mit Verzeichniseinträgen
+
 ### ROOT-verzeichnis bei FAT
 
 - im Datenbereich beim FAT-Datenträger
 - FAT12&16 → direkt im Anschluss an die FAT
 - FAT32 → kann überall beginnen, meist in den Sektoren direkt nach der FAT
 - Root Verzeichnis finden: boot Sektor ansehen, wie viele reservierte Sektoren, zwei im Offset und ein paar mehr → dann diese Zahl ist das gesuchte ROOT-Datenverzeichnis
+
+### Master Boot Record (MBR) 
+
+- TODO
+
+### GUID Partition Table (GPT)
+
+- TODO
 
 ### Master File Table
 
@@ -416,6 +453,10 @@ Systemspezifische Daten gleich ausblenden
 ### Superblock
 
 - alle wichtigen Infos zum ext Dateisystem (Adressedes ersten Blocks, Blockgröße, Blockgruppengröße, freie Inodes, ...)
+
+### Aufbau ext3 / ext4-Dateisystem
+
+<!--TODO-->
 
 ### Umgang mit Dateien im Ext-Dateisystem
 
