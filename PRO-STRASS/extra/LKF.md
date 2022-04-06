@@ -296,7 +296,11 @@ Systemspezifische Daten gleich ausblenden
 - Rechtsformulierung da sich Gesetze langsamer als die Technik entwickeln
 - Hinweise auf Stand der Technik geben bspw. IT-Grundschutz Bausteine
 
-### Received-Einträge im E-Mail Header
+### Aufbau eines E-Mail-Headers
+
+<!--ToDo-->
+
+#### Received-Einträge im E-Mail Header
 
 - jeder Mailrouter, der Mail verarbeitet fügt sich dieser Liste hinzu
 - Anomalien leicht feststellbar
@@ -330,6 +334,10 @@ Systemspezifische Daten gleich ausblenden
 - ob Nutzer gelöscht wurden, die daran etwas gemacht haben
 - Log Dateien bzgl. Löschvorgangs/Änderung an Nutzerkonten
 - SID bleibt immer identisch
+
+### macOS-Frage
+
+<!--ToDo: Was könnte gefragt werden?-->
 
 ### Interessante Linux-Anwendungsprotokolle
 
