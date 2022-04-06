@@ -190,7 +190,7 @@
 
 ### Durchführung einer Risikobeurteilung
 
-- Ersteinschreiter für digitale Beweismittel (DEFR): 
+- Ersteinschreiter für digitale Beweismittel (DEFR):
   - befugt die ersten Maßnahmen am Tatort/an den Systemen vorzunehmen
   - Entscheidung über Sicherungsmethode und Methode der Mitnahme
 
@@ -356,9 +356,8 @@ Systemspezifische Daten gleich ausblenden
 ### FileCarving
 
 - Suche nach Dateien, die gelöscht wurden
-- nicht mehr im allozierten Speicher, aber noch drauf sind
-- zB mit Hexeditor
-
+- nicht mehr im allokierten Speicher, aber noch drauf sind
+- z.B. mit Hex-Editor
 
 ### Kernel Level Sicherung
 
@@ -408,6 +407,7 @@ Systemspezifische Daten gleich ausblenden
 ### Aufbau FAT-Dateisystem
 
 <!-- Folie 5-15 (done) und Folie 5-21 (TODO) -->
+
 - FAT-Dateisystem = FileAllocationTable (FAT) + DirectoryEntries
 - Partition:
   - Bootsektor + Partitionskennung
@@ -422,7 +422,7 @@ Systemspezifische Daten gleich ausblenden
 - FAT32 → kann überall beginnen, meist in den Sektoren direkt nach der FAT
 - Root Verzeichnis finden: boot Sektor ansehen, wie viele reservierte Sektoren, zwei im Offset und ein paar mehr → dann diese Zahl ist das gesuchte ROOT-Datenverzeichnis
 
-### Master Boot Record (MBR) 
+### Master Boot Record (MBR)
 
 - TODO
 
