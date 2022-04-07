@@ -247,7 +247,7 @@ Relevanz, Vollständigkeit, Verlässlichkeit
 
 Entscheiden, ob man das Gerät an sich braucht oder nur Daten auf der Festplatte
 
-Wichtiges Entscheidungskriterium: ist das Gerät aus oder an? Wenn es an ist → Live Forensik vor Ort mögl. oder mit Stromzufuhr Mitnahme oder Sicherung vor Ort vornehmen (gerade bei schweren Geräten, die man erst ausschalten müssen oder so, bei systemkritischer Technik)
+Wichtiges Entscheidungskriterium: ist das Gerät aus oder an? Wenn es an ist $\rightarrow$ Live Forensik vor Ort mögl. oder mit Stromzufuhr Mitnahme oder Sicherung vor Ort vornehmen (gerade bei schweren Geräten, die man erst ausschalten müssen oder so, bei systemkritischer Technik)
 
 ### Totmannschaltung
 
@@ -257,35 +257,34 @@ im digital forensischen Umfeld Manipulationen am Tatort: ausschalten/abziehen ei
 
 ### Grundlegende Maßnahmen für ausgeschaltete digitale Geräte
 
-- Stromversorgungskabel zuerst am Gerät und nicht an der Steckdose trennen
-- Alle Kabel werden vom Gerät getrennt, gesichert und gekennzeichnet
-- Ein-/Aus-Knopf mit Klebeband überkleben, so dass keine Zustandsänderung stattfinden kann
+- **Zustand prüfen:** Gerät WIRKLICH ausgeschaltet? (Status-LEDs, Maus bewegen, ...)
+  - besonders bei Laptops! anschließend Akku entfernen
+- **Stromzufuhr trennen:** zunächst am Gerät (damit keine unterbrechungsfreie Stromzufuhr ausgelöst wird)
+- **Alle Kabel trennen, sichern und kennzeichnen** die mit dem Gerät verbunden sind
+  - Beim Entfernen von Komponenten auf Erdung achten
+- **Dokumentieren**, ob CD/DVD-Laufwerke leer und vollständig eingefahren sind
+- **Transport-Sicherung:** Beschädigungen des Gerätes vermeiden $\rightarrow$ Anti-Statik Beutel, ...
+  - Ein-/Aus-Knopf überkleben $\rightarrow$ Zustandsänderung verhindern
 
-- bei Laptops sicherstellen, dass das Gerät wirklich ausgeschalten ist, anschließend Akku entfernen
-- Beim entfernen von Komponenten auf Erdung achten
-- Dokumentieren, ob CD/DVD-Laufwerke leer und vollständig eingefahren sind
-- bei Transport: Anti-Statik Beutel, keine Beschädigungen des Gerätes
 
-- In den meisten Fällen sollte das Speichermedium bis zum zeitpunkt der Sicherung nicht aus dem digitalen Gerät entfernt werden, da Das Entfernen das Risiko der Beschädigung oder Störung durch andere Speichermedien erhöhen kann.
+> In den meisten Fällen sollte das Speichermedium bis zum Zeitpunkt der Sicherung nicht aus dem digitalen Gerät entfernt werden, da das Entfernen das Risiko der Beschädigung oder Störung durch andere Speichermedien erhöhen kann.
 
 ### Grundlegende Maßnahmen für eingeschaltete digitale Geräte
-
-<!-- ToDo: nochmal prüfen ob bei Merge nichts verloren gegangen ist -->
 
 - Sicherung der flüchtigen Daten in Betracht ziehen
   - Verschlüsselungscodes können im aktiven und inaktiven Speicher vorhanden sein
   - Wenn Verschlüsselung vermutet wird, dann logischer Sicherung in Betracht ziehen
   - Analyse, ob das Gerät durch normales Herunterfahren ausgeschalten werden sollte oder mittels Netzstecker
-  - Beim trennen des Netzsteckers darauf achten, dass die Seite am Gerät zuerst getrennt wird und nicht auf Seiten der Steckdose
+  - Beim Trennen des Netzsteckers darauf achten, dass die Seite am Gerät zuerst getrennt wird und nicht auf Seiten der Steckdose
 - Netzschalter mit Klebeband abkleben!
 
-Beim trennen der Stromzufuhr werden verschlüsselte Daten ohne passenden Schlüssel unzugänglich gemacht. Live-Daten können verloren gehen, was zu Schadensersatzansprüchen oder zu Verlusten von Menschenleben führen kann!
+> Beim Trennen der Stromzufuhr werden verschlüsselte Daten ohne passenden Schlüssel unzugänglich gemacht. Live-Daten können verloren gehen, was zu Schadensersatzansprüchen oder zu Verlusten von Menschenleben führen kann!
 
 ### Erhebung von nicht digitalen Beweismitteln
 
 - digitaler Ersteinschreiter sollte nicht nur digitale Beweismittel erhalten, sondern auch nicht digitale Beweismittel berücksichtigen
 - z.B. Personen, die für das Büro vor Ort verantwortlich sind, Zugänge von diesen Personen herausgeben lassen
-- diese Personen können zusätzliche Infos für Doku herausgeben → relevante Details aus Gesprächen mit aufnehmen, Name und Position der Person dokumentieren
+- diese Personen können zusätzliche Infos für Doku herausgeben $\rightarrow$ relevante Details aus Gesprächen mit aufnehmen, Name und Position der Person dokumentieren
 - Hinweise die z.B. Passwort herausgeben (Post It Zettel), andere weitere Notizen
 
 ### Besonderheiten bei der Sicherung digitaler Beweismittel
@@ -294,23 +293,20 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 ### Hashwerte
 
-Ein einzigartiges Rechenergebnis aus einer Bitfolge
-
-Für Überprüfung von Datenmanipulation (Integrität sicherstellen)
-
-Illegale Daten finden z.B. Kinderporngrafie
-
-Systemspezifische Daten gleich ausblenden
+- Ein einzigartiges Rechenergebnis aus einer Bitfolge
+- Für Überprüfung von Datenmanipulation (Integrität sicherstellen)
+- Illegale Daten finden z.B. Kinderporngrafie
+- Systemspezifische Daten gleich ausblenden
 
 ## Bekämpfung der Computerkriminalität
 
 ### Die sechs Schritte des SANS-Institut
 
-**1. Vorbereitung:** Die Organisation sensibilisiert die Mitarbeiter und trainiert sie darauf, auf Computer-und Netzwerk-Sicherheits-Zwischenfälle schnell und korrekt zu reagieren.
-**2. Identifizierung:** Das Response Team entscheidet, ob ein bestimmtes Ereignis eine Bedrohung darstellt. Das Team kann sich an das CERT CoordinationCenter wenden, welche aktuelle Spuren im Internet auf Sicherheitsvorfälle untersucht und hat die Möglichkeit die aktuellsten Informationen über Viren und Würmer zu erhalten.
-**3. Eingrenzung:** Das Team bestimmt, wie weit das Problem bereits Schaden verursacht hat und nimmt alle betroffenen Systeme und Geräte zur Verhinderung weiterer Schäden offline.4.Beseitigung: Das Team untersucht die Herkunft des Vorfalls und beseitigt die Ursache des Problems.
-**5. Recovery:** Daten und Software sind sauber von Backup-Systemen wiederherzustellen. Um sicherzustellen, dass keine Lücken bleiben, werden diese überprüft. Systeme werden für weitere Anzeichen von Kompromittierung oder eines erneuten Auftretens überwacht.
-**6. Nachbesprechung:** Das Team untersucht den Vorfall und wie er behandelt wurde und versucht die Vorfallbehandlung und Prävention zu verbessern, um ein erneutes Auftreten des Problems zu verhindern.
+- **1. Vorbereitung:** Die Organisation sensibilisiert die Mitarbeiter und trainiert sie darauf, auf Computer-und Netzwerk-Sicherheits-Zwischenfälle schnell und korrekt zu reagieren.
+- **2. Identifizierung:** Das Response Team entscheidet, ob ein bestimmtes Ereignis eine Bedrohung darstellt. Das Team kann sich an das CERT CoordinationCenter wenden, welche aktuelle Spuren im Internet auf Sicherheitsvorfälle untersucht und hat die Möglichkeit die aktuellsten Informationen über Viren und Würmer zu erhalten.
+- **3. Eingrenzung:** Das Team bestimmt, wie weit das Problem bereits Schaden verursacht hat und nimmt alle betroffenen Systeme und Geräte zur Verhinderung weiterer Schäden offline.4.Beseitigung: Das Team untersucht die Herkunft des Vorfalls und beseitigt die Ursache des Problems.
+- **5. Recovery:** Daten und Software sind sauber von Backup-Systemen wiederherzustellen. Um sicherzustellen, dass keine Lücken bleiben, werden diese überprüft. Systeme werden für weitere Anzeichen von Kompromittierung oder eines erneuten Auftretens überwacht.
+- **6. Nachbesprechung:** Das Team untersucht den Vorfall und wie er behandelt wurde und versucht die Vorfallbehandlung und Prävention zu verbessern, um ein erneutes Auftreten des Problems zu verhindern.
 
 ### CERT
 
@@ -361,7 +357,7 @@ Systemspezifische Daten gleich ausblenden
 
 - SID pro Benutzergruppe/Benutzerkonto etc. eindeutig vergeben
 
-→ nachvollziehen, wer was geändert hat
+> $\rightarrow$ nachvollziehen, wer was geändert hat
 
 - Benutzerrechte damit zuweisen
 - welcher Nutzer hat Zugriff, wer hat es angelegt und wer hat es geändert
@@ -452,9 +448,9 @@ Systemspezifische Daten gleich ausblenden
 ### ROOT-verzeichnis bei FAT
 
 - im Datenbereich beim FAT-Datenträger
-- FAT12&16 → direkt im Anschluss an die FAT
-- FAT32 → kann überall beginnen, meist in den Sektoren direkt nach der FAT
-- Root Verzeichnis finden: boot Sektor ansehen, wie viele reservierte Sektoren, zwei im Offset und ein paar mehr → dann diese Zahl ist das gesuchte ROOT-Datenverzeichnis
+- FAT12&16 $\rightarrow$ direkt im Anschluss an die FAT
+- FAT32 $\rightarrow$ kann überall beginnen, meist in den Sektoren direkt nach der FAT
+- Root Verzeichnis finden: boot Sektor ansehen, wie viele reservierte Sektoren, zwei im Offset und ein paar mehr $\rightarrow$ dann diese Zahl ist das gesuchte ROOT-Datenverzeichnis
 
 ### Master Boot Record (MBR)
 
