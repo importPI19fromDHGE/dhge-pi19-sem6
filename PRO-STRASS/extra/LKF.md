@@ -225,23 +225,23 @@ Relevanz, Vollständigkeit, Verlässlichkeit
 
 ### Leitfäden nach ISO 27037
 
-![Leitfaden Bild 1](/assets/LeitfadenISO27037_Bild1.png)
+![Leitfaden: Sicherung/Mitnahme digitaler Geräte](/assets/iso27037-leitfaden-1.png)
 
 #### Mitnahme von eingeschaltenen digitalen Geräten
 
-![Leitfaden Bild 2](/assets/LeitfadenISO27037_Bild2.png)
+![Leitfaden: Mitnahme von eingeschaltenen digitalen Geräten](/assets/iso27037-leitfaden-2.png)
 
 #### Mitnahme von ausgeschalteten digitalen Geräten
 
-![Leitfaden Bild 3](/assets/LeitfadenISO27037_Bild3.png)
+![Leitfaden: Mitnahme von ausgeschalteten digitalen Geräten](/assets/iso27037-leitfaden-3.png)
 
 #### Sicherung von eingeschalteten digitalen Geräten
 
-![Leitfaden Bild 4](/assets/LeitfadenISO27037_Bild4.png)
+![Leitfaden: Sicherung von eingeschalteten digitalen Geräten](/assets/iso27037-leitfaden-4.png)
 
 #### Sicherung von ausgeschalteten digitalen Geräten
 
-![Leitfaden Bild 5](/assets/LeitfadenISO27037_Bild5.png)
+![Leitfaden: Sicherung von ausgeschalteten digitalen Geräten](/assets/iso27037-leitfaden-5.png)
 
 ### Mitnahme vs. Sicherung
 
