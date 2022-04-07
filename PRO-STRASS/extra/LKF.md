@@ -364,9 +364,9 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 ### Alternate DataStream
 
 - `Data`-Attribut mit `DataRuns` mit Clusternummern mit eigentlichen Dateininhalten
-- zusätzlich `Alternate Data Streams` anhängen mit weiteren Infos zur Datei
+- zusätzlich `Alternate DataStreams` anhängen mit weiteren Infos zur Datei
   - z.B. lokaler Ursprung der Datei bzw. aus Internet
-- man kann darin Dateien verstecken (wie Schadsoftware)
+- man kann darin Dateien verstecken (z.B. Schadsoftware)
 
 ### Windows SID
 
@@ -493,9 +493,9 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - Datei auf dem Datenträger die Infos über alle anderen Dateien & Verzeichnisse enthält
 - enthält verschiedene Informationen über Aufbau des Datenträgers
 - Datenbank mit Adressen zu jeder Datei auf den Datenträger, jede Datei besitzt MFT Eintrag mit verschiedenen Attributen
-- wichtigste Attribute: Filename, Standard-Attribut (Meta-Daten, wann wurde es angelegt etc.), Data-Attribut (enthält Daten direkt (wenn klein genug, `MFT` Eintrag ist meist 1024 Bytes groß), sonst DataRuns)
+- wichtigste Attribute: Filename, Standard-Attribut (Meta-Daten, wann wurde es angelegt etc.), Data-Attribut (enthält Daten direkt (wenn klein genug, `MFT` Eintrag ist meist 1024 Bytes groß), sonst `DataRuns`)
 - Datei (vgl. Datenbank) mit Einträgen zu allen Dateien/Verzeichnissen
-- Attribute: Filename, Metadaten, Data (Daten selbst oder DataRuns)
+- Attribute: Filename, Metadaten, Data (Daten selbst oder `DataRuns`)
 
 ### $DATA Attribut
 
