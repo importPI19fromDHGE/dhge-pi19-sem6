@@ -448,14 +448,7 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - Clustergröße bei Formatierung festlegbar
 - einzelne Bytes zu Block zusammengefasst
 
-- Betriebssystem arbeitet Clusterweise $\rightarrow$ es werden immer ganze Cluster gespeichert
-
-### ROOT-verzeichnis bei FAT
-
-- im Datenbereich beim FAT-Datenträger
-- FAT12&16 → direkt im Anschluss an die FAT
-- FAT32 → kann überall beginnen, meist in den Sektoren direkt nach der FAST
-- Root Verzeichnis finden: boot Sektor ansehen, wie viele reservierte Sektoren, zwei im Offset und ein paar mehr → dann diese Zahl ist das gesuchte ROOT-Datenverzeichnis
+> Betriebssystem arbeitet Clusterweise $\rightarrow$ es werden immer ganze Cluster gespeichert
 
 ### Aufbau FAT-Dateisystem
 
@@ -468,7 +461,7 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
   - FAT Bereich
   - Datenbereich mit Verzeichniseinträgen
 
-### ROOT-verzeichnis bei FAT
+#### ROOT-verzeichnis bei FAT
 
 - im Datenbereich beim FAT-Datenträger
 - FAT12&16 $\rightarrow$ direkt im Anschluss an die FAT
