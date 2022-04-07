@@ -390,7 +390,19 @@ Spuren entstehen im Hintergrund, können **flüchtig** sein, sind **leicht ände
 
 #### Wichtige Fundstellen unter MacOS
 
+<!-- ToDo: passt das oder eher PPT3 - Folie 48? -->
+
+> Aufteilung nach Systemdaten (`/System/Library/`, `/Library/`), Benutzerdaten und
+Softwaredaten (`/Application`)
+
 <!--ToDo: Was könnte noch zu MacOS gefragt werden?-->
+
+#### Plist-Dateien (MacOS)
+
+- Property List Dateien: Key-Value-Paare
+- vorallem unter macOS vorhanden, als Konfigurationsdateien
+- vom Aufbau `XML`-Dateien mit spezifischen Schlüsselpaaren
+  - welche Konfigurationsparameter, wurden wann und von wem zuletzt geändert
 
 ### Interessante Linux-Anwendungsprotokolle
 
@@ -434,13 +446,6 @@ Spuren entstehen im Hintergrund, können **flüchtig** sein, sind **leicht ände
 ### Volatility Framework
 
 - Framework zum Analysieren von `RAM`-Abbildern
-
-### Plist-Dateien
-
-- Property List Dateien: Key-Value-Paare
-- vorallem unter macOS vorhanden, als Konfigurationsdateien
-- vom Aufbau `XML`-Dateien mit spezifischen Schlüsselpaaren
-  - welche Konfigurationsparameter, wurden wann und von wem zuletzt geändert
 
 ### Hinweise auf einen Einbruch
 
