@@ -245,15 +245,14 @@ Relevanz, Vollständigkeit, Verlässlichkeit
 
 ### Mitnahme vs. Sicherung
 
-Entscheiden, ob man das Gerät an sich braucht oder nur Daten auf der Festplatte
-
-Wichtiges Entscheidungskriterium: ist das Gerät aus oder an? Wenn es an ist $\rightarrow$ Live Forensik vor Ort mögl. oder mit Stromzufuhr Mitnahme oder Sicherung vor Ort vornehmen (gerade bei schweren Geräten, die man erst ausschalten müssen oder so, bei systemkritischer Technik)
+> Entscheiden, ob man das Gerät an sich braucht oder nur Daten auf der Festplatte
+>
+> Wichtiges Entscheidungskriterium: ist das Gerät aus oder an? Wenn es an ist $\rightarrow$ Live Forensik vor Ort mögl. oder mit Stromzufuhr Mitnahme oder Sicherung vor Ort vornehmen (gerade bei schweren Geräten, die man erst ausschalten müssen oder so, bei systemkritischer Technik)
 
 ### Totmannschaltung
 
-Mechanismus, der ausgelöst wird wenn die Bestätigung durch einen Menschen ausbleibt
-
-im digital forensischen Umfeld Manipulationen am Tatort: ausschalten/abziehen eines Geräts, entfernen eines Tokens (z.B. abziehen eines USB-Sticks) kann zur Verschlüsselung des Systems führen
+- Mechanismus, der ausgelöst wird wenn die Bestätigung durch einen Menschen ausbleibt
+- im digital forensischen Umfeld Manipulationen am Tatort: ausschalten/abziehen eines Geräts, entfernen eines Tokens (z.B. abziehen eines USB-Sticks) kann zur Verschlüsselung des Systems führen
 
 ### Grundlegende Maßnahmen für ausgeschaltete digitale Geräte
 
@@ -313,6 +312,15 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - größere Unternehmen, extern ausgelagert, auch auf Landesebene (pro Bundesland eins)
 - Kontaktstellen bei größeren IT-Sicherheitsvorfall
 
+### Sechs Schritte des SANS-Institut
+
+1. Vorbereitung: Die Organisation sensibilisiert die MA und trainiert sie darauf, auf Computer- und Netzwerk-Sicherheits-Zwischenfälle schnell und korrekt zu reagieren.
+2. Identifizierung: Das Response Team entscheidet, ob ein bestimmtes Ereignis eine Bedrohung darstellt. Das Team kann sich an der CERT Coordination Center wenden, welche aktuelle Spuren im Internet auf Sicherheitsvorfälle untersucht und hat die Möglichkeit die aktuellsten Informationen über Viren und Würmer zu enthalten.
+3. Eingrenzung: Das Team bestimmt, wie weit das Problem bereits Schaden verursacht hat und nimmt alle betroffenen Systeme und Geräte zur Verhinderung weiterer Schäden offline.
+4. Beseitigung: Das Team untersucht die Herkunft des Vorfalls und beseitig die Ursache des Problems.
+5. Recovery: Daten und Software sind sauber von Backup-Systemen wiederherzustellen. Um sicherzustellen, dass keine Lücken bleiben, werden diese überprüft. Systeme werden für weitere Anzeichen und Kompromittierung oder eines erneuten Auftretens überwacht.
+6. Nachbesprechung: Das Team untersucht den Vorfall und wie er behandelt wurde und versucht die Vorfallbehandlung und Prävention zu verbessern, um ein erneutes Auftreten des Problems zu verhindern.
+
 ### BSI IT-Grundschutz Kompendium
 
 - Katalog für die einzelnen Bereiche einer Organisation einzelne Bausteine beschrieben
@@ -325,7 +333,13 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - Rechtsformulierung da sich Gesetze langsamer als die Technik entwickeln
 - Hinweise auf Stand der Technik geben bspw. IT-Grundschutz Bausteine
 
-### Aufbau eines E-Mail-Headers
+### E-Mail Header
+
+- Folgende Angaben kann der Angreifer manipulieren: From, To, Date, Subject, Message-ID
+- praktisch manipulationssicher: Received
+- good to know: G Suite Toolbox Nachrichten-Header
+
+#### Aufbau eines E-Mail-Headers
 
 <!--ToDo-->
 
@@ -338,6 +352,9 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 ### Windows Registry
 
 - verschiedene Datenbanken (Registry Hives) die dort als Datei vorliegen auf dem Datenträger
+- Speicherung von Einstellungen in der Registrierungsdatenbank:
+  - gespeicherte Daten in sogenannten Registrierungshives aufgeteilt und in Keys mit Values abgelegt
+  - Datenbanken existieren in Form von Dateien im Verzeichnis
 
 ### Volume Shadow Copy
 
@@ -431,7 +448,7 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - Clustergröße bei Formatierung festlegbar
 - einzelne Bytes zu Block zusammengefasst
 
-- Betriebssystem arbeitet Clusterweise $\rightarrow$ es werden immer ganze Cluster gespeichert
+> Betriebssystem arbeitet Clusterweise $\rightarrow$ es werden immer ganze Cluster gespeichert
 
 ### Aufbau FAT-Dateisystem
 
@@ -444,7 +461,7 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
   - FAT Bereich
   - Datenbereich mit Verzeichniseinträgen
 
-### ROOT-verzeichnis bei FAT
+#### ROOT-verzeichnis bei FAT
 
 - im Datenbereich beim FAT-Datenträger
 - FAT12&16 $\rightarrow$ direkt im Anschluss an die FAT
@@ -466,7 +483,6 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - enthält verschiedene Informationen über Aufbau des Datenträgers
 - Datenbank mit Adressen zu jeder Datei auf den Datenträger, jede Datei besitzt MFT Eintrag mit verschiedenen Attributen
 - wichtigste Attribute: Filename, Standardattribut (Meta Daten, wann wurde es angelegt etc.), Dataattribut (enthält Daten direkt (wenn klein genug, MFT Eintrag ist meist 1024 Bytes groß), sonst DataRuns)
-
 - Datei (vgl. Datenbank) mit Einträgen zu allen Dateien/Verzeichnissen
 - Attribute: Filename, Metadaten, Data (Daten selbst oder DataRuns)
 
@@ -479,7 +495,7 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 ### Slackspeicher
 
 - Ursprung: interne Fragmentierung
-- Cluster wird nicht komplett durch eine Datei ausgenutzt, ist aber komplett ausgefüllt -> verbleibender Bereich = Slackspeicher (kann alte Daten beinhalten)
+- Cluster wird nicht komplett durch eine Datei ausgenutzt, ist aber komplett ausgefüllt $\rightarrow$ verbleibender Bereich = Slackspeicher (kann alte Daten beinhalten)
 - z.B. bei FAT oder NTFS, aber nicht ext
 
 ### MAC-Zeitstempel
