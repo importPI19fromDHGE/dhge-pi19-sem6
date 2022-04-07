@@ -266,7 +266,6 @@ im digital forensischen Umfeld Manipulationen am Tatort: ausschalten/abziehen ei
 - **Transport-Sicherung:** Beschädigungen des Gerätes vermeiden $\rightarrow$ Anti-Statik Beutel, ...
   - Ein-/Aus-Knopf überkleben $\rightarrow$ Zustandsänderung verhindern
 
-
 > In den meisten Fällen sollte das Speichermedium bis zum Zeitpunkt der Sicherung nicht aus dem digitalen Gerät entfernt werden, da das Entfernen das Risiko der Beschädigung oder Störung durch andere Speichermedien erhöhen kann.
 
 ### Grundlegende Maßnahmen für eingeschaltete digitale Geräte
