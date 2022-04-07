@@ -180,8 +180,8 @@
 
 <!-- ToDo: Auf Duplikat prüfen-->
 
-- Ersteinschreiter für digitale Beweismittel (DEFR): Befugt ist die ersten Maßnahmen am Tatort/an den Systemen vorzunehmen, der über Sicherungsmethode entscheidet & über Methode der Mitnahme
-- Spezialist für digitale Beweismittel (DES): kümmert sich um Analyse, kann Aufgaben des DEFR übernehmen, aber zusätzlich noch Analysen
+- **Ersteinschreiter für digitale Beweismittel (DEFR):** Befugt ist die ersten Maßnahmen am Tatort/an den Systemen vorzunehmen, der über Sicherungsmethode entscheidet & über Methode der Mitnahme
+- **Spezialist für digitale Beweismittel (DES):** kümmert sich um Analyse, kann Aufgaben des DEFR übernehmen, aber zusätzlich noch Analysen
 
 ### Allgemeine Schritte nach ISO 27037
 
