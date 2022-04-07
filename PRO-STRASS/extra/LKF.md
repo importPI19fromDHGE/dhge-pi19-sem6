@@ -298,28 +298,22 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 ## Bekämpfung der Computerkriminalität
 
-### Die sechs Schritte des SANS-Institut
-
-- **1. Vorbereitung:** Die Organisation sensibilisiert die Mitarbeiter und trainiert sie darauf, auf Computer-und Netzwerk-Sicherheits-Zwischenfälle schnell und korrekt zu reagieren.
-- **2. Identifizierung:** Das Response Team entscheidet, ob ein bestimmtes Ereignis eine Bedrohung darstellt. Das Team kann sich an das CERT CoordinationCenter wenden, welche aktuelle Spuren im Internet auf Sicherheitsvorfälle untersucht und hat die Möglichkeit die aktuellsten Informationen über Viren und Würmer zu erhalten.
-- **3. Eingrenzung:** Das Team bestimmt, wie weit das Problem bereits Schaden verursacht hat und nimmt alle betroffenen Systeme und Geräte zur Verhinderung weiterer Schäden offline.4.Beseitigung: Das Team untersucht die Herkunft des Vorfalls und beseitigt die Ursache des Problems.
-- **5. Recovery:** Daten und Software sind sauber von Backup-Systemen wiederherzustellen. Um sicherzustellen, dass keine Lücken bleiben, werden diese überprüft. Systeme werden für weitere Anzeichen von Kompromittierung oder eines erneuten Auftretens überwacht.
-- **6. Nachbesprechung:** Das Team untersucht den Vorfall und wie er behandelt wurde und versucht die Vorfallbehandlung und Prävention zu verbessern, um ein erneutes Auftreten des Problems zu verhindern.
-
 ### CERT
 
-- Computer Emergency Response Team
-- größere Unternehmen, extern ausgelagert, auch auf Landesebene (pro Bundesland eins)
+- **C**omputer **E**mergency **R**esponse **T**eam
 - Kontaktstellen bei größeren IT-Sicherheitsvorfall
+- für Bundesbehörden auf Landesebene (pro Bundesland)
+- auch bei größere Unternehmen (extern ausgelagert)
 
-### Sechs Schritte des SANS-Institut
+### Die sechs Schritte des SANS-Institut
 
-1. Vorbereitung: Die Organisation sensibilisiert die MA und trainiert sie darauf, auf Computer- und Netzwerk-Sicherheits-Zwischenfälle schnell und korrekt zu reagieren.
-2. Identifizierung: Das Response Team entscheidet, ob ein bestimmtes Ereignis eine Bedrohung darstellt. Das Team kann sich an der CERT Coordination Center wenden, welche aktuelle Spuren im Internet auf Sicherheitsvorfälle untersucht und hat die Möglichkeit die aktuellsten Informationen über Viren und Würmer zu enthalten.
-3. Eingrenzung: Das Team bestimmt, wie weit das Problem bereits Schaden verursacht hat und nimmt alle betroffenen Systeme und Geräte zur Verhinderung weiterer Schäden offline.
-4. Beseitigung: Das Team untersucht die Herkunft des Vorfalls und beseitig die Ursache des Problems.
-5. Recovery: Daten und Software sind sauber von Backup-Systemen wiederherzustellen. Um sicherzustellen, dass keine Lücken bleiben, werden diese überprüft. Systeme werden für weitere Anzeichen und Kompromittierung oder eines erneuten Auftretens überwacht.
-6. Nachbesprechung: Das Team untersucht den Vorfall und wie er behandelt wurde und versucht die Vorfallbehandlung und Prävention zu verbessern, um ein erneutes Auftreten des Problems zu verhindern.
+- **1. Vorbereitung:** Organisation und Mitarbeiter sensibilisieren und trainiert $\rightarrow$ schnelle und korrekte Reaktion auf Computer- und Netzwerk-Sicherheits-Zwischenfälle
+- **2. Identifizierung:** Entscheidung des Response Teams, ob ein bestimmtes Ereignis eine Bedrohung darstellt
+  - Team kann sich an das CERT CoordinationCenter wenden (aktuelle Infos zu Sicherheitsvorfälle, ...)
+- **3. Eingrenzung:** Bestimmung des Schadensumfanges durch das Team $\rightarrow$ welcher Schaden; nimmt alle betroffenen Systeme/Geräte zur Verhinderung weiterer Schäden offline
+- **4. Beseitigung:** Untersuchung der Herkunft des Vorfalls und beseitigt der Ursache des Problems durch das Team.
+- **5. Recovery:** Wiederherstellung von Daten und Software von Backup-Systemen; Überprüfung der Schließung der Sicherheitslücken; Überwachung der Systeme für Anzeichen von Kompromittierung/erneutes Auftretten
+- **6. Nachbesprechung:** Team untersucht den Vorfall und wie er behandelt wurde und versucht die Vorfallbehandlung und Prävention zu verbessern, um ein erneutes Auftreten des Problems zu verhindern
 
 ### BSI IT-Grundschutz Kompendium
 
@@ -333,28 +327,31 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - Rechtsformulierung da sich Gesetze langsamer als die Technik entwickeln
 - Hinweise auf Stand der Technik geben bspw. IT-Grundschutz Bausteine
 
-### E-Mail Header
-
-- Folgende Angaben kann der Angreifer manipulieren: From, To, Date, Subject, Message-ID
-- praktisch manipulationssicher: Received
-- good to know: G Suite Toolbox Nachrichten-Header
-
 #### Aufbau eines E-Mail-Headers
 
-<!--ToDo-->
+- Folgende Angaben kann der Angreifer manipulieren
+  - `From` (Absender)
+  - `To` (Empfänger)
+  - `Date` (Zeitpunkt der Erstellung)
+  - `Subject` (Betreff)
+  - `Message-ID` (eindeutige Zeichenfolge)
+- praktisch manipulationssicher: `Received` (Weg der Email vom Sender zum Empfänger)
+- Header und Inhalt wird durch eine Leerzeile getrennt
+
+<!-- ToDo: Können wir das Entfernen? -> good to know: G Suite Toolbox Nachrichten-Header-->
 
 #### Received-Einträge im E-Mail Header
 
-- jeder Mailrouter, der Mail verarbeitet fügt sich dieser Liste hinzu
+- jeder Mailrouter fügt dem Header seine Kennung hinzu, wenn er die Mail verarbeitet
 - Anomalien leicht feststellbar
 - Phishingmails darüber identifizieren
 
 ### Windows Registry
 
-- verschiedene Datenbanken (Registry Hives) die dort als Datei vorliegen auf dem Datenträger
-- Speicherung von Einstellungen in der Registrierungsdatenbank:
-  - gespeicherte Daten in sogenannten Registrierungshives aufgeteilt und in Keys mit Values abgelegt
-  - Datenbanken existieren in Form von Dateien im Verzeichnis
+- Konfigurationsdatenbank des Betriebsystems
+- Einstellungen von Systemdiensten und -prozessen sowie von anderen Anwendungen
+  - werden als Key/Value-Pairs gespeichert und in `Registry Hives` aufgeteilt
+  - verschiedene Datenbanken (`Registry Hives`) liegen als Datei auf dem Datenträger vor
 
 ### Volume Shadow Copy
 
@@ -460,18 +457,18 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 <!-- Folie 5-15 (done) und Folie 5-21 (TODO) -->
 
-- FAT-Dateisystem = FileAllocationTable (FAT) + DirectoryEntries
+- `FAT`-Dateisystem = FileAllocationTable (`FAT`) + DirectoryEntries
 - Partition:
   - Bootsektor + Partitionskennung
   - Reservierte Sektoren
-  - FAT Bereich
+  - `FAT` Bereich
   - Datenbereich mit Verzeichniseinträgen
 
 #### ROOT-verzeichnis bei FAT
 
-- im Datenbereich beim FAT-Datenträger
-- `FAT12`, `FAT16` $\rightarrow$ direkt im Anschluss an die FAT
-- `FAT32` $\rightarrow$ kann überall beginnen, meist in den Sektoren direkt nach der FAT
+- im Datenbereich des `FAT`-Datenträgers
+- `FAT12`, `FAT16` $\rightarrow$ direkt im Anschluss an die `FAT`
+- `FAT32` $\rightarrow$ kann überall beginnen, meist in den Sektoren direkt nach der `FAT`
 - Root Verzeichnis finden: boot Sektor ansehen, wie viele reservierte Sektoren, zwei im Offset und ein paar mehr $\rightarrow$ dann diese Zahl ist das gesuchte ROOT-Datenverzeichnis
 
 ### Master Boot Record (MBR)
