@@ -39,7 +39,7 @@
 
 #### Überschneidungen zu anderen Gebieten der Informationssicherheit
 
-<!-- HELP: Findet ihr das relevant? -->
+<!-- ToDo: HELP -> Findet ihr das relevant? -->
 
 - Forensic Intelligence (predictive Policing, Untersuchung von Radikalisierung im Internet)
 - Informationssicherheitsmanagement
@@ -358,28 +358,29 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 ### Volume Shadow Copy
 
-- Snapshots eines NTFS Volumes (pro NTFS Volume 64 Snapshotkopien)
-- arbeitet auf copy und write Basis
+- Snapshots eines `NTFS` Volumes (pro `NTFS` Volume 64 Snapshotkopien)
+- arbeitet auf `copy` und `write` Basis
 - alte Zustände eines Volumes abrufen
 - aller 7 Tage, bei Patches, Treibersoftware etc. erstellt
 
-### Alternate Data Stream
+### Alternate DataStream
 
-- Data Attribut mit Data Runs mit Clusternummern mit eigentlichen Dateininhalten
-- zusätzlich Alternate Data Streams anhängen mit weiteren Infos zur Datei zB kommt Datei aus lokalen oder aus Internet
+- `Data`-Attribut mit `DataRuns` mit Clusternummern mit eigentlichen Dateininhalten
+- zusätzlich `Alternate Data Streams` anhängen mit weiteren Infos zur Datei
+  - z.B. lokaler Ursprung der Datei bzw. aus Internet
 - man kann darin Dateien verstecken (wie Schadsoftware)
 
 ### Windows SID
 
-- SID pro Benutzergruppe/Benutzerkonto etc. eindeutig vergeben
+- `SID` wird pro Benutzergruppe/Benutzerkonto **eindeutig** vergeben
 
 > $\rightarrow$ nachvollziehen, wer was geändert hat
 
 - Benutzerrechte damit zuweisen
 - welcher Nutzer hat Zugriff, wer hat es angelegt und wer hat es geändert
 - ob Nutzer gelöscht wurden, die daran etwas gemacht haben
-- Log Dateien bzgl. Löschvorgangs/Änderung an Nutzerkonten
-- SID bleibt immer identisch
+- Log-Dateien bzgl. Löschvorgangs/Änderung an Nutzerkonten
+- `SID` bleibt immer identisch
 
 ### macOS-Frage
 
@@ -387,10 +388,10 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 ### Interessante Linux-Anwendungsprotokolle
 
-- apache2
-- httpd
-- samba
-- mysqld
+- `apache2`
+- `httpd`
+- `samba`
+- `mysqld`
 
 ## Techniken der Spurensuche und RAM Analyse
 
@@ -398,6 +399,10 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 - Dateien ohne Dateiendung analysieren & Dateityp identifiziert
 - durch Header & Footer Informationen
+
+#### Magic-Bytes
+
+<!-- ToDo -->
 
 ### FileCarving
 
@@ -407,34 +412,35 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 ### Kernel Level Sicherung
 
-- Systemkern speichert RAM Inhalte
+- Systemkern speichert `RAM` Inhalte
 - versch. Tools je nach Betriebssystem
-- Vorteil zu User Level: gesamter RAM gesichert und nicht selektive Sicherung
+- Vorteil zu User Level: gesamter `RAM` gesichert und nicht selektive Sicherung
 
 ### Cold Boot
 
-- RAM Sicherungsmethode
-- RAM heruntergekühlt um kurzzeitig Stromzufuhr zu unterbrechen + keine Inhalte verlieren
-- mit/ohne Transfer, ohne mit Livesystem
+- `RAM` Sicherungsmethode
+- `RAM` heruntergekühlt um kurzzeitig Stromzufuhr zu unterbrechen + keine Inhalte verlieren
+- mit/ohne Transfer, ohne/mit Livesystem
 
 ### Volatility Framework
 
-- Framework zum Analysieren von RAM-Abbildern
+- Framework zum Analysieren von `RAM`-Abbildern
 
 ### Plist-Dateien
 
 - Property List Dateien: Key-Value-Paare
 - vorallem unter macOS vorhanden, als Konfigurationsdateien
-- vom Aufbau XML-Dateien mit spezifischen Schlüsselpaaren, können bspw. mit xcode geöffnet werden, welche Konfigurationsparameter gesetzt sind, wer zuletzt etwas geändert hat
+- vom Aufbau `XML`-Dateien mit spezifischen Schlüsselpaaren
+  - welche Konfigurationsparameter, wurden wann und von wem zuletzt geändert
 
 ### Hinweise auf einen Einbruch
 
 - wenn Rechner auffällig langsam wird
-- verdächtige/unbekannte Prozesse im Taskmanager prüfe
+- verdächtige/unbekannte Prozesse im Taskmanager prüfen
 - Auffälligkeiten bei Netzwerkverbindungen
 - Auffälligkeiten in Log-Dateien (unvollständig/geleert)
 - unbekannte Benutzer, besonders Admin Accounts
-- Meldungen von Antiviren Software, Protokolldateien der Software prüfen
+- Meldungen von Antiviren-Software, Protokolldateien der Software prüfen
 
 ## Dateisysteme
 
@@ -446,9 +452,9 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 - Zusammenfassung mehrerer Sektoren
 - Clustergröße bei Formatierung festlegbar
-- einzelne Bytes zu Block zusammengefasst
+- einzelne Bytes zu Block zusammengefasst <!-- ToDo: vgl. Sektoren^^ -->
 
-> Betriebssystem arbeitet Clusterweise $\rightarrow$ es werden immer ganze Cluster gespeichert
+> **Betriebssystem arbeitet Clusterweise** $\rightarrow$ es werden immer ganze Cluster gespeichert
 
 ### Aufbau FAT-Dateisystem
 
@@ -464,48 +470,57 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 #### ROOT-verzeichnis bei FAT
 
 - im Datenbereich beim FAT-Datenträger
-- FAT12&16 $\rightarrow$ direkt im Anschluss an die FAT
-- FAT32 $\rightarrow$ kann überall beginnen, meist in den Sektoren direkt nach der FAT
+- `FAT12`, `FAT16` $\rightarrow$ direkt im Anschluss an die FAT
+- `FAT32` $\rightarrow$ kann überall beginnen, meist in den Sektoren direkt nach der FAT
 - Root Verzeichnis finden: boot Sektor ansehen, wie viele reservierte Sektoren, zwei im Offset und ein paar mehr $\rightarrow$ dann diese Zahl ist das gesuchte ROOT-Datenverzeichnis
 
 ### Master Boot Record (MBR)
 
-- TODO
+<!-- ToDo -->
 
 ### GUID Partition Table (GPT)
 
-- TODO
+<!-- ToDo -->
 
 ### Master File Table
 
-- Teil des NTFS Dateisystem
+- Teil des `NTFS` Dateisystem
 - Datei auf dem Datenträger die Infos über alle anderen Dateien & Verzeichnisse enthält
 - enthält verschiedene Informationen über Aufbau des Datenträgers
 - Datenbank mit Adressen zu jeder Datei auf den Datenträger, jede Datei besitzt MFT Eintrag mit verschiedenen Attributen
-- wichtigste Attribute: Filename, Standardattribut (Meta Daten, wann wurde es angelegt etc.), Dataattribut (enthält Daten direkt (wenn klein genug, MFT Eintrag ist meist 1024 Bytes groß), sonst DataRuns)
+- wichtigste Attribute: Filename, Standard-Attribut (Meta-Daten, wann wurde es angelegt etc.), Data-Attribut (enthält Daten direkt (wenn klein genug, `MFT` Eintrag ist meist 1024 Bytes groß), sonst DataRuns)
 - Datei (vgl. Datenbank) mit Einträgen zu allen Dateien/Verzeichnissen
 - Attribute: Filename, Metadaten, Data (Daten selbst oder DataRuns)
 
 ### $DATA Attribut
 
+- Attribut im `NTFS`-Dateisystem
 - die tatsächlichen Daten, die in die Datei geschrieben wurden
-- NTFS-Dateisystem
-- direkte Daten oder DataRuns
+- direkte Daten oder `DataRuns`
 
 ### Slackspeicher
 
 - Ursprung: interne Fragmentierung
-- Cluster wird nicht komplett durch eine Datei ausgenutzt, ist aber komplett ausgefüllt $\rightarrow$ verbleibender Bereich = Slackspeicher (kann alte Daten beinhalten)
-- z.B. bei FAT oder NTFS, aber nicht ext
+- Cluster wird nicht komplett durch eine Datei ausgenutzt, ist aber komplett ausgefüllt $\rightarrow$ **verbleibender Bereich = Slackspeicher**
+- Slackspeicher kann alte Daten beinhalten
+- z.B. bei `FAT` oder `NTFS`, aber **nicht bei `ext`**
 
 ### MAC-Zeitstempel
+
+<!-- ToDo: HELP -> Hat nichts mit MacOS zu tun, oder? -->
 
 - jedes Betriebssystem besitzt Zeitstempel
 - Modification, Access, Change/Creation-Time
 
 ### Superblock
 
-- alle wichtigen Infos zum ext Dateisystem (Adressedes ersten Blocks, Blockgröße, Blockgruppengröße, freie Inodes, ...)
+> alle wichtigen Infos zum `ext`-Dateisystem
+
+- Adresse des ersten Blocks
+- Blockgröße
+- Blockgruppengröße
+- Anzahl freier Inodes
+- ...
 
 ### Aufbau ext3 / ext4-Dateisystem
 
@@ -513,13 +528,12 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 ### Umgang mit Dateien im Ext-Dateisystem
 
-- Superblock & Gruppendeskriptortabelle (wie viele freie Blöcke pro Block, weitere Infos zu Inodes z.B. Inode mit 2 ist immer Rootverzeichnis
+- Superblock & Gruppendeskriptortabelle (wie viele freie Blöcke pro Block, weitere Infos zu Inodes z.B. Inode mit 2 ist immer Rootverzeichnis)
 
 ### DataRuns
 
 - bestehen aus einer Anzahl an Clustern, besitzen Clusternummern die dazugehören
 - über diese Clusternummern lässt sich Datei zusammenbauen
-
 - Liste von Clustern
 
 ## Windows-Zusatz
