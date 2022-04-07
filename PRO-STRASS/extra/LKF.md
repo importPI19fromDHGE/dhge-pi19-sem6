@@ -146,7 +146,9 @@
 
 #### S-A-P-Modell
 
-<!-- ToDo: ein Schwerpunkt! -->
+- **Secure:** strategische und operative Vorbereitungen zur Erfassung aller relevanten Daten durchführen
+- **Analyse:** gesicherten Spuren und Beweise werden überprüfbar aufgearbeitet, sorgfältig geprüft und objektiv bewertet
+- **Present:** Ermittlungsprozess wird nachvollziehbar dargelegt (präsentiert)
 
 #### Post-mortem Forensik
 
