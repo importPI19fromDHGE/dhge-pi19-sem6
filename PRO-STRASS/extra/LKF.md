@@ -4,10 +4,15 @@
 
 ### Definition Digitale Forensik
 
-- **Forensik:** systematischenUntersuchung von kriminellen Handlungen
-- **Digitale Forensik:**
-
 <!-- ToDo: PPT 1 - Folie 33 -->
+
+- **Forensik:** systematische Untersuchung von kriminellen Handlungen
+
+**Digitale Forensik:**
+
+- **streng methodisch vorgenommene Datenanalyse** auf Datenträgern und in Computernetzen
+- zur **Aufklärung von Vorfällen**
+- unter Einbeziehung der Möglichkeiten der strategischen Vorbereitung insbesondere aus der Sicht des Anlagenbetreibers eines IT-Systems.
 
 ### Ziele digitaler Forensik
 
@@ -22,35 +27,57 @@
 
 <!-- PPT 1 - Folie 35 -->
 
-- Datenträger-Forensik
-- Mobilfunk-Forensik
-- Netzwerk-Forensik
-- Multimedia-Forensik
-- Cloud-Forensik
-- Memory-Forensik
-- Car Forensik
-- IoT-Forensik
-- Forensische Linguistik
+- **Datenträger**-Forensik
+- **Mobilfunk**-Forensik
+- **Netzwerk**-Forensik
+- **Multimedia**-Forensik
+- **Cloud**-Forensik
+- **Memory**-Forensik
+- **Car** Forensik
+- **IoT**-Forensik
+- Forensische **Linguistik**
+
+#### Überschneidungen zu anderen Gebieten der Informationssicherheit
+
+<!-- HELP: Findet ihr das relevant? -->
+
+- Forensic Intelligence (predictive Policing, Untersuchung von Radikalisierung im Internet)
+- Informationssicherheitsmanagement
+- Schadsoftware-Analyse / Reverse Engineering
+- Untersuchungen im Darknet
+- Kryptowährungen / Blockchain-Untersuchung
 
 #### Multimedia-Forensik
 
 - Feststellung von Spuren bzw. Manipulationen in Bildern/Videos/Audio
 - Arbeitsgebiet der digitalen Forensik
 
+### Herausforderungen der digitalen Forensik
+
+- Massendaten in der Datenträger-Forensik: **Datenmengen immer größer**, Speicherplatz immer günstiger
+- **Faktor Zeit:** bis zur Entdeckung eines Vorfalls vergehen oft Monate
+
 ### Dunkelfeld
 
-Der Bereich, der Cyber-Straftaten, die nicht in der polizeilichen Kriminalstatistik erfasst wird, da es nicht entdeckt wird.
+> **Bereich der Cyber-Straftaten, die nicht in der polizeilichen Kriminalstatistik erfasst wird**, da sie nicht entdeckt werden.
 
-#### Gründe für nicht entdecken
+#### Gründe für Nicht-Entdecken
 
 - gute Angreifer (wird nicht entdeckt)
 - mangelnde Schutzvorkehrung
-- Firmen melden Vorfälle wegen Imageschäden/Zeitdruck (schnell wieder einsatzfähig sein)
-- Kein Interesse an forensischer Aufarbeitung nicht
+- Firmen melden Vorfälle wegen Imageschäden/Zeitdruck nicht (schnell wieder einsatzfähig sein)
+- Kein Interesse an forensischer Aufarbeitung
 
-### Digitale Spuren
+### Spuren
 
-Metadaten/Computerdaten, die aufgrund unseres Verhalten angelegt werden (Arbeitsspeicher, auf Datenbanken etc.)
+- materielle **Veränderungen an Personen oder Objekten**
+- stehen **im Zusammenhang mit relevanten Ereignissen**
+- **können zur Tataufklärung beitragen** (geben Rückschlüsse auf Tatablauf und Täter)
+
+#### Digitale Spuren
+
+- basieren auf Daten, welche in Computersystemen gespeichert sind bzw. übertragen wurden (Metadaten/Computerdaten $\rightarrow$ RAM, DBs, ...)
+- werden erst durch ihre Interpretation von physischen Spuren über unterschiedliche Interpretationsebenen zu verwertbaren Spuren
 
 #### Unterschiede im Gegensatz zu analogen Spuren
 
@@ -61,45 +88,58 @@ Metadaten/Computerdaten, die aufgrund unseres Verhalten angelegt werden (Arbeits
 
 #### Spurenträger
 
-<!-- ToDo -->
+<!-- ToDo: HELP PPT1 - Folie 45? -->
 
 ### Locard'sche Prinzip
 
-Keine Person (Täter/Opfer/Ermittler) kann einen Tatort betreten & verlassen ohne Spuren zu hinterlassen
+> Es gibt keinen Tatort ohne Spuren!
 
-Jeder der mit Tatort interagiert hinterlässt/verändert Spuren oder nimmt etwas mit. Auch bei digitalen Spuren
+- keine Person (Täter/Opfer/Ermittler) kann einen Tatort betreten und verlassen ohne Spuren zu hinterlassen
+- Jeder der mit Tatort interagiert hinterlässt/verändert Spuren oder nimmt etwas mit.
+
+> auch bei digitalen Spuren!
 
 ### Forensischer Arbeitsplatz
 
-<!--ToDo-->
+- **forensische Workstation** (sehr potente Hardware)
+- **Office Computer** für schriftliche Sachen (Dokumentation) ohne Verbindung zum Netzwerk oder nur interne Verbindung, aber kein Internetzugang
+- **Internetcomputer** für Recherche (aktuelle Virenscanner und Firewall!)
+
+> $\rightarrow$ im Idealfall drei physische Rechner (forensische Workstation immer physisch getrennt)
 
 ### Forensic Readiness
 
-Wenn etwas passiert, auf strategischer und operativer Ebene, bereit sein für forensische Prozesse durch forensischen Arbeitsplatz
+> -**bereit sein** für forensische Prozesse durch forensischen Arbeitsplatz **(strategischer und operativer Ebene)**
+> - Systeme sollen so konfiguriert sein, dass man digitale Spuren sammeln, schneller im Ernstfall agieren und Kosten sparen kann
 
-Systeme sollen so konfiguriert sein, dass man digitale Spuren sammeln kann, schneller im Ernstfall agieren, Kosten sparen
+- **Transportable Workstations** für Außeneinsätze (Beweismittel vor Ort erheben)
+- **Schreibschutzadapter** für Datensicherung (Außen- und Laboreinsatz)
+- **Technische Maßnahmen:** Gruppenrichtlinien konfigurieren (Server), Logging aktivieren
+- **Organisatorische Maßnahmen:** Response-Teams, Hard- und Software beschaffen, Prozesse aufbauen (Verantwortliche, Budget, Kompetenzen, Räumlichkeiten, ...)
 
-#### Drei Säulen
+#### Schreibschutzadapter
 
-- forensische Workstation (sehr potente Hardware)
-- Office Computer für schriftliche Sachen (Dokumentation) ohne Verbindung zum Netzwerk oder nur interne Verbindung, aber kein Internetzugang
-- Internetcomputer für Recherche
+- Gerät zwischen Datenträger und Auslesegerät
+- verhindert dass Auslesegerät den Inhalt auf dem Datenträger verändern kann (blockiert Schreibzugriffe)
 
-→ im Idealfall drei physische Rechner
+##### Datenintegrität
 
-### Schreibschutzadapter
-
-Gerät zwischen Datenträger und Auslesegerät, verhindert dass Auslesegerät den Inhalt auf dem Datenträger verändern kann.
-
-#### Datenintegrität
+<!--ToDo: Prüfen -->
 
 - Sichern: nach gewissen Vorgehen, damit man nichts verändert
-
-- Analysieren: Wer/Wann/Wo/Wie/Was
-
-- Präsentieren bzw. Aufbereiten: Ergebnisse so aufarbeiten, dass sie Auftraggeber pärsentieren kann
+- Analysieren: Wer/Wann/Wo/Wie/Was?
+- Präsentieren bzw. Aufbereiten: Ergebnisse so aufarbeiten, dass Auftraggeber sie präsentieren kann
 
 ### Vorgehensmodelle
+
+#### Anforderungen an forensische Vorgehensweisen
+
+- **Akzeptanz:** Methoden sind in der Fachwelt anerkannt
+- **Glaubwürdigkeit:** Funktionalität der Methoden ist nachweisbar
+- **Wiederholbarkeit:** Ergebnisse ist durch Dritte reproduzierbar
+- **Integrität:** Spuren werden durch Untersuchung nicht verändert
+- **Ursache und Auswirkungen:** Verbindung zwischen digitalen Spuren, Ereignissen und Personen sindherstellbar
+- **Dokumentation:** Ermittlungsprozess ist nachvollziehbar dokumentiert
 
 #### BSI-IT-Forensik-Leitfaden
 
@@ -107,43 +147,63 @@ Gerät zwischen Datenträger und Auslesegerät, verhindert dass Auslesegerät de
 
 <!-- ToDo: ein Schwerpunkt! -->
 
-#### Post-moretem-Forensik
+#### Post-mortem Forensik
 
-“nach dem Tod” Hierbei werden nach einem Vorfall Daten erhoben und analysiert z.B. Datenträger-Forensik
+- *"nach dem Tod"* werden nach einem Vorfall Daten erhoben und analysiert (z.B. Datenträger-Forensik)
+- wenn Rechner ausgeschaltet und Festplatte ausbaubar $\rightarrow$ komplettes Datenträgerabbild mit forensischer Maschine erstellen
+- komplette Datenträgerkopie erstellen, alles vollumfänglich gesichert
+- können immer wieder neue Wege zur Ermittlung einschlagen durch die vollumfänglichen Kopien
 
-Wenn Rechner ausgeschaltet ist & Festplatte ausbaubar, dann an forensische Maschine anschließen & Daten 1:1 kopieren kann
+#### Live Forensik
 
-#### Live-Forensik
+- *während das System noch läuft* findet die Untersuchung eines Vorfalls statt
+- Daten live abziehen, wenn das System noch läuft (z.B. RAM)
+- wenn kein physischer Zugriff/man weiß nicht was drauf läuft/evtl. Verschlüsselung bei herunterfahren
+- Vorteil: geht deutlich schneller
 
-Während das System noch läuft, findet die Untersuchung eines Vorfalls statt
+#### logische Sicherung
 
-Daten live abziehen, wenn das System noch läuft
+- auf Betriebssystemebene
+- mit Mitteln des Betriebssystems
+- mit Drittanwendersoftware
+- erfolgt abhängig von Betriebssystem
 
-Wenn kein physischer Zugriff/man weiß nicht was drauf läuft/evtl. Verschlüsselung bei herunterfahren
+#### physikalische Sicherung
 
-### logische vs. physikal Sicherung
-
-<!-- ToDo -->
-
-### Post-Mortem vs. Live-Forensik
-
-<!-- ToDo -->
+- auf Hardwareebene
+- mit hardware- und softwaretechnischen Hilfsmitteln
+- erfolgt betriebssystemunabhängig
 
 ## ISO 27037 und Tatorfotografie
 
 ### Beteiligte Akteuere in der ISO 27037
 
-<!-- ToDo -->
+<!-- ToDo: Auf Duplikat prüfen-->
+
+- **Ersteinschreiter für digitale Beweismittel (DEFR):** Befugt ist die ersten Maßnahmen am Tatort/an den Systemen vorzunehmen, der über Sicherungsmethode entscheidet & über Methode der Mitnahme
+- **Spezialist für digitale Beweismittel (DES):** kümmert sich um Analyse, kann Aufgaben des DEFR übernehmen, aber zusätzlich noch Analysen
 
 ### Allgemeine Schritte nach ISO 27037
+
+- Sichern und Kontrollieren des Bereichs, in dem sich die Geräte befinden
+- Bestimmung der Person, die für den Ort die fachliche Verantwortung trägt
+- Sicherstellen, dass Personen von den Geräten und von der Stromversorgung ferngehalten werden
+- Alle Personen dokumentieren, die Zugang zum Ort haben oder für die ein Motiv für eine Beteiligung am Untersuchungsort vorliegen könnte
+- Ist das Gerät eingeschaltet, darf das Gerät nicht ausgeschaltet werden und umgekehrt, falls das Gerät ausgeschaltet ist, darf es nicht eingeschaltet werden
+- Untersuchungsort mit allen Komponenten und Kabeln in seiner ursprünglichen Position dokumentieren
+- Falls zulässig: Bereiche nach Gegenstände, wie Haftnotizen, Terminkalender, Akten, Laptops oder Handbücher für Hard- und Software durchsuchen
+
+### Grundsätzliche Regeln am Tatort
 
 <!-- ToDo -->
 
 ### Durchführung einer Risikobeurteilung
 
-Ersteinschreiter für digitale Beweismittel (DEFR): Befugt ist die ersten Maßnahmen am Tatort/an den Systemen vorzunehmen, der über Sicherungsmethode entscheidet & über Methode der Mitnahme
-
-Spezialist für digitale Beweismittel (DES): kümmert sich um Analyse, kann Aufgaben des DEFR übernehmen, aber zusätzlich noch Analysen
+- Ersteinschreiter für digitale Beweismittel (DEFR):
+  - befugt die ersten Maßnahmen am Tatort/an den Systemen vorzunehmen
+  - Entscheidung über Sicherungsmethode und Methode der Mitnahme
+- Spezialist für digitale Beweismittel (DES)
+  - kann Aufgaben des DEFR übernehmen, führt zusätzliche Analysen durch
 
 ### Grundsätze der digitalen Beweisführung
 
@@ -155,68 +215,96 @@ Relevanz, Vollständigkeit, Verlässlichkeit
 
 ### Identifikationsphase
 
-nach ISO Ersteinschreiter wird tätig und sucht nach Beweismitteln, diese können in physischer und logischer Form vorliegen
-
-physischer: Vorhandensein auf konkreten Gerät, die Zustände der einzelnen Datenträgern auf Bitebene
-
-logischer: physische Form interpretieren z.B. Mithilfe Betriebssystem oder Dirttanwendersoftware
-
-logische Form soll dargestellt und gesichert werden
-
-- soll Speichermedien und alle datenverarbeitenden Geräte alle identifizieren (die vorfallrelevant sein können)
+- nach ISO: Ersteinschreiter wird tätig und sucht nach Beweismitteln, diese können in physischer und logischer Form vorliegen
+- physisch: Vorhandensein auf konkreten Gerät, die Zustände der einzelnen Datenträgern auf Bitebene
+- logisch: physische Form interpretieren z.B. Mithilfe Betriebssystem oder Dirttanwendersoftware
+- logische Form soll dargestellt und gesichert werden
+- soll Speichermedien und alle datenverarbeitenden Geräte identifizieren (die Vorfall-relevant sein können)
 - Priorisierung der Beweismittelerhebung auf Grundlage der Flüchtigkeit der Daten
 - Ein- oder ausgeschalteter Zustand der Geräte
 
 ### Leitfäden nach ISO 27037
 
-<!-- ToDo -->
+![Leitfaden: Sicherung/Mitnahme digitaler Geräte](/assets/iso27037-leitfaden-1.png)
+
+#### Mitnahme von eingeschaltenen digitalen Geräten
+
+![Leitfaden: Mitnahme von eingeschaltenen digitalen Geräten](/assets/iso27037-leitfaden-2.png)
+
+#### Mitnahme von ausgeschalteten digitalen Geräten
+
+![Leitfaden: Mitnahme von ausgeschalteten digitalen Geräten](/assets/iso27037-leitfaden-3.png)
+
+#### Sicherung von eingeschalteten digitalen Geräten
+
+![Leitfaden: Sicherung von eingeschalteten digitalen Geräten](/assets/iso27037-leitfaden-4.png)
+
+#### Sicherung von ausgeschalteten digitalen Geräten
+
+![Leitfaden: Sicherung von ausgeschalteten digitalen Geräten](/assets/iso27037-leitfaden-5.png)
 
 ### Mitnahme vs. Sicherung
 
-Entscheiden, ob man das Gerät an sich braucht oder nur Daten auf der Festplatte
-
-Wichtiges Entscheidungskriterium: ist das Gerät aus oder an? Wenn es an ist → Live Forensik Vorort mögl. oder mit Stromzufuhr Mitnahme oder Sicherung Vorort vornehmen (gerade bei schweren Geräten, die man erst ausschalten müssen oder so, bei systemkritischer Technik)
+> Entscheiden, ob man das Gerät an sich braucht oder nur Daten auf der Festplatte
+>
+> Wichtiges Entscheidungskriterium: ist das Gerät aus oder an? Wenn es an ist $\rightarrow$ Live Forensik vor Ort mögl. oder mit Stromzufuhr Mitnahme oder Sicherung vor Ort vornehmen (gerade bei schweren Geräten, die man erst ausschalten müssen oder so, bei systemkritischer Technik)
 
 ### Totmannschaltung
 
-Mechanismus, der ausgelöst wird wenn die Bestätigung durch einen Menschen ausbleibt
-
-im digital forensischen Umfeld Manipulationen am Tatort: ausschalten/abziehen eines Geräts, entfernen eines Tokens (z.B. abziehen eines USB-Sticks) kann zur Verschlüsselung des Systems führen
+- Mechanismus, der ausgelöst wird wenn die Bestätigung durch einen Menschen ausbleibt
+- im digital forensischen Umfeld Manipulationen am Tatort: ausschalten/abziehen eines Geräts, entfernen eines Tokens (z.B. abziehen eines USB-Sticks) kann zur Verschlüsselung des Systems führen
 
 ### Grundlegende Maßnahmen für ausgeschaltete digitale Geräte
 
-<!-- ToDo -->
+- **Zustand prüfen:** Gerät WIRKLICH ausgeschaltet? (Status-LEDs, Maus bewegen, ...)
+  - besonders bei Laptops! anschließend Akku entfernen
+- **Stromzufuhr trennen:** zunächst am Gerät (damit keine unterbrechungsfreie Stromzufuhr ausgelöst wird)
+- **Alle Kabel trennen, sichern und kennzeichnen** die mit dem Gerät verbunden sind
+  - Beim Entfernen von Komponenten auf Erdung achten
+- **Dokumentieren**, ob CD/DVD-Laufwerke leer und vollständig eingefahren sind
+- **Transport-Sicherung:** Beschädigungen des Gerätes vermeiden $\rightarrow$ Anti-Statik Beutel, ...
+  - Ein-/Aus-Knopf überkleben $\rightarrow$ Zustandsänderung verhindern
+
+> In den meisten Fällen sollte das Speichermedium bis zum Zeitpunkt der Sicherung nicht aus dem digitalen Gerät entfernt werden, da das Entfernen das Risiko der Beschädigung oder Störung durch andere Speichermedien erhöhen kann.
 
 ### Grundlegende Maßnahmen für eingeschaltete digitale Geräte
 
-- drauf achten, ob Gerät WIRKLICH ausgeschaltet ist z.B. durch Status-LED, Maus bewegen
-- Ein- und Ausschaltknöpfe abkleben → während Transport keine Zustandsänderungen
-- Kabel etc. vom Gerät trennen, kennzeichnen an welchem Port diese waren
-- Stromzufuhr trennen: zunächst am Gerät trennen, damit keine unterbrechungsfreie Stromzufuhr ausgelöst wird
-- bei Transport: Anti-Statik Beutel, keine Beschädigungen des Gerätes
+- Sicherung der flüchtigen Daten in Betracht ziehen
+  - Verschlüsselungscodes können im aktiven und inaktiven Speicher vorhanden sein
+  - Wenn Verschlüsselung vermutet wird, dann logischer Sicherung in Betracht ziehen
+  - Analyse, ob das Gerät durch normales Herunterfahren ausgeschalten werden sollte oder mittels Netzstecker
+  - Beim Trennen des Netzsteckers darauf achten, dass die Seite am Gerät zuerst getrennt wird und nicht auf Seiten der Steckdose
+- Netzschalter mit Klebeband abkleben!
+
+> Beim Trennen der Stromzufuhr werden verschlüsselte Daten ohne passenden Schlüssel unzugänglich gemacht. Live-Daten können verloren gehen, was zu Schadensersatzansprüchen oder zu Verlusten von Menschenleben führen kann!
 
 ### Erhebung von nicht digitalen Beweismitteln
 
 - digitaler Ersteinschreiter sollte nicht nur digitale Beweismittel erhalten, sondern auch nicht digitale Beweismittel berücksichtigen
-- z.B. Personen, die für das Büro Vorort verantwortlich sind, Zugänge von diesen Personen herausgeben lassen
-- diese Personen können zusätzliche Infos für Doku herausgeben → relevante Details aus Gesprächen mit aufnehmen, Name und Position der Person dokumentieren
+- z.B. Personen, die für das Büro vor Ort verantwortlich sind, Zugänge von diesen Personen herausgeben lassen
+- diese Personen können zusätzliche Infos für Doku herausgeben $\rightarrow$ relevante Details aus Gesprächen mit aufnehmen, Name und Position der Person dokumentieren
 - Hinweise die z.B. Passwort herausgeben (Post It Zettel), andere weitere Notizen
 
 ### Besonderheiten bei der Sicherung digitaler Beweismittel
 
-<!-- ToDo -->
+Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, können verschlüsselt sein, liegen physisch auf Datenträger vor und müssen dann logisch interpretiert werden um lesbar zu werden
 
 ### Hashwerte
 
-Ein einzigartiges Rechenergebnis aus einer Bitfolge
+- Ein einzigartiges Rechenergebnis aus einer Bitfolge
+- Für Überprüfung von Datenmanipulation (Integrität sicherstellen)
+- Illegale Daten finden z.B. Kinderporngrafie
+- Systemspezifische Daten gleich ausblenden
 
-Für Überprüfung von Datenmanipulation (Integrität sicherstellen)
+## Bekämpfung der Computerkriminalität
 
-Illegale Daten finden z.B. Kinderporngrafie
+### Die sechs Schritte des SANS-Institut
 
-Systemspezifische Daten gleich ausblenden
-
-## Betriebssysteme
+- **1. Vorbereitung:** Die Organisation sensibilisiert die Mitarbeiter und trainiert sie darauf, auf Computer-und Netzwerk-Sicherheits-Zwischenfälle schnell und korrekt zu reagieren.
+- **2. Identifizierung:** Das Response Team entscheidet, ob ein bestimmtes Ereignis eine Bedrohung darstellt. Das Team kann sich an das CERT CoordinationCenter wenden, welche aktuelle Spuren im Internet auf Sicherheitsvorfälle untersucht und hat die Möglichkeit die aktuellsten Informationen über Viren und Würmer zu erhalten.
+- **3. Eingrenzung:** Das Team bestimmt, wie weit das Problem bereits Schaden verursacht hat und nimmt alle betroffenen Systeme und Geräte zur Verhinderung weiterer Schäden offline.4.Beseitigung: Das Team untersucht die Herkunft des Vorfalls und beseitigt die Ursache des Problems.
+- **5. Recovery:** Daten und Software sind sauber von Backup-Systemen wiederherzustellen. Um sicherzustellen, dass keine Lücken bleiben, werden diese überprüft. Systeme werden für weitere Anzeichen von Kompromittierung oder eines erneuten Auftretens überwacht.
+- **6. Nachbesprechung:** Das Team untersucht den Vorfall und wie er behandelt wurde und versucht die Vorfallbehandlung und Prävention zu verbessern, um ein erneutes Auftreten des Problems zu verhindern.
 
 ### CERT
 
@@ -238,6 +326,8 @@ Systemspezifische Daten gleich ausblenden
 - Katalog für die einzelnen Bereiche einer Organisation einzelne Bausteine beschrieben
 - Applikation, System, Organisation usw.
 
+## Betriebssysteme
+
 ### Stand der Technik
 
 - Rechtsformulierung da sich Gesetze langsamer als die Technik entwickeln
@@ -248,6 +338,10 @@ Systemspezifische Daten gleich ausblenden
 - Folgende Angaben kann der Angreifer manipulieren: From, To, Date, Subject, Message-ID
 - praktisch manipulationssicher: Received
 - good to know: G Suite Toolbox Nachrichten-Header
+
+#### Aufbau eines E-Mail-Headers
+
+<!--ToDo-->
 
 #### Received-Einträge im E-Mail Header
 
@@ -279,13 +373,24 @@ Systemspezifische Daten gleich ausblenden
 
 - SID pro Benutzergruppe/Benutzerkonto etc. eindeutig vergeben
 
-→ nachvollziehen wer, was geändert hat
+> $\rightarrow$ nachvollziehen, wer was geändert hat
 
 - Benutzerrechte damit zuweisen
 - welcher Nutzer hat Zugriff, wer hat es angelegt und wer hat es geändert
 - ob Nutzer gelöscht wurden, die daran etwas gemacht haben
 - Log Dateien bzgl. Löschvorgangs/Änderung an Nutzerkonten
 - SID bleibt immer identisch
+
+### macOS-Frage
+
+<!--ToDo: Was könnte gefragt werden?-->
+
+### Interessante Linux-Anwendungsprotokolle
+
+- apache2
+- httpd
+- samba
+- mysqld
 
 ## Techniken der Spurensuche und RAM Analyse
 
@@ -297,17 +402,8 @@ Systemspezifische Daten gleich ausblenden
 ### FileCarving
 
 - Suche nach Dateien, die gelöscht wurden
-- nicht mehr im allozierten Speicher, aber noch drauf sind
-- zB mit Hexeditor
-
-### Post Mortem Forensik
-
-- komplette Datenträgerkopie erstellen, alles vollumfänglich gesichert
-- können immer wieder neue Wege zur Ermittlung einschlagen durch die vollumfänglichen Kopien
-
-### Live Forensik
-
-- Vorteil: geht deutlich schneller
+- nicht mehr im allokierten Speicher, aber noch drauf sind
+- z.B. mit Hex-Editor
 
 ### Kernel Level Sicherung
 
@@ -323,7 +419,7 @@ Systemspezifische Daten gleich ausblenden
 
 ### Volatility Framework
 
-- Framework zum analysieren von RAM Abbildern
+- Framework zum Analysieren von RAM-Abbildern
 
 ### Plist-Dateien
 
@@ -361,6 +457,32 @@ Systemspezifische Daten gleich ausblenden
 - FAT32 → kann überall beginnen, meist in den Sektoren direkt nach der FAST
 - Root Verzeichnis finden: boot Sektor ansehen, wie viele reservierte Sektoren, zwei im Offset und ein paar mehr → dann diese Zahl ist das gesuchte ROOT-Datenverzeichnis
 
+### Aufbau FAT-Dateisystem
+
+<!-- Folie 5-15 (done) und Folie 5-21 (TODO) -->
+
+- FAT-Dateisystem = FileAllocationTable (FAT) + DirectoryEntries
+- Partition:
+  - Bootsektor + Partitionskennung
+  - Reservierte Sektoren
+  - FAT Bereich
+  - Datenbereich mit Verzeichniseinträgen
+
+### ROOT-verzeichnis bei FAT
+
+- im Datenbereich beim FAT-Datenträger
+- FAT12&16 $\rightarrow$ direkt im Anschluss an die FAT
+- FAT32 $\rightarrow$ kann überall beginnen, meist in den Sektoren direkt nach der FAT
+- Root Verzeichnis finden: boot Sektor ansehen, wie viele reservierte Sektoren, zwei im Offset und ein paar mehr $\rightarrow$ dann diese Zahl ist das gesuchte ROOT-Datenverzeichnis
+
+### Master Boot Record (MBR)
+
+- TODO
+
+### GUID Partition Table (GPT)
+
+- TODO
+
 ### Master File Table
 
 - Teil des NTFS Dateisystem
@@ -368,7 +490,6 @@ Systemspezifische Daten gleich ausblenden
 - enthält verschiedene Informationen über Aufbau des Datenträgers
 - Datenbank mit Adressen zu jeder Datei auf den Datenträger, jede Datei besitzt MFT Eintrag mit verschiedenen Attributen
 - wichtigste Attribute: Filename, Standardattribut (Meta Daten, wann wurde es angelegt etc.), Dataattribut (enthält Daten direkt (wenn klein genug, MFT Eintrag ist meist 1024 Bytes groß), sonst DataRuns)
-
 - Datei (vgl. Datenbank) mit Einträgen zu allen Dateien/Verzeichnissen
 - Attribute: Filename, Metadaten, Data (Daten selbst oder DataRuns)
 
@@ -381,7 +502,7 @@ Systemspezifische Daten gleich ausblenden
 ### Slackspeicher
 
 - Ursprung: interne Fragmentierung
-- Cluster wird nicht komplett durch eine Datei ausgefüllt, ist aber komplett ausgefüllt -> verbleiende Bereich = Slackspeicher (kann alte Daten beinhalten)
+- Cluster wird nicht komplett durch eine Datei ausgenutzt, ist aber komplett ausgefüllt $\rightarrow$ verbleibender Bereich = Slackspeicher (kann alte Daten beinhalten)
 - z.B. bei FAT oder NTFS, aber nicht ext
 
 ### MAC-Zeitstempel
@@ -392,6 +513,10 @@ Systemspezifische Daten gleich ausblenden
 ### Superblock
 
 - alle wichtigen Infos zum ext Dateisystem (Adressedes ersten Blocks, Blockgröße, Blockgruppengröße, freie Inodes, ...)
+
+### Aufbau ext3 / ext4-Dateisystem
+
+<!--TODO-->
 
 ### Umgang mit Dateien im Ext-Dateisystem
 
