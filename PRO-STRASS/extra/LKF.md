@@ -290,7 +290,7 @@ Relevanz, Vollständigkeit, Verlässlichkeit
 
 ### Besonderheiten bei der Sicherung digitaler Beweismittel
 
-Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, können verschlüsselt sein, liegen physisch auf Datenträger vor und müssen dann logisch interpretiert werden um lesbar zu werden
+Spuren entstehen im Hintergrund, können **flüchtig** sein, sind **leicht änderbar**, können **verschlüsselt** sein, liegen physisch auf Datenträger vor und **müssen logisch interpretiert** werden um lesbar zu werden
 
 ### Hashwerte
 
@@ -349,28 +349,32 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - Anomalien leicht feststellbar
 - Phishingmails darüber identifizieren
 
-### Windows Registry
+### Wichtige Fundstellen von Beweisen
+
+#### Windows Registry
 
 - Konfigurationsdatenbank des Betriebsystems
 - Einstellungen von Systemdiensten und -prozessen sowie von anderen Anwendungen
   - werden als Key/Value-Pairs gespeichert und in `Registry Hives` aufgeteilt
   - verschiedene Datenbanken (`Registry Hives`) liegen als Datei auf dem Datenträger vor
 
-### Volume Shadow Copy
+> `C:\Windows\System32\Config\`, `C:\Windows\Users\${Name}`
+
+#### Volume Shadow Copy (Windows)
 
 - Snapshots eines `NTFS` Volumes (pro `NTFS` Volume 64 Snapshotkopien)
 - arbeitet auf `copy` und `write` Basis
 - alte Zustände eines Volumes abrufen
 - aller 7 Tage, bei Patches, Treibersoftware etc. erstellt
 
-### Alternate DataStream
+#### Alternate DataStream
 
 - `Data`-Attribut mit `DataRuns` mit Clusternummern mit eigentlichen Dateininhalten
 - zusätzlich `Alternate DataStreams` anhängen mit weiteren Infos zur Datei
   - z.B. lokaler Ursprung der Datei bzw. aus Internet
 - man kann darin Dateien verstecken (z.B. Schadsoftware)
 
-### Windows SID
+#### Windows SID
 
 - `SID` wird pro Benutzergruppe/Benutzerkonto **eindeutig** vergeben
 
@@ -382,9 +386,9 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - Log-Dateien bzgl. Löschvorgangs/Änderung an Nutzerkonten
 - `SID` bleibt immer identisch
 
-### macOS-Frage
+#### Wichtige Fundstellen unter MacOS
 
-<!--ToDo: Was könnte gefragt werden?-->
+<!--ToDo: Was könnte noch zu MacOS gefragt werden?-->
 
 ### Interessante Linux-Anwendungsprotokolle
 
@@ -412,6 +416,8 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - z.B. mit Hex-Editor
 
 ### Kernel Level Sicherung
+
+<!-- ToDo: Kernel und Userlevel vergleichen -->
 
 - Systemkern speichert `RAM` Inhalte
 - versch. Tools je nach Betriebssystem
@@ -476,6 +482,10 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - `FAT32` $\rightarrow$ kann überall beginnen, meist in den Sektoren direkt nach der `FAT`
 - Root Verzeichnis finden: boot Sektor ansehen, wie viele reservierte Sektoren, zwei im Offset und ein paar mehr $\rightarrow$ dann diese Zahl ist das gesuchte ROOT-Datenverzeichnis
 
+#### Löschung und Wiederherstellung von Daten im FAT Dateisystem
+
+<!-- ToDo -->
+
 ### Master Boot Record (MBR)
 
 <!-- PPT5 - 6/7 -->
@@ -489,7 +499,11 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 - Partitionstabelle am Anfang eines Datenträgers (bis zu 8192 Exabyte)
 
-### Master File Table
+### NTFS
+
+#### Master File Table
+
+<!-- ToDo: Prüfen: wichtigsten Attribute vorhanden -->
 
 - Teil des `NTFS` Dateisystem
 - Datei auf dem Datenträger die Infos über alle anderen Dateien & Verzeichnisse enthält
@@ -499,11 +513,15 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - Datei (vgl. Datenbank) mit Einträgen zu allen Dateien/Verzeichnissen
 - Attribute: Filename, Metadaten, Data (Daten selbst oder `DataRuns`)
 
-### $DATA Attribut
+#### $DATA Attribut
 
 - Attribut im `NTFS`-Dateisystem
 - die tatsächlichen Daten, die in die Datei geschrieben wurden
 - direkte Daten oder `DataRuns`
+
+#### Löschung und Wiederherstellung von Daten im NTFS Dateisystem
+
+<!-- ToDo -->
 
 ### Slackspeicher
 
@@ -529,7 +547,9 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 ### Aufbau ext3 / ext4-Dateisystem
 
-<!--TODO-->
+<!-- TODO: Begriff "Blockgruppen" muss erläutert werden-->
+
+<!-- PPT 05 - Folie 42, 47 muss mit rein -->
 
 ### Umgang mit Dateien im Ext-Dateisystem
 
