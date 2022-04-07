@@ -200,11 +200,13 @@
 
 ### Durchführung einer Risikobeurteilung
 
-- Ersteinschreiter für digitale Beweismittel (DEFR):
-  - befugt die ersten Maßnahmen am Tatort/an den Systemen vorzunehmen
-  - Entscheidung über Sicherungsmethode und Methode der Mitnahme
-- Spezialist für digitale Beweismittel (DES)
-  - kann Aufgaben des DEFR übernehmen, führt zusätzliche Analysen durch
+- Welche **Art von Mitnahme-/Sicherungsmethode** wird angewendet?
+- Welche **Ausrüstung** wird möglicherweise vor Ort benötigt?
+- Inwieweit sind die Daten und Informationen im Hinblick auf die **potentiellen digitalen Beweismittel flüchtig**?
+- Ist ein Fernzugriff auf irgendein digitales Gerät möglich und stellt er eine **Bedrohung für die Beweismittel-Integrität** dar?
+- Was passiert, wenn der Datenbestand beschädigt ist?
+- Könnte der Datenbestand beeinträchtigt worden sein?
+- Könnte das digitale Gerät so konfiguriert worden sein, dass Daten zerstört (bspw. eine sog. Logikbombe), vereitelt oder verschleiert werden, wenn das Gerät ausgeschaltet wird oder ein unkontrolliert Zugriff darauf erfolgt?
 
 ### Grundsätze der digitalen Beweisführung
 
@@ -476,7 +478,7 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 ### Master Boot Record (MBR)
 
-<!-- PPT5 - 6/7 -->s
+<!-- PPT5 - 6/7 -->
 
 - Partitionstabelle (64 Bytes) am Anfang eines Datenträgers
 - beinhaltet max. 4 Partitionen (je 16 Bytes)
