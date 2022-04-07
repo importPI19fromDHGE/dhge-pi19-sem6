@@ -4,7 +4,7 @@
 
 ### Definition Digitale Forensik
 
-<!-- ToDo: PPT 1 - Folie 33 -->
+<!--: PPT 1 - Folie 33 -->
 
 - **Forensik:** systematische Untersuchung von kriminellen Handlungen
 
@@ -124,11 +124,12 @@
 
 ##### Datenintegrität
 
-<!--ToDo: Prüfen -->
+<!-- PPT1 - Folie 83 -->
 
-- Sichern: nach gewissen Vorgehen, damit man nichts verändert
-- Analysieren: Wer/Wann/Wo/Wie/Was?
-- Präsentieren bzw. Aufbereiten: Ergebnisse so aufarbeiten, dass Auftraggeber sie präsentieren kann
+> Verhindern/Feststellen von Datenveränderung durch Untersuchungen
+
+- **Verhindern durch Writeblocks** (Schreibschutzadapter)
+- **Feststellen durch Hashing** von forensischen Duplikaten (bereits während des Kopiervorgangs)
 
 ### Vorgehensmodelle
 
@@ -291,10 +292,10 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 ### Hashwerte
 
-- Ein einzigartiges Rechenergebnis aus einer Bitfolge
-- Für Überprüfung von Datenmanipulation (Integrität sicherstellen)
-- Illegale Daten finden z.B. Kinderporngrafie
-- Systemspezifische Daten gleich ausblenden
+> Mathematische Funktion, die beliebig lange Zeichenfolgen auf Zeichenfolge fester Länge abbildet (schnell, deterministisch)
+
+- **Datenintegritätsprüfung** (Datensicherung, Passwörtern)
+- **Dateninhaltsvergleiche** Kinderporngrafie, UrhG-geschützte Werke finde finden / generische Systemdateien für Untersuchung ausblenden
 
 ## Bekämpfung der Computerkriminalität
 
@@ -327,7 +328,7 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - Rechtsformulierung da sich Gesetze langsamer als die Technik entwickeln
 - Hinweise auf Stand der Technik geben bspw. IT-Grundschutz Bausteine
 
-#### Aufbau eines E-Mail-Headers
+### Aufbau eines E-Mail-Headers
 
 - Folgende Angaben kann der Angreifer manipulieren
   - `From` (Absender)
@@ -338,7 +339,7 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - praktisch manipulationssicher: `Received` (Weg der Email vom Sender zum Empfänger)
 - Header und Inhalt wird durch eine Leerzeile getrennt
 
-<!-- ToDo: Können wir das Entfernen? -> good to know: G Suite Toolbox Nachrichten-Header-->
+<!-- ToDo: Können wir das folgende entfernen? -> good to know: G Suite Toolbox Nachrichten-Header-->
 
 #### Received-Einträge im E-Mail Header
 
@@ -399,7 +400,8 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 #### Magic-Bytes
 
-<!-- ToDo -->
+- spezieller Wert, der ein bestimmtes Dateiformat am Dateibeginn kennzeichnet
+- z.B. `0xFFD8FF` für `JPEG`
 
 ### FileCarving
 
@@ -443,21 +445,22 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 ### Sektoren
 
-- Zusammenfassung von Bytes in einem Block
+- Zusammenfassung **einzelner Bytes** zu einem Block
+- auf Ebene der **Festplattenfirmware** festgelegt (z.B. 512 Bytes)
 
 ### Cluster
 
-- Zusammenfassung mehrerer Sektoren
-- Clustergröße bei Formatierung festlegbar
-- einzelne Bytes zu Block zusammengefasst <!-- ToDo: vgl. Sektoren^^ -->
+- Zusammenfassung **einzelner Sektoren** zu einem Block
+- auf Ebene der **Betriebssysteme** realisiert (abhängig bon Dateisystem)
 
-> **Betriebssystem arbeitet Clusterweise** $\rightarrow$ es werden immer ganze Cluster gespeichert
+> **Betriebssystem arbeitet nur clusterweise** $\rightarrow$ es werden immer ganze Cluster gespeichert
 
 ### Aufbau FAT-Dateisystem
 
 <!-- Folie 5-15 (done) und Folie 5-21 (TODO) -->
 
-- `FAT`-Dateisystem = FileAllocationTable (`FAT`) + DirectoryEntries
+> `FAT` = **F**ile**A**llocation**T**able + DirectoryEntries
+
 - Partition:
   - Bootsektor + Partitionskennung
   - Reservierte Sektoren
@@ -473,11 +476,16 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 ### Master Boot Record (MBR)
 
-<!-- ToDo -->
+<!-- PPT5 - 6/7 -->s
+
+- Partitionstabelle (64 Bytes) am Anfang eines Datenträgers
+- beinhaltet max. 4 Partitionen (je 16 Bytes)
 
 ### GUID Partition Table (GPT)
 
-<!-- ToDo -->
+<!-- ToDo: Inhalt auf Folie/Notizen knapp? -> PPT5 - 8 -->
+
+- Partitionstabelle am Anfang eines Datenträgers (bis zu 8192 Exabyte)
 
 ### Master File Table
 
@@ -504,10 +512,8 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 ### MAC-Zeitstempel
 
-<!-- ToDo: HELP -> Hat nichts mit MacOS zu tun, oder? -->
-
 - jedes Betriebssystem besitzt Zeitstempel
-- Modification, Access, Change/Creation-Time
+- `Modification`, `Access`, `Change`/`Creation`-Time
 
 ### Superblock
 
@@ -535,4 +541,4 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 
 ## Windows-Zusatz
 
-<!-- Coming soonTM -->
+<!-- ToDo: Coming soonTM -> Nicht relevant? -->
