@@ -10,9 +10,10 @@
 
 **Digitale Forensik:**
 
-- **streng methodisch vorgenommene Datenanalyse** auf Datenträgern und in Computernetzen
-- zur **Aufklärung von Vorfällen**
-- unter Einbeziehung der Möglichkeiten der strategischen Vorbereitung insbesondere aus der Sicht des Anlagenbetreibers eines IT-Systems.
+- **streng methodisch vorgenommene Datenanalyse** (Datenträgern, Computernetzen)
+- Ziel: **Aufklärung von Vorfällen**
+- Verwendung von Möglichkeiten der strategischen Vorbereitung
+  - insbesondere aus der Sicht des Anlagenbetreibers eines IT-Systems
 
 ### Ziele digitaler Forensik
 
@@ -42,7 +43,7 @@
 <!-- ToDo: HELP -> Findet ihr das relevant? -->
 
 - Forensic Intelligence (predictive Policing, Untersuchung von Radikalisierung im Internet)
-- Informationssicherheitsmanagement
+- Informationssicherheitsmanagement (ISM)
 - Schadsoftware-Analyse / Reverse Engineering
 - Untersuchungen im Darknet
 - Kryptowährungen / Blockchain-Untersuchung
