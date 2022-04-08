@@ -2,7 +2,7 @@
 
 ## Grundlagen und Beweisführung
 
-### Definition Digitale Forensik
+ ### Forensik
 
 <!--: PPT 1 - Folie 33 -->
 
