@@ -2,13 +2,13 @@
 
 ## Grundlagen und Beweisführung
 
- ### Forensik
+### Forensik
 
 <!--: PPT 1 - Folie 33 -->
 
-- **Forensik:** systematische Untersuchung von kriminellen Handlungen
+> systematische Untersuchung von kriminellen Handlungen
 
- ### Digitale Forensik
+### Digitale Forensik
 
 - **streng methodisch vorgenommene Datenanalyse** (Datenträgern, Computernetzen)
 - Ziel: **Aufklärung von Vorfällen**
