@@ -103,6 +103,41 @@ Computerforensik
     - [Dateisysteme Read-only mounten](#dateisysteme-read-only-mounten)
     - [Dateisystem-Rechte auf Linux / Rollensystem](#dateisystem-rechte-auf-linux--rollensystem)
   - [Hacking](#hacking)
+- [Techniken und Untersuchungsplanung für die digitale Spurensuche](#techniken-und-untersuchungsplanung-f%C3%BCr-die-digitale-spurensuche)
+  - [Techniken digitaler Spurensuche](#techniken-digitaler-spurensuche)
+    - [File Carving](#file-carving)
+    - [Stichwortsuche](#stichwortsuche)
+- [RAM Sicherung](#ram-sicherung)
+  - [Grundlagen der RAM-Sicherung](#grundlagen-der-ram-sicherung)
+  - [RAM-Sicherung - Sicherungstechniken](#ram-sicherung---sicherungstechniken)
+  - [Arten der RAM-Sicherung](#arten-der-ram-sicherung)
+    - [User Level RAM Sicherung](#user-level-ram-sicherung)
+    - [Kernel Level RAM Sicherung](#kernel-level-ram-sicherung)
+    - [Crash Dump RAM Sicherung](#crash-dump-ram-sicherung)
+- [Dateisysteme](#dateisysteme)
+  - [Dateisysteme Grundlagen](#dateisysteme-grundlagen)
+    - [Aufbau des MBR](#aufbau-des-mbr)
+    - [Aufbau des GPT](#aufbau-des-gpt)
+  - [Dateisysteme besondere Zeitstempel](#dateisysteme-besondere-zeitstempel)
+  - [Slack-Speicher](#slack-speicher)
+  - [FAT-Dateisystem](#fat-dateisystem)
+    - [FAT Root-Verzeichnis](#fat-root-verzeichnis)
+    - [FAT Verzeichniseinträge](#fat-verzeichniseintr%C3%A4ge)
+    - [Löschung von Daten im FAT-Dateisystem](#l%C3%B6schung-von-daten-im-fat-dateisystem)
+    - [Wiederherstellung von Daten in FAT (Variante 1)](#wiederherstellung-von-daten-in-fat-variante-1)
+    - [Wiederherstellung von Daten in FAT (Variante 2)](#wiederherstellung-von-daten-in-fat-variante-2)
+  - [NTFS-Dateisystem](#ntfs-dateisystem)
+    - [MFT Records](#mft-records)
+    - [NTFS Attribute](#ntfs-attribute)
+    - [NTFS: Speichern von Dateien](#ntfs-speichern-von-dateien)
+    - [NTFS: Löschen von Daten](#ntfs-l%C3%B6schen-von-daten)
+    - [NTFS: Datenwiederherstellung](#ntfs-datenwiederherstellung)
+    - [NTFS-Journal](#ntfs-journal)
+  - [EXT-Dateisystem](#ext-dateisystem)
+    - [EXT-Aufbau](#ext-aufbau)
+    - [Löschen von Daten bei ext2 und ext3](#l%C3%B6schen-von-daten-bei-ext2-und-ext3)
+    - [EXT Antiforensik](#ext-antiforensik)
+    - [Ext Besonderheiten](#ext-besonderheiten)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -449,6 +484,8 @@ Bei Außeneinsätzen, bei denen Beweismittel vor Ort erhoben werden müssen, wer
 
 # mögliche forensische Untersuchungstechniken
 
+<!--hochgradig prüfungsrelevant, siehe Foliensatz 4 Folie 9-->
+
 - Wiederherstellen gelöschter Objekte
 - Hashwert-Überprüfungen
 - File Carving
@@ -794,3 +831,307 @@ PostMortem
 - TCP-View
 - PDF Malware Analysis
 - Wireshark
+
+# Techniken und Untersuchungsplanung für die digitale Spurensuche
+
+## Techniken digitaler Spurensuche
+
+- potentielle Beweismittel sicherstellen, identifizieren, mitnehmen
+- forensische Kopien
+- Schreibblocker
+- Hashwerte
+- Prüfung von Standardverzeichnissen
+- Filterfunktionen von Tools verwenden
+- Wiederherstellen gelöschter Dateien
+- Papierkorb prüfen
+- Dateiendungen auf Inhalte prüfen
+- Erkennung unbekannter Dateiobjekte
+- Untersuchung des RAM-Inhaltes
+- Untersuchung von Hibernation- / Swap-Dateien
+- Überprüfung Schadsoftware
+- VMs
+
+### File Carving
+
+- gelöschte Dateien wiederherstellen, z.B. aus dem freien Speicherplatz
+- sucht nach typischen Byte-Sequenzen als Signaturen für Dateitypen
+- kann fragmentierten Dateien nicht vollständig wiederherstellen (false positive)
+
+### Stichwortsuche
+
+- richtige Wahl der Suchworte
+- ausgeblendete und scheinbar irrelevante Dateien mit einbeziehen
+- Untersuchungswerkzeuge nutzen
+- [Slack-Untersuchungen](https://de.wikipedia.org/wiki/Slack_(Dateisystem)): Untersuchung von bereits teilweise überschriebenen Daten im RAM oder von Dateien
+  - kann nur im Hexadezimal / ANSI Betrieb durchgeführt werden
+  - Auswertung beschränkt sich oft auf die Wiederherstellung von Textpassagen
+
+# RAM Sicherung
+
+- Logfiles und Daten im Netzwerk: logische Sicherung mit geeigneten Tools
+- RAM-Inhalte: mit DMA oder Cold-Boot; post-mortem
+- Random Access Memory...
+  - ...ist flüchtig: nach Ausschalten gehen die Daten verloren
+  - ...volatil: Daten unterliegen ständiger Änderung
+  - ...enthält u.a. Programme in Ausführung und Caches
+- folgende Informationen sind darin interessant:
+  - laufende Prozesse
+  - geöffnete Netzwerk-Verbindungen
+  - entschlüsselte Inhalte
+- Passwörter (Klartext oder Hash)
+- Informationen zu angemeldeten Benutzern
+- Schadsoftware und deren Aktivitäten (Registry Aufrufe)
+- Flüchtige nicht gespeicherte Dokumente oder Online Inhalte
+
+## Grundlagen der RAM-Sicherung
+
+Für eine Vergleichbarkeit einzelner Sicherungstechniken findet man folgende Einteilung:
+
+- Korrektheit des Abbildes in Prozent
+- Atomarität: Abbild wird in atomar fortlaufenden Leseoperationen ohne Unterbrechung erzeugt
+- Integrität: bezeichnet den prozentualen Anteil an geänderten Speicherseiten im Bezug auf alle Speicherseiten, die zu einem Zeitpunkt geherrscht haben (Übernahme des Asservates durch den Forensiker etwa).
+- Verfügbarkeit: ist die Methode verfügbar für bestimmte Sicherungsfälle?
+
+## RAM-Sicherung - Sicherungstechniken
+
+- User-Level: selektiver Bereich wird im Userland gesichert, z.B. Prozess
+- Kernel-Level: auf Ebene des Systemkerns wird der gesamte RAM gesichert
+- Crash-Dump: RAM-Abbild, was nach Absturz geschrieben wird
+
+- Bus-basiert (extern): Nutzung eines externen Bussystems, welcher DMA nutzt
+- Hardware-basiert: Nutzung eines internen Bussystems, welcher DMA nutzt
+
+- Cold Boot ohne RAM-Transfer: RAM-Sicherung durch Live-System im selben Host
+- Cold Boot mit RAM-Transfer: nach einem Transfer der RAM Speichermodule in ein zweites Sicherungssystems RAM Datensicherung mittels eines eigenen Betriebssystems
+- Beide Techniken geeignet für RAM Sicherung.
+- praktische Umsetzung: sehr kompliziert und eher für Forensik Labore
+
+- Hibernation-basiert: nach _Suspend to disk_ wird die Hibernation-Datei gelesen
+- Virtualisation-basiert: Snapshots
+
+## Arten der RAM-Sicherung
+
+### User Level RAM Sicherung
+
+- RAM Sicherungen: Bereiche sichern auf die der Benutzer selbst Zugriff hat.
+- Malware Analysen:  Prozesse der Malware können  versteckt und nicht auffindbar sein (Rootkit Hiding Technologien / APT).
+- Tools:
+  - Sysinternals ProcDump (CMD basiert)
+  - Process Explorer (Abbildung)
+  - Windows Taskmanager ('Abbilddatei erstellen')
+
+### Kernel Level RAM Sicherung
+
+- Dump durch Systemkern
+- z.B. durch Tool "DumpIt" für Windows, "LiME" für Linux oder "Rekall Memory Toolkit" für macOS
+
+### Crash Dump RAM Sicherung
+
+- in drei verschiedenen Arten:
+  - Complete Memory Dump
+  - Kernel Memory Dump
+  - Small memory Dump
+
+# Dateisysteme
+
+## Dateisysteme Grundlagen
+
+- Sektoren: ein Block an Bytes auf einer Spur
+- Cluster: Zusammenfassung von Sektoren im Betriebssystem
+- auf SATA SSDs leert erst ein ``TRIM``-Befehl die Zellen
+- Am Anfang eines Datenträgers ist der Bootsektor (MBR oder GPT) mit Partitionstabelle
+  - existiert am Anfang eines Datenträgers
+  - möglicherweise existiert eine Kopie davon am Ende
+
+### Aufbau des MBR
+
+![MBR](assets/mbr.png)<!--width=600px-->
+
+- 64 Bytes groß
+- 16 Byte Einträge
+- daraus folgt: max. 4 Partitionen
+
+### Aufbau des GPT
+
+![GPT](assets/gpt.png)<!--width=600px-->
+
+## Dateisysteme besondere Zeitstempel
+
+- Drei Zeitstempel bilden die **MAC-Time**:
+  - **M**odification Time
+  - **A**ccess Time
+  - **C**reation Time / **C**hange Time (Linux, wann wurden Metadaten verändert)
+- C-Stempel existieren nur unter Windows und Linux
+- Last-Access-Timestamp kann deaktiviert werden
+
+## Slack-Speicher
+
+- auch: Schlupfspeicher
+- freier Speicher, der durch interne Fragmentierung einer Datei zugeordnet ist (freie Sektoren innerhalb eines Clusters)
+
+## FAT-Dateisystem
+
+- in den Varianten FAT12, FAT16, FAT32, exFAT, VFAT, TFAT
+- geringe Anzahl an Datenstrukturen
+- basiert auf Directory Entries und File Allocation Tables
+
+![FAT Wahnsinn](assets/fat_wahnsinn.png)<!--width=600px-->
+
+TODO: was passiert hier?
+
+### FAT Root-Verzeichnis
+
+- Tabelle von Verzeichniseinträgen, die jede Datei und Unterverzeichnis repräsentiert
+- bei FAT12 und FAT16 direkt an die `FAT` anschließend mit fixer Größe
+- bei FAT32 variable Größe, kann an beliebiiger Position im Datenbereich beginnen
+
+![FAT Aufbau](assets/fat_aufbau.png)<!--width=600px-->
+
+### FAT Verzeichniseinträge
+
+- jeder Ordnereintrag 32 Byte Datenstruktur, enthält Ordner und Dateien
+- speichert alle Attribute, Dateigröße, Startcluster
+
+### Löschung von Daten im FAT-Dateisystem
+
+- beim Löschen wird das erste Byte des **Verzeichniseintrages mit ``0xE5`` überschrieben**
+- Clusterkette der Datei, Daten erscheinen als "frei"
+- damit in forensischer Anwendung wiederherstellbar
+
+### Wiederherstellung von Daten in FAT (Variante 1)
+
+- vom Startcluster aus alle Cluster wiederherstellen, bis Dateigröße aus Verzeichniseintrag erreicht
+- funktioniert **nicht bei fragmentierten Dateien**
+
+### Wiederherstellung von Daten in FAT (Variante 2)
+
+- zusätzlich zu Variante 1 wird Zuteilungsstatus von freien Custern berücksichtigt: **nur nicht zugeteilte Cluster werden wiederhergestellt**
+- Wahrscheinlichkeit gegeben, fragmentierte Dateien vollst. wiederherzustellen
+- funktioniert **nicht, wenn CLuster bereits neu zugewiesen**
+
+## NTFS-Dateisystem
+
+- alles ist eine Datei
+- Master File Table (MFT) enthält Strukturverzeichnis und Datenträgerinformationen
+  - kann über Bootsektor addressiert werden
+  - erster Eintrag ist Pointer auf sich selbst
+  - kann fragmentiert vorliegen
+  - Einträge üblicherweise 1024 Bytes groß
+  - häufig als iNode bezeichnet
+
+![NTFS MFT](assets/ntfs_mft.png)<!--width=600px-->
+
+### MFT Records
+
+- ``$Data`` Attribut enthält Nutzlast
+- Flags codieren Art des Eintrags (Datei / Ordner) und ob es gelöscht wurde
+- Dateien haben einen File Record Header
+  - startet mit Signatur "FILE"
+  - endet mit 0xFFFFFFFF
+- es existieren feste MFT-Einträge
+
+### NTFS Attribute
+
+- jede Datei hat:
+  - ``$STANDARD_INFORMATION``
+  - ``$FILE_NAME``
+  - ``$DATA``
+- jedes Verzeichnis hat:
+  - ``$STANDARD_INFORMATION``
+  - ``$FILE_NAME``
+  - ``$INDEX_ROOT``
+  - ``$INDEX_ALLOCATION``
+- im ``$Data``-Attribut können entweder die Nutzlast selbst gespeichert sein oder über Datarun-Einträgen Verweise auf mehrere Cluster sein
+
+![NFTS Dataruns](assets/ntfs_dataruns.png)<!--width=600px-->
+
+### NTFS: Speichern von Dateien
+
+1. im Bootsector wird der ``$MFT`` Eintrag gesucht und gelesen
+2. darin wird in der $Bitmap ein freier Eintrag gesucht
+3. ``$Logfile`` wird angelegt
+4. MFT-Eintrag wird mit o.g. Pflichtinhalt initialisiert
+5. in ``$Bitmap`` wird passender Platz für Nutzlast gesucht
+6. ``$INDEX_ROOT`` und ``$INDEX_ALLOCATION`` werden angepasst und die Datei in das Verzeichnis aufgenommen
+7. Zeitstempel wird erneuert
+8. Operationsende in ``$Logfile`` vermerkt
+
+### NTFS: Löschen von Daten
+
+1. im Bootsector wird der ``$MFT`` Eintrag gesucht und gelesen
+2. MFT-Eintrag und Verzeichniseintrag der zu löschenden Datei wird gesucht
+3. im Verzeichniseintrag werden die Zeitstempel aktualisiert
+4. ``$Logfile`` wird angelegt
+5. Datei wird aus Index des Verzeichnisses gelöscht
+6. MFT-Eintrag der Datei wird gelöscht und Sequenzeintrag der MFT wird inkrementiert
+7. In ``$Bitmap`` werden die Datencluster als _unallocated_ eingetragen
+
+### NTFS: Datenwiederherstellung
+
+- man kann sich nicht auf Dateisystemtreiber verlassen, da alle MFT-Einträge gelöscht
+  - Treiber verwendet Top-Down Methode: von Dateisystem-Wurzel aus alle Verzeichniseinträge durchsuchen $\rightarrow$ keine gelöschten Einträge
+- man muss auf Byte-Ebene arbeiten
+  - anhand der Parent File Referenz können verwaiste Referenzen gelöschter Elemente gefunden werden $\rightarrow$ Bottom-Up Methode
+
+![Top Down vs. Bottom Up](assets/top-down-vs-bottom-up.png)<!--width=600px-->
+
+### NTFS-Journal
+
+- Changelog (USN Journal ``$UsnJrnl``) und Transaktionslog ``$LogFile`` des Dateisystems
+
+## EXT-Dateisystem
+
+- quasi-Standard-Dateisystem für Linux-Distributionen
+- entworfen für Geschwindigkeit und Zuverlässigkeit
+- Datenblöcke einer Datei werden nahe beieinander gehalten, um Seeking in HDDs zu minimieren
+- Kopien zentraler Datenstrukturen mehrfach auf dem Volume
+- 4 Versionen (ext bis ext4)
+- Forensik ist mit ext3/ext4 schwierig
+- durch Quelloffenheit können Antiforensik-Maßnahmen durchgeführt werden
+
+### EXT-Aufbau
+
+- besteht aus Boot-Block und mehreren Block-Gruppen
+- Superblock am Anfang jeder Block-Gruppe, nummeriert, ansonsten identisch
+  - am Offset ``0x38`` steht das Magic Byte ``0x53EF``
+- Gruppendeskriptor enthält Informationen über die entsprechende Block-Gruppe:
+  - Superblock
+  - Gruppendeskriptortabelle
+  - Block-Bitmap
+  - Inode-Bitmap
+  - Inode-Tabelle
+- Bitmaps kennzeichnen belegte Blöcke
+- Metadaten für Dateien und Verzeichnisse werden in Inode-Datenstruktur gespeichert
+- Inodes verweisen auf Dateninhalte über direkte oder indirekte Blockpointer
+- Inodes enthalten Dateistempel
+- Verzeichniseinträge sind Datenstrukturen, die den Datei-/Verzeichniseintrag sowie Pointer auf Inode-Eintrag sowie den nächsten genutzten Verzeichniseintrag enthalten (Länge)
+
+![EXT Aufbau](assets/ext_aufbau.png)<!--width=600px-->
+
+### Löschen von Daten bei ext2 und ext3
+
+![Löschen bei ext2](assets/ext-delete.png)<!--width=600px-->
+
+- kinda TODO
+
+### EXT Antiforensik
+
+- Ext ist quelloffen
+- kann beliebig modifiziert werden:
+  - Änderungen am Superblock
+  - Änderungen am Gruppendeskriptor
+  - Änderungen an der Inode
+- neu zu beschreibende Datenbereiche werden vorher immer mit Nullen überschrieben $\rightarrow$ **keine File-Slacks**
+
+### Ext Besonderheiten
+
+- ab Ext3 existiert ein Journal für Rollback bei Crash (im Superblock definiert)
+- jede Änderung am Dateisystem erfolgt in 3 Schritten:
+  - Kopie aller zu verändernden Blöcke in Journal kopieren
+  - I/O Operation durchführen
+  - Journaleintrag löschen
+- im Journaling existieren drei Optionen:
+  - **Journal**: Alle Transaktionen protokollieren
+  - **Ordered**: nur Transaktionen an Inodes protokollieren: erst Datenblöcke, dann Inodes speichern (Standard)
+  - **Writeback**
+- für Ext4 ist vieles wegen umfassenden Änderungen nicht mehr glültig
