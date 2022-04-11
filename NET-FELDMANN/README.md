@@ -631,7 +631,7 @@ Latenz kann abhängig von der Geolokalität durch Load-Balancer optimiert werden
 
 ## Anonymisierung
 
-- Ziel: keine Dritte Partei kann nicht durch die Kenntnis über eine Kommunikation auf die Kommunikationspartner schließen
+- Ziel: keine Dritte Partei kann durch die Kenntnis über eine Kommunikation auf die Kommunikationspartner schließen
 - einfache Variante: Pseudonyme
 - einfach und wenig effizient: Proxy-Server
 - aufwändiger: Mix-System
