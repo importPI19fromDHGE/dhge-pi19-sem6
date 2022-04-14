@@ -439,13 +439,28 @@ Softwaredaten (`/Application`)
 - nicht mehr im allokierten Speicher, aber noch drauf sind
 - z.B. mit Hex-Editor
 
-### Kernel Level Sicherung
+### RAM Sicherung Sicherungstechniken
 
-<!-- ToDo: Kernel und Userlevel vergleichen -->
+- User-Level vs. Kernel-Level vs. Crash-Dump
+- Bus-based (extern) vs harware-based (intern)
+- Cold-Boot mit oder ohne RAM Transfer
+- Hibernation-based vs Virtualisation-based
 
-- Systemkern speichert `RAM` Inhalte
-- versch. Tools je nach Betriebssystem
+### User-Level vs Kernel-Level RAM Sicherung
+
+User Level
+
+- Sicherung der Bereiche, auf die der Benutzer selbst Zugriff = die Anwendungen die mit seinen Rechten gestartet wurden.
+- Malware-Prozesse können versteckt und nicht auffindbar sein (Rootkit Hiding Technologien / APT).
+- Tools: Sysinternals ProcDump (CMD basiert) oder der Process Explorer (Abbildung) oder Taskmanager
+
+Kernel Level
+
+- durch Nutzung des Kernels des Betriebssystems (Ring 0) werden die kompletten Hauptspeicher-Bereiche gesichert
+- Kernel Mode Treiber und Admin/Root Passwort nötig
+- Veränderung des RAM durch Sicherungsanwendung selbst
 - Vorteil zu User Level: gesamter `RAM` gesichert und nicht selektive Sicherung
+- Tools: DumpIt/Comae; LiME; Rekall Memory Toolkit: memsic
 
 ### Cold Boot
 
