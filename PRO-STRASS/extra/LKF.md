@@ -199,7 +199,16 @@
 
 ### Grundsätzliche Regeln am Tatort
 
-<!-- ToDo -->
+- ruhig und überlegt vorgehen
+- **grundsätzlich nichts anfassen, verändern, verlegen etc.**
+- **unklare Lage $\rightarrow$ weiträumige Sicherung**
+- Einsatzfahrzeuge nicht an unmittelbaren Tatort bringen
+- nur Ausrüstung/persönliche Dinge an den Tatort bringen, die benötigt werden
+- keine Einrichtungen am Tatort nutzen
+- nicht essen, trinken, rauchen!
+- Kontaminationen vermeiden
+- keine eigenen Spuren hinterlassen
+- erforderliche Veränderungen markieren und **dokumentieren**
 
 ### Durchführung einer Risikobeurteilung
 
