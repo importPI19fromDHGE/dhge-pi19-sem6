@@ -483,6 +483,16 @@ Softwaredaten (`/Application`)
   - `FAT` Bereich
   - Datenbereich mit Verzeichniseinträgen
 
+Ein Eintrag in der `FAT` ordnet Clusternummer zu:
+
+- Unbenutzer Cluster
+- Nummer Folgecluster (gleiche Datei)
+- reservierter Cluster
+- defekter Cluster
+- EOF
+
+Dateien, die sich über mehrere Cluster erstrecken, sind durch das die Verweise der Folgecluster bis EOF auffindbar.
+
 #### ROOT-verzeichnis bei FAT
 
 - im Datenbereich des `FAT`-Datenträgers
@@ -494,18 +504,31 @@ Softwaredaten (`/Application`)
 
 <!-- ToDo -->
 
-### Master Boot Record (MBR)
+### Master Boot Record (MBR) - Partitionierung
 
 <!-- PPT5 - 6/7 -->
 
-- Partitionstabelle (64 Bytes) am Anfang eines Datenträgers
-- beinhaltet max. 4 Partitionen (je 16 Bytes)
+- MBR (Bootsektor) befindet sich am Anfang des Datenträgers
+- enthält u.a. Boot Loader, Partitionstabelle (64 Bytes)
+- Einträge Partitionstabelle sind 16 Bytes groß
+  - Erster/Letzter Sektor, Partitionstyp, Anzahl Sektoren ...
+- mit MBR-Partitionierung **max. 4 Partitionen**
 
-### GUID Partition Table (GPT)
+### GUID Partition Table (GPT) - Partitionierung
 
 <!-- ToDo: Inhalt auf Folie/Notizen knapp? -> PPT5 - 8 -->
 
-- Partitionstabelle am Anfang eines Datenträgers (bis zu 8192 Exabyte)
+- GPT (Bootsektor) befindet sich am Anfang des Datenträgers
+- Aufbau GPT:
+  - LBA Block 00: MBR
+  - LBA Block 01: GPT HEADER
+  - LBA Block 02 bis 33:
+    - Partitionseinträge / 4 je Block
+    - Blockgröße 512 Byte - Partitionseintrag 128 Byte
+  - LBA Block 34 ff.: Partition 1 bis 128
+- mit GPT-Partitionierung **max. 128 Partitionen** (bis zu 8192 Exabyte)
+- Inhalt GPT-Partitionseintrag:
+  - TYP, GUID Partition, Beginn, Ende, Attribute, Name
 
 ### NTFS
 
