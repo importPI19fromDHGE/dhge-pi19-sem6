@@ -605,7 +605,3 @@ Inhalt einer Partition:
 - bestehen aus einer Anzahl an Clustern, besitzen Clusternummern die dazugehören
 - über diese Clusternummern lässt sich Datei zusammenbauen
 - Liste von Clustern
-
-## Windows-Zusatz
-
-<!-- ToDo: Coming soonTM -> Nicht relevant? -->
