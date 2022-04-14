@@ -540,10 +540,8 @@ Dateien, die sich über mehrere Cluster erstrecken, sind durch das die Verweise 
 
 ### GUID Partition Table (GPT) - Partitionierung
 
-<!-- ToDo: Inhalt auf Folie/Notizen knapp? -> PPT5 - 8 -->
-
 - GPT (Bootsektor) befindet sich am Anfang des Datenträgers
-- Aufbau GPT:
+- **Aufbau GPT**:
   - LBA Block 00: Protective MBR
   - LBA Block 01: GPT HEADER
   - LBA Block 02 bis 33:
@@ -552,7 +550,7 @@ Dateien, die sich über mehrere Cluster erstrecken, sind durch das die Verweise 
   - LBA Block 34 ff. bis -34: Partition 1 bis 128
   - LBA Block -33 bis -1: Blöcke 1 bis 34 erneut am Ende des Datenträgers
 - mit GPT-Partitionierung **max. 128 Partitionen** (bis zu 8192 Exabyte)
-- Inhalt GPT-Partitionseintrag:
+- **Inhalt GPT-Partitionseintrag**:
   - Typ, GUID Partition, Beginn, Ende, Attribute, Name
 
 ### NTFS
@@ -567,7 +565,7 @@ Dateien, die sich über mehrere Cluster erstrecken, sind durch das die Verweise 
 - Datenbank mit Adressen zu jeder Datei auf den Datenträger, jede Datei besitzt MFT Eintrag mit verschiedenen Attributen
 - wichtigste Attribute: Filename, Standard-Attribut (Meta-Daten, wann wurde es angelegt etc.), Data-Attribut (enthält Daten direkt (wenn klein genug, `MFT` Eintrag ist meist 1024 Bytes groß), sonst `DataRuns`)
 - Datei (vgl. Datenbank) mit Einträgen zu allen Dateien/Verzeichnissen
-- Attribute: Filename, Metadaten, Data (Daten selbst oder `DataRuns`)
+- **Attribute: Filename, Metadaten, Data (Daten selbst oder `DataRuns`)**
 
 #### $DATA Attribut
 
