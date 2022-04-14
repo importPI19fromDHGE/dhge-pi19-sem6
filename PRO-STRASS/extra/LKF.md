@@ -520,15 +520,16 @@ Dateien, die sich über mehrere Cluster erstrecken, sind durch das die Verweise 
 
 - GPT (Bootsektor) befindet sich am Anfang des Datenträgers
 - Aufbau GPT:
-  - LBA Block 00: MBR
+  - LBA Block 00: Protective MBR
   - LBA Block 01: GPT HEADER
   - LBA Block 02 bis 33:
     - Partitionseinträge / 4 je Block
     - Blockgröße 512 Byte - Partitionseintrag 128 Byte
-  - LBA Block 34 ff.: Partition 1 bis 128
+  - LBA Block 34 ff. bis -34: Partition 1 bis 128
+  - LBA Block -33 bis -1: Blöcke 1 bis 34 erneut am Ende des Datenträgers
 - mit GPT-Partitionierung **max. 128 Partitionen** (bis zu 8192 Exabyte)
 - Inhalt GPT-Partitionseintrag:
-  - TYP, GUID Partition, Beginn, Ende, Attribute, Name
+  - Typ, GUID Partition, Beginn, Ende, Attribute, Name
 
 ### NTFS
 
@@ -578,9 +579,22 @@ Dateien, die sich über mehrere Cluster erstrecken, sind durch das die Verweise 
 
 ### Aufbau ext3 / ext4-Dateisystem
 
+Inhalt einer Partition:
+
+- Boot Block
+- Block Gruppe 0
+  - Superblock
+    - Anzahl freie Blöcke, Anzahl freie Inodes, Blockgröße etc.
+  - Gruppen Descriptor
+  - Block Bitmap
+  - Inode Bitmap
+  - Inode Tabelle
+  - Dateninhalte
+- Block Gruppe 1... n
+
 <!-- TODO: Begriff "Blockgruppen" muss erläutert werden-->
 
-<!-- PPT 05 - Folie 42, 47 muss mit rein -->
+<!-- PPT 05 - Folie 42 done, 47 todo muss mit rein -->
 
 ### Umgang mit Dateien im Ext-Dateisystem
 
