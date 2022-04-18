@@ -318,16 +318,16 @@ Spuren entstehen im Hintergrund, können **flüchtig** sein, sind **leicht ände
 - **C**omputer **E**mergency **R**esponse **T**eam
 - Kontaktstellen bei größeren IT-Sicherheitsvorfall
 - für Bundesbehörden auf Landesebene (pro Bundesland)
-- auch bei größere Unternehmen (extern ausgelagert)
+- auch bei größeren Unternehmen (extern ausgelagert)
 
 ### Die sechs Schritte des SANS-Institut
 
-- **1. Vorbereitung:** Organisation und Mitarbeiter sensibilisieren und trainiert $\rightarrow$ schnelle und korrekte Reaktion auf Computer- und Netzwerk-Sicherheits-Zwischenfälle
+- **1. Vorbereitung:** Organisation und Mitarbeiter sensibilisieren und trainieren $\rightarrow$ schnelle und korrekte Reaktion auf Computer- und Netzwerk-Sicherheits-Zwischenfälle
 - **2. Identifizierung:** Entscheidung des Response Teams, ob ein bestimmtes Ereignis eine Bedrohung darstellt
-  - Team kann sich an das CERT CoordinationCenter wenden (aktuelle Infos zu Sicherheitsvorfälle, ...)
+  - Team kann sich an das CERT CoordinationCenter wenden (aktuelle Infos zu Sicherheitsvorfällen, ...)
 - **3. Eingrenzung:** Bestimmung des Schadensumfanges durch das Team $\rightarrow$ welcher Schaden; nimmt alle betroffenen Systeme/Geräte zur Verhinderung weiterer Schäden offline
-- **4. Beseitigung:** Untersuchung der Herkunft des Vorfalls und beseitigt der Ursache des Problems durch das Team.
-- **5. Recovery:** Wiederherstellung von Daten und Software von Backup-Systemen; Überprüfung der Schließung der Sicherheitslücken; Überwachung der Systeme für Anzeichen von Kompromittierung/erneutes Auftretten
+- **4. Beseitigung:** Untersuchung der Herkunft des Vorfalls und Beseitigung der Ursache des Problems durch das Team.
+- **5. Recovery:** Wiederherstellung von Daten und Software von Backup-Systemen; Überprüfung der Schließung der Sicherheitslücken; Überwachung der Systeme für Anzeichen von Kompromittierung/erneutes Auftreten
 - **6. Nachbesprechung:** Team untersucht den Vorfall und wie er behandelt wurde und versucht die Vorfallbehandlung und Prävention zu verbessern, um ein erneutes Auftreten des Problems zu verhindern
 
 ### BSI IT-Grundschutz Kompendium
@@ -491,7 +491,7 @@ Kernel Level
 ### Cluster
 
 - Zusammenfassung **einzelner Sektoren** zu einem Block
-- auf Ebene der **Betriebssysteme** realisiert (abhängig bon Dateisystem)
+- auf Ebene der **Betriebssysteme** realisiert (abhängig von Dateisystem)
 
 > **Betriebssystem arbeitet nur clusterweise** $\rightarrow$ es werden immer ganze Cluster gespeichert
 
