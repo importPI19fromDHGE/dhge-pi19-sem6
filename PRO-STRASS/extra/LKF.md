@@ -218,7 +218,7 @@
 - Ist ein Fernzugriff auf irgendein digitales Gerät möglich und stellt er eine **Bedrohung für die Beweismittel-Integrität** dar?
 - Was passiert, wenn der Datenbestand beschädigt ist?
 - Könnte der Datenbestand beeinträchtigt worden sein?
-- Könnte das digitale Gerät so konfiguriert worden sein, dass Daten zerstört (bspw. eine sog. Logikbombe), vereitelt oder verschleiert werden, wenn das Gerät ausgeschaltet wird oder ein unkontrolliert Zugriff darauf erfolgt?
+- Könnte das digitale Gerät so konfiguriert worden sein, dass Daten zerstört (bspw. eine sog. Logikbombe), vereitelt oder verschleiert werden, wenn das Gerät ausgeschaltet wird oder ein unkontrollierter Zugriff darauf erfolgt?
 
 ### Grundsätze der digitalen Beweisführung
 
