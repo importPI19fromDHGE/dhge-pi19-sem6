@@ -2,17 +2,18 @@
 
 ## Grundlagen und Beweisführung
 
-### Definition Digitale Forensik
+### Forensik
 
-<!-- ToDo: PPT 1 - Folie 33 -->
+<!--: PPT 1 - Folie 33 -->
 
-- **Forensik:** systematische Untersuchung von kriminellen Handlungen
+> systematische Untersuchung von kriminellen Handlungen
 
-**Digitale Forensik:**
+### Digitale Forensik
 
-- **streng methodisch vorgenommene Datenanalyse** auf Datenträgern und in Computernetzen
-- zur **Aufklärung von Vorfällen**
-- unter Einbeziehung der Möglichkeiten der strategischen Vorbereitung insbesondere aus der Sicht des Anlagenbetreibers eines IT-Systems.
+- **streng methodisch vorgenommene Datenanalyse** (Datenträgern, Computernetzen)
+- Ziel: **Aufklärung von Vorfällen**
+- Verwendung von Möglichkeiten der strategischen Vorbereitung
+  - insbesondere aus der Sicht des Anlagenbetreibers eines IT-Systems
 
 ### Ziele digitaler Forensik
 
@@ -39,10 +40,10 @@
 
 #### Überschneidungen zu anderen Gebieten der Informationssicherheit
 
-<!-- HELP: Findet ihr das relevant? -->
+<!-- ToDo: HELP -> Findet ihr das relevant? -->
 
 - Forensic Intelligence (predictive Policing, Untersuchung von Radikalisierung im Internet)
-- Informationssicherheitsmanagement
+- Informationssicherheitsmanagement (ISM)
 - Schadsoftware-Analyse / Reverse Engineering
 - Untersuchungen im Darknet
 - Kryptowährungen / Blockchain-Untersuchung
@@ -124,11 +125,12 @@
 
 ##### Datenintegrität
 
-<!--ToDo: Prüfen -->
+<!-- PPT1 - Folie 83 -->
 
-- Sichern: nach gewissen Vorgehen, damit man nichts verändert
-- Analysieren: Wer/Wann/Wo/Wie/Was?
-- Präsentieren bzw. Aufbereiten: Ergebnisse so aufarbeiten, dass Auftraggeber sie präsentieren kann
+> Verhindern/Feststellen von Datenveränderung durch Untersuchungen
+
+- **Verhindern durch Writeblocks** (Schreibschutzadapter)
+- **Feststellen durch Hashing** von forensischen Duplikaten (bereits während des Kopiervorgangs)
 
 ### Vorgehensmodelle
 
@@ -145,7 +147,9 @@
 
 #### S-A-P-Modell
 
-<!-- ToDo: ein Schwerpunkt! -->
+- **Secure:** strategische und operative Vorbereitungen zur Erfassung aller relevanten Daten durchführen
+- **Analyse:** gesicherten Spuren und Beweise werden überprüfbar aufgearbeitet, sorgfältig geprüft und objektiv bewertet
+- **Present:** Ermittlungsprozess wird nachvollziehbar dargelegt (präsentiert)
 
 #### Post-mortem Forensik
 
@@ -195,15 +199,26 @@
 
 ### Grundsätzliche Regeln am Tatort
 
-<!-- ToDo -->
+- ruhig und überlegt vorgehen
+- **grundsätzlich nichts anfassen, verändern, verlegen etc.**
+- **unklare Lage $\rightarrow$ weiträumige Sicherung**
+- Einsatzfahrzeuge nicht an unmittelbaren Tatort bringen
+- nur Ausrüstung/persönliche Dinge an den Tatort bringen, die benötigt werden
+- keine Einrichtungen am Tatort nutzen
+- nicht essen, trinken, rauchen!
+- Kontaminationen vermeiden
+- keine eigenen Spuren hinterlassen
+- erforderliche Veränderungen markieren und **dokumentieren**
 
 ### Durchführung einer Risikobeurteilung
 
-- Ersteinschreiter für digitale Beweismittel (DEFR):
-  - befugt die ersten Maßnahmen am Tatort/an den Systemen vorzunehmen
-  - Entscheidung über Sicherungsmethode und Methode der Mitnahme
-- Spezialist für digitale Beweismittel (DES)
-  - kann Aufgaben des DEFR übernehmen, führt zusätzliche Analysen durch
+- Welche **Art von Mitnahme-/Sicherungsmethode** wird angewendet?
+- Welche **Ausrüstung** wird möglicherweise vor Ort benötigt?
+- Inwieweit sind die Daten und Informationen im Hinblick auf die **potentiellen digitalen Beweismittel flüchtig**?
+- Ist ein Fernzugriff auf irgendein digitales Gerät möglich und stellt er eine **Bedrohung für die Beweismittel-Integrität** dar?
+- Was passiert, wenn der Datenbestand beschädigt ist?
+- Könnte der Datenbestand beeinträchtigt worden sein?
+- Könnte das digitale Gerät so konfiguriert worden sein, dass Daten zerstört (bspw. eine sog. Logikbombe), vereitelt oder verschleiert werden, wenn das Gerät ausgeschaltet wird oder ein unkontrollierter Zugriff darauf erfolgt?
 
 ### Grundsätze der digitalen Beweisführung
 
@@ -287,39 +302,33 @@ Relevanz, Vollständigkeit, Verlässlichkeit
 
 ### Besonderheiten bei der Sicherung digitaler Beweismittel
 
-Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, können verschlüsselt sein, liegen physisch auf Datenträger vor und müssen dann logisch interpretiert werden um lesbar zu werden
+Spuren entstehen im Hintergrund, können **flüchtig** sein, sind **leicht änderbar**, können **verschlüsselt** sein, liegen physisch auf Datenträger vor und **müssen logisch interpretiert** werden um lesbar zu werden
 
 ### Hashwerte
 
-- Ein einzigartiges Rechenergebnis aus einer Bitfolge
-- Für Überprüfung von Datenmanipulation (Integrität sicherstellen)
-- Illegale Daten finden z.B. Kinderporngrafie
-- Systemspezifische Daten gleich ausblenden
+> Mathematische Funktion, die beliebig lange Zeichenfolgen auf Zeichenfolge fester Länge abbildet (schnell, deterministisch)
+
+- **Datenintegritätsprüfung** (Datensicherung, Passwörtern)
+- **Dateninhaltsvergleiche** Kinderporngrafie, UrhG-geschützte Werke finde finden / generische Systemdateien für Untersuchung ausblenden
 
 ## Bekämpfung der Computerkriminalität
 
-### Die sechs Schritte des SANS-Institut
-
-- **1. Vorbereitung:** Die Organisation sensibilisiert die Mitarbeiter und trainiert sie darauf, auf Computer-und Netzwerk-Sicherheits-Zwischenfälle schnell und korrekt zu reagieren.
-- **2. Identifizierung:** Das Response Team entscheidet, ob ein bestimmtes Ereignis eine Bedrohung darstellt. Das Team kann sich an das CERT CoordinationCenter wenden, welche aktuelle Spuren im Internet auf Sicherheitsvorfälle untersucht und hat die Möglichkeit die aktuellsten Informationen über Viren und Würmer zu erhalten.
-- **3. Eingrenzung:** Das Team bestimmt, wie weit das Problem bereits Schaden verursacht hat und nimmt alle betroffenen Systeme und Geräte zur Verhinderung weiterer Schäden offline.4.Beseitigung: Das Team untersucht die Herkunft des Vorfalls und beseitigt die Ursache des Problems.
-- **5. Recovery:** Daten und Software sind sauber von Backup-Systemen wiederherzustellen. Um sicherzustellen, dass keine Lücken bleiben, werden diese überprüft. Systeme werden für weitere Anzeichen von Kompromittierung oder eines erneuten Auftretens überwacht.
-- **6. Nachbesprechung:** Das Team untersucht den Vorfall und wie er behandelt wurde und versucht die Vorfallbehandlung und Prävention zu verbessern, um ein erneutes Auftreten des Problems zu verhindern.
-
 ### CERT
 
-- Computer Emergency Response Team
-- größere Unternehmen, extern ausgelagert, auch auf Landesebene (pro Bundesland eins)
+- **C**omputer **E**mergency **R**esponse **T**eam
 - Kontaktstellen bei größeren IT-Sicherheitsvorfall
+- für Bundesbehörden auf Landesebene (pro Bundesland)
+- auch bei größeren Unternehmen (extern ausgelagert)
 
-### Sechs Schritte des SANS-Institut
+### Die sechs Schritte des SANS-Institut
 
-1. Vorbereitung: Die Organisation sensibilisiert die MA und trainiert sie darauf, auf Computer- und Netzwerk-Sicherheits-Zwischenfälle schnell und korrekt zu reagieren.
-2. Identifizierung: Das Response Team entscheidet, ob ein bestimmtes Ereignis eine Bedrohung darstellt. Das Team kann sich an der CERT Coordination Center wenden, welche aktuelle Spuren im Internet auf Sicherheitsvorfälle untersucht und hat die Möglichkeit die aktuellsten Informationen über Viren und Würmer zu enthalten.
-3. Eingrenzung: Das Team bestimmt, wie weit das Problem bereits Schaden verursacht hat und nimmt alle betroffenen Systeme und Geräte zur Verhinderung weiterer Schäden offline.
-4. Beseitigung: Das Team untersucht die Herkunft des Vorfalls und beseitig die Ursache des Problems.
-5. Recovery: Daten und Software sind sauber von Backup-Systemen wiederherzustellen. Um sicherzustellen, dass keine Lücken bleiben, werden diese überprüft. Systeme werden für weitere Anzeichen und Kompromittierung oder eines erneuten Auftretens überwacht.
-6. Nachbesprechung: Das Team untersucht den Vorfall und wie er behandelt wurde und versucht die Vorfallbehandlung und Prävention zu verbessern, um ein erneutes Auftreten des Problems zu verhindern.
+- **1. Vorbereitung:** Organisation und Mitarbeiter sensibilisieren und trainieren $\rightarrow$ schnelle und korrekte Reaktion auf Computer- und Netzwerk-Sicherheits-Zwischenfälle
+- **2. Identifizierung:** Entscheidung des Response Teams, ob ein bestimmtes Ereignis eine Bedrohung darstellt
+  - Team kann sich an das CERT CoordinationCenter wenden (aktuelle Infos zu Sicherheitsvorfällen, ...)
+- **3. Eingrenzung:** Bestimmung des Schadensumfanges durch das Team $\rightarrow$ welcher Schaden; nimmt alle betroffenen Systeme/Geräte zur Verhinderung weiterer Schäden offline
+- **4. Beseitigung:** Untersuchung der Herkunft des Vorfalls und Beseitigung der Ursache des Problems durch das Team.
+- **5. Recovery:** Wiederherstellung von Daten und Software von Backup-Systemen; Überprüfung der Schließung der Sicherheitslücken; Überwachung der Systeme für Anzeichen von Kompromittierung/erneutes Auftreten
+- **6. Nachbesprechung:** Team untersucht den Vorfall und wie er behandelt wurde und versucht die Vorfallbehandlung und Prävention zu verbessern, um ein erneutes Auftreten des Problems zu verhindern
 
 ### BSI IT-Grundschutz Kompendium
 
@@ -333,64 +342,84 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - Rechtsformulierung da sich Gesetze langsamer als die Technik entwickeln
 - Hinweise auf Stand der Technik geben bspw. IT-Grundschutz Bausteine
 
-### E-Mail Header
+### Aufbau eines E-Mail-Headers
 
-- Folgende Angaben kann der Angreifer manipulieren: From, To, Date, Subject, Message-ID
-- praktisch manipulationssicher: Received
-- good to know: G Suite Toolbox Nachrichten-Header
+- Folgende Angaben kann der Angreifer manipulieren
+  - `From` (Absender)
+  - `To` (Empfänger)
+  - `Date` (Zeitpunkt der Erstellung)
+  - `Subject` (Betreff)
+  - `Message-ID` (eindeutige Zeichenfolge)
+- praktisch manipulationssicher: `Received` (Weg der Email vom Sender zum Empfänger)
+- Header und Inhalt wird durch eine Leerzeile getrennt
 
-#### Aufbau eines E-Mail-Headers
-
-<!--ToDo-->
+<!-- ToDo: Können wir das folgende entfernen? -> good to know: G Suite Toolbox Nachrichten-Header-->
 
 #### Received-Einträge im E-Mail Header
 
-- jeder Mailrouter, der Mail verarbeitet fügt sich dieser Liste hinzu
+- jeder Mailrouter fügt dem Header seine Kennung hinzu, wenn er die Mail verarbeitet
 - Anomalien leicht feststellbar
 - Phishingmails darüber identifizieren
 
-### Windows Registry
+### Wichtige Fundstellen von Beweisen
 
-- verschiedene Datenbanken (Registry Hives) die dort als Datei vorliegen auf dem Datenträger
-- Speicherung von Einstellungen in der Registrierungsdatenbank:
-  - gespeicherte Daten in sogenannten Registrierungshives aufgeteilt und in Keys mit Values abgelegt
-  - Datenbanken existieren in Form von Dateien im Verzeichnis
+#### Windows Registry
 
-### Volume Shadow Copy
+- Konfigurationsdatenbank des Betriebsystems
+- Einstellungen von Systemdiensten und -prozessen sowie von anderen Anwendungen
+  - werden als Key/Value-Pairs gespeichert und in `Registry Hives` aufgeteilt
+  - verschiedene Datenbanken (`Registry Hives`) liegen als Datei auf dem Datenträger vor
 
-- Snapshots eines NTFS Volumes (pro NTFS Volume 64 Snapshotkopien)
-- arbeitet auf copy und write Basis
+> `C:\Windows\System32\Config\`, `C:\Windows\Users\${Name}`
+
+#### Volume Shadow Copy (Windows)
+
+- Snapshots eines `NTFS` Volumes (pro `NTFS` Volume 64 Snapshotkopien)
+- arbeitet auf `copy` und `write` Basis
 - alte Zustände eines Volumes abrufen
 - aller 7 Tage, bei Patches, Treibersoftware etc. erstellt
 
-### Alternate Data Stream
+#### Alternate DataStream
 
-- Data Attribut mit Data Runs mit Clusternummern mit eigentlichen Dateininhalten
-- zusätzlich Alternate Data Streams anhängen mit weiteren Infos zur Datei zB kommt Datei aus lokalen oder aus Internet
-- man kann darin Dateien verstecken (wie Schadsoftware)
+- `Data`-Attribut mit `DataRuns` mit Clusternummern mit eigentlichen Dateininhalten
+- zusätzlich `Alternate DataStreams` anhängen mit weiteren Infos zur Datei
+  - z.B. lokaler Ursprung der Datei bzw. aus Internet
+- man kann darin Dateien verstecken (z.B. Schadsoftware)
 
-### Windows SID
+#### Windows SID
 
-- SID pro Benutzergruppe/Benutzerkonto etc. eindeutig vergeben
+- `SID` wird pro Benutzergruppe/Benutzerkonto **eindeutig** vergeben
 
 > $\rightarrow$ nachvollziehen, wer was geändert hat
 
 - Benutzerrechte damit zuweisen
 - welcher Nutzer hat Zugriff, wer hat es angelegt und wer hat es geändert
 - ob Nutzer gelöscht wurden, die daran etwas gemacht haben
-- Log Dateien bzgl. Löschvorgangs/Änderung an Nutzerkonten
-- SID bleibt immer identisch
+- Log-Dateien bzgl. Löschvorgangs/Änderung an Nutzerkonten
+- `SID` bleibt immer identisch
 
-### macOS-Frage
+#### Wichtige Fundstellen unter MacOS
 
-<!--ToDo: Was könnte gefragt werden?-->
+<!-- ToDo: passt das oder eher PPT3 - Folie 48? -->
+
+> Aufteilung nach Systemdaten (`/System/Library/`, `/Library/`), Benutzerdaten und
+Softwaredaten (`/Application`)
+
+<!--ToDo: Was könnte noch zu MacOS gefragt werden?-->
+
+#### Plist-Dateien (MacOS)
+
+- Property List Dateien: Key-Value-Paare
+- vorallem unter macOS vorhanden, als Konfigurationsdateien
+- vom Aufbau `XML`-Dateien mit spezifischen Schlüsselpaaren
+  - welche Konfigurationsparameter, wurden wann und von wem zuletzt geändert
 
 ### Interessante Linux-Anwendungsprotokolle
 
-- apache2
-- httpd
-- samba
-- mysqld
+- `apache2`
+- `httpd`
+- `samba`
+- `mysqld`
 
 ## Techniken der Spurensuche und RAM Analyse
 
@@ -399,129 +428,202 @@ Spuren entstehen im Hintergrund, können flüchtig sein, sind leicht änderbar, 
 - Dateien ohne Dateiendung analysieren & Dateityp identifiziert
 - durch Header & Footer Informationen
 
+#### Magic-Bytes
+
+- spezieller Wert, der ein bestimmtes Dateiformat am Dateibeginn kennzeichnet
+- z.B. `0xFFD8FF` für `JPEG`
+
 ### FileCarving
 
 - Suche nach Dateien, die gelöscht wurden
 - nicht mehr im allokierten Speicher, aber noch drauf sind
 - z.B. mit Hex-Editor
 
-### Kernel Level Sicherung
+### RAM Sicherung Sicherungstechniken
 
-- Systemkern speichert RAM Inhalte
-- versch. Tools je nach Betriebssystem
-- Vorteil zu User Level: gesamter RAM gesichert und nicht selektive Sicherung
+- User-Level vs. Kernel-Level vs. Crash-Dump
+- Bus-based (extern) vs harware-based (intern)
+- Cold-Boot mit oder ohne RAM Transfer
+- Hibernation-based vs Virtualisation-based
+
+### User-Level vs Kernel-Level RAM Sicherung
+
+User Level
+
+- Sicherung der Bereiche, auf die der Benutzer selbst Zugriff = die Anwendungen die mit seinen Rechten gestartet wurden.
+- Malware-Prozesse können versteckt und nicht auffindbar sein (Rootkit Hiding Technologien / APT).
+- Tools: Sysinternals ProcDump (CMD basiert) oder der Process Explorer (Abbildung) oder Taskmanager
+
+Kernel Level
+
+- durch Nutzung des Kernels des Betriebssystems (Ring 0) werden die kompletten Hauptspeicher-Bereiche gesichert
+- Kernel Mode Treiber und Admin/Root Passwort nötig
+- Veränderung des RAM durch Sicherungsanwendung selbst
+- Vorteil zu User Level: gesamter `RAM` gesichert und nicht selektive Sicherung
+- Tools: DumpIt/Comae; LiME; Rekall Memory Toolkit: memsic
 
 ### Cold Boot
 
-- RAM Sicherungsmethode
-- RAM heruntergekühlt um kurzzeitig Stromzufuhr zu unterbrechen + keine Inhalte verlieren
-- mit/ohne Transfer, ohne mit Livesystem
+- `RAM` Sicherungsmethode
+- `RAM` heruntergekühlt um kurzzeitig Stromzufuhr zu unterbrechen + keine Inhalte verlieren
+- mit/ohne Transfer, ohne/mit Livesystem
 
 ### Volatility Framework
 
-- Framework zum Analysieren von RAM-Abbildern
-
-### Plist-Dateien
-
-- Property List Dateien: Key-Value-Paare
-- vorallem unter macOS vorhanden, als Konfigurationsdateien
-- vom Aufbau XML-Dateien mit spezifischen Schlüsselpaaren, können bspw. mit xcode geöffnet werden, welche Konfigurationsparameter gesetzt sind, wer zuletzt etwas geändert hat
+- Framework zum Analysieren von `RAM`-Abbildern
 
 ### Hinweise auf einen Einbruch
 
 - wenn Rechner auffällig langsam wird
-- verdächtige/unbekannte Prozesse im Taskmanager prüfe
+- verdächtige/unbekannte Prozesse im Taskmanager prüfen
 - Auffälligkeiten bei Netzwerkverbindungen
 - Auffälligkeiten in Log-Dateien (unvollständig/geleert)
 - unbekannte Benutzer, besonders Admin Accounts
-- Meldungen von Antiviren Software, Protokolldateien der Software prüfen
+- Meldungen von Antiviren-Software, Protokolldateien der Software prüfen
 
 ## Dateisysteme
 
 ### Sektoren
 
-- Zusammenfassung von Bytes in einem Block
+- Zusammenfassung **einzelner Bytes** zu einem Block
+- auf Ebene der **Festplattenfirmware** festgelegt (z.B. 512 Bytes)
 
 ### Cluster
 
-- Zusammenfassung mehrerer Sektoren
-- Clustergröße bei Formatierung festlegbar
-- einzelne Bytes zu Block zusammengefasst
+- Zusammenfassung **einzelner Sektoren** zu einem Block
+- auf Ebene der **Betriebssysteme** realisiert (abhängig von Dateisystem)
 
-> Betriebssystem arbeitet Clusterweise $\rightarrow$ es werden immer ganze Cluster gespeichert
+> **Betriebssystem arbeitet nur clusterweise** $\rightarrow$ es werden immer ganze Cluster gespeichert
 
 ### Aufbau FAT-Dateisystem
 
 <!-- Folie 5-15 (done) und Folie 5-21 (TODO) -->
 
-- FAT-Dateisystem = FileAllocationTable (FAT) + DirectoryEntries
+> `FAT` = **F**ile**A**llocation**T**able + DirectoryEntries
+
 - Partition:
   - Bootsektor + Partitionskennung
   - Reservierte Sektoren
-  - FAT Bereich
+  - `FAT` Bereich
   - Datenbereich mit Verzeichniseinträgen
+
+Ein Eintrag in der `FAT` ordnet Clusternummer zu:
+
+- Unbenutzer Cluster
+- Nummer Folgecluster (gleiche Datei)
+- reservierter Cluster
+- defekter Cluster
+- EOF
+
+Dateien, die sich über mehrere Cluster erstrecken, sind durch das die Verweise der Folgecluster bis EOF auffindbar.
 
 #### ROOT-verzeichnis bei FAT
 
-- im Datenbereich beim FAT-Datenträger
-- FAT12&16 $\rightarrow$ direkt im Anschluss an die FAT
-- FAT32 $\rightarrow$ kann überall beginnen, meist in den Sektoren direkt nach der FAT
+- im Datenbereich des `FAT`-Datenträgers
+- `FAT12`, `FAT16` $\rightarrow$ direkt im Anschluss an die `FAT`
+- `FAT32` $\rightarrow$ kann überall beginnen, meist in den Sektoren direkt nach der `FAT`
 - Root Verzeichnis finden: boot Sektor ansehen, wie viele reservierte Sektoren, zwei im Offset und ein paar mehr $\rightarrow$ dann diese Zahl ist das gesuchte ROOT-Datenverzeichnis
 
-### Master Boot Record (MBR)
+#### Löschung und Wiederherstellung von Daten im FAT Dateisystem
 
-- TODO
+<!-- ToDo -->
 
-### GUID Partition Table (GPT)
+### Master Boot Record (MBR) - Partitionierung
 
-- TODO
+<!-- PPT5 - 6/7 -->
 
-### Master File Table
+- MBR (Bootsektor) befindet sich am Anfang des Datenträgers
+- enthält u.a. Boot Loader, Partitionstabelle (64 Bytes)
+- Einträge Partitionstabelle sind 16 Bytes groß
+  - Erster/Letzter Sektor, Partitionstyp, Anzahl Sektoren ...
+- mit MBR-Partitionierung **max. 4 Partitionen**
 
-- Teil des NTFS Dateisystem
+### GUID Partition Table (GPT) - Partitionierung
+
+- GPT (Bootsektor) befindet sich am Anfang des Datenträgers
+- **Aufbau GPT**:
+  - LBA Block 00: Protective MBR
+  - LBA Block 01: GPT HEADER
+  - LBA Block 02 bis 33:
+    - Partitionseinträge / 4 je Block
+    - Blockgröße 512 Byte - Partitionseintrag 128 Byte
+  - LBA Block 34 ff. bis -34: Partition 1 bis 128
+  - LBA Block -33 bis -1: Blöcke 1 bis 34 erneut am Ende des Datenträgers
+- mit GPT-Partitionierung **max. 128 Partitionen** (bis zu 8192 Exabyte)
+- **Inhalt GPT-Partitionseintrag**:
+  - Typ, GUID Partition, Beginn, Ende, Attribute, Name
+
+### NTFS
+
+#### Master File Table
+
+<!-- ToDo: Prüfen: wichtigsten Attribute vorhanden -->
+
+- Teil des `NTFS` Dateisystem
 - Datei auf dem Datenträger die Infos über alle anderen Dateien & Verzeichnisse enthält
 - enthält verschiedene Informationen über Aufbau des Datenträgers
 - Datenbank mit Adressen zu jeder Datei auf den Datenträger, jede Datei besitzt MFT Eintrag mit verschiedenen Attributen
-- wichtigste Attribute: Filename, Standardattribut (Meta Daten, wann wurde es angelegt etc.), Dataattribut (enthält Daten direkt (wenn klein genug, MFT Eintrag ist meist 1024 Bytes groß), sonst DataRuns)
+- wichtigste Attribute: Filename, Standard-Attribut (Meta-Daten, wann wurde es angelegt etc.), Data-Attribut (enthält Daten direkt (wenn klein genug, `MFT` Eintrag ist meist 1024 Bytes groß), sonst `DataRuns`)
 - Datei (vgl. Datenbank) mit Einträgen zu allen Dateien/Verzeichnissen
-- Attribute: Filename, Metadaten, Data (Daten selbst oder DataRuns)
+- **Attribute: Filename, Metadaten, Data (Daten selbst oder `DataRuns`)**
 
-### $DATA Attribut
+#### $DATA Attribut
 
+- Attribut im `NTFS`-Dateisystem
 - die tatsächlichen Daten, die in die Datei geschrieben wurden
-- NTFS-Dateisystem
-- direkte Daten oder DataRuns
+- direkte Daten oder `DataRuns`
+
+#### Löschung und Wiederherstellung von Daten im NTFS Dateisystem
+
+<!-- ToDo -->
 
 ### Slackspeicher
 
 - Ursprung: interne Fragmentierung
-- Cluster wird nicht komplett durch eine Datei ausgenutzt, ist aber komplett ausgefüllt $\rightarrow$ verbleibender Bereich = Slackspeicher (kann alte Daten beinhalten)
-- z.B. bei FAT oder NTFS, aber nicht ext
+- Cluster wird nicht komplett durch eine Datei ausgenutzt, ist aber komplett ausgefüllt $\rightarrow$ **verbleibender Bereich = Slackspeicher**
+- Slackspeicher kann alte Daten beinhalten
+- z.B. bei `FAT` oder `NTFS`, aber **nicht bei `ext`**
 
 ### MAC-Zeitstempel
 
 - jedes Betriebssystem besitzt Zeitstempel
-- Modification, Access, Change/Creation-Time
+- `Modification`, `Access`, `Change`/`Creation`-Time
 
 ### Superblock
 
-- alle wichtigen Infos zum ext Dateisystem (Adressedes ersten Blocks, Blockgröße, Blockgruppengröße, freie Inodes, ...)
+> alle wichtigen Infos zum `ext`-Dateisystem
+
+- Adresse des ersten Blocks
+- Blockgröße
+- Blockgruppengröße
+- Anzahl freier Inodes
+- ...
 
 ### Aufbau ext3 / ext4-Dateisystem
 
-<!--TODO-->
+Inhalt einer Partition:
+
+- Boot Block
+- Block Gruppe 0
+  - Superblock
+    - Anzahl freie Blöcke, Anzahl freie Inodes, Blockgröße etc.
+  - Gruppen Descriptor
+  - Block Bitmap
+  - Inode Bitmap
+  - Inode Tabelle
+  - Dateninhalte
+- Block Gruppe 1... n
+
+<!-- TODO: Begriff "Blockgruppen" muss erläutert werden-->
+
+<!-- PPT 05 - Folie 42 done, 47 todo muss mit rein -->
 
 ### Umgang mit Dateien im Ext-Dateisystem
 
-- Superblock & Gruppendeskriptortabelle (wie viele freie Blöcke pro Block, weitere Infos zu Inodes z.B. Inode mit 2 ist immer Rootverzeichnis
+- Superblock & Gruppendeskriptortabelle (wie viele freie Blöcke pro Block, weitere Infos zu Inodes z.B. Inode mit 2 ist immer Rootverzeichnis)
 
 ### DataRuns
 
 - bestehen aus einer Anzahl an Clustern, besitzen Clusternummern die dazugehören
 - über diese Clusternummern lässt sich Datei zusammenbauen
-
 - Liste von Clustern
-
-## Windows-Zusatz
-
-<!-- Coming soonTM -->
