@@ -91,9 +91,9 @@ Am Besten sollten man sich die Punkte in einem Graphen anzeigen lassen.
 Anhand des Graphens sind die Parameter für die Ellipsen-Gleichung zu wählen, sodass die Ellipse die gegebenen Punkte einschließt.
 
 $$
-x_0 = 2.5 \\
-y_0 = 1.5 \\
-a = 2 \\
+x_0 = 2.5 \quad
+y_0 = 1.5 \quad
+a = 2 \quad
 b = 1.5
 $$
 
