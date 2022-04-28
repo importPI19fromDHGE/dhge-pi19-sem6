@@ -191,5 +191,5 @@ $$f(x_1,x_2,x_3,x_4)= 1 * x_1 - 1 * x_2 + 1 * x_3 + 0 * x_4 - \frac{1-1}{2}$$
 
 > Die letzte Komponente in der Funktion der Hyperebene entspricht dem arithmetischen Mittelwert der letzten beiden Komponenten des Vektors ($\frac{a+b}{2}$).
 
-#### Überprüfung
+#### Überprüfung (2)
 
