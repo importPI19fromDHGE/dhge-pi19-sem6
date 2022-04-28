@@ -24,20 +24,27 @@ Wissensbasierte Systeme / Neuronale Netze
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Wissensbasierte Systeme / Neuronale Netze](#wissensbasierte-systeme--neuronale-netze)
 - [Klausurvorbereitung](#klausurvorbereitung)
   - [Aufgabe 1](#aufgabe-1)
-    - [Lösung](#l%C3%B6sung)
+    - [Aufgabe 1: Lösung](#aufgabe-1-lösung)
       - [1. Punkte zeichnen](#1-punkte-zeichnen)
-      - [2. Parameter für die Ellipse wählen](#2-parameter-f%C3%BCr-die-ellipse-w%C3%A4hlen)
+      - [2. Parameter für die Ellipse wählen](#2-parameter-für-die-ellipse-wählen)
       - [3. Ellipsengleichung und Schwellwertfunktion aufstellen](#3-ellipsengleichung-und-schwellwertfunktion-aufstellen)
-      - [4. Überprüfung](#4-%C3%9Cberpr%C3%BCfung)
+      - [4. Überprüfung](#4-überprüfung)
   - [Aufgabe 2](#aufgabe-2)
-    - [Lösung](#l%C3%B6sung-1)
-      - [1. ToDo](#1-todo)
+    - [Aufgabe 2: Lösung](#aufgabe-2-lösung)
+      - [1. Matrizen aufstellen](#1-matrizen-aufstellen)
       - [2. Optimierungsproblem aufstellen](#2-optimierungsproblem-aufstellen)
-      - [Lösung des Optimierungsproblems](#l%C3%B6sung-des-optimierungsproblems)
-      - [Trennbarkeit feststellen und Hyperebene aufstellen](#trennbarkeit-feststellen-und-hyperebene-aufstellen)
-      - [Überprüfung (2)](#%C3%9Cberpr%C3%BCfung-2)
+      - [3. Lösung des Optimierungsproblems](#3-lösung-des-optimierungsproblems)
+      - [4. Trennbarkeit feststellen und Hyperebene aufstellen](#4-trennbarkeit-feststellen-und-hyperebene-aufstellen)
+      - [5. Überprüfung](#5-überprüfung)
+  - [Aufgabe 3](#aufgabe-3)
+    - [Aufgabe 3: Lösung](#aufgabe-3-lösung)
+  - [Aufgabe 4](#aufgabe-4)
+    - [Aufgabe 4: Lösung](#aufgabe-4-lösung)
+      - [1. Punkte aufstellen und optisch auf Trennbarkeit prüfen](#1-punkte-aufstellen-und-optisch-auf-trennbarkeit-prüfen)
+      - [2. Durchführung des Lernperzeptron-Algorithmus](#2-durchführung-des-lernperzeptron-algorithmus)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -208,6 +215,114 @@ $$\begin{matrix}
 
 ### Aufgabe 3: Lösung
 
-1. Punkte zeichnen
+1. Punkte in einen Graphen zeichnen
 2. Äußere Punkte der Punktmenge mit einem geschlossenen Kantenzug umranden
-3. Profit!!!
+3. ...
+4. Profit!!!
+
+## Aufgabe 4
+
+> Stellen Sie für die Punktmengen $G:={(1,1), (1,3), (2,4)}$, und $B:={(3,5),(2,2),(2,1)}$ den
+> Lernperzeptron-Algorithmus auf und führen Sie zwei Iterationsschritte ausgehend vom
+> Startvektor $w0:=[-2.5,1,4]^T$ aus. Benutzen Sie die Zahlenfolge $\varphi_k:=1-1/(1+k^2)$.
+> Zeichnen Sie beide Punktmengen und entscheiden Sie optisch, ob beide Mengen
+> linear trennbar sind. Geben Sie im trennbaren Fall, die Gleichung einer Trenngeraden
+> an und zeichnen Sie deren Graph zwischen die Punktmengen ein. Ordnen Sie in der
+> Trainingsfolge $\xi$ die Punkte aus $G$ und $B$ abwechselnd an, beginnend mit einem
+> grünen Punkt. Behalten Sie die Reihenfolge der Elemente von $G$ und $B$ bei.
+
+### Aufgabe 4: Lösung
+
+#### 1. Punkte aufstellen und optisch auf Trennbarkeit prüfen
+
+$$
+G_1=\begin{bmatrix}1\\1\end{bmatrix}\quad
+G_2=\begin{bmatrix}1\\3\end{bmatrix}\quad
+G_3=\begin{bmatrix}2\\4\end{bmatrix}
+$$
+
+$$
+B_1=\begin{bmatrix}3\\5\end{bmatrix}\quad
+B_2=\begin{bmatrix}2\\2\end{bmatrix}\quad
+B_3=\begin{bmatrix}2\\1\end{bmatrix}
+$$
+
+> Anschließend beide Punktmengen in einem Graphen zeichen.
+> Empirisches Bilden einer linearen Funktion ($f(x)=ax+b$) zum Trennen der Punktmengen.
+> Ist eine solche Funktion gefunden, werden die Mengen als trennbar betrachtet und es kann fortgefahren werden.
+
+$$f(x)=3x-3$$
+
+#### 2. Vorbereitung des Lernperzeptron-Algorithmus
+
+> Zur Durchführung des Lernperzeptronen-Algorithmus müssen die Punkte zunächst erweitert und zu einer Matrix zusammengeführt werden.
+
+$$
+G_{1ext}=\begin{bmatrix}1\\1\\1\end{bmatrix}\quad
+G_{2ext}=\begin{bmatrix}1\\3\\1\end{bmatrix}\quad
+G_{3ext}=\begin{bmatrix}2\\4\\1\end{bmatrix}
+$$
+
+$$
+B_{1ext}=\begin{bmatrix}3\\5\\1\end{bmatrix}\quad
+B_{2ext}=\begin{bmatrix}2\\2\\1\end{bmatrix}\quad
+B_{3ext}=\begin{bmatrix}2\\1\\1\end{bmatrix}
+$$
+
+$$
+\xi_1 = \begin{bmatrix} G_{1ext} & -B_{1ext} & G_{2ext} & -B_{2ext} & G_{3ext} & -B_{3ext} \end{bmatrix}\\
+\quad\\
+\xi_1 = \begin{bmatrix}
+1 & -3 & 1 & -2 & 2 & -2 \\
+1 & -5 & 3 & -2 & 4 & -1 \\
+1 & -1 & 1 & -1 & 1 & -1 \\
+\end{bmatrix}
+$$
+
+#### 3. Durchführung des Lernperzeptron-Algorithmus
+
+> Für zwei Iterationsschritte wird die Matrix $\xi_1$ zweimal aneinander gehangen, um die Trainingsfolge $\xi$ zu erzeugen.
+
+$$
+\xi = \begin{bmatrix}
+1 & -3 & 1 & -2 & 2 & -2 & 1 & -3 & 1 & -2 & 2 & -2 \\
+1 & -5 & 3 & -2 & 4 & -1 & 1 & -5 & 3 & -2 & 4 & -1 \\
+1 & -1 & 1 & -1 & 1 & -1 & 1 & -1 & 1 & -1 & 1 & -1 \\
+\end{bmatrix}
+$$
+
+> Der Startvektor $w^{<0>}$ und die Zahlenfolge $\varphi_k$ werden der Aufgabenstellung entnommen.
+
+$$
+w^{<0>} = \begin{bmatrix}-2.5\\1\\4\end{bmatrix} \qquad \varphi_k = 1-\frac{1}{1+k^2}
+$$
+
+$$
+w^{<k+1>} =
+\begin{cases}
+  w^{<k>} & \text{if} \quad {w^{<k>}}^T * \xi^{<k>} > 0 \\
+  (w^{<k>} + \varphi_k * \xi^{<k>}) & \text{otherwise}
+\end{cases}
+$$
+
+> Entsprechend $w^{<k+1>}$ werden nun zwei Iterationsschritte ausgeführt.
+
+$$
+{w^{<0>}}^T * \xi^{<0>} =
+\begin{bmatrix}
+  -2.5 & 1 & 4\\
+\end{bmatrix} * \begin{bmatrix}
+  1 \\ 1 \\ 1
+\end{bmatrix} = 2.5
+\quad\rightarrow\quad 2.5 > 0 \quad\rightarrow\quad w^{<1>} = w^{<0>} = \begin{bmatrix}-2.5\\1\\4\end{bmatrix}
+$$
+
+$$
+{w^{<1>}}^T * \xi^{<0>} =
+\begin{bmatrix}
+  -2.5 & 1 & 4\\
+\end{bmatrix} * \begin{bmatrix}
+  -3 \\ -5 \\ -1
+\end{bmatrix} = -1.5
+\quad\rightarrow\quad -1.5 < 0 \quad\rightarrow\quad w^{<2>} = w^{<1>} * \varphi_1 * \xi^{<1>} = \begin{bmatrix}-4\\1.5\\3.5\end{bmatrix}
+$$
