@@ -46,6 +46,10 @@ Wissensbasierte Systeme / Neuronale Netze
       - [1. Punkte aufstellen und optisch auf Trennbarkeit prüfen](#1-punkte-aufstellen-und-optisch-auf-trennbarkeit-pr%C3%BCfen)
       - [2. Vorbereitung des Lernperzeptron-Algorithmus](#2-vorbereitung-des-lernperzeptron-algorithmus)
       - [3. Durchführung des Lernperzeptron-Algorithmus](#3-durchf%C3%BChrung-des-lernperzeptron-algorithmus)
+  - [Aufgabe 5](#aufgabe-5)
+    - [Aufgabe 5: Lösung](#aufgabe-5-l%C3%B6sung)
+      - [1. Funktion $f(x,y,z)$ aufstellen](#1-funktion-fxyz-aufstellen)
+      - [2. Aktivierungsfunktion und Perzeptronen definieren](#2-aktivierungsfunktion-und-perzeptronen-definieren)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
