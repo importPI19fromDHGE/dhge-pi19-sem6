@@ -115,50 +115,68 @@ $$
 
 $$
 G = \begin{bmatrix} 1 & 2 & 3 & 4 \\ 1 & 1 & 1 & 1 \end{bmatrix}
-$$
-
-$$
+\qquad
 o = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
-$$
-
-$$
+\qquad
 e_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
 $$
 
 #### 2. Optimierungsproblem aufstellen
 
-$$A = stapeln\(erweitern \(−G, e_1, o\) erweitern (B o −e1))$$
+$$A = \text{stapeln}(\text{erweitern}(−G, e_1, o), \text{erweitern}(B, o, −e_1))=
+\begin{bmatrix}
+-1 & -2 & -3 & -4 & 1 &  0 \\
+-1 & -1 & -1 & -1 & 1 &  0 \\
+ 1 &  3 &  1 &  2 & 0 & -1 \\
+ 2 &  2 & -1 & -1 & 0 & -1
+\end{bmatrix}$$
 
 $$B_1 = \begin{bmatrix}
   0\\
   0\\
   0\\
   0
-\end{bmatrix}$$
-
-$$lb = -\begin{bmatrix}
+\end{bmatrix}
+\qquad
+lb = -\begin{bmatrix}
+  1\\
+  1\\
+  1\\
+  1
+\end{bmatrix}
+\qquad
+ub = -lb = \begin{bmatrix}
   1\\
   1\\
   1\\
   1
 \end{bmatrix}$$
 
-$$ub = -lb = \begin{bmatrix}
-  1\\
-  1\\
-  1\\
-  1
-\end{bmatrix}$$
+#### Lösung des Optimierungsproblems
 
-####
+> Die Lösung des Optimierungsproblems wird vorgegeben: *some `Mathlab`-magic*
 
-> Die Lösung des optimierungsproblems wird vorgegeben
+$$x=\begin{bmatrix}
+1 \\
+-1 \\
+1 \\
+0 \\
+1 \\
+-1 \end{bmatrix}
+\qquad
+ans = -2$$
 
-Wenn diff (b-a) negativ, dann trennbar
+#### Trennbarkeit feststellen und Hyperebene aufstellen
 
-$$
-f(x)=
-$$
+Wenn die Differenz $b-a$ negativ ist, dann trennbar sind beide Punktwolken trennbar. Ist die Differenz positiv, dann ist die Trennbarkeit nicht vorhanden. Wenn es keine Differenz gibt $b-a = 0$, so gibt es Punkte, die auf der Hyperebene liegen.
+
+$$b-a = (-1) -1 = -2 \quad \rightarrow\quad\text{Die Mengen sind trennbar}$$
+
+Die Hyperebene ergibt sich ebenfalls aus dem Verktor $x$:
+
+$$f(x_1,x_2,x_3,x_4)= 1 * x_1 - 1 * x_2 + 1 * x_3 + 0 * x_4 - \frac{1-1}{2}$$
+
+> Die letzte Komponente in der Funktion der Hyperebene entspricht dem arithmetischen Mittelwert der letzten beiden Komponenten des Vektors ($\frac{a+b}{2}$).
 
 #### Überprüfung
 
