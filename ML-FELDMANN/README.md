@@ -60,7 +60,7 @@ $$
 \frac{(x-x_0)^2}{a^2} + \frac{(y-y_0)^2}{b^2} = 1
 $$
 
-### Lösung
+### Aufgabe 1: Lösung
 
 #### 1. Punkte zeichnen
 
@@ -122,9 +122,9 @@ $$
 > Überprüfen Sie, ob `f(x)` auf `G` konstantes Vorzeichen besitzt und auf `B`
 > das entgegengesetzte.
 
-### Lösung
+### Aufgabe 2: Lösung
 
-#### 1. ToDo
+#### 1. Matrizen aufstellen
 
 $$
 G = \begin{bmatrix} 1 & 2 & 3 & 4 \\ 1 & 1 & 1 & 1 \end{bmatrix}
@@ -165,7 +165,7 @@ ub = -lb = \begin{bmatrix}
   1
 \end{bmatrix}$$
 
-#### Lösung des Optimierungsproblems
+#### 3. Lösung des Optimierungsproblems
 
 > Die Lösung des Optimierungsproblems wird vorgegeben: *some `Mathlab`-magic*
 
@@ -179,7 +179,7 @@ $$x=\begin{bmatrix}
 \qquad
 ans = -2$$
 
-#### Trennbarkeit feststellen und Hyperebene aufstellen
+#### 4. Trennbarkeit feststellen und Hyperebene aufstellen
 
 Wenn die Differenz $b-a$ negativ ist, dann trennbar sind beide Punktwolken trennbar. Ist die Differenz positiv, dann ist die Trennbarkeit nicht vorhanden. Wenn es keine Differenz gibt $b-a = 0$, so gibt es Punkte, die auf der Hyperebene liegen.
 
@@ -191,5 +191,23 @@ $$f(x_1,x_2,x_3,x_4)= 1 * x_1 - 1 * x_2 + 1 * x_3 + 0 * x_4 - \frac{1-1}{2}$$
 
 > Die letzte Komponente in der Funktion der Hyperebene entspricht dem arithmetischen Mittelwert der letzten beiden Komponenten des Vektors ($\frac{a+b}{2}$).
 
-#### Überprüfung (2)
+#### 5. Überprüfung
 
+Punktemengen nacheinander zeilenweise in die Funktion $f(x_1,x_2,x_3,x_4)$ einsetzen.
+
+$$\begin{matrix}
+  G: & f(1,2,3,4)=2 &\quad& f(1,1,1,1)=1 \\
+  B: & f(1,3,1,2)=-1 &\quad& f(2,2,-1,-1)=-1
+\end{matrix}$$
+
+> G und B besitzen jeweils ein konstantes jedoch nicht das gleiche Vorzeichen.
+
+## Aufgabe 3
+
+> Zeichnen Sie die konvexe Menge der Punkte $(1,1)$, $(1,3)$, $(2,3.5)$, $(3,5)$, $(2,2)$, $(2,3)$.
+
+### Aufgabe 3: Lösung
+
+1. Punkte zeichnen
+2. Äußere Punkte der Punktmenge mit einem geschlossenen Kantenzug umranden
+3. Profit!!!
