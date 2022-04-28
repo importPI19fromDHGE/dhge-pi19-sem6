@@ -356,7 +356,29 @@ $$(\neg x \land \neg y \land \neg z) \lor (\neg x \land y \land \neg z)$$
 
 #### 2. Aktivierungsfunktion und Perzeptronen definieren
 
-$$\omega(x)=\begin{cases}
+$$\sigma(x)=\begin{cases}
   1 & \text{if} \quad 0 \leq x \\
   0 & \text{otherwise}
 \end{cases}$$
+
+$$\begin{matrix}
+  AND(x,y,z) & = & \sigma(x+y+z-3) \\
+  OR(x,y) & = & \sigma(x+y-0.5) \\
+  NOT(x) & = & \sigma(-x + 0.5) \\
+\end{matrix}$$
+
+#### 3. Perzeptronen entsprechend der logischen Funktion verknüpfen
+
+$$Neu(x,y,z) = OR(AND(NOT(x),NOT(y),NOT(z)),AND(NOT(x),y,NOT(z)))$$
+
+## Aufgabe 6
+
+> Berechnen Sie für die Eingabe (1,2,3) die Ausgabe folgenden Netzwerkes:
+
+*some Netzwerk*
+
+### Aufgabe 6: Lösung
+
+1. Werte in Funktion des Netzwerkes einsetzen
+2. ...
+3. Profit!!!
