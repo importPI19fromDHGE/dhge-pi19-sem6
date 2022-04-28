@@ -26,18 +26,20 @@ Wissensbasierte Systeme / Neuronale Netze
 
 - [Klausurvorbereitung](#klausurvorbereitung)
   - [Aufgabe 1](#aufgabe-1)
-    - [Lösung](#l%C3%B6sung)
+    - [Aufgabe 1: Lösung](#aufgabe-1-l%C3%B6sung)
       - [1. Punkte zeichnen](#1-punkte-zeichnen)
       - [2. Parameter für die Ellipse wählen](#2-parameter-f%C3%BCr-die-ellipse-w%C3%A4hlen)
       - [3. Ellipsengleichung und Schwellwertfunktion aufstellen](#3-ellipsengleichung-und-schwellwertfunktion-aufstellen)
       - [4. Überprüfung](#4-%C3%9Cberpr%C3%BCfung)
   - [Aufgabe 2](#aufgabe-2)
-    - [Lösung](#l%C3%B6sung-1)
-      - [1. ToDo](#1-todo)
+    - [Aufgabe 2: Lösung](#aufgabe-2-l%C3%B6sung)
+      - [1. Matrizen aufstellen](#1-matrizen-aufstellen)
       - [2. Optimierungsproblem aufstellen](#2-optimierungsproblem-aufstellen)
-      - [Lösung des Optimierungsproblems](#l%C3%B6sung-des-optimierungsproblems)
-      - [Trennbarkeit feststellen und Hyperebene aufstellen](#trennbarkeit-feststellen-und-hyperebene-aufstellen)
-      - [Überprüfung (2)](#%C3%9Cberpr%C3%BCfung-2)
+      - [3. Lösung des Optimierungsproblems](#3-l%C3%B6sung-des-optimierungsproblems)
+      - [4. Trennbarkeit feststellen und Hyperebene aufstellen](#4-trennbarkeit-feststellen-und-hyperebene-aufstellen)
+      - [5. Überprüfung](#5-%C3%9Cberpr%C3%BCfung)
+  - [Aufgabe 3](#aufgabe-3)
+    - [Aufgabe 3: Lösung](#aufgabe-3-l%C3%B6sung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
