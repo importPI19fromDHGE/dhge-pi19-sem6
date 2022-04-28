@@ -37,7 +37,7 @@ Wissensbasierte Systeme / Neuronale Netze
       - [2. Optimierungsproblem aufstellen](#2-optimierungsproblem-aufstellen)
       - [Lösung des Optimierungsproblems](#l%C3%B6sung-des-optimierungsproblems)
       - [Trennbarkeit feststellen und Hyperebene aufstellen](#trennbarkeit-feststellen-und-hyperebene-aufstellen)
-      - [Überprüfung](#%C3%9Cberpr%C3%BCfung)
+      - [Überprüfung (2)](#%C3%9Cberpr%C3%BCfung-2)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
