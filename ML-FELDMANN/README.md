@@ -24,7 +24,20 @@ Wissensbasierte Systeme / Neuronale Netze
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Platzhalter](#platzhalter)
+- [Klausurvorbereitung](#klausurvorbereitung)
+  - [Aufgabe 1](#aufgabe-1)
+    - [Lösung](#l%C3%B6sung)
+      - [1. Punkte zeichnen](#1-punkte-zeichnen)
+      - [2. Parameter für die Ellipse wählen](#2-parameter-f%C3%BCr-die-ellipse-w%C3%A4hlen)
+      - [3. Ellipsengleichung und Schwellwertfunktion aufstellen](#3-ellipsengleichung-und-schwellwertfunktion-aufstellen)
+      - [4. Überprüfung](#4-%C3%9Cberpr%C3%BCfung)
+  - [Aufgabe 2](#aufgabe-2)
+    - [Lösung](#l%C3%B6sung-1)
+      - [1. ToDo](#1-todo)
+      - [2. Optimierungsproblem aufstellen](#2-optimierungsproblem-aufstellen)
+      - [Lösung des Optimierungsproblems](#l%C3%B6sung-des-optimierungsproblems)
+      - [Trennbarkeit feststellen und Hyperebene aufstellen](#trennbarkeit-feststellen-und-hyperebene-aufstellen)
+      - [Überprüfung](#%C3%9Cberpr%C3%BCfung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
