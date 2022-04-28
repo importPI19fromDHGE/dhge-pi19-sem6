@@ -50,6 +50,9 @@ Wissensbasierte Systeme / Neuronale Netze
     - [Aufgabe 5: Lösung](#aufgabe-5-l%C3%B6sung)
       - [1. Funktion $f(x,y,z)$ aufstellen](#1-funktion-fxyz-aufstellen)
       - [2. Aktivierungsfunktion und Perzeptronen definieren](#2-aktivierungsfunktion-und-perzeptronen-definieren)
+      - [3. Perzeptronen entsprechend der logischen Funktion verknüpfen](#3-perzeptronen-entsprechend-der-logischen-funktion-verkn%C3%BCpfen)
+  - [Aufgabe 6](#aufgabe-6)
+    - [Aufgabe 6: Lösung](#aufgabe-6-l%C3%B6sung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
