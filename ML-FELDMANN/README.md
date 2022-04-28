@@ -122,9 +122,9 @@ $$
 Die aufgestellte Funktion $g(x,y)$ muss für alle Punkte innerhalb der Ellipse 1 und für alle Punkte außerhalb der Ellipse 0 ergbene. Die gegebenen Punkte werden zur Überprüfung in die Funktion eingesetzt. Diese Prüfung soll ebenfalls mit einem weiteren Punkt durchgeführt werden, der sich außerhalb der Ellipse befindet.
 
 $$
-g(1,1)=1 \\
-g(2,1)=1 \\
-g(4,2)=1 \\
+g(1,1)=1 \quad
+g(2,1)=1 \quad
+g(4,2)=1 \quad
 g(5,5)=0
 $$
 
