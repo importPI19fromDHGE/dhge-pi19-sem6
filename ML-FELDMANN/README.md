@@ -24,14 +24,13 @@ Wissensbasierte Systeme / Neuronale Netze
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Wissensbasierte Systeme / Neuronale Netze](#wissensbasierte-systeme--neuronale-netze)
 - [Klausurvorbereitung](#klausurvorbereitung)
   - [Aufgabe 1](#aufgabe-1)
     - [Aufgabe 1: Lösung](#aufgabe-1-l%C3%B6sung)
       - [1. Punkte zeichnen](#1-punkte-zeichnen)
-      - [2. Parameter für die Ellipse wählen](#2-parameter-für-die-ellipse-wählen)
+      - [2. Parameter für die Ellipse wählen](#2-parameter-f%C3%BCr-die-ellipse-w%C3%A4hlen)
       - [3. Ellipsengleichung und Schwellwertfunktion aufstellen](#3-ellipsengleichung-und-schwellwertfunktion-aufstellen)
-      - [4. Überprüfung](#4-überprüfung)
+      - [4. Überprüfung](#4-%C3%9Cberpr%C3%BCfung)
   - [Aufgabe 2](#aufgabe-2)
     - [Aufgabe 2: Lösung](#aufgabe-2-l%C3%B6sung)
       - [1. Matrizen aufstellen](#1-matrizen-aufstellen)
@@ -41,6 +40,11 @@ Wissensbasierte Systeme / Neuronale Netze
       - [5. Überprüfung](#5-%C3%9Cberpr%C3%BCfung)
   - [Aufgabe 3](#aufgabe-3)
     - [Aufgabe 3: Lösung](#aufgabe-3-l%C3%B6sung)
+  - [Aufgabe 4](#aufgabe-4)
+    - [Aufgabe 4: Lösung](#aufgabe-4-l%C3%B6sung)
+      - [1. Punkte aufstellen und optisch auf Trennbarkeit prüfen](#1-punkte-aufstellen-und-optisch-auf-trennbarkeit-pr%C3%BCfen)
+      - [2. Vorbereitung des Lernperzeptron-Algorithmus](#2-vorbereitung-des-lernperzeptron-algorithmus)
+      - [3. Durchführung des Lernperzeptron-Algorithmus](#3-durchf%C3%BChrung-des-lernperzeptron-algorithmus)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
