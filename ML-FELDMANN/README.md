@@ -73,7 +73,7 @@ Die Bedingung $a \neq b$ muss gelten!
 
 Eine grafische Überprüfung der Parameter ist empfehlenswert.
 
-#### 3. Ellipsengleichung und Aktivierungsfunktion aufstellen
+#### 3. Ellipsengleichung und Schwellwertfunktion aufstellen
 
 Aus den gewählten Parametern ergibt sich die Ellipsengleichung:
 
@@ -99,4 +99,66 @@ g(2,1)=1 \\
 g(4,2)=1 \\
 g(5,5)=0
 $$
+
+## Aufgabe 2
+
+> Stellen Sie für die vierdimensionalen Punktmengen `G:={(1,2,3,4), (1,1,1,1)}`
+> und `B={(1,3,1,2), (2,2,-1,1)}` ein lineares Optimierungsproblem auf,
+> welches die Trennbarkeit von `B` und `G` entscheidet. Falls Trennbarkeit
+> vorliegt, geben Sie die Gleichung `f(x)=0` der trennenden Hyperebene an.
+> Überprüfen Sie, ob `f(x)` auf `G` konstantes Vorzeichen besitzt und auf `B`
+> das entgegengesetzte.
+
+### Lösung
+
+#### 1. ToDo
+
+$$
+G = \begin{bmatrix} 1 & 2 & 3 & 4 \\ 1 & 1 & 1 & 1 \end{bmatrix}
+$$
+
+$$
+o = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+$$
+
+$$
+e_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+$$
+
+#### 2. Optimierungsproblem aufstellen
+
+$$A = stapeln\(erweitern \(−G, e_1, o\) erweitern (B o −e1))$$
+
+$$B_1 = \begin{bmatrix}
+  0\\
+  0\\
+  0\\
+  0
+\end{bmatrix}$$
+
+$$lb = -\begin{bmatrix}
+  1\\
+  1\\
+  1\\
+  1
+\end{bmatrix}$$
+
+$$ub = -lb = \begin{bmatrix}
+  1\\
+  1\\
+  1\\
+  1
+\end{bmatrix}$$
+
+####
+
+> Die Lösung des optimierungsproblems wird vorgegeben
+
+Wenn diff (b-a) negativ, dann trennbar
+
+$$
+f(x)=
+$$
+
+#### Überprüfung
 
