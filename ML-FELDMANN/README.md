@@ -12,6 +12,7 @@ header-includes:
   - \setlist[itemize,1]{label=\textbullet}
   - \setlist[itemize,2]{label=--}
   - \setlist[itemize,3]{label=*}
+  - \setcounter{MaxMatrixCols}{20}
 
 ---------->
 
@@ -326,3 +327,36 @@ $$
 \end{bmatrix} = -1.5
 \quad\rightarrow\quad -1.5 < 0 \quad\rightarrow\quad w^{<2>} = w^{<1>} * \varphi_1 * \xi^{<1>} = \begin{bmatrix}-4\\1.5\\3.5\end{bmatrix}
 $$
+
+## Aufgabe 5
+
+> Man simuliere die Boolesche Funktion $f(x,y,z)$ mit folgendem Werteverlauf
+> durch ein Neuronales Netz! Kontrollieren Sie die Korrektheit Ihrer Konstruktion
+> indem Sie alle möglichen Eingaben auswerten.
+
+$$\begin{bmatrix}x&y&z&f(x,y,z)\\
+0 & 0 & 0 & 1\\
+0 & 0 & 1 & 0\\
+0 & 1 & 0 & 1\\
+0 & 1 & 1 & 0\\
+1 & 0 & 0 & 0\\
+1 & 0 & 1 & 0\\
+1 & 1 & 0 & 0\\
+1 & 1 & 1 & 0
+\end{bmatrix}$$
+
+### Aufgabe 5: Lösung
+
+#### 1. Funktion $f(x,y,z)$ aufstellen
+
+> $f(x,y,z)$ kann sehr einfach über die Konjunktive Normalform (KNF) gebildet werden.
+> Dazu werden die Eingangsbelegungen, die $1$ ergeben konjunktiv verknüpft.
+
+$$(\neg x \land \neg y \land \neg z) \lor (\neg x \land y \land \neg z)$$
+
+#### 2. Aktivierungsfunktion und Perzeptronen definieren
+
+$$\omega(x)=\begin{cases}
+  1 & \text{if} \quad 0 \leq x \\
+  0 & \text{otherwise}
+\end{cases}$$
